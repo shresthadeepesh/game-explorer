@@ -14,7 +14,10 @@ An http origin is required (ES modules + `fetch`); `file://` will not work.
 
 ```
 index.html              markup shell
-src/app.js              filter state, panel, rail, URL sync
+src/app.js              filter state, rail, view switching, URL sync
+src/panel.js            detail panel: facts, list controls, similar games
+src/listview.js         the accessible list view
+src/a11y.js             focus trapping and polite announcements
 src/mylist.js           my-list drawer and recommendation shelf
 src/store.js            IndexedDB persistence for the list
 src/recommend.js        similarity scoring behind the recommendations
@@ -27,7 +30,10 @@ scripts/source-games.mjs  source of truth: [year, [[title, genre, blurb, wiki?],
 scripts/build-data.mjs    emits data/games.json + data/games.csv
 scripts/fetch-covers.mjs  optional real key art from Wikipedia
 scripts/check-links.mjs   verifies every Wikipedia article still resolves
-scripts/smoke.mjs         CDP end-to-end test (list, storage, recommendations)
+scripts/check-data.mjs    dataset integrity gate
+scripts/enrich-wikidata.mjs  platforms, studios and release dates
+scripts/smoke.mjs         CDP end-to-end test, 29 checks
+sw.js, manifest.webmanifest  offline shell and install metadata
 assets/covers/            drop-in real covers, named <id>.jpg|png|webp|avif
 ```
 
@@ -93,16 +99,39 @@ art is normally non-free fair-use — fine for local use, your call to publish.
 The panel credits whichever source supplied the image, and deleting a file from
 `assets/covers/` plus a rebuild reverts that game to procedural art.
 
+## Views
+
+The timeline is the default. `?view=list`, the header toggle or the skip link
+opens the same filtered data as a plain list — covers, facts, blurbs, links and
+an add button — which is what screen readers, keyboards and small screens get.
+
+Years that fade out of the camera's range are marked `inert`, so Tab never
+lands on a card you cannot see; the panel and drawer trap focus while open and
+hand it back on close; the year is announced once the camera settles rather
+than on every frame it crosses.
+
+## Offline
+
+`sw.js` precaches the shell and the dataset, caches cover art as it is seen,
+and serves data stale-while-revalidate, so a second visit paints immediately
+and an offline one still works. `manifest.webmanifest` makes it installable.
+The dev server sends ETag, Last-Modified and 304s, and marks cover art
+immutable for a year.
+
 ## My list and recommendations
 
 Any game can be saved from its panel (**+ Add to my list**, or `A` while a panel
-is open). Saved games get a marker on the timeline, and the drawer (`L`, or
+is open), where it also takes a status, a five-star rating and a note. Saved games get a marker on the timeline, and the drawer (`L`, or
 **MY LIST** in the header) shows the list plus a recommendation shelf. **Show
 only my list** filters the timeline down to saved games and is shareable as
 `?list=1`.
 
-Storage is IndexedDB — database `game-explorer`, one object store `list` keyed
-by game id with an `addedAt` index. `src/store.js` keeps a memory mirror so the
+The drawer sorts by date added, rating, status, release year or title, exports
+and imports JSON, and copies a share link that carries the ids; an incoming
+link is offered in a bar rather than merged on sight.
+
+Storage is IndexedDB — database `game-explorer`, object store `list` keyed by
+game id, schema v2 (`status`, `rating`, `note`) with a migration from v1. `src/store.js` keeps a memory mirror so the
 UI reads synchronously, writes through to disk, and notifies subscribers. If
 IndexedDB is unavailable (private window, blocked storage) it degrades to a
 session-only list and says so in the drawer rather than failing.
@@ -123,13 +152,21 @@ varied. Each row names the saved game that earned it the slot ("Action RPG ·
 like Elden Ring").
 
 ```bash
-npm run smoke    # needs `npm start` running in another shell
+npm run check:data   # dataset integrity, also runs as part of build:data
+npm run smoke        # 29 browser checks; needs `npm start` in another shell
+npm test             # both
 ```
 
-`scripts/smoke.mjs` drives real Chrome over the DevTools Protocol and checks the
-parts a DOM dump cannot: writes land in IndexedDB, the list survives a reload,
-the drawer and timeline markers update, recommendations appear and exclude saved
-games, and the list-only filter narrows the timeline.
+`check-data.mjs` fails the build on a duplicate id, an unmapped genre, a colour
+that disagrees with its category, an image path with no file behind it, a link
+that is not https, or a year index that disagrees with its games.
+
+`smoke.mjs` drives real Chrome over the DevTools Protocol and checks the parts a
+DOM dump cannot: writes land in IndexedDB and survive a reload, the drawer and
+timeline markers follow, recommendations appear and exclude saved games, filters
+and search and deep links work, a similar game opens in place, the list view
+renders every entry, offscreen years are inert, share links round-trip, and the
+service worker precaches.
 
 ## Performance
 
