@@ -16,6 +16,7 @@
 // every game under its earliest release.
 
 import { writeFile, readFile, mkdir, readdir } from "node:fs/promises";
+import { existsSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -25,9 +26,11 @@ const ENDPOINT = "https://query.wikidata.org/sparql";
 const UA = "game-explorer/1.0 (catalogue build)";
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-const REFILE = process.argv.includes("--refile");
-const FROM = Number(process.argv[2] || 1990);
-const TO = Number(process.argv[3] || 2025);
+const args = process.argv.slice(2);
+const REFILE = args.includes("--refile");
+const years = args.filter((a) => /^\d{4}$/.test(a)).map(Number);
+const FROM = years[0] ?? 1990;
+const TO = years[1] ?? 2025;
 
 const itemsQuery = (year) => `
 SELECT ?item ?name ?date ?sitelinks ?article WHERE {
@@ -82,15 +85,20 @@ if (REFILE) {
   console.log(`re-filing ${all.size} games from ${files.length} years`);
 
   const qids = [...all.keys()];
-  const firstDates = new Map();
-  for (let i = 0; i < qids.length; i += 200) {
-    for (const row of await run(firstDateQuery(qids.slice(i, i + 200)))) {
+  const CACHE = join(OUT, "first-dates.json");
+  const firstDates = new Map(existsSync(CACHE) ? Object.entries(JSON.parse(await readFile(CACHE, "utf8"))) : []);
+  const missing = qids.filter((q) => !firstDates.has(q));
+  if (firstDates.size) console.log(`  ${firstDates.size} first dates from cache, ${missing.length} to fetch`);
+
+  for (let i = 0; i < missing.length; i += 200) {
+    for (const row of await run(firstDateQuery(missing.slice(i, i + 200)))) {
       firstDates.set(row.item.value.split("/").pop(), row.first.value.slice(0, 10));
     }
-    process.stdout.write(`  first dates ${Math.min(i + 200, qids.length)}/${qids.length}\r`);
+    process.stdout.write(`  first dates ${Math.min(i + 200, missing.length)}/${missing.length}\r`);
     await sleep(500);
   }
-  console.log("");
+  if (missing.length) console.log("");
+  await writeFile(CACHE, JSON.stringify(Object.fromEntries(firstDates)) + "\n");
 
   const buckets = new Map();
   let moved = 0, dropped = 0;

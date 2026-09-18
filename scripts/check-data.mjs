@@ -59,8 +59,29 @@ for (const row of data.years) {
 if (data.count !== data.games.length) problems.push(`count says ${data.count}, games has ${data.games.length}`);
 if (csv.length - 1 !== data.games.length) problems.push(`csv has ${csv.length - 1} rows for ${data.games.length} games`);
 
+// the catalogue is optional, but if it is present its index must match its files
+const catalogueIndex = join(ROOT, "data", "catalog", "index.json");
+let catalogue = null;
+if (existsSync(catalogueIndex)) {
+  catalogue = JSON.parse(readFileSync(catalogueIndex, "utf8"));
+  const seen = new Set();
+  for (const { year, count } of catalogue.years) {
+    const file = join(ROOT, "data", "catalog", `${year}.json`);
+    if (!existsSync(file)) { problems.push(`catalogue: ${year}.json is missing`); continue; }
+    const yearData = JSON.parse(readFileSync(file, "utf8"));
+    if (yearData.games.length !== count) problems.push(`catalogue ${year}: index says ${count}, file has ${yearData.games.length}`);
+    for (const game of yearData.games) {
+      if (game.year !== year) problems.push(`catalogue ${year}: ${game.qid} is dated ${game.year}`);
+      if (seen.has(game.qid)) problems.push(`catalogue: ${game.qid} appears in more than one year`);
+      seen.add(game.qid);
+    }
+  }
+  const counted = catalogue.years.reduce((n, y) => n + y.count, 0);
+  if (counted !== catalogue.total) problems.push(`catalogue: total says ${catalogue.total}, years add to ${counted}`);
+}
+
 const covered = data.games.filter((g) => g.image || g.imageUrl).length;
-console.log(`checked ${data.games.length} games · ${Object.keys(data.categories).length} categories · ${covered} with real cover art`);
+console.log(`checked ${data.games.length} games · ${Object.keys(data.categories).length} categories · ${covered} with real cover art${catalogue ? ` · catalogue ${catalogue.total} across ${catalogue.years.length} years` : ""}`);
 if (problems.length) {
   console.error(`\n${problems.length} problem${problems.length > 1 ? "s" : ""}:\n  ${problems.join("\n  ")}`);
   process.exit(1);

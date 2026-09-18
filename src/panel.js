@@ -102,7 +102,7 @@ export function mountPanel({ root, games, onSelect, onClose }) {
     root.style.setProperty("--panel-color", g.color);
     root.innerHTML = `
       <div class="panel__top">
-        <span class="panel__meta">${g.year} / ${String(g.rank).padStart(2, "0")}</span>
+        <span class="panel__meta">${g.catalogue ? `${g.year} / catalogue` : `${g.year} / ${String(g.rank).padStart(2, "0")}`}</span>
         <button type="button" class="panel__close" data-close aria-label="Close">✕</button>
       </div>
       <img class="panel__art" src="${artFor(g)}" alt="${esc(g.title)} key art" decoding="async">
