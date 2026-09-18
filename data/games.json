@@ -84,12 +84,13 @@
   },
   "platforms": {
     "PC": 164,
-    "PlayStation": 65,
-    "Nintendo": 61,
-    "Xbox": 42,
-    "Retro home computer": 10,
+    "PlayStation": 144,
+    "Nintendo": 114,
+    "Xbox": 106,
+    "Mobile": 52,
+    "Sega": 19,
+    "Retro home computer": 13,
     "Arcade": 4,
-    "Mobile": 4,
     "Streaming & web": 1
   },
   "years": [
@@ -670,7 +671,9 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Dragon Quest IV",
       "platforms": [
-        "Nintendo"
+        "Mobile",
+        "Nintendo",
+        "PlayStation"
       ],
       "developers": [
         "Chunsoft"
@@ -685,7 +688,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Dragon%20Quest%20IV",
       "trailer": "https://www.youtube.com/results?search_query=Dragon%20Quest%20IV%201990%20trailer",
       "seed": 767471289,
-      "search": "dragon quest iv jrpg rpg 1990 chunsoft enix nintendo"
+      "search": "dragon quest iv jrpg rpg 1990 chunsoft enix mobile nintendo playstation"
     },
     {
       "id": "sonic-the-hedgehog-1991",
@@ -706,14 +709,16 @@
         "Mobile",
         "Nintendo",
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Sega",
+        "Xbox"
       ],
       "developers": [
         "Konami",
         "Sonic Team"
       ],
       "publishers": [
-        "Q122741"
+        "Sega"
       ],
       "released": "1991-06-23",
       "wikidata": "Q37123",
@@ -722,7 +727,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Sonic%20the%20Hedgehog",
       "trailer": "https://www.youtube.com/results?search_query=Sonic%20the%20Hedgehog%201991%20trailer",
       "seed": 2472953908,
-      "search": "sonic the hedgehog platformer platformer 1991 konami sonic team q122741 arcade mobile nintendo pc playstation"
+      "search": "sonic the hedgehog platformer platformer 1991 konami sonic team sega arcade mobile nintendo pc playstation sega xbox"
     },
     {
       "id": "street-fighter-ii-1991",
@@ -743,7 +748,10 @@
         "Mobile",
         "Nintendo",
         "PC",
-        "Retro home computer"
+        "PlayStation",
+        "Retro home computer",
+        "Sega",
+        "Xbox"
       ],
       "developers": [
         "Capcom"
@@ -758,7 +766,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Street%20Fighter%20II",
       "trailer": "https://www.youtube.com/results?search_query=Street%20Fighter%20II%201991%20trailer",
       "seed": 2354418974,
-      "search": "street fighter ii fighting fighting 1991 capcom data east arcade mobile nintendo pc retro home computer"
+      "search": "street fighter ii fighting fighting 1991 capcom data east arcade mobile nintendo pc playstation retro home computer sega xbox"
     },
     {
       "id": "civilization-1991",
@@ -777,7 +785,9 @@
       "platforms": [
         "Nintendo",
         "PC",
-        "Retro home computer"
+        "PlayStation",
+        "Retro home computer",
+        "Sega"
       ],
       "developers": [
         "MicroProse"
@@ -793,7 +803,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Civilization",
       "trailer": "https://www.youtube.com/results?search_query=Civilization%201991%20trailer",
       "seed": 3343661419,
-      "search": "civilization 4x strategy 1991 microprose koei microprose nintendo pc retro home computer"
+      "search": "civilization 4x strategy 1991 microprose koei microprose nintendo pc playstation retro home computer sega"
     },
     {
       "id": "the-legend-of-zelda-a-link-to-the-past-1991",
@@ -842,17 +852,19 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Another World (video game)",
       "platforms": [
+        "Mobile",
         "Nintendo",
         "PC",
-        "Retro home computer"
+        "Retro home computer",
+        "Sega"
       ],
       "developers": [
         "Delphine Software International",
         "Éric Chahi"
       ],
       "publishers": [
+        "Focus Entertainment",
         "Interplay Entertainment",
-        "Q921944",
         "U.S. Gold"
       ],
       "released": "1991-01-01",
@@ -862,7 +874,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Another%20World",
       "trailer": "https://www.youtube.com/results?search_query=Another%20World%201991%20trailer",
       "seed": 2206195968,
-      "search": "another world cinematic platformer platformer 1991 delphine software international éric chahi interplay entertainment q921944 u.s. gold nintendo pc retro home computer"
+      "search": "another world cinematic platformer platformer 1991 delphine software international éric chahi focus entertainment interplay entertainment u.s. gold mobile nintendo pc retro home computer sega"
     },
     {
       "id": "lemmings-1991",
@@ -881,10 +893,11 @@
       "platforms": [
         "Nintendo",
         "PC",
-        "Retro home computer"
+        "Retro home computer",
+        "Sega"
       ],
       "developers": [
-        "Q94893"
+        "Rockstar North"
       ],
       "publishers": [
         "SCE Studio Liverpool"
@@ -896,7 +909,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Lemmings",
       "trailer": "https://www.youtube.com/results?search_query=Lemmings%201991%20trailer",
       "seed": 471372040,
-      "search": "lemmings puzzle puzzle 1991 q94893 sce studio liverpool nintendo pc retro home computer"
+      "search": "lemmings puzzle puzzle 1991 rockstar north sce studio liverpool nintendo pc retro home computer sega"
     },
     {
       "id": "mortal-kombat-1992",
@@ -916,7 +929,10 @@
         "Arcade",
         "Nintendo",
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Retro home computer",
+        "Sega",
+        "Xbox"
       ],
       "developers": [
         "Midway Games"
@@ -931,7 +947,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Mortal%20Kombat",
       "trailer": "https://www.youtube.com/results?search_query=Mortal%20Kombat%201992%20trailer",
       "seed": 1309133261,
-      "search": "mortal kombat fighting fighting 1992 midway games midway games arcade nintendo pc playstation"
+      "search": "mortal kombat fighting fighting 1992 midway games midway games arcade nintendo pc playstation retro home computer sega xbox"
     },
     {
       "id": "wolfenstein-3d-1992",
@@ -948,30 +964,32 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Wolfenstein 3D",
       "platforms": [
+        "Mobile",
         "Nintendo",
         "PC",
         "PlayStation",
-        "Retro home computer"
+        "Retro home computer",
+        "Xbox"
       ],
       "developers": [
+        "Id Software",
         "Interplay Entertainment",
         "Nerve Software",
-        "Q204474",
         "Raven Software"
       ],
       "publishers": [
         "3D Realms",
+        "Activision",
         "Apogee Software",
         "Atari",
         "BAM! Entertainment",
         "Bethesda Softworks",
+        "Id Software",
         "Imagineer",
         "Interplay Entertainment",
         "MacPlay",
         "Manaccom",
-        "Q193559",
-        "Q200491",
-        "Q204474"
+        "Valve Corporation"
       ],
       "released": "1992-05-05",
       "wikidata": "Q18940",
@@ -980,7 +998,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Wolfenstein%203D",
       "trailer": "https://www.youtube.com/results?search_query=Wolfenstein%203D%201992%20trailer",
       "seed": 2946621517,
-      "search": "wolfenstein 3d fps shooter 1992 interplay entertainment nerve software q204474 raven software 3d realms apogee software atari bam! entertainment bethesda softworks imagineer interplay entertainment macplay manaccom q193559 q200491 q204474 nintendo pc playstation retro home computer"
+      "search": "wolfenstein 3d fps shooter 1992 id software interplay entertainment nerve software raven software 3d realms activision apogee software atari bam! entertainment bethesda softworks id software imagineer interplay entertainment macplay manaccom valve corporation mobile nintendo pc playstation retro home computer xbox"
     },
     {
       "id": "super-mario-kart-1992",
@@ -1030,7 +1048,8 @@
       "imageCredit": "Wikipedia: Dune II",
       "platforms": [
         "Nintendo",
-        "PC"
+        "PC",
+        "Retro home computer"
       ],
       "developers": [
         "Westwood Studios"
@@ -1045,7 +1064,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Dune%20II",
       "trailer": "https://www.youtube.com/results?search_query=Dune%20II%201992%20trailer",
       "seed": 1661089806,
-      "search": "dune ii rts strategy 1992 westwood studios virgin interactive nintendo pc"
+      "search": "dune ii rts strategy 1992 westwood studios virgin interactive nintendo pc retro home computer"
     },
     {
       "id": "ultima-underworld-1992",
@@ -1062,7 +1081,8 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Ultima Underworld: The Stygian Abyss",
       "platforms": [
-        "PC"
+        "PC",
+        "PlayStation"
       ],
       "developers": [
         "Looking Glass Studios"
@@ -1077,7 +1097,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Ultima%20Underworld",
       "trailer": "https://www.youtube.com/results?search_query=Ultima%20Underworld%201992%20trailer",
       "seed": 3745808940,
-      "search": "ultima underworld immersive sim immersive sim 1992 looking glass studios origin systems pc"
+      "search": "ultima underworld immersive sim immersive sim 1992 looking glass studios origin systems pc playstation"
     },
     {
       "id": "kirbys-dream-land-1992",
@@ -1126,21 +1146,24 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Doom (1993 video game)",
       "platforms": [
+        "Mobile",
         "Nintendo",
         "PC",
         "PlayStation",
-        "Retro home computer"
+        "Retro home computer",
+        "Sega",
+        "Xbox"
       ],
       "developers": [
-        "Nerve Software",
-        "Q204474"
+        "Id Software",
+        "Nerve Software"
       ],
       "publishers": [
+        "Activision",
         "Atari",
         "Atari, Inc.",
         "Ocean Software",
-        "Q122741",
-        "Q200491",
+        "Sega",
         "WMS Industries"
       ],
       "released": "1993-01-01",
@@ -1150,7 +1173,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Doom",
       "trailer": "https://www.youtube.com/results?search_query=Doom%201993%20trailer",
       "seed": 1051168437,
-      "search": "doom fps shooter 1993 nerve software q204474 atari atari, inc. ocean software q122741 q200491 wms industries nintendo pc playstation retro home computer"
+      "search": "doom fps shooter 1993 id software nerve software activision atari atari, inc. ocean software sega wms industries mobile nintendo pc playstation retro home computer sega xbox"
     },
     {
       "id": "myst-1993",
@@ -1167,10 +1190,12 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Myst",
       "platforms": [
+        "Mobile",
         "Nintendo",
         "PC",
         "PlayStation",
         "Retro home computer",
+        "Sega",
         "Xbox"
       ],
       "developers": [
@@ -1187,7 +1212,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Myst",
       "trailer": "https://www.youtube.com/results?search_query=Myst%201993%20trailer",
       "seed": 3698998925,
-      "search": "myst adventure adventure 1993 cyan worlds broderbund midway games nintendo pc playstation retro home computer xbox"
+      "search": "myst adventure adventure 1993 cyan worlds broderbund midway games mobile nintendo pc playstation retro home computer sega xbox"
     },
     {
       "id": "star-fox-1993",
@@ -1237,6 +1262,7 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Secret of Mana",
       "platforms": [
+        "Mobile",
         "Nintendo",
         "PC"
       ],
@@ -1254,7 +1280,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Secret%20of%20Mana",
       "trailer": "https://www.youtube.com/results?search_query=Secret%20of%20Mana%201993%20trailer",
       "seed": 4040893604,
-      "search": "secret of mana action rpg rpg 1993 square square square enix nintendo pc"
+      "search": "secret of mana action rpg rpg 1993 square square square enix mobile nintendo pc"
     },
     {
       "id": "simcity-2000-1993",
@@ -1273,7 +1299,9 @@
       "platforms": [
         "Nintendo",
         "PC",
-        "Retro home computer"
+        "PlayStation",
+        "Retro home computer",
+        "Sega"
       ],
       "developers": [
         "Full Fat",
@@ -1283,7 +1311,7 @@
         "Electronic Arts",
         "Maxis",
         "Nintendo DSi",
-        "Q122741",
+        "Sega",
         "Zushi Games"
       ],
       "released": "1993-01-01",
@@ -1293,7 +1321,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=SimCity%202000",
       "trailer": "https://www.youtube.com/results?search_query=SimCity%202000%201993%20trailer",
       "seed": 2351526481,
-      "search": "simcity 2000 city builder simulation 1993 full fat maxis electronic arts maxis nintendo dsi q122741 zushi games nintendo pc retro home computer"
+      "search": "simcity 2000 city builder simulation 1993 full fat maxis electronic arts maxis nintendo dsi sega zushi games nintendo pc playstation retro home computer sega"
     },
     {
       "id": "nba-jam-1993",
@@ -1311,7 +1339,8 @@
       "imageCredit": "Wikipedia: NBA Jam (1993 video game)",
       "platforms": [
         "Arcade",
-        "Nintendo"
+        "Nintendo",
+        "Sega"
       ],
       "developers": [
         "Midway Games"
@@ -1326,7 +1355,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=NBA%20Jam",
       "trailer": "https://www.youtube.com/results?search_query=NBA%20Jam%201993%20trailer",
       "seed": 2408905210,
-      "search": "nba jam sports simulation 1993 midway games midway games arcade nintendo"
+      "search": "nba jam sports simulation 1993 midway games midway games arcade nintendo sega"
     },
     {
       "id": "super-metroid-1994",
@@ -1375,6 +1404,7 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Final Fantasy VI",
       "platforms": [
+        "Mobile",
         "Nintendo",
         "PC",
         "PlayStation"
@@ -1392,7 +1422,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Final%20Fantasy%20VI",
       "trailer": "https://www.youtube.com/results?search_query=Final%20Fantasy%20VI%201994%20trailer",
       "seed": 1507033390,
-      "search": "final fantasy vi jrpg rpg 1994 square square nintendo pc playstation"
+      "search": "final fantasy vi jrpg rpg 1994 square square mobile nintendo pc playstation"
     },
     {
       "id": "donkey-kong-country-1994",
@@ -1538,6 +1568,7 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Chrono Trigger",
       "platforms": [
+        "Mobile",
         "Nintendo",
         "PC",
         "PlayStation"
@@ -1556,7 +1587,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Chrono%20Trigger",
       "trailer": "https://www.youtube.com/results?search_query=Chrono%20Trigger%201995%20trailer",
       "seed": 2617116846,
-      "search": "chrono trigger jrpg rpg 1995 square square square enix nintendo pc playstation"
+      "search": "chrono trigger jrpg rpg 1995 square square square enix mobile nintendo pc playstation"
     },
     {
       "id": "command-conquer-1995",
@@ -1575,7 +1606,8 @@
       "platforms": [
         "Nintendo",
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Sega"
       ],
       "developers": [
         "Westwood Studios"
@@ -1591,7 +1623,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Command%20%26%20Conquer",
       "trailer": "https://www.youtube.com/results?search_query=Command%20%26%20Conquer%201995%20trailer",
       "seed": 912468141,
-      "search": "command & conquer rts strategy 1995 westwood studios nintendo virgin interactive nintendo pc playstation"
+      "search": "command & conquer rts strategy 1995 westwood studios nintendo virgin interactive nintendo pc playstation sega"
     },
     {
       "id": "yoshis-island-1995",
@@ -1640,10 +1672,11 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Descent (video game)",
       "platforms": [
-        "PC"
+        "PC",
+        "PlayStation"
       ],
       "developers": [
-        "Q4355671"
+        "Parallax Software"
       ],
       "publishers": [
         "Interplay Entertainment",
@@ -1656,7 +1689,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Descent",
       "trailer": "https://www.youtube.com/results?search_query=Descent%201995%20trailer",
       "seed": 2089402024,
-      "search": "descent fps shooter 1995 q4355671 interplay entertainment macplay pc"
+      "search": "descent fps shooter 1995 parallax software interplay entertainment macplay pc playstation"
     },
     {
       "id": "suikoden-1995",
@@ -1673,7 +1706,9 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Suikoden (video game)",
       "platforms": [
-        "PC"
+        "PC",
+        "PlayStation",
+        "Sega"
       ],
       "developers": [
         "Konami"
@@ -1688,7 +1723,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Suikoden",
       "trailer": "https://www.youtube.com/results?search_query=Suikoden%201995%20trailer",
       "seed": 3934116424,
-      "search": "suikoden jrpg rpg 1995 konami konami pc"
+      "search": "suikoden jrpg rpg 1995 konami konami pc playstation sega"
     },
     {
       "id": "wipeout-1995",
@@ -1705,7 +1740,9 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Wipeout (video game)",
       "platforms": [
-        "PC"
+        "PC",
+        "PlayStation",
+        "Sega"
       ],
       "developers": [
         "SCE Studio Liverpool"
@@ -1718,7 +1755,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Wipeout",
       "trailer": "https://www.youtube.com/results?search_query=Wipeout%201995%20trailer",
       "seed": 4049418245,
-      "search": "wipeout racing racing 1995 sce studio liverpool  pc"
+      "search": "wipeout racing racing 1995 sce studio liverpool  pc playstation sega"
     },
     {
       "id": "super-mario-64-1996",
@@ -1768,7 +1805,9 @@
       "imageCredit": "Wikipedia: Resident Evil (1996 video game)",
       "platforms": [
         "Nintendo",
-        "PC"
+        "PC",
+        "PlayStation",
+        "Sega"
       ],
       "developers": [
         "Capcom"
@@ -1783,7 +1822,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Resident%20Evil",
       "trailer": "https://www.youtube.com/results?search_query=Resident%20Evil%201996%20trailer",
       "seed": 710645548,
-      "search": "resident evil survival horror horror 1996 capcom capcom nintendo pc"
+      "search": "resident evil survival horror horror 1996 capcom capcom nintendo pc playstation sega"
     },
     {
       "id": "quake-1996",
@@ -1802,21 +1841,24 @@
       "platforms": [
         "Nintendo",
         "PC",
+        "PlayStation",
+        "Retro home computer",
+        "Sega",
         "Xbox"
       ],
       "developers": [
-        "Nightdive Studios",
-        "Q204474"
+        "Id Software",
+        "Nightdive Studios"
       ],
       "publishers": [
+        "Activision",
         "Atari, Inc.",
         "Bethesda Softworks",
         "ClickBoom",
         "MacSoft Games",
         "Macmillan Inc.",
         "Midway Games",
-        "Q122741",
-        "Q200491"
+        "Sega"
       ],
       "released": "1996-06-22",
       "wikidata": "Q217423",
@@ -1825,7 +1867,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Quake",
       "trailer": "https://www.youtube.com/results?search_query=Quake%201996%20trailer",
       "seed": 3945277832,
-      "search": "quake fps shooter 1996 nightdive studios q204474 atari, inc. bethesda softworks clickboom macsoft games macmillan inc. midway games q122741 q200491 nintendo pc xbox"
+      "search": "quake fps shooter 1996 id software nightdive studios activision atari, inc. bethesda softworks clickboom macsoft games macmillan inc. midway games sega nintendo pc playstation retro home computer sega xbox"
     },
     {
       "id": "diablo-1996",
@@ -1842,7 +1884,8 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Diablo (video game)",
       "platforms": [
-        "PC"
+        "PC",
+        "PlayStation"
       ],
       "developers": [
         "Blizzard North"
@@ -1857,7 +1900,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Diablo",
       "trailer": "https://www.youtube.com/results?search_query=Diablo%201996%20trailer",
       "seed": 1770004486,
-      "search": "diablo action rpg rpg 1996 blizzard north blizzard entertainment pc"
+      "search": "diablo action rpg rpg 1996 blizzard north blizzard entertainment pc playstation"
     },
     {
       "id": "pokemon-red-and-blue-1996",
@@ -1906,7 +1949,11 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Tomb Raider (1996 video game)",
       "platforms": [
+        "Mobile",
+        "Nintendo",
         "PC",
+        "PlayStation",
+        "Sega",
         "Xbox"
       ],
       "developers": [
@@ -1925,7 +1972,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Tomb%20Raider",
       "trailer": "https://www.youtube.com/results?search_query=Tomb%20Raider%201996%20trailer",
       "seed": 3254147613,
-      "search": "tomb raider action-adventure adventure 1996 core design eidos interactive golden disc electronic suntendy interactive multimedia co.,ltd. victor interactive software pc xbox"
+      "search": "tomb raider action-adventure adventure 1996 core design eidos interactive golden disc electronic suntendy interactive multimedia co.,ltd. victor interactive software mobile nintendo pc playstation sega xbox"
     },
     {
       "id": "final-fantasy-vii-1997",
@@ -1942,7 +1989,10 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Final Fantasy VII",
       "platforms": [
-        "PC"
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation"
       ],
       "developers": [
         "Square"
@@ -1958,7 +2008,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Final%20Fantasy%20VII",
       "trailer": "https://www.youtube.com/results?search_query=Final%20Fantasy%20VII%201997%20trailer",
       "seed": 506705166,
-      "search": "final fantasy vii jrpg rpg 1997 square square square enix pc"
+      "search": "final fantasy vii jrpg rpg 1997 square square square enix mobile nintendo pc playstation"
     },
     {
       "id": "goldeneye-007-1997",
@@ -2039,6 +2089,7 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Castlevania: Symphony of the Night",
       "platforms": [
+        "Mobile",
         "PlayStation"
       ],
       "developers": [
@@ -2054,7 +2105,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Castlevania%3A%20Symphony%20of%20the%20Night",
       "trailer": "https://www.youtube.com/results?search_query=Castlevania%3A%20Symphony%20of%20the%20Night%201997%20trailer",
       "seed": 3507466006,
-      "search": "castlevania: symphony of the night metroidvania adventure 1997 konami konami playstation"
+      "search": "castlevania: symphony of the night metroidvania adventure 1997 konami konami mobile playstation"
     },
     {
       "id": "ultima-online-1997",
@@ -2135,14 +2186,15 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Half-Life (video game)",
       "platforms": [
-        "PC"
+        "PC",
+        "PlayStation"
       ],
       "developers": [
-        "Q193559"
+        "Valve Corporation"
       ],
       "publishers": [
-        "Q193559",
-        "Q494614"
+        "Sierra Entertainment",
+        "Valve Corporation"
       ],
       "released": "1998-11-19",
       "wikidata": "Q279744",
@@ -2151,7 +2203,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Half-Life",
       "trailer": "https://www.youtube.com/results?search_query=Half-Life%201998%20trailer",
       "seed": 2241545219,
-      "search": "half-life fps shooter 1998 q193559 q193559 q494614 pc"
+      "search": "half-life fps shooter 1998 valve corporation sierra entertainment valve corporation pc playstation"
     },
     {
       "id": "the-legend-of-zelda-ocarina-of-time-1998",
@@ -2269,12 +2321,14 @@
       "imageCredit": "Wikipedia: Resident Evil 2",
       "platforms": [
         "Nintendo",
-        "PC"
+        "PC",
+        "PlayStation",
+        "Sega"
       ],
       "developers": [
         "Capcom",
         "Factor 5",
-        "Q959329",
+        "Rockstar San Diego",
         "Tiger Electronics"
       ],
       "publishers": [
@@ -2287,7 +2341,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Resident%20Evil%202",
       "trailer": "https://www.youtube.com/results?search_query=Resident%20Evil%202%201998%20trailer",
       "seed": 3045974703,
-      "search": "resident evil 2 survival horror horror 1998 capcom factor 5 q959329 tiger electronics capcom nintendo pc"
+      "search": "resident evil 2 survival horror horror 1998 capcom factor 5 rockstar san diego tiger electronics capcom nintendo pc playstation sega"
     },
     {
       "id": "grim-fandango-1998",
@@ -2304,6 +2358,7 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Grim Fandango",
       "platforms": [
+        "Mobile",
         "PC",
         "PlayStation"
       ],
@@ -2320,7 +2375,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Grim%20Fandango",
       "trailer": "https://www.youtube.com/results?search_query=Grim%20Fandango%201998%20trailer",
       "seed": 2770310421,
-      "search": "grim fandango point & click adventure 1998 lucasfilm games lucasfilm games pc playstation"
+      "search": "grim fandango point & click adventure 1998 lucasfilm games lucasfilm games mobile pc playstation"
     },
     {
       "id": "system-shock-2-1999",
@@ -2370,7 +2425,8 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Silent Hill (video game)",
       "platforms": [
-        "PC"
+        "PC",
+        "PlayStation"
       ],
       "developers": [
         "Konami",
@@ -2386,7 +2442,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Silent%20Hill",
       "trailer": "https://www.youtube.com/results?search_query=Silent%20Hill%201999%20trailer",
       "seed": 2738896715,
-      "search": "silent hill horror horror 1999 konami team silent konami pc"
+      "search": "silent hill horror horror 1999 konami team silent konami pc playstation"
     },
     {
       "id": "age-of-empires-ii-1999",
@@ -2403,11 +2459,12 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Age of Empires II",
       "platforms": [
-        "PC"
+        "PC",
+        "PlayStation"
       ],
       "developers": [
-        "Hidden Path Entertainment",
-        "Q308913"
+        "Ensemble Studios",
+        "Hidden Path Entertainment"
       ],
       "publishers": [
         "Konami",
@@ -2420,7 +2477,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Age%20of%20Empires%20II",
       "trailer": "https://www.youtube.com/results?search_query=Age%20of%20Empires%20II%201999%20trailer",
       "seed": 1945720182,
-      "search": "age of empires ii rts strategy 1999 hidden path entertainment q308913 konami microsoft pc"
+      "search": "age of empires ii rts strategy 1999 ensemble studios hidden path entertainment konami microsoft pc playstation"
     },
     {
       "id": "unreal-tournament-1999",
@@ -2437,10 +2494,12 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Unreal Tournament",
       "platforms": [
-        "PC"
+        "PC",
+        "PlayStation",
+        "Sega"
       ],
       "developers": [
-        "Q739711"
+        "Epic Games"
       ],
       "publishers": [
         "Atari, Inc."
@@ -2452,7 +2511,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Unreal%20Tournament",
       "trailer": "https://www.youtube.com/results?search_query=Unreal%20Tournament%201999%20trailer",
       "seed": 606178265,
-      "search": "unreal tournament arena fps shooter 1999 q739711 atari, inc. pc"
+      "search": "unreal tournament arena fps shooter 1999 epic games atari, inc. pc playstation sega"
     },
     {
       "id": "everquest-1999",
@@ -2508,7 +2567,7 @@
       ],
       "publishers": [
         "Interplay Entertainment",
-        "Q122741",
+        "Sega",
         "Suntendy Interactive Multimedia Co.,Ltd."
       ],
       "released": "1999-12-12",
@@ -2518,7 +2577,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Planescape%3A%20Torment",
       "trailer": "https://www.youtube.com/results?search_query=Planescape%3A%20Torment%201999%20trailer",
       "seed": 4059287048,
-      "search": "planescape: torment rpg rpg 1999 black isle studios interplay entertainment q122741 suntendy interactive multimedia co.,ltd. pc"
+      "search": "planescape: torment rpg rpg 1999 black isle studios interplay entertainment sega suntendy interactive multimedia co.,ltd. pc"
     },
     {
       "id": "deus-ex-2000",
@@ -2570,7 +2629,9 @@
       "imageCredit": "Wikipedia: The Sims (video game)",
       "platforms": [
         "Nintendo",
-        "PC"
+        "PC",
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
         "Maxis"
@@ -2587,7 +2648,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=The%20Sims",
       "trailer": "https://www.youtube.com/results?search_query=The%20Sims%202000%20trailer",
       "seed": 3369958728,
-      "search": "the sims life sim simulation 2000 maxis aspyr electronic arts findev nintendo pc"
+      "search": "the sims life sim simulation 2000 maxis aspyr electronic arts findev nintendo pc playstation xbox"
     },
     {
       "id": "diablo-ii-2000",
@@ -2636,15 +2697,16 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Counter-Strike (video game)",
       "platforms": [
-        "PC"
+        "PC",
+        "Xbox"
       ],
       "developers": [
-        "Q193559"
+        "Valve Corporation"
       ],
       "publishers": [
         "Nexon",
-        "Q193559",
-        "Q494614"
+        "Sierra Entertainment",
+        "Valve Corporation"
       ],
       "released": "2000-11-14",
       "wikidata": "Q163628",
@@ -2653,7 +2715,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Counter-Strike",
       "trailer": "https://www.youtube.com/results?search_query=Counter-Strike%202000%20trailer",
       "seed": 3272570549,
-      "search": "counter-strike tactical fps shooter 2000 q193559 nexon q193559 q494614 pc"
+      "search": "counter-strike tactical fps shooter 2000 valve corporation nexon sierra entertainment valve corporation pc xbox"
     },
     {
       "id": "perfect-dark-2000",
@@ -2670,7 +2732,8 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Perfect Dark",
       "platforms": [
-        "Nintendo"
+        "Nintendo",
+        "Xbox"
       ],
       "developers": [
         "Rare Ltd."
@@ -2685,7 +2748,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Perfect%20Dark",
       "trailer": "https://www.youtube.com/results?search_query=Perfect%20Dark%202000%20trailer",
       "seed": 3805913654,
-      "search": "perfect dark fps shooter 2000 rare ltd. rare ltd. nintendo"
+      "search": "perfect dark fps shooter 2000 rare ltd. rare ltd. nintendo xbox"
     },
     {
       "id": "tony-hawks-pro-skater-2-2000",
@@ -2702,14 +2765,18 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Tony Hawk's Pro Skater 2",
       "platforms": [
+        "Mobile",
         "Nintendo",
-        "PC"
+        "PC",
+        "PlayStation",
+        "Sega",
+        "Xbox"
       ],
       "developers": [
         "Neversoft"
       ],
       "publishers": [
-        "Q200491"
+        "Activision"
       ],
       "released": "2000-09-20",
       "wikidata": "Q1538485",
@@ -2718,7 +2785,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Tony%20Hawk's%20Pro%20Skater%202",
       "trailer": "https://www.youtube.com/results?search_query=Tony%20Hawk's%20Pro%20Skater%202%202000%20trailer",
       "seed": 1675523105,
-      "search": "tony hawk's pro skater 2 sports simulation 2000 neversoft q200491 nintendo pc"
+      "search": "tony hawk's pro skater 2 sports simulation 2000 neversoft activision mobile nintendo pc playstation sega xbox"
     },
     {
       "id": "halo-combat-evolved-2001",
@@ -2769,15 +2836,17 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Grand Theft Auto III",
       "platforms": [
+        "Mobile",
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
-        "Q94893"
+        "Rockstar North"
       ],
       "publishers": [
         "Capcom",
-        "Q94912"
+        "Rockstar Games"
       ],
       "released": "2001-10-23",
       "wikidata": "Q149106",
@@ -2786,7 +2855,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Grand%20Theft%20Auto%20III",
       "trailer": "https://www.youtube.com/results?search_query=Grand%20Theft%20Auto%20III%202001%20trailer",
       "seed": 2679009691,
-      "search": "grand theft auto iii open world open world 2001 q94893 capcom q94912 pc playstation"
+      "search": "grand theft auto iii open world open world 2001 rockstar north capcom rockstar games mobile pc playstation xbox"
     },
     {
       "id": "ico-2001",
@@ -2835,17 +2904,21 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Max Payne (video game)",
       "platforms": [
-        "PC"
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
-        "Q830947"
+        "Remedy Entertainment"
       ],
       "publishers": [
         "3D Realms",
         "Feral Interactive",
         "Gathering of Developers",
         "MacSoft Games",
-        "Q94912",
+        "Rockstar Games",
         "Suntendy Interactive Multimedia Co.,Ltd.",
         "Take-Two Interactive"
       ],
@@ -2856,7 +2929,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Max%20Payne",
       "trailer": "https://www.youtube.com/results?search_query=Max%20Payne%202001%20trailer",
       "seed": 257863195,
-      "search": "max payne action action 2001 q830947 3d realms feral interactive gathering of developers macsoft games q94912 suntendy interactive multimedia co.,ltd. take-two interactive pc"
+      "search": "max payne action action 2001 remedy entertainment 3d realms feral interactive gathering of developers macsoft games rockstar games suntendy interactive multimedia co.,ltd. take-two interactive mobile nintendo pc playstation xbox"
     },
     {
       "id": "super-smash-bros-melee-2001",
@@ -2906,7 +2979,8 @@
       "imageCredit": "Wikipedia: Silent Hill 2",
       "platforms": [
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
         "Team Silent"
@@ -2921,7 +2995,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Silent%20Hill%202",
       "trailer": "https://www.youtube.com/results?search_query=Silent%20Hill%202%202001%20trailer",
       "seed": 2263365695,
-      "search": "silent hill 2 horror horror 2001 team silent konami pc playstation"
+      "search": "silent hill 2 horror horror 2001 team silent konami pc playstation xbox"
     },
     {
       "id": "the-elder-scrolls-iii-morrowind-2002",
@@ -2938,7 +3012,8 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: The Elder Scrolls III: Morrowind",
       "platforms": [
-        "PC"
+        "PC",
+        "Xbox"
       ],
       "developers": [
         "Bethesda Game Studios"
@@ -2946,8 +3021,8 @@
       "publishers": [
         "1C Company",
         "Bethesda Softworks",
-        "Q188273",
-        "Softclub"
+        "Softclub",
+        "Ubisoft"
       ],
       "released": "2002-05-01",
       "wikidata": "Q718448",
@@ -2956,7 +3031,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=The%20Elder%20Scrolls%20III%3A%20Morrowind",
       "trailer": "https://www.youtube.com/results?search_query=The%20Elder%20Scrolls%20III%3A%20Morrowind%202002%20trailer",
       "seed": 2222297087,
-      "search": "the elder scrolls iii: morrowind rpg rpg 2002 bethesda game studios 1c company bethesda softworks q188273 softclub pc"
+      "search": "the elder scrolls iii: morrowind rpg rpg 2002 bethesda game studios 1c company bethesda softworks softclub ubisoft pc xbox"
     },
     {
       "id": "metroid-prime-2002",
@@ -3004,7 +3079,9 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/en/8/85/Kingdom_Hearts.jpg",
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Kingdom Hearts (video game)",
-      "platforms": [],
+      "platforms": [
+        "PlayStation"
+      ],
       "developers": [
         "Square"
       ],
@@ -3018,7 +3095,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Kingdom%20Hearts",
       "trailer": "https://www.youtube.com/results?search_query=Kingdom%20Hearts%202002%20trailer",
       "seed": 4125394327,
-      "search": "kingdom hearts action rpg rpg 2002 square square "
+      "search": "kingdom hearts action rpg rpg 2002 square square playstation"
     },
     {
       "id": "battlefield-1942-2002",
@@ -3166,14 +3243,15 @@
         "Mobile",
         "Nintendo",
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
-        "Q903621"
+        "Ubisoft Montreal"
       ],
       "publishers": [
-        "Q188273",
-        "Sony Interactive Entertainment"
+        "Sony Interactive Entertainment",
+        "Ubisoft"
       ],
       "released": "2003-10-28",
       "wikidata": "Q715292",
@@ -3182,7 +3260,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Prince%20of%20Persia%3A%20Sands%20of%20Time",
       "trailer": "https://www.youtube.com/results?search_query=Prince%20of%20Persia%3A%20Sands%20of%20Time%202003%20trailer",
       "seed": 2145297019,
-      "search": "prince of persia: sands of time platformer platformer 2003 q903621 q188273 sony interactive entertainment mobile nintendo pc playstation"
+      "search": "prince of persia: sands of time platformer platformer 2003 ubisoft montreal sony interactive entertainment ubisoft mobile nintendo pc playstation xbox"
     },
     {
       "id": "beyond-good-evil-2003",
@@ -3200,13 +3278,15 @@
       "imageCredit": "Wikipedia: Beyond Good & Evil (video game)",
       "platforms": [
         "Nintendo",
-        "PC"
+        "PC",
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
-        "Q2083518"
+        "Ubisoft Montpellier"
       ],
       "publishers": [
-        "Q188273"
+        "Ubisoft"
       ],
       "released": "2003-01-01",
       "wikidata": "Q794367",
@@ -3215,7 +3295,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Beyond%20Good%20%26%20Evil",
       "trailer": "https://www.youtube.com/results?search_query=Beyond%20Good%20%26%20Evil%202003%20trailer",
       "seed": 1489819411,
-      "search": "beyond good & evil action-adventure adventure 2003 q2083518 q188273 nintendo pc"
+      "search": "beyond good & evil action-adventure adventure 2003 ubisoft montpellier ubisoft nintendo pc playstation xbox"
     },
     {
       "id": "call-of-duty-2003",
@@ -3233,15 +3313,16 @@
       "imageCredit": "Wikipedia: Call of Duty (video game)",
       "platforms": [
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
         "Infinity Ward"
       ],
       "publishers": [
+        "Activision",
         "Aspyr",
-        "MediaQuest Holdings",
-        "Q200491"
+        "MediaQuest Holdings"
       ],
       "released": "2003-10-29",
       "wikidata": "Q211096",
@@ -3250,7 +3331,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Call%20of%20Duty",
       "trailer": "https://www.youtube.com/results?search_query=Call%20of%20Duty%202003%20trailer",
       "seed": 1592558184,
-      "search": "call of duty fps shooter 2003 infinity ward aspyr mediaquest holdings q200491 pc playstation"
+      "search": "call of duty fps shooter 2003 infinity ward activision aspyr mediaquest holdings pc playstation xbox"
     },
     {
       "id": "star-wars-knights-of-the-old-republic-2003",
@@ -3267,10 +3348,13 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Star Wars: Knights of the Old Republic (video game)",
       "platforms": [
-        "PC"
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "Xbox"
       ],
       "developers": [
-        "Q219758"
+        "BioWare"
       ],
       "publishers": [
         "Lucasfilm Games"
@@ -3282,7 +3366,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Star%20Wars%3A%20Knights%20of%20the%20Old%20Republic",
       "trailer": "https://www.youtube.com/results?search_query=Star%20Wars%3A%20Knights%20of%20the%20Old%20Republic%202003%20trailer",
       "seed": 1531581885,
-      "search": "star wars: knights of the old republic rpg rpg 2003 q219758 lucasfilm games pc"
+      "search": "star wars: knights of the old republic rpg rpg 2003 bioware lucasfilm games mobile nintendo pc xbox"
     },
     {
       "id": "eve-online-2003",
@@ -3334,14 +3418,16 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Half-Life 2",
       "platforms": [
+        "Mobile",
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
-        "Q193559"
+        "Valve Corporation"
       ],
       "publishers": [
-        "Q193559"
+        "Valve Corporation"
       ],
       "released": "2004-11-16",
       "wikidata": "Q193581",
@@ -3350,7 +3436,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Half-Life%202",
       "trailer": "https://www.youtube.com/results?search_query=Half-Life%202%202004%20trailer",
       "seed": 1539385291,
-      "search": "half-life 2 fps shooter 2004 q193559 q193559 pc playstation"
+      "search": "half-life 2 fps shooter 2004 valve corporation valve corporation mobile pc playstation xbox"
     },
     {
       "id": "world-of-warcraft-2004",
@@ -3399,14 +3485,16 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Grand Theft Auto: San Andreas",
       "platforms": [
+        "Mobile",
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
-        "Q94893"
+        "Rockstar North"
       ],
       "publishers": [
-        "Q94912"
+        "Rockstar Games"
       ],
       "released": "2004-10-26",
       "wikidata": "Q83265",
@@ -3415,7 +3503,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=GTA%3A%20San%20Andreas",
       "trailer": "https://www.youtube.com/results?search_query=GTA%3A%20San%20Andreas%202004%20trailer",
       "seed": 2362342480,
-      "search": "gta: san andreas open world open world 2004 q94893 q94912 pc playstation"
+      "search": "gta: san andreas open world open world 2004 rockstar north rockstar games mobile pc playstation xbox"
     },
     {
       "id": "katamari-damacy-2004",
@@ -3431,7 +3519,9 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/en/a/aa/KatamariDamacybox.jpg",
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Katamari Damacy",
-      "platforms": [],
+      "platforms": [
+        "PlayStation"
+      ],
       "developers": [
         "Namco"
       ],
@@ -3445,7 +3535,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Katamari%20Damacy",
       "trailer": "https://www.youtube.com/results?search_query=Katamari%20Damacy%202004%20trailer",
       "seed": 1197841166,
-      "search": "katamari damacy puzzle puzzle 2004 namco bandai namco entertainment "
+      "search": "katamari damacy puzzle puzzle 2004 namco bandai namco entertainment playstation"
     },
     {
       "id": "far-cry-2004",
@@ -3463,14 +3553,15 @@
       "imageCredit": "Wikipedia: Far Cry (video game)",
       "platforms": [
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
-        "Q164716"
+        "Crytek"
       ],
       "publishers": [
         "Buka Entertainment",
-        "Q188273"
+        "Ubisoft"
       ],
       "released": "2004-03-23",
       "wikidata": "Q337865",
@@ -3479,7 +3570,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Far%20Cry",
       "trailer": "https://www.youtube.com/results?search_query=Far%20Cry%202004%20trailer",
       "seed": 1444609152,
-      "search": "far cry fps shooter 2004 q164716 buka entertainment q188273 pc playstation"
+      "search": "far cry fps shooter 2004 crytek buka entertainment ubisoft pc playstation xbox"
     },
     {
       "id": "burnout-3-takedown-2004",
@@ -3495,7 +3586,10 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/en/9/93/Burnout_3_-_Takedown_Coverart.jpg",
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Burnout 3: Takedown",
-      "platforms": [],
+      "platforms": [
+        "PlayStation",
+        "Xbox"
+      ],
       "developers": [
         "Criterion Games"
       ],
@@ -3509,7 +3603,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Burnout%203%3A%20Takedown",
       "trailer": "https://www.youtube.com/results?search_query=Burnout%203%3A%20Takedown%202004%20trailer",
       "seed": 1704188841,
-      "search": "burnout 3: takedown racing racing 2004 criterion games electronic arts "
+      "search": "burnout 3: takedown racing racing 2004 criterion games electronic arts playstation xbox"
     },
     {
       "id": "resident-evil-4-2005",
@@ -3526,9 +3620,11 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Resident Evil 4",
       "platforms": [
+        "Mobile",
         "Nintendo",
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
         "Capcom"
@@ -3543,7 +3639,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Resident%20Evil%204",
       "trailer": "https://www.youtube.com/results?search_query=Resident%20Evil%204%202005%20trailer",
       "seed": 847974599,
-      "search": "resident evil 4 survival horror horror 2005 capcom capcom nintendo pc playstation"
+      "search": "resident evil 4 survival horror horror 2005 capcom capcom mobile nintendo pc playstation xbox"
     },
     {
       "id": "shadow-of-the-colossus-2005",
@@ -3593,7 +3689,8 @@
       "imageCredit": "Wikipedia: Psychonauts",
       "platforms": [
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
         "Budcat Creations",
@@ -3610,7 +3707,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Psychonauts",
       "trailer": "https://www.youtube.com/results?search_query=Psychonauts%202005%20trailer",
       "seed": 3620177784,
-      "search": "psychonauts platformer platformer 2005 budcat creations double fine majesco entertainment thq pc playstation"
+      "search": "psychonauts platformer platformer 2005 budcat creations double fine majesco entertainment thq pc playstation xbox"
     },
     {
       "id": "guitar-hero-2005",
@@ -3626,7 +3723,9 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/en/2/2d/Guitarhero-cover.jpg",
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Guitar Hero (video game)",
-      "platforms": [],
+      "platforms": [
+        "PlayStation"
+      ],
       "developers": [
         "Harmonix Music Systems"
       ],
@@ -3640,7 +3739,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Guitar%20Hero",
       "trailer": "https://www.youtube.com/results?search_query=Guitar%20Hero%202005%20trailer",
       "seed": 2441901260,
-      "search": "guitar hero rhythm simulation 2005 harmonix music systems redoctane "
+      "search": "guitar hero rhythm simulation 2005 harmonix music systems redoctane playstation"
     },
     {
       "id": "civilization-iv-2005",
@@ -3726,7 +3825,8 @@
       "platforms": [
         "Mobile",
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
         "4J Studios",
@@ -3746,7 +3846,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Oblivion",
       "trailer": "https://www.youtube.com/results?search_query=Oblivion%202006%20trailer",
       "seed": 3096714066,
-      "search": "oblivion rpg rpg 2006 4j studios bethesda game studios superscape 1c company 2k bethesda softworks vir2l studios mobile pc playstation"
+      "search": "oblivion rpg rpg 2006 4j studios bethesda game studios superscape 1c company 2k bethesda softworks vir2l studios mobile pc playstation xbox"
     },
     {
       "id": "okami-2006",
@@ -3763,7 +3863,8 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Ōkami",
       "platforms": [
-        "Nintendo"
+        "Nintendo",
+        "PlayStation"
       ],
       "developers": [
         "Clover Studio"
@@ -3778,7 +3879,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Okami",
       "trailer": "https://www.youtube.com/results?search_query=Okami%202006%20trailer",
       "seed": 1881347135,
-      "search": "okami action-adventure adventure 2006 clover studio capcom nintendo"
+      "search": "okami action-adventure adventure 2006 clover studio capcom nintendo playstation"
     },
     {
       "id": "gears-of-war-2006",
@@ -3795,10 +3896,11 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Gears of War (video game)",
       "platforms": [
-        "PC"
+        "PC",
+        "Xbox"
       ],
       "developers": [
-        "Q739711"
+        "Epic Games"
       ],
       "publishers": [
         "Xbox Game Studios"
@@ -3810,7 +3912,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Gears%20of%20War",
       "trailer": "https://www.youtube.com/results?search_query=Gears%20of%20War%202006%20trailer",
       "seed": 3107027559,
-      "search": "gears of war shooter shooter 2006 q739711 xbox game studios pc"
+      "search": "gears of war shooter shooter 2006 epic games xbox game studios pc xbox"
     },
     {
       "id": "wii-sports-2006",
@@ -3862,7 +3964,7 @@
         "PC"
       ],
       "developers": [
-        "Q1518612"
+        "Relic Entertainment"
       ],
       "publishers": [
         "THQ"
@@ -3874,7 +3976,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Company%20of%20Heroes",
       "trailer": "https://www.youtube.com/results?search_query=Company%20of%20Heroes%202006%20trailer",
       "seed": 3528075972,
-      "search": "company of heroes rts strategy 2006 q1518612 thq pc"
+      "search": "company of heroes rts strategy 2006 relic entertainment thq pc"
     },
     {
       "id": "hitman-blood-money-2006",
@@ -3891,12 +3993,15 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Hitman: Blood Money",
       "platforms": [
+        "Mobile",
+        "Nintendo",
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
         "Feral Interactive",
-        "Q746059"
+        "IO Interactive"
       ],
       "publishers": [
         "Eidos Interactive"
@@ -3908,7 +4013,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Hitman%3A%20Blood%20Money",
       "trailer": "https://www.youtube.com/results?search_query=Hitman%3A%20Blood%20Money%202006%20trailer",
       "seed": 1830198657,
-      "search": "hitman: blood money stealth stealth 2006 feral interactive q746059 eidos interactive pc playstation"
+      "search": "hitman: blood money stealth stealth 2006 feral interactive io interactive eidos interactive mobile nintendo pc playstation xbox"
     },
     {
       "id": "portal-2007",
@@ -3925,14 +4030,16 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Portal (video game)",
       "platforms": [
+        "Mobile",
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
-        "Q193559"
+        "Valve Corporation"
       ],
       "publishers": [
-        "Q193559"
+        "Valve Corporation"
       ],
       "released": "2007-10-10",
       "wikidata": "Q274897",
@@ -3941,7 +4048,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Portal",
       "trailer": "https://www.youtube.com/results?search_query=Portal%202007%20trailer",
       "seed": 2084044949,
-      "search": "portal puzzle puzzle 2007 q193559 q193559 pc playstation"
+      "search": "portal puzzle puzzle 2007 valve corporation valve corporation mobile pc playstation xbox"
     },
     {
       "id": "bioshock-2007",
@@ -3958,8 +4065,11 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: BioShock",
       "platforms": [
+        "Mobile",
+        "Nintendo",
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
         "Irrational Games"
@@ -3974,7 +4084,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=BioShock",
       "trailer": "https://www.youtube.com/results?search_query=BioShock%202007%20trailer",
       "seed": 2134560995,
-      "search": "bioshock immersive sim immersive sim 2007 irrational games 2k pc playstation"
+      "search": "bioshock immersive sim immersive sim 2007 irrational games 2k mobile nintendo pc playstation xbox"
     },
     {
       "id": "super-mario-galaxy-2007",
@@ -4024,12 +4134,13 @@
       "imageCredit": "Wikipedia: Mass Effect (video game)",
       "platforms": [
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
-        "Edge of Reality",
-        "Q219758",
-        "Q3705312"
+        "BioWare",
+        "Demiurge Studios",
+        "Edge of Reality"
       ],
       "publishers": [
         "CD Projekt",
@@ -4044,7 +4155,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Mass%20Effect",
       "trailer": "https://www.youtube.com/results?search_query=Mass%20Effect%202007%20trailer",
       "seed": 2335553171,
-      "search": "mass effect action rpg rpg 2007 edge of reality q219758 q3705312 cd projekt electronic arts square enix xbox game studios pc playstation"
+      "search": "mass effect action rpg rpg 2007 bioware demiurge studios edge of reality cd projekt electronic arts square enix xbox game studios pc playstation xbox"
     },
     {
       "id": "team-fortress-2-2007",
@@ -4062,13 +4173,14 @@
       "imageCredit": "Wikipedia: Team Fortress 2",
       "platforms": [
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
-        "Q193559"
+        "Valve Corporation"
       ],
       "publishers": [
-        "Q193559"
+        "Valve Corporation"
       ],
       "released": "2007-10-10",
       "wikidata": "Q382108",
@@ -4077,7 +4189,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Team%20Fortress%202",
       "trailer": "https://www.youtube.com/results?search_query=Team%20Fortress%202%202007%20trailer",
       "seed": 4051481990,
-      "search": "team fortress 2 hero shooter shooter 2007 q193559 q193559 pc playstation"
+      "search": "team fortress 2 hero shooter shooter 2007 valve corporation valve corporation pc playstation xbox"
     },
     {
       "id": "rock-band-2007",
@@ -4095,7 +4207,8 @@
       "imageCredit": "Wikipedia: Rock Band (video game)",
       "platforms": [
         "Nintendo",
-        "PlayStation"
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
         "Harmonix Music Systems",
@@ -4111,7 +4224,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Rock%20Band",
       "trailer": "https://www.youtube.com/results?search_query=Rock%20Band%202007%20trailer",
       "seed": 3388703956,
-      "search": "rock band rhythm simulation 2007 harmonix music systems pi studios mtv games nintendo playstation"
+      "search": "rock band rhythm simulation 2007 harmonix music systems pi studios mtv games nintendo playstation xbox"
     },
     {
       "id": "fallout-3-2008",
@@ -4129,7 +4242,8 @@
       "imageCredit": "Wikipedia: Fallout 3",
       "platforms": [
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
         "Bethesda Game Studios"
@@ -4144,7 +4258,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Fallout%203",
       "trailer": "https://www.youtube.com/results?search_query=Fallout%203%202008%20trailer",
       "seed": 4234258549,
-      "search": "fallout 3 rpg rpg 2008 bethesda game studios bethesda softworks pc playstation"
+      "search": "fallout 3 rpg rpg 2008 bethesda game studios bethesda softworks pc playstation xbox"
     },
     {
       "id": "littlebigplanet-2008",
@@ -4194,7 +4308,8 @@
       "imageCredit": "Wikipedia: Dead Space (2008 video game)",
       "platforms": [
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
         "Visceral Games"
@@ -4209,7 +4324,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Dead%20Space",
       "trailer": "https://www.youtube.com/results?search_query=Dead%20Space%202008%20trailer",
       "seed": 2155376469,
-      "search": "dead space horror horror 2008 visceral games electronic arts pc playstation"
+      "search": "dead space horror horror 2008 visceral games electronic arts pc playstation xbox"
     },
     {
       "id": "braid-2008",
@@ -4257,14 +4372,15 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Left 4 Dead",
       "platforms": [
-        "PC"
+        "PC",
+        "Xbox"
       ],
       "developers": [
-        "Q1193116",
-        "Q193559"
+        "Turtle Rock Studios",
+        "Valve Corporation"
       ],
       "publishers": [
-        "Q193559"
+        "Valve Corporation"
       ],
       "released": "2008-11-17",
       "wikidata": "Q323981",
@@ -4273,7 +4389,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Left%204%20Dead",
       "trailer": "https://www.youtube.com/results?search_query=Left%204%20Dead%202008%20trailer",
       "seed": 62493511,
-      "search": "left 4 dead co-op shooter shooter 2008 q1193116 q193559 q193559 pc"
+      "search": "left 4 dead co-op shooter shooter 2008 turtle rock studios valve corporation valve corporation pc xbox"
     },
     {
       "id": "world-of-goo-2008",
@@ -4290,6 +4406,7 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: World of Goo",
       "platforms": [
+        "Mobile",
         "Nintendo",
         "PC"
       ],
@@ -4306,7 +4423,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=World%20of%20Goo",
       "trailer": "https://www.youtube.com/results?search_query=World%20of%20Goo%202008%20trailer",
       "seed": 1677040138,
-      "search": "world of goo physics puzzle puzzle 2008 2d boy 2d boy nintendo pc"
+      "search": "world of goo physics puzzle puzzle 2008 2d boy 2d boy mobile nintendo pc"
     },
     {
       "id": "demons-souls-2009",
@@ -4388,6 +4505,7 @@
       "imageSource": null,
       "imageCredit": null,
       "platforms": [
+        "Mobile",
         "Nintendo",
         "PC",
         "PlayStation",
@@ -4407,7 +4525,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Minecraft",
       "trailer": "https://www.youtube.com/results?search_query=Minecraft%202009%20trailer",
       "seed": 2908536690,
-      "search": "minecraft sandbox simulation 2009 microsoft mojang studios xbox game studios nintendo pc playstation xbox"
+      "search": "minecraft sandbox simulation 2009 microsoft mojang studios xbox game studios mobile nintendo pc playstation xbox"
     },
     {
       "id": "batman-arkham-asylum-2009",
@@ -4425,7 +4543,8 @@
       "imageCredit": "Wikipedia: Batman: Arkham Asylum",
       "platforms": [
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
         "Rocksteady Studios"
@@ -4440,7 +4559,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Batman%3A%20Arkham%20Asylum",
       "trailer": "https://www.youtube.com/results?search_query=Batman%3A%20Arkham%20Asylum%202009%20trailer",
       "seed": 1374189783,
-      "search": "batman: arkham asylum action action 2009 rocksteady studios eidos interactive pc playstation"
+      "search": "batman: arkham asylum action action 2009 rocksteady studios eidos interactive pc playstation xbox"
     },
     {
       "id": "plants-vs-zombies-2009",
@@ -4457,15 +4576,16 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Plants vs. Zombies (video game)",
       "platforms": [
+        "Mobile",
         "Nintendo",
         "PC",
         "PlayStation"
       ],
       "developers": [
-        "Q1064703"
+        "PopCap Games"
       ],
       "publishers": [
-        "Q1064703"
+        "PopCap Games"
       ],
       "released": "2009-05-05",
       "wikidata": "Q379128",
@@ -4474,7 +4594,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Plants%20vs.%20Zombies",
       "trailer": "https://www.youtube.com/results?search_query=Plants%20vs.%20Zombies%202009%20trailer",
       "seed": 3637268555,
-      "search": "plants vs. zombies tower defense strategy 2009 q1064703 q1064703 nintendo pc playstation"
+      "search": "plants vs. zombies tower defense strategy 2009 popcap games popcap games mobile nintendo pc playstation"
     },
     {
       "id": "dragon-age-origins-2009",
@@ -4492,10 +4612,11 @@
       "imageCredit": "Wikipedia: Dragon Age: Origins",
       "platforms": [
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
-        "Q219758"
+        "BioWare"
       ],
       "publishers": [
         "Electronic Arts"
@@ -4507,7 +4628,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Dragon%20Age%3A%20Origins",
       "trailer": "https://www.youtube.com/results?search_query=Dragon%20Age%3A%20Origins%202009%20trailer",
       "seed": 2168753656,
-      "search": "dragon age: origins rpg rpg 2009 q219758 electronic arts pc playstation"
+      "search": "dragon age: origins rpg rpg 2009 bioware electronic arts pc playstation xbox"
     },
     {
       "id": "red-dead-redemption-2010",
@@ -4524,15 +4645,17 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Red Dead Redemption",
       "platforms": [
+        "Mobile",
+        "Nintendo",
         "PC",
         "PlayStation",
         "Xbox"
       ],
       "developers": [
-        "Q959329"
+        "Rockstar San Diego"
       ],
       "publishers": [
-        "Q94912"
+        "Rockstar Games"
       ],
       "released": "2010-05-18",
       "wikidata": "Q548203",
@@ -4541,7 +4664,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Red%20Dead%20Redemption",
       "trailer": "https://www.youtube.com/results?search_query=Red%20Dead%20Redemption%202010%20trailer",
       "seed": 311681731,
-      "search": "red dead redemption open world open world 2010 q959329 q94912 pc playstation xbox"
+      "search": "red dead redemption open world open world 2010 rockstar san diego rockstar games mobile nintendo pc playstation xbox"
     },
     {
       "id": "mass-effect-2-2010",
@@ -4559,10 +4682,11 @@
       "imageCredit": "Wikipedia: Mass Effect 2",
       "platforms": [
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
-        "Q219758"
+        "BioWare"
       ],
       "publishers": [
         "Electronic Arts"
@@ -4574,7 +4698,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Mass%20Effect%202",
       "trailer": "https://www.youtube.com/results?search_query=Mass%20Effect%202%202010%20trailer",
       "seed": 471333114,
-      "search": "mass effect 2 action rpg rpg 2010 q219758 electronic arts pc playstation"
+      "search": "mass effect 2 action rpg rpg 2010 bioware electronic arts pc playstation xbox"
     },
     {
       "id": "super-meat-boy-2010",
@@ -4591,8 +4715,11 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Super Meat Boy",
       "platforms": [
+        "Mobile",
         "Nintendo",
-        "PC"
+        "PC",
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
         "Edmund McMillen"
@@ -4607,7 +4734,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Super%20Meat%20Boy",
       "trailer": "https://www.youtube.com/results?search_query=Super%20Meat%20Boy%202010%20trailer",
       "seed": 1823020097,
-      "search": "super meat boy platformer platformer 2010 edmund mcmillen xbox game studios nintendo pc"
+      "search": "super meat boy platformer platformer 2010 edmund mcmillen xbox game studios mobile nintendo pc playstation xbox"
     },
     {
       "id": "starcraft-ii-wings-of-liberty-2010",
@@ -4656,8 +4783,11 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Limbo (video game)",
       "platforms": [
+        "Mobile",
+        "Nintendo",
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
         "Playdead"
@@ -4673,7 +4803,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Limbo",
       "trailer": "https://www.youtube.com/results?search_query=Limbo%202010%20trailer",
       "seed": 1990154006,
-      "search": "limbo puzzle-platformer platformer 2010 playdead playdead xbox game studios pc playstation"
+      "search": "limbo puzzle-platformer platformer 2010 playdead playdead xbox game studios mobile nintendo pc playstation xbox"
     },
     {
       "id": "civilization-v-2010",
@@ -4723,6 +4853,7 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: The Elder Scrolls V: Skyrim",
       "platforms": [
+        "Nintendo",
         "PC",
         "PlayStation",
         "Xbox"
@@ -4742,7 +4873,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=The%20Elder%20Scrolls%20V%3A%20Skyrim",
       "trailer": "https://www.youtube.com/results?search_query=The%20Elder%20Scrolls%20V%3A%20Skyrim%202011%20trailer",
       "seed": 1603140454,
-      "search": "the elder scrolls v: skyrim rpg rpg 2011 bethesda game studios 1c company bethesda softworks softclub pc playstation xbox"
+      "search": "the elder scrolls v: skyrim rpg rpg 2011 bethesda game studios 1c company bethesda softworks softclub nintendo pc playstation xbox"
     },
     {
       "id": "dark-souls-2011",
@@ -4759,8 +4890,10 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Dark Souls (video game)",
       "platforms": [
+        "Nintendo",
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
         "FromSoftware"
@@ -4775,7 +4908,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Dark%20Souls",
       "trailer": "https://www.youtube.com/results?search_query=Dark%20Souls%202011%20trailer",
       "seed": 3694128415,
-      "search": "dark souls action rpg rpg 2011 fromsoftware fromsoftware pc playstation"
+      "search": "dark souls action rpg rpg 2011 fromsoftware fromsoftware nintendo pc playstation xbox"
     },
     {
       "id": "portal-2-2011",
@@ -4793,13 +4926,14 @@
       "imageCredit": "Wikipedia: Portal 2",
       "platforms": [
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
-        "Q193559"
+        "Valve Corporation"
       ],
       "publishers": [
-        "Q193559"
+        "Valve Corporation"
       ],
       "released": "2011-04-18",
       "wikidata": "Q279446",
@@ -4808,7 +4942,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Portal%202",
       "trailer": "https://www.youtube.com/results?search_query=Portal%202%202011%20trailer",
       "seed": 1669075855,
-      "search": "portal 2 puzzle puzzle 2011 q193559 q193559 pc playstation"
+      "search": "portal 2 puzzle puzzle 2011 valve corporation valve corporation pc playstation xbox"
     },
     {
       "id": "the-binding-of-isaac-2011",
@@ -4858,9 +4992,11 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Terraria",
       "platforms": [
+        "Mobile",
         "Nintendo",
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
         "505 Games",
@@ -4880,7 +5016,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Terraria",
       "trailer": "https://www.youtube.com/results?search_query=Terraria%202011%20trailer",
       "seed": 1914638602,
-      "search": "terraria sandbox simulation 2011 505 games engine software re-logic 505 games pipeworks software re-logic spike chunsoft nintendo pc playstation"
+      "search": "terraria sandbox simulation 2011 505 games engine software re-logic 505 games pipeworks software re-logic spike chunsoft mobile nintendo pc playstation xbox"
     },
     {
       "id": "bastion-2011",
@@ -4897,8 +5033,11 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Bastion (video game)",
       "platforms": [
+        "Mobile",
+        "Nintendo",
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
         "Supergiant Games"
@@ -4913,7 +5052,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Bastion",
       "trailer": "https://www.youtube.com/results?search_query=Bastion%202011%20trailer",
       "seed": 1203722586,
-      "search": "bastion action rpg rpg 2011 supergiant games warner bros. games pc playstation"
+      "search": "bastion action rpg rpg 2011 supergiant games warner bros. games mobile nintendo pc playstation xbox"
     },
     {
       "id": "journey-2012",
@@ -4930,14 +5069,15 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Journey (2012 video game)",
       "platforms": [
+        "Mobile",
         "PC",
         "PlayStation"
       ],
       "developers": [
-        "Q286780"
+        "Thatgamecompany"
       ],
       "publishers": [
-        "Q38805988",
+        "Annapurna Interactive",
         "Sony Interactive Entertainment"
       ],
       "released": "2012-03-13",
@@ -4947,7 +5087,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Journey",
       "trailer": "https://www.youtube.com/results?search_query=Journey%202012%20trailer",
       "seed": 2993206011,
-      "search": "journey adventure adventure 2012 q286780 q38805988 sony interactive entertainment pc playstation"
+      "search": "journey adventure adventure 2012 thatgamecompany annapurna interactive sony interactive entertainment mobile pc playstation"
     },
     {
       "id": "xcom-enemy-unknown-2012",
@@ -4964,8 +5104,10 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: XCOM: Enemy Unknown",
       "platforms": [
+        "Mobile",
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
         "Feral Interactive",
@@ -4982,7 +5124,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=XCOM%3A%20Enemy%20Unknown",
       "trailer": "https://www.youtube.com/results?search_query=XCOM%3A%20Enemy%20Unknown%202012%20trailer",
       "seed": 1260903388,
-      "search": "xcom: enemy unknown tactics strategy 2012 feral interactive firaxis games 2k feral interactive pc playstation"
+      "search": "xcom: enemy unknown tactics strategy 2012 feral interactive firaxis games 2k feral interactive mobile pc playstation xbox"
     },
     {
       "id": "dishonored-2012",
@@ -5000,7 +5142,8 @@
       "imageCredit": "Wikipedia: Dishonored",
       "platforms": [
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
         "Arkane Studios"
@@ -5015,7 +5158,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Dishonored",
       "trailer": "https://www.youtube.com/results?search_query=Dishonored%202012%20trailer",
       "seed": 4002166670,
-      "search": "dishonored immersive sim immersive sim 2012 arkane studios bethesda softworks pc playstation"
+      "search": "dishonored immersive sim immersive sim 2012 arkane studios bethesda softworks pc playstation xbox"
     },
     {
       "id": "ftl-faster-than-light-2012",
@@ -5032,6 +5175,7 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: FTL: Faster Than Light",
       "platforms": [
+        "Mobile",
         "PC"
       ],
       "developers": [
@@ -5047,7 +5191,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=FTL%3A%20Faster%20Than%20Light",
       "trailer": "https://www.youtube.com/results?search_query=FTL%3A%20Faster%20Than%20Light%202012%20trailer",
       "seed": 3217883180,
-      "search": "ftl: faster than light roguelike roguelike 2012 subset games subset games pc"
+      "search": "ftl: faster than light roguelike roguelike 2012 subset games subset games mobile pc"
     },
     {
       "id": "hotline-miami-2012",
@@ -5064,6 +5208,7 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Hotline Miami",
       "platforms": [
+        "Mobile",
         "PC",
         "PlayStation",
         "Xbox"
@@ -5081,7 +5226,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Hotline%20Miami",
       "trailer": "https://www.youtube.com/results?search_query=Hotline%20Miami%202012%20trailer",
       "seed": 2235595966,
-      "search": "hotline miami action action 2012 dennaton games devolver digital pc playstation xbox"
+      "search": "hotline miami action action 2012 dennaton games devolver digital mobile pc playstation xbox"
     },
     {
       "id": "the-walking-dead-2012",
@@ -5098,8 +5243,10 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: The Walking Dead (video game)",
       "platforms": [
+        "Mobile",
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
         "Telltale Games"
@@ -5114,7 +5261,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=The%20Walking%20Dead",
       "trailer": "https://www.youtube.com/results?search_query=The%20Walking%20Dead%202012%20trailer",
       "seed": 2636492439,
-      "search": "the walking dead adventure adventure 2012 telltale games telltale games pc playstation"
+      "search": "the walking dead adventure adventure 2012 telltale games telltale games mobile pc playstation xbox"
     },
     {
       "id": "the-last-of-us-2013",
@@ -5168,15 +5315,15 @@
         "Xbox"
       ],
       "developers": [
-        "Q1750959",
-        "Q94893",
-        "Q959329",
+        "Rockstar Leeds",
         "Rockstar London",
         "Rockstar New England",
+        "Rockstar North",
+        "Rockstar San Diego",
         "Rockstar Toronto"
       ],
       "publishers": [
-        "Q94912",
+        "Rockstar Games",
         "Softclub",
         "Take-Two Interactive"
       ],
@@ -5187,7 +5334,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Grand%20Theft%20Auto%20V",
       "trailer": "https://www.youtube.com/results?search_query=Grand%20Theft%20Auto%20V%202013%20trailer",
       "seed": 750883889,
-      "search": "grand theft auto v open world open world 2013 q1750959 q94893 q959329 rockstar london rockstar new england rockstar toronto q94912 softclub take-two interactive pc playstation xbox"
+      "search": "grand theft auto v open world open world 2013 rockstar leeds rockstar london rockstar new england rockstar north rockstar san diego rockstar toronto rockstar games softclub take-two interactive pc playstation xbox"
     },
     {
       "id": "papers-please-2013",
@@ -5204,6 +5351,7 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Papers, Please",
       "platforms": [
+        "Mobile",
         "PC",
         "PlayStation"
       ],
@@ -5220,7 +5368,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Papers%2C%20Please",
       "trailer": "https://www.youtube.com/results?search_query=Papers%2C%20Please%202013%20trailer",
       "seed": 2559877780,
-      "search": "papers, please simulation simulation 2013 lucas pope 3909 pc playstation"
+      "search": "papers, please simulation simulation 2013 lucas pope 3909 mobile pc playstation"
     },
     {
       "id": "super-mario-3d-world-2013",
@@ -5269,6 +5417,8 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Gone Home",
       "platforms": [
+        "Mobile",
+        "Nintendo",
         "PC"
       ],
       "developers": [
@@ -5284,7 +5434,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Gone%20Home",
       "trailer": "https://www.youtube.com/results?search_query=Gone%20Home%202013%20trailer",
       "seed": 1272561531,
-      "search": "gone home adventure adventure 2013 fullbright fullbright pc"
+      "search": "gone home adventure adventure 2013 fullbright fullbright mobile nintendo pc"
     },
     {
       "id": "dota-2-2013",
@@ -5304,11 +5454,11 @@
         "PC"
       ],
       "developers": [
-        "Q193559"
+        "Valve Corporation"
       ],
       "publishers": [
-        "Q193559",
-        "Q7168080"
+        "Perfect World (company)",
+        "Valve Corporation"
       ],
       "released": "2013-07-09",
       "wikidata": "Q771541",
@@ -5317,7 +5467,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Dota%202",
       "trailer": "https://www.youtube.com/results?search_query=Dota%202%202013%20trailer",
       "seed": 1455165261,
-      "search": "dota 2 moba strategy 2013 q193559 q193559 q7168080 pc"
+      "search": "dota 2 moba strategy 2013 valve corporation perfect world (company) valve corporation pc"
     },
     {
       "id": "alien-isolation-2014",
@@ -5334,15 +5484,18 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Alien: Isolation",
       "platforms": [
+        "Mobile",
+        "Nintendo",
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
         "Creative Assembly"
       ],
       "publishers": [
         "Feral Interactive",
-        "Q122741"
+        "Sega"
       ],
       "released": "2014-10-07",
       "wikidata": "Q15613717",
@@ -5351,7 +5504,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Alien%3A%20Isolation",
       "trailer": "https://www.youtube.com/results?search_query=Alien%3A%20Isolation%202014%20trailer",
       "seed": 3886446795,
-      "search": "alien: isolation horror horror 2014 creative assembly feral interactive q122741 pc playstation"
+      "search": "alien: isolation horror horror 2014 creative assembly feral interactive sega mobile nintendo pc playstation xbox"
     },
     {
       "id": "shovel-knight-2014",
@@ -5368,9 +5521,11 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Shovel Knight",
       "platforms": [
+        "Mobile",
         "Nintendo",
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
         "Yacht Club Games"
@@ -5385,7 +5540,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Shovel%20Knight",
       "trailer": "https://www.youtube.com/results?search_query=Shovel%20Knight%202014%20trailer",
       "seed": 1447718928,
-      "search": "shovel knight platformer platformer 2014 yacht club games yacht club games nintendo pc playstation"
+      "search": "shovel knight platformer platformer 2014 yacht club games yacht club games mobile nintendo pc playstation xbox"
     },
     {
       "id": "bayonetta-2-2014",
@@ -5405,7 +5560,7 @@
         "Nintendo"
       ],
       "developers": [
-        "Q1576758"
+        "PlatinumGames"
       ],
       "publishers": [
         "Nintendo"
@@ -5417,7 +5572,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Bayonetta%202",
       "trailer": "https://www.youtube.com/results?search_query=Bayonetta%202%202014%20trailer",
       "seed": 387280917,
-      "search": "bayonetta 2 action action 2014 q1576758 nintendo nintendo"
+      "search": "bayonetta 2 action action 2014 platinumgames nintendo nintendo"
     },
     {
       "id": "destiny-2014",
@@ -5434,13 +5589,14 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Destiny (video game)",
       "platforms": [
-        "PlayStation"
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
         "Bungie"
       ],
       "publishers": [
-        "Q200491"
+        "Activision"
       ],
       "released": "2014-09-09",
       "wikidata": "Q210275",
@@ -5449,7 +5605,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Destiny",
       "trailer": "https://www.youtube.com/results?search_query=Destiny%202014%20trailer",
       "seed": 829989855,
-      "search": "destiny shooter shooter 2014 bungie q200491 playstation"
+      "search": "destiny shooter shooter 2014 bungie activision playstation xbox"
     },
     {
       "id": "hearthstone-2014",
@@ -5466,6 +5622,7 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Hearthstone",
       "platforms": [
+        "Mobile",
         "PC"
       ],
       "developers": [
@@ -5481,7 +5638,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Hearthstone",
       "trailer": "https://www.youtube.com/results?search_query=Hearthstone%202014%20trailer",
       "seed": 1173436422,
-      "search": "hearthstone card game roguelike 2014 blizzard entertainment blizzard entertainment pc"
+      "search": "hearthstone card game roguelike 2014 blizzard entertainment blizzard entertainment mobile pc"
     },
     {
       "id": "mario-kart-8-2014",
@@ -5530,7 +5687,9 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: The Witcher 3: Wild Hunt",
       "platforms": [
+        "Nintendo",
         "PC",
+        "PlayStation",
         "Xbox"
       ],
       "developers": [
@@ -5549,7 +5708,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=The%20Witcher%203%3A%20Wild%20Hunt",
       "trailer": "https://www.youtube.com/results?search_query=The%20Witcher%203%3A%20Wild%20Hunt%202015%20trailer",
       "seed": 2230531373,
-      "search": "the witcher 3: wild hunt rpg rpg 2015 cd projekt red cd projekt red namco warner bros. games cdp.pl pc xbox"
+      "search": "the witcher 3: wild hunt rpg rpg 2015 cd projekt red cd projekt red namco warner bros. games cdp.pl nintendo pc playstation xbox"
     },
     {
       "id": "bloodborne-2015",
@@ -5565,7 +5724,9 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/en/6/68/Bloodborne_Cover_Wallpaper.jpg",
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Bloodborne",
-      "platforms": [],
+      "platforms": [
+        "PlayStation"
+      ],
       "developers": [
         "FromSoftware",
         "Japan Studio"
@@ -5580,7 +5741,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Bloodborne",
       "trailer": "https://www.youtube.com/results?search_query=Bloodborne%202015%20trailer",
       "seed": 2185530374,
-      "search": "bloodborne action rpg rpg 2015 fromsoftware japan studio sony interactive entertainment "
+      "search": "bloodborne action rpg rpg 2015 fromsoftware japan studio sony interactive entertainment playstation"
     },
     {
       "id": "metal-gear-solid-v-2015",
@@ -5598,11 +5759,10 @@
       "imageCredit": "Wikipedia: Metal Gear Solid V: The Phantom Pain",
       "platforms": [
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Xbox"
       ],
-      "developers": [
-        "Q2531521"
-      ],
+      "developers": [],
       "publishers": [
         "Konami"
       ],
@@ -5613,7 +5773,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Metal%20Gear%20Solid%20V",
       "trailer": "https://www.youtube.com/results?search_query=Metal%20Gear%20Solid%20V%202015%20trailer",
       "seed": 3763345468,
-      "search": "metal gear solid v stealth stealth 2015 q2531521 konami pc playstation"
+      "search": "metal gear solid v stealth stealth 2015  konami pc playstation xbox"
     },
     {
       "id": "undertale-2015",
@@ -5630,6 +5790,7 @@
       "imageSource": null,
       "imageCredit": null,
       "platforms": [
+        "Nintendo",
         "PC",
         "PlayStation",
         "Xbox"
@@ -5649,7 +5810,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Undertale",
       "trailer": "https://www.youtube.com/results?search_query=Undertale%202015%20trailer",
       "seed": 2597754824,
-      "search": "undertale rpg rpg 2015 8-4 toby fox 8-4 fangamer pc playstation xbox"
+      "search": "undertale rpg rpg 2015 8-4 toby fox 8-4 fangamer nintendo pc playstation xbox"
     },
     {
       "id": "rocket-league-2015",
@@ -5666,7 +5827,10 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Rocket League",
       "platforms": [
-        "PC"
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
         "Psyonix"
@@ -5682,7 +5846,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Rocket%20League",
       "trailer": "https://www.youtube.com/results?search_query=Rocket%20League%202015%20trailer",
       "seed": 1730762132,
-      "search": "rocket league sports simulation 2015 psyonix 505 games psyonix pc"
+      "search": "rocket league sports simulation 2015 psyonix 505 games psyonix nintendo pc playstation xbox"
     },
     {
       "id": "splatoon-2015",
@@ -5731,7 +5895,10 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Overwatch (2016 video game)",
       "platforms": [
-        "PC"
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
         "Blizzard Entertainment"
@@ -5746,7 +5913,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Overwatch",
       "trailer": "https://www.youtube.com/results?search_query=Overwatch%202016%20trailer",
       "seed": 2815832808,
-      "search": "overwatch hero shooter shooter 2016 blizzard entertainment blizzard entertainment pc"
+      "search": "overwatch hero shooter shooter 2016 blizzard entertainment blizzard entertainment nintendo pc playstation xbox"
     },
     {
       "id": "doom-2016",
@@ -5763,11 +5930,14 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Doom (2016 video game)",
       "platforms": [
-        "PC"
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
         "Bethesda Game Studios",
-        "Q204474"
+        "Id Software"
       ],
       "publishers": [
         "Bethesda Softworks"
@@ -5779,7 +5949,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Doom",
       "trailer": "https://www.youtube.com/results?search_query=Doom%202016%20trailer",
       "seed": 2525836866,
-      "search": "doom fps shooter 2016 bethesda game studios q204474 bethesda softworks pc"
+      "search": "doom fps shooter 2016 bethesda game studios id software bethesda softworks nintendo pc playstation xbox"
     },
     {
       "id": "inside-2016",
@@ -5796,7 +5966,11 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Inside (video game)",
       "platforms": [
-        "PC"
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
         "Playdead"
@@ -5811,7 +5985,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Inside",
       "trailer": "https://www.youtube.com/results?search_query=Inside%202016%20trailer",
       "seed": 415152541,
-      "search": "inside puzzle-platformer platformer 2016 playdead playdead pc"
+      "search": "inside puzzle-platformer platformer 2016 playdead playdead mobile nintendo pc playstation xbox"
     },
     {
       "id": "stardew-valley-2016",
@@ -5828,8 +6002,11 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Stardew Valley",
       "platforms": [
+        "Mobile",
+        "Nintendo",
         "PC",
-        "PlayStation"
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
         "ConcernedApe LLC"
@@ -5844,7 +6021,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Stardew%20Valley",
       "trailer": "https://www.youtube.com/results?search_query=Stardew%20Valley%202016%20trailer",
       "seed": 3727618733,
-      "search": "stardew valley sim simulation 2016 concernedape llc concernedape llc pc playstation"
+      "search": "stardew valley sim simulation 2016 concernedape llc concernedape llc mobile nintendo pc playstation xbox"
     },
     {
       "id": "titanfall-2-2016",
@@ -5861,7 +6038,9 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Titanfall 2",
       "platforms": [
-        "PC"
+        "PC",
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
         "Respawn Entertainment"
@@ -5876,7 +6055,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Titanfall%202",
       "trailer": "https://www.youtube.com/results?search_query=Titanfall%202%202016%20trailer",
       "seed": 1557263895,
-      "search": "titanfall 2 fps shooter 2016 respawn entertainment electronic arts pc"
+      "search": "titanfall 2 fps shooter 2016 respawn entertainment electronic arts pc playstation xbox"
     },
     {
       "id": "hitman-2016",
@@ -5893,10 +6072,12 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Hitman (2016 video game)",
       "platforms": [
-        "PC"
+        "PC",
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
-        "Q746059"
+        "IO Interactive"
       ],
       "publishers": [
         "Feral Interactive",
@@ -5910,7 +6091,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Hitman",
       "trailer": "https://www.youtube.com/results?search_query=Hitman%202016%20trailer",
       "seed": 282905448,
-      "search": "hitman stealth stealth 2016 q746059 feral interactive square enix warner bros. games pc"
+      "search": "hitman stealth stealth 2016 io interactive feral interactive square enix warner bros. games pc playstation xbox"
     },
     {
       "id": "breath-of-the-wild-2017",
@@ -5960,10 +6141,13 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Nier: Automata",
       "platforms": [
-        "PC"
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
-        "Q1576758"
+        "PlatinumGames"
       ],
       "publishers": [
         "Square Enix"
@@ -5975,7 +6159,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=NieR%3A%20Automata",
       "trailer": "https://www.youtube.com/results?search_query=NieR%3A%20Automata%202017%20trailer",
       "seed": 3847384593,
-      "search": "nier: automata action rpg rpg 2017 q1576758 square enix pc"
+      "search": "nier: automata action rpg rpg 2017 platinumgames square enix nintendo pc playstation xbox"
     },
     {
       "id": "super-mario-odyssey-2017",
@@ -5991,7 +6175,9 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/en/8/8d/Super_Mario_Odyssey.jpg",
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Super Mario Odyssey",
-      "platforms": [],
+      "platforms": [
+        "Nintendo"
+      ],
       "developers": [
         "Nintendo"
       ],
@@ -6005,7 +6191,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Super%20Mario%20Odyssey",
       "trailer": "https://www.youtube.com/results?search_query=Super%20Mario%20Odyssey%202017%20trailer",
       "seed": 393354683,
-      "search": "super mario odyssey platformer platformer 2017 nintendo nintendo "
+      "search": "super mario odyssey platformer platformer 2017 nintendo nintendo nintendo"
     },
     {
       "id": "pubg-2017",
@@ -6022,7 +6208,9 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: PUBG: Battlegrounds",
       "platforms": [
+        "Mobile",
         "PC",
+        "PlayStation",
         "Xbox"
       ],
       "developers": [
@@ -6038,7 +6226,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=PUBG",
       "trailer": "https://www.youtube.com/results?search_query=PUBG%202017%20trailer",
       "seed": 1851689326,
-      "search": "pubg battle royale shooter 2017 pubg studios krafton pc xbox"
+      "search": "pubg battle royale shooter 2017 pubg studios krafton mobile pc playstation xbox"
     },
     {
       "id": "hollow-knight-2017",
@@ -6055,7 +6243,9 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Hollow Knight",
       "platforms": [
+        "Nintendo",
         "PC",
+        "PlayStation",
         "Xbox"
       ],
       "developers": [
@@ -6071,7 +6261,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Hollow%20Knight",
       "trailer": "https://www.youtube.com/results?search_query=Hollow%20Knight%202017%20trailer",
       "seed": 3878693841,
-      "search": "hollow knight metroidvania adventure 2017 team cherry team cherry pc xbox"
+      "search": "hollow knight metroidvania adventure 2017 team cherry team cherry nintendo pc playstation xbox"
     },
     {
       "id": "persona-5-2017",
@@ -6091,11 +6281,11 @@
         "PlayStation"
       ],
       "developers": [
-        "Q780528"
+        "Atlus"
       ],
       "publishers": [
-        "Deep Silver",
-        "Q780528"
+        "Atlus",
+        "Deep Silver"
       ],
       "released": "2016-09-15",
       "wikidata": "Q15225985",
@@ -6104,7 +6294,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Persona%205",
       "trailer": "https://www.youtube.com/results?search_query=Persona%205%202017%20trailer",
       "seed": 2432788698,
-      "search": "persona 5 jrpg rpg 2017 q780528 deep silver q780528 playstation"
+      "search": "persona 5 jrpg rpg 2017 atlus atlus deep silver playstation"
     },
     {
       "id": "red-dead-redemption-2-2018",
@@ -6121,13 +6311,15 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Red Dead Redemption 2",
       "platforms": [
-        "PC"
+        "PC",
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
-        "Q959329"
+        "Rockstar San Diego"
       ],
       "publishers": [
-        "Q94912"
+        "Rockstar Games"
       ],
       "released": "2018-10-26",
       "wikidata": "Q27438121",
@@ -6136,7 +6328,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Red%20Dead%20Redemption%202",
       "trailer": "https://www.youtube.com/results?search_query=Red%20Dead%20Redemption%202%202018%20trailer",
       "seed": 3257051434,
-      "search": "red dead redemption 2 open world open world 2018 q959329 q94912 pc"
+      "search": "red dead redemption 2 open world open world 2018 rockstar san diego rockstar games pc playstation xbox"
     },
     {
       "id": "celeste-2018",
@@ -6153,13 +6345,16 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Celeste (video game)",
       "platforms": [
-        "PC"
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
-        "Q91620371"
+        "Maddy Makes Games"
       ],
       "publishers": [
-        "Q91620371"
+        "Maddy Makes Games"
       ],
       "released": "2018-01-25",
       "wikidata": "Q28451532",
@@ -6168,7 +6363,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Celeste",
       "trailer": "https://www.youtube.com/results?search_query=Celeste%202018%20trailer",
       "seed": 2425679932,
-      "search": "celeste platformer platformer 2018 q91620371 q91620371 pc"
+      "search": "celeste platformer platformer 2018 maddy makes games maddy makes games nintendo pc playstation xbox"
     },
     {
       "id": "god-of-war-2018",
@@ -6185,7 +6380,8 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: God of War (2018 video game)",
       "platforms": [
-        "PC"
+        "PC",
+        "PlayStation"
       ],
       "developers": [
         "Jetpack Interactive",
@@ -6202,7 +6398,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=God%20of%20War",
       "trailer": "https://www.youtube.com/results?search_query=God%20of%20War%202018%20trailer",
       "seed": 1715728698,
-      "search": "god of war action-adventure adventure 2018 jetpack interactive santa monica studio playstation pc llc sony interactive entertainment pc"
+      "search": "god of war action-adventure adventure 2018 jetpack interactive santa monica studio playstation pc llc sony interactive entertainment pc playstation"
     },
     {
       "id": "return-of-the-obra-dinn-2018",
@@ -6219,7 +6415,10 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Return of the Obra Dinn",
       "platforms": [
-        "PC"
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
         "Lucas Pope"
@@ -6235,7 +6434,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Return%20of%20the%20Obra%20Dinn",
       "trailer": "https://www.youtube.com/results?search_query=Return%20of%20the%20Obra%20Dinn%202018%20trailer",
       "seed": 2438452788,
-      "search": "return of the obra dinn puzzle puzzle 2018 lucas pope 3909 lucas pope pc"
+      "search": "return of the obra dinn puzzle puzzle 2018 lucas pope 3909 lucas pope nintendo pc playstation xbox"
     },
     {
       "id": "into-the-breach-2018",
@@ -6252,6 +6451,7 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Into the Breach",
       "platforms": [
+        "Nintendo",
         "PC"
       ],
       "developers": [
@@ -6267,7 +6467,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Into%20the%20Breach",
       "trailer": "https://www.youtube.com/results?search_query=Into%20the%20Breach%202018%20trailer",
       "seed": 3560352519,
-      "search": "into the breach tactics strategy 2018 subset games subset games pc"
+      "search": "into the breach tactics strategy 2018 subset games subset games nintendo pc"
     },
     {
       "id": "dead-cells-2018",
@@ -6284,7 +6484,11 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Dead Cells",
       "platforms": [
-        "PC"
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
         "Evil Empire",
@@ -6300,7 +6504,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Dead%20Cells",
       "trailer": "https://www.youtube.com/results?search_query=Dead%20Cells%202018%20trailer",
       "seed": 3576575557,
-      "search": "dead cells roguelike roguelike 2018 evil empire motion twin motion twin pc"
+      "search": "dead cells roguelike roguelike 2018 evil empire motion twin motion twin mobile nintendo pc playstation xbox"
     },
     {
       "id": "sekiro-shadows-die-twice-2019",
@@ -6317,16 +6521,18 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Sekiro: Shadows Die Twice",
       "platforms": [
-        "PC"
+        "PC",
+        "PlayStation",
+        "Xbox"
       ],
       "developers": [
         "FromSoftware",
         "Yoshitaka Suzuki"
       ],
       "publishers": [
+        "Activision",
         "Cubejoy",
-        "FromSoftware",
-        "Q200491"
+        "FromSoftware"
       ],
       "released": "2019-03-22",
       "wikidata": "Q54906424",
@@ -6335,7 +6541,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Sekiro%3A%20Shadows%20Die%20Twice",
       "trailer": "https://www.youtube.com/results?search_query=Sekiro%3A%20Shadows%20Die%20Twice%202019%20trailer",
       "seed": 1188242779,
-      "search": "sekiro: shadows die twice action action 2019 fromsoftware yoshitaka suzuki cubejoy fromsoftware q200491 pc"
+      "search": "sekiro: shadows die twice action action 2019 fromsoftware yoshitaka suzuki activision cubejoy fromsoftware pc playstation xbox"
     },
     {
       "id": "disco-elysium-2019",
@@ -6352,7 +6558,10 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Disco Elysium",
       "platforms": [
+        "Mobile",
+        "Nintendo",
         "PC",
+        "PlayStation",
         "Xbox"
       ],
       "developers": [
@@ -6369,7 +6578,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Disco%20Elysium",
       "trailer": "https://www.youtube.com/results?search_query=Disco%20Elysium%202019%20trailer",
       "seed": 711360953,
-      "search": "disco elysium rpg rpg 2019 za/um spike chunsoft za/um pc xbox"
+      "search": "disco elysium rpg rpg 2019 za/um spike chunsoft za/um mobile nintendo pc playstation xbox"
     },
     {
       "id": "outer-wilds-2019",
@@ -6386,14 +6595,16 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Outer Wilds",
       "platforms": [
+        "Nintendo",
         "PC",
+        "PlayStation",
         "Xbox"
       ],
       "developers": [
         "Mobius Digital"
       ],
       "publishers": [
-        "Q38805988"
+        "Annapurna Interactive"
       ],
       "released": "2019-05-28",
       "wikidata": "Q19631660",
@@ -6402,7 +6613,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Outer%20Wilds",
       "trailer": "https://www.youtube.com/results?search_query=Outer%20Wilds%202019%20trailer",
       "seed": 1636438491,
-      "search": "outer wilds adventure adventure 2019 mobius digital q38805988 pc xbox"
+      "search": "outer wilds adventure adventure 2019 mobius digital annapurna interactive nintendo pc playstation xbox"
     },
     {
       "id": "death-stranding-2019",
@@ -6419,11 +6630,13 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Death Stranding",
       "platforms": [
-        "PC"
+        "Mobile",
+        "PC",
+        "PlayStation"
       ],
       "developers": [
         "Guerrilla Games",
-        "Q22123955"
+        "Kojima Productions"
       ],
       "publishers": [
         "505 Games",
@@ -6436,7 +6649,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Death%20Stranding",
       "trailer": "https://www.youtube.com/results?search_query=Death%20Stranding%202019%20trailer",
       "seed": 967754871,
-      "search": "death stranding adventure adventure 2019 guerrilla games q22123955 505 games sony interactive entertainment pc"
+      "search": "death stranding adventure adventure 2019 guerrilla games kojima productions 505 games sony interactive entertainment mobile pc playstation"
     },
     {
       "id": "slay-the-spire-2019",
@@ -6453,11 +6666,13 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Slay the Spire",
       "platforms": [
-        "PC"
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
       ],
-      "developers": [
-        "Q87419925"
-      ],
+      "developers": [],
       "publishers": [
         "Humble Bundle, Inc."
       ],
@@ -6468,7 +6683,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Slay%20the%20Spire",
       "trailer": "https://www.youtube.com/results?search_query=Slay%20the%20Spire%202019%20trailer",
       "seed": 805408207,
-      "search": "slay the spire roguelike deckbuilder roguelike 2019 q87419925 humble bundle, inc. pc"
+      "search": "slay the spire roguelike deckbuilder roguelike 2019  humble bundle, inc. mobile nintendo pc playstation xbox"
     },
     {
       "id": "apex-legends-2019",
@@ -6485,7 +6700,9 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Apex Legends",
       "platforms": [
+        "Nintendo",
         "PC",
+        "PlayStation",
         "Xbox"
       ],
       "developers": [
@@ -6503,7 +6720,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Apex%20Legends",
       "trailer": "https://www.youtube.com/results?search_query=Apex%20Legends%202019%20trailer",
       "seed": 2882149265,
-      "search": "apex legends battle royale shooter 2019 iron galaxy studios panic button respawn entertainment electronic arts pc xbox"
+      "search": "apex legends battle royale shooter 2019 iron galaxy studios panic button respawn entertainment electronic arts nintendo pc playstation xbox"
     },
     {
       "id": "hades-2020",
@@ -6520,7 +6737,9 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Hades (video game)",
       "platforms": [
+        "Nintendo",
         "PC",
+        "PlayStation",
         "Xbox"
       ],
       "developers": [
@@ -6536,7 +6755,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Hades",
       "trailer": "https://www.youtube.com/results?search_query=Hades%202020%20trailer",
       "seed": 231663501,
-      "search": "hades roguelike roguelike 2020 supergiant games supergiant games pc xbox"
+      "search": "hades roguelike roguelike 2020 supergiant games supergiant games nintendo pc playstation xbox"
     },
     {
       "id": "half-life-alyx-2020",
@@ -6557,10 +6776,10 @@
       ],
       "developers": [
         "Campo Santo",
-        "Q193559"
+        "Valve Corporation"
       ],
       "publishers": [
-        "Q193559"
+        "Valve Corporation"
       ],
       "released": "2020-03-23",
       "wikidata": "Q75653574",
@@ -6569,7 +6788,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Half-Life%3A%20Alyx",
       "trailer": "https://www.youtube.com/results?search_query=Half-Life%3A%20Alyx%202020%20trailer",
       "seed": 4042218455,
-      "search": "half-life: alyx vr fps shooter 2020 campo santo q193559 q193559 pc"
+      "search": "half-life: alyx vr fps shooter 2020 campo santo valve corporation valve corporation pc"
     },
     {
       "id": "animal-crossing-new-horizons-2020",
@@ -6585,7 +6804,9 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/en/1/1f/Animal_Crossing_New_Horizons.jpg",
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Animal Crossing: New Horizons",
-      "platforms": [],
+      "platforms": [
+        "Nintendo"
+      ],
       "developers": [
         "Nintendo Entertainment Planning & Development"
       ],
@@ -6599,7 +6820,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Animal%20Crossing%3A%20New%20Horizons",
       "trailer": "https://www.youtube.com/results?search_query=Animal%20Crossing%3A%20New%20Horizons%202020%20trailer",
       "seed": 1423762609,
-      "search": "animal crossing: new horizons life sim simulation 2020 nintendo entertainment planning & development nintendo "
+      "search": "animal crossing: new horizons life sim simulation 2020 nintendo entertainment planning & development nintendo nintendo"
     },
     {
       "id": "ghost-of-tsushima-2020",
@@ -6615,9 +6836,11 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/en/b/b6/Ghost_of_Tsushima.jpg",
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Ghost of Tsushima",
-      "platforms": [],
+      "platforms": [
+        "PlayStation"
+      ],
       "developers": [
-        "Q916714"
+        "Sucker Punch Productions"
       ],
       "publishers": [
         "Sony Interactive Entertainment"
@@ -6629,7 +6852,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Ghost%20of%20Tsushima",
       "trailer": "https://www.youtube.com/results?search_query=Ghost%20of%20Tsushima%202020%20trailer",
       "seed": 190390736,
-      "search": "ghost of tsushima open world open world 2020 q916714 sony interactive entertainment "
+      "search": "ghost of tsushima open world open world 2020 sucker punch productions sony interactive entertainment playstation"
     },
     {
       "id": "doom-eternal-2020",
@@ -6646,11 +6869,13 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Doom Eternal",
       "platforms": [
+        "Nintendo",
         "PC",
+        "PlayStation",
         "Xbox"
       ],
       "developers": [
-        "Q204474"
+        "Id Software"
       ],
       "publishers": [
         "Bethesda Softworks"
@@ -6662,7 +6887,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Doom%20Eternal",
       "trailer": "https://www.youtube.com/results?search_query=Doom%20Eternal%202020%20trailer",
       "seed": 3034746259,
-      "search": "doom eternal fps shooter 2020 q204474 bethesda softworks pc xbox"
+      "search": "doom eternal fps shooter 2020 id software bethesda softworks nintendo pc playstation xbox"
     },
     {
       "id": "fall-guys-2020",
@@ -6679,14 +6904,16 @@
       "imageSource": null,
       "imageCredit": null,
       "platforms": [
+        "Nintendo",
         "PC",
+        "PlayStation",
         "Xbox"
       ],
       "developers": [
         "Mediatonic"
       ],
       "publishers": [
-        "Q739711"
+        "Epic Games"
       ],
       "released": "2020-08-04",
       "wikidata": "Q85760410",
@@ -6695,7 +6922,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Fall%20Guys",
       "trailer": "https://www.youtube.com/results?search_query=Fall%20Guys%202020%20trailer",
       "seed": 3317804682,
-      "search": "fall guys party simulation 2020 mediatonic q739711 pc xbox"
+      "search": "fall guys party simulation 2020 mediatonic epic games nintendo pc playstation xbox"
     },
     {
       "id": "it-takes-two-2021",
@@ -6712,11 +6939,13 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: It Takes Two (video game)",
       "platforms": [
+        "Nintendo",
         "PC",
+        "PlayStation",
         "Xbox"
       ],
       "developers": [
-        "Q60354586"
+        "Hazelight Studios"
       ],
       "publishers": [
         "Electronic Arts"
@@ -6728,7 +6957,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=It%20Takes%20Two",
       "trailer": "https://www.youtube.com/results?search_query=It%20Takes%20Two%202021%20trailer",
       "seed": 847327146,
-      "search": "it takes two co-op platformer platformer 2021 q60354586 electronic arts pc xbox"
+      "search": "it takes two co-op platformer platformer 2021 hazelight studios electronic arts nintendo pc playstation xbox"
     },
     {
       "id": "metroid-dread-2021",
@@ -6744,10 +6973,12 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/en/f/f7/Metroid_Dread_Banner.png",
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Metroid Dread",
-      "platforms": [],
+      "platforms": [
+        "Nintendo"
+      ],
       "developers": [
-        "Nintendo Entertainment Planning & Development",
-        "Q2699057"
+        "MercurySteam",
+        "Nintendo Entertainment Planning & Development"
       ],
       "publishers": [
         "Nintendo"
@@ -6759,7 +6990,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Metroid%20Dread",
       "trailer": "https://www.youtube.com/results?search_query=Metroid%20Dread%202021%20trailer",
       "seed": 2104604350,
-      "search": "metroid dread action-adventure adventure 2021 nintendo entertainment planning & development q2699057 nintendo "
+      "search": "metroid dread action-adventure adventure 2021 mercurysteam nintendo entertainment planning & development nintendo nintendo"
     },
     {
       "id": "returnal-2021",
@@ -6776,10 +7007,11 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Returnal",
       "platforms": [
-        "PC"
+        "PC",
+        "PlayStation"
       ],
       "developers": [
-        "Q2572761"
+        "Housemarque"
       ],
       "publishers": [
         "Sony Interactive Entertainment"
@@ -6791,7 +7023,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Returnal",
       "trailer": "https://www.youtube.com/results?search_query=Returnal%202021%20trailer",
       "seed": 1002069546,
-      "search": "returnal roguelike roguelike 2021 q2572761 sony interactive entertainment pc"
+      "search": "returnal roguelike roguelike 2021 housemarque sony interactive entertainment pc playstation"
     },
     {
       "id": "inscryption-2021",
@@ -6808,12 +7040,12 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Inscryption",
       "platforms": [
+        "Nintendo",
         "PC",
+        "PlayStation",
         "Xbox"
       ],
-      "developers": [
-        "Q24081023"
-      ],
+      "developers": [],
       "publishers": [
         "Devolver Digital"
       ],
@@ -6824,7 +7056,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Inscryption",
       "trailer": "https://www.youtube.com/results?search_query=Inscryption%202021%20trailer",
       "seed": 1843037147,
-      "search": "inscryption card game roguelike 2021 q24081023 devolver digital pc xbox"
+      "search": "inscryption card game roguelike 2021  devolver digital nintendo pc playstation xbox"
     },
     {
       "id": "forza-horizon-5-2021",
@@ -6842,6 +7074,7 @@
       "imageCredit": "Wikipedia: Forza Horizon 5",
       "platforms": [
         "PC",
+        "PlayStation",
         "Xbox"
       ],
       "developers": [
@@ -6857,7 +7090,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Forza%20Horizon%205",
       "trailer": "https://www.youtube.com/results?search_query=Forza%20Horizon%205%202021%20trailer",
       "seed": 1815631187,
-      "search": "forza horizon 5 racing racing 2021 playground games xbox game studios pc xbox"
+      "search": "forza horizon 5 racing racing 2021 playground games xbox game studios pc playstation xbox"
     },
     {
       "id": "psychonauts-2-2021",
@@ -6875,6 +7108,7 @@
       "imageCredit": "Wikipedia: Psychonauts 2",
       "platforms": [
         "PC",
+        "PlayStation",
         "Xbox"
       ],
       "developers": [
@@ -6890,7 +7124,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Psychonauts%202",
       "trailer": "https://www.youtube.com/results?search_query=Psychonauts%202%202021%20trailer",
       "seed": 1557118283,
-      "search": "psychonauts 2 platformer platformer 2021 double fine xbox game studios pc xbox"
+      "search": "psychonauts 2 platformer platformer 2021 double fine xbox game studios pc playstation xbox"
     },
     {
       "id": "elden-ring-2022",
@@ -6907,7 +7141,9 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Elden Ring",
       "platforms": [
+        "Nintendo",
         "PC",
+        "PlayStation",
         "Xbox"
       ],
       "developers": [
@@ -6924,7 +7160,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Elden%20Ring",
       "trailer": "https://www.youtube.com/results?search_query=Elden%20Ring%202022%20trailer",
       "seed": 2918699549,
-      "search": "elden ring action rpg rpg 2022 fromsoftware bandai namco entertainment fromsoftware pc xbox"
+      "search": "elden ring action rpg rpg 2022 fromsoftware bandai namco entertainment fromsoftware nintendo pc playstation xbox"
     },
     {
       "id": "vampire-survivors-2022",
@@ -6942,15 +7178,12 @@
       "imageCredit": "Wikipedia: Vampire Survivors",
       "platforms": [
         "PC",
+        "PlayStation",
         "Streaming & web",
         "Xbox"
       ],
-      "developers": [
-        "Q110726236"
-      ],
-      "publishers": [
-        "Q110726236"
-      ],
+      "developers": [],
+      "publishers": [],
       "released": "2021-12-17",
       "wikidata": "Q110726215",
       "wikiTitle": "Vampire Survivors",
@@ -6958,7 +7191,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Vampire%20Survivors",
       "trailer": "https://www.youtube.com/results?search_query=Vampire%20Survivors%202022%20trailer",
       "seed": 1036938684,
-      "search": "vampire survivors roguelike roguelike 2022 q110726236 q110726236 pc streaming & web xbox"
+      "search": "vampire survivors roguelike roguelike 2022   pc playstation streaming & web xbox"
     },
     {
       "id": "god-of-war-ragnarok-2022",
@@ -6975,7 +7208,8 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: God of War Ragnarök",
       "platforms": [
-        "PC"
+        "PC",
+        "PlayStation"
       ],
       "developers": [
         "Jetpack Interactive",
@@ -6991,7 +7225,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=God%20of%20War%20Ragnarok",
       "trailer": "https://www.youtube.com/results?search_query=God%20of%20War%20Ragnarok%202022%20trailer",
       "seed": 843099789,
-      "search": "god of war ragnarok action-adventure adventure 2022 jetpack interactive santa monica studio sony interactive entertainment pc"
+      "search": "god of war ragnarok action-adventure adventure 2022 jetpack interactive santa monica studio sony interactive entertainment pc playstation"
     },
     {
       "id": "stray-2022",
@@ -7008,14 +7242,16 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Stray (video game)",
       "platforms": [
+        "Nintendo",
         "PC",
+        "PlayStation",
         "Xbox"
       ],
       "developers": [
         "BlueTwelve Studio"
       ],
       "publishers": [
-        "Q38805988"
+        "Annapurna Interactive"
       ],
       "released": "2022-07-19",
       "wikidata": "Q96247255",
@@ -7024,7 +7260,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Stray",
       "trailer": "https://www.youtube.com/results?search_query=Stray%202022%20trailer",
       "seed": 3190668467,
-      "search": "stray adventure adventure 2022 bluetwelve studio q38805988 pc xbox"
+      "search": "stray adventure adventure 2022 bluetwelve studio annapurna interactive nintendo pc playstation xbox"
     },
     {
       "id": "tunic-2022",
@@ -7041,7 +7277,9 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Tunic (video game)",
       "platforms": [
+        "Nintendo",
         "PC",
+        "PlayStation",
         "Xbox"
       ],
       "developers": [
@@ -7057,7 +7295,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Tunic",
       "trailer": "https://www.youtube.com/results?search_query=Tunic%202022%20trailer",
       "seed": 4085542409,
-      "search": "tunic adventure adventure 2022 isometricorp games finji pc xbox"
+      "search": "tunic adventure adventure 2022 isometricorp games finji nintendo pc playstation xbox"
     },
     {
       "id": "pentiment-2022",
@@ -7074,7 +7312,9 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Pentiment (video game)",
       "platforms": [
+        "Nintendo",
         "PC",
+        "PlayStation",
         "Xbox"
       ],
       "developers": [
@@ -7090,7 +7330,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Pentiment",
       "trailer": "https://www.youtube.com/results?search_query=Pentiment%202022%20trailer",
       "seed": 3731675348,
-      "search": "pentiment adventure adventure 2022 obsidian entertainment xbox game studios pc xbox"
+      "search": "pentiment adventure adventure 2022 obsidian entertainment xbox game studios nintendo pc playstation xbox"
     },
     {
       "id": "baldurs-gate-3-2023",
@@ -7108,6 +7348,7 @@
       "imageCredit": "Wikipedia: Baldur's Gate 3",
       "platforms": [
         "PC",
+        "PlayStation",
         "Xbox"
       ],
       "developers": [
@@ -7123,7 +7364,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Baldur's%20Gate%203",
       "trailer": "https://www.youtube.com/results?search_query=Baldur's%20Gate%203%202023%20trailer",
       "seed": 562228430,
-      "search": "baldur's gate 3 rpg rpg 2023 larian studios larian studios pc xbox"
+      "search": "baldur's gate 3 rpg rpg 2023 larian studios larian studios pc playstation xbox"
     },
     {
       "id": "tears-of-the-kingdom-2023",
@@ -7139,7 +7380,9 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/en/f/fb/The_Legend_of_Zelda_Tears_of_the_Kingdom_cover.jpg",
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: The Legend of Zelda: Tears of the Kingdom",
-      "platforms": [],
+      "platforms": [
+        "Nintendo"
+      ],
       "developers": [
         "Monolith Soft Inc.",
         "Nintendo Entertainment Planning & Development"
@@ -7154,7 +7397,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Tears%20of%20the%20Kingdom",
       "trailer": "https://www.youtube.com/results?search_query=Tears%20of%20the%20Kingdom%202023%20trailer",
       "seed": 3006612216,
-      "search": "tears of the kingdom action-adventure adventure 2023 monolith soft inc. nintendo entertainment planning & development nintendo "
+      "search": "tears of the kingdom action-adventure adventure 2023 monolith soft inc. nintendo entertainment planning & development nintendo nintendo"
     },
     {
       "id": "alan-wake-2-2023",
@@ -7172,13 +7415,14 @@
       "imageCredit": "Wikipedia: Alan Wake 2",
       "platforms": [
         "PC",
+        "PlayStation",
         "Xbox"
       ],
       "developers": [
-        "Q830947"
+        "Remedy Entertainment"
       ],
       "publishers": [
-        "Q739711"
+        "Epic Games"
       ],
       "released": "2023-10-27",
       "wikidata": "Q108417001",
@@ -7187,7 +7431,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Alan%20Wake%202",
       "trailer": "https://www.youtube.com/results?search_query=Alan%20Wake%202%202023%20trailer",
       "seed": 454421965,
-      "search": "alan wake 2 horror horror 2023 q830947 q739711 pc xbox"
+      "search": "alan wake 2 horror horror 2023 remedy entertainment epic games pc playstation xbox"
     },
     {
       "id": "pizza-tower-2023",
@@ -7204,6 +7448,7 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Pizza Tower",
       "platforms": [
+        "Nintendo",
         "PC"
       ],
       "developers": [
@@ -7219,7 +7464,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Pizza%20Tower",
       "trailer": "https://www.youtube.com/results?search_query=Pizza%20Tower%202023%20trailer",
       "seed": 997238465,
-      "search": "pizza tower platformer platformer 2023 tour de pizza tour de pizza pc"
+      "search": "pizza tower platformer platformer 2023 tour de pizza tour de pizza nintendo pc"
     },
     {
       "id": "street-fighter-6-2023",
@@ -7236,7 +7481,9 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Street Fighter 6",
       "platforms": [
+        "Nintendo",
         "PC",
+        "PlayStation",
         "Xbox"
       ],
       "developers": [
@@ -7252,7 +7499,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Street%20Fighter%206",
       "trailer": "https://www.youtube.com/results?search_query=Street%20Fighter%206%202023%20trailer",
       "seed": 2642324841,
-      "search": "street fighter 6 fighting fighting 2023 capcom capcom pc xbox"
+      "search": "street fighter 6 fighting fighting 2023 capcom capcom nintendo pc playstation xbox"
     },
     {
       "id": "cocoon-2023",
@@ -7269,6 +7516,7 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Cocoon (video game)",
       "platforms": [
+        "Nintendo",
         "PC",
         "Xbox"
       ],
@@ -7276,7 +7524,7 @@
         "Geometric Interactive"
       ],
       "publishers": [
-        "Q38805988"
+        "Annapurna Interactive"
       ],
       "released": "2023-09-29",
       "wikidata": "Q112618750",
@@ -7285,7 +7533,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Cocoon",
       "trailer": "https://www.youtube.com/results?search_query=Cocoon%202023%20trailer",
       "seed": 956574782,
-      "search": "cocoon puzzle puzzle 2023 geometric interactive q38805988 pc xbox"
+      "search": "cocoon puzzle puzzle 2023 geometric interactive annapurna interactive nintendo pc xbox"
     },
     {
       "id": "balatro-2024",
@@ -7302,7 +7550,10 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Balatro",
       "platforms": [
+        "Mobile",
+        "Nintendo",
         "PC",
+        "PlayStation",
         "Xbox"
       ],
       "developers": [
@@ -7318,7 +7569,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Balatro",
       "trailer": "https://www.youtube.com/results?search_query=Balatro%202024%20trailer",
       "seed": 2539295909,
-      "search": "balatro roguelike deckbuilder roguelike 2024 localthunk playstack pc xbox"
+      "search": "balatro roguelike deckbuilder roguelike 2024 localthunk playstack mobile nintendo pc playstation xbox"
     },
     {
       "id": "astro-bot-2024",
@@ -7334,9 +7585,11 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/en/a/a9/Astro_Bot_cover_art.jpg",
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Astro Bot",
-      "platforms": [],
+      "platforms": [
+        "PlayStation"
+      ],
       "developers": [
-        "Q107198400"
+        "Team Asobi"
       ],
       "publishers": [
         "Sony Interactive Entertainment"
@@ -7348,7 +7601,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Astro%20Bot",
       "trailer": "https://www.youtube.com/results?search_query=Astro%20Bot%202024%20trailer",
       "seed": 1071936219,
-      "search": "astro bot platformer platformer 2024 q107198400 sony interactive entertainment "
+      "search": "astro bot platformer platformer 2024 team asobi sony interactive entertainment playstation"
     },
     {
       "id": "black-myth-wukong-2024",
@@ -7366,6 +7619,7 @@
       "imageCredit": "Wikipedia: Black Myth: Wukong",
       "platforms": [
         "PC",
+        "PlayStation",
         "Xbox"
       ],
       "developers": [
@@ -7381,7 +7635,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Black%20Myth%3A%20Wukong",
       "trailer": "https://www.youtube.com/results?search_query=Black%20Myth%3A%20Wukong%202024%20trailer",
       "seed": 1385765984,
-      "search": "black myth: wukong action rpg rpg 2024 game science game science pc xbox"
+      "search": "black myth: wukong action rpg rpg 2024 game science game science pc playstation xbox"
     },
     {
       "id": "metaphor-refantazio-2024",
@@ -7398,16 +7652,17 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Metaphor: ReFantazio",
       "platforms": [
+        "Nintendo",
         "PC",
+        "PlayStation",
         "Xbox"
       ],
       "developers": [
-        "Q140288231",
-        "Q780528"
+        "Atlus"
       ],
       "publishers": [
-        "Q122741",
-        "Q780528"
+        "Atlus",
+        "Sega"
       ],
       "released": "2024-10-11",
       "wikidata": "Q119362054",
@@ -7416,7 +7671,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Metaphor%3A%20ReFantazio",
       "trailer": "https://www.youtube.com/results?search_query=Metaphor%3A%20ReFantazio%202024%20trailer",
       "seed": 3090946904,
-      "search": "metaphor: refantazio jrpg rpg 2024 q140288231 q780528 q122741 q780528 pc xbox"
+      "search": "metaphor: refantazio jrpg rpg 2024 atlus atlus sega nintendo pc playstation xbox"
     },
     {
       "id": "helldivers-2-2024",
@@ -7434,10 +7689,11 @@
       "imageCredit": "Wikipedia: Helldivers 2",
       "platforms": [
         "PC",
+        "PlayStation",
         "Xbox"
       ],
       "developers": [
-        "Q16833903"
+        "Arrowhead Game Studios"
       ],
       "publishers": [
         "Sony Interactive Entertainment"
@@ -7449,7 +7705,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Helldivers%202",
       "trailer": "https://www.youtube.com/results?search_query=Helldivers%202%202024%20trailer",
       "seed": 2186326267,
-      "search": "helldivers 2 co-op shooter shooter 2024 q16833903 sony interactive entertainment pc xbox"
+      "search": "helldivers 2 co-op shooter shooter 2024 arrowhead game studios sony interactive entertainment pc playstation xbox"
     },
     {
       "id": "animal-well-2024",
@@ -7466,12 +7722,12 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Animal Well",
       "platforms": [
+        "Nintendo",
         "PC",
+        "PlayStation",
         "Xbox"
       ],
-      "developers": [
-        "Q133034197"
-      ],
+      "developers": [],
       "publishers": [
         "Bigmode"
       ],
@@ -7482,7 +7738,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Animal%20Well",
       "trailer": "https://www.youtube.com/results?search_query=Animal%20Well%202024%20trailer",
       "seed": 2652668803,
-      "search": "animal well metroidvania adventure 2024 q133034197 bigmode pc xbox"
+      "search": "animal well metroidvania adventure 2024  bigmode nintendo pc playstation xbox"
     },
     {
       "id": "clair-obscur-expedition-33-2025",
@@ -7500,13 +7756,14 @@
       "imageCredit": "Wikipedia: Clair Obscur: Expedition 33",
       "platforms": [
         "PC",
+        "PlayStation",
         "Xbox"
       ],
       "developers": [
         "Sandfall Interactive"
       ],
       "publishers": [
-        "Q116786225"
+        "Kepler Interactive"
       ],
       "released": "2025-04-24",
       "wikidata": "Q126462072",
@@ -7515,7 +7772,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Clair%20Obscur%3A%20Expedition%2033",
       "trailer": "https://www.youtube.com/results?search_query=Clair%20Obscur%3A%20Expedition%2033%202025%20trailer",
       "seed": 3315382000,
-      "search": "clair obscur: expedition 33 jrpg rpg 2025 sandfall interactive q116786225 pc xbox"
+      "search": "clair obscur: expedition 33 jrpg rpg 2025 sandfall interactive kepler interactive pc playstation xbox"
     },
     {
       "id": "blue-prince-2025",
@@ -7532,7 +7789,9 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Blue Prince",
       "platforms": [
+        "Nintendo",
         "PC",
+        "PlayStation",
         "Xbox"
       ],
       "developers": [
@@ -7548,7 +7807,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Blue%20Prince",
       "trailer": "https://www.youtube.com/results?search_query=Blue%20Prince%202025%20trailer",
       "seed": 3611994331,
-      "search": "blue prince puzzle puzzle 2025 dogubomb raw fury pc xbox"
+      "search": "blue prince puzzle puzzle 2025 dogubomb raw fury nintendo pc playstation xbox"
     },
     {
       "id": "split-fiction-2025",
@@ -7565,11 +7824,13 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Split Fiction",
       "platforms": [
+        "Nintendo",
         "PC",
+        "PlayStation",
         "Xbox"
       ],
       "developers": [
-        "Q60354586"
+        "Hazelight Studios"
       ],
       "publishers": [
         "Electronic Arts"
@@ -7581,7 +7842,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Split%20Fiction",
       "trailer": "https://www.youtube.com/results?search_query=Split%20Fiction%202025%20trailer",
       "seed": 1568446690,
-      "search": "split fiction co-op platformer platformer 2025 q60354586 electronic arts pc xbox"
+      "search": "split fiction co-op platformer platformer 2025 hazelight studios electronic arts nintendo pc playstation xbox"
     },
     {
       "id": "hollow-knight-silksong-2025",
@@ -7598,7 +7859,9 @@
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Hollow Knight: Silksong",
       "platforms": [
+        "Nintendo",
         "PC",
+        "PlayStation",
         "Xbox"
       ],
       "developers": [
@@ -7614,7 +7877,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Hollow%20Knight%3A%20Silksong",
       "trailer": "https://www.youtube.com/results?search_query=Hollow%20Knight%3A%20Silksong%202025%20trailer",
       "seed": 1669061813,
-      "search": "hollow knight: silksong metroidvania adventure 2025 team cherry team cherry pc xbox"
+      "search": "hollow knight: silksong metroidvania adventure 2025 team cherry team cherry nintendo pc playstation xbox"
     },
     {
       "id": "mario-kart-world-2025",
@@ -7630,7 +7893,9 @@
       "imageUrl": "https://upload.wikimedia.org/wikipedia/en/6/65/Mario_Kart_World_Cover_Artwork.png",
       "imageSource": "wikipedia",
       "imageCredit": "Wikipedia: Mario Kart World",
-      "platforms": [],
+      "platforms": [
+        "Nintendo"
+      ],
       "developers": [
         "Nintendo Entertainment Planning & Development"
       ],
@@ -7644,7 +7909,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Mario%20Kart%20World",
       "trailer": "https://www.youtube.com/results?search_query=Mario%20Kart%20World%202025%20trailer",
       "seed": 228105191,
-      "search": "mario kart world kart racer racing 2025 nintendo entertainment planning & development nintendo "
+      "search": "mario kart world kart racer racing 2025 nintendo entertainment planning & development nintendo nintendo"
     },
     {
       "id": "kingdom-come-deliverance-ii-2025",
@@ -7662,6 +7927,7 @@
       "imageCredit": "Wikipedia: Kingdom Come: Deliverance II",
       "platforms": [
         "PC",
+        "PlayStation",
         "Xbox"
       ],
       "developers": [
@@ -7677,7 +7943,7 @@
       "guide": "https://strategywiki.org/w/index.php?search=Kingdom%20Come%3A%20Deliverance%20II",
       "trailer": "https://www.youtube.com/results?search_query=Kingdom%20Come%3A%20Deliverance%20II%202025%20trailer",
       "seed": 2595844449,
-      "search": "kingdom come: deliverance ii rpg rpg 2025 warhorse studios deep silver pc xbox"
+      "search": "kingdom come: deliverance ii rpg rpg 2025 warhorse studios deep silver pc playstation xbox"
     }
   ]
 }
