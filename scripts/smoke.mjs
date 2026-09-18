@@ -121,20 +121,20 @@ try {
     await new Promise((r) => setTimeout(r, 400));
     return {
       nodes: document.querySelectorAll(".node.is-saved").length,
-      button: document.querySelector("#save")?.textContent.trim(),
-      pressed: document.querySelector("#save")?.classList.contains("is-saved")
+      button: document.querySelector("[data-save]")?.textContent.trim(),
+      pressed: document.querySelector("[data-save]")?.classList.contains("is-saved")
     };
   });
   check("saved games are marked on the timeline", marked.nodes > 0, `${marked.nodes} nodes`);
   check("panel reflects saved state", marked.pressed === true, marked.button || "no button");
 
   const toggled = await evaluate(async () => {
-    document.querySelector("#save").click();
+    document.querySelector("[data-save]").click();
     await new Promise((r) => setTimeout(r, 200));
-    const off = document.querySelector("#save").classList.contains("is-saved");
-    document.querySelector("#save").click();
+    const off = document.querySelector("[data-save]").classList.contains("is-saved");
+    document.querySelector("[data-save]").click();
     await new Promise((r) => setTimeout(r, 200));
-    return { off, on: document.querySelector("#save").classList.contains("is-saved"), count: document.querySelector("#list-count").textContent };
+    return { off, on: document.querySelector("[data-save]").classList.contains("is-saved"), count: document.querySelector("#list-count").textContent };
   });
   check("panel button toggles both ways", toggled.off === false && toggled.on === true, JSON.stringify(toggled));
 

@@ -1,10 +1,11 @@
 // App shell: loads the dataset, owns filter state, drives the timeline.
 
 import { CATEGORIES } from "./categories.js";
-import { iconSprite, artFor, coverFor } from "./art.js";
+import { iconSprite } from "./art.js";
 import { Timeline } from "./timeline.js";
 import * as store from "./store.js";
 import { mountMyList } from "./mylist.js";
+import { mountPanel } from "./panel.js";
 
 const $ = (sel, root = document) => root.querySelector(sel);
 
@@ -19,6 +20,7 @@ const state = {
 
 let timeline;
 let myList;
+let panel;
 const ui = {};
 
 async function boot() {
@@ -33,6 +35,13 @@ async function boot() {
 
   timeline = new Timeline(ui.stageHost, { onSelect: select, onFrame: onFrame });
 
+  panel = mountPanel({
+    root: ui.panel,
+    games: state.data.games,
+    onSelect: (game) => { jumpTo(game); select(game); },
+    onClose: close
+  });
+
   myList = mountMyList({
     root: ui.mylist,
     games: state.data.games,
@@ -46,7 +55,7 @@ async function boot() {
     const saved = new Set(store.ids());
     ui.listCount.textContent = saved.size;
     timeline.markSaved(saved);
-    if (state.selected) syncSaveButton();
+    panel.refresh();
     if (state.listOnly) applyFilters();
   });
 
@@ -210,48 +219,9 @@ function onFrame({ nearest, progress, year }) {
 
 function select(game) {
   state.selected = game;
-  const c = CATEGORIES[game.category];
-  ui.panel.hidden = false;
   document.body.classList.add("has-panel");
-  ui.panel.style.setProperty("--panel-color", game.color);
-  ui.panel.innerHTML = `
-    <div class="panel__top">
-      <span class="panel__meta">${game.year} / ${String(game.rank).padStart(2, "0")}</span>
-      <button type="button" class="panel__close" id="close" aria-label="Close">✕</button>
-    </div>
-    <img class="panel__art" src="${artFor(game)}" alt="${game.title} key art" decoding="async">
-    ${game.imageCredit ? `<p class="panel__credit">Cover: ${game.imageCredit}</p>` : ""}
-    <div>
-      <h2 class="panel__title">${game.title}</h2>
-      <p class="panel__genre">
-        <svg class="panel__icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-${game.category}"/></svg>
-        ${c.label} · ${game.genre}
-      </p>
-    </div>
-    <p class="panel__blurb">${game.blurb}</p>
-    <button type="button" class="panel__save" id="save"></button>
-    <nav class="panel__links">
-      <a href="${game.wiki}" target="_blank" rel="noopener"><span>Wikipedia · what it is</span><span>↗</span></a>
-      <a href="${game.guide}" target="_blank" rel="noopener"><span>StrategyWiki · how to play</span><span>↗</span></a>
-      <a href="${game.trailer}" target="_blank" rel="noopener"><span>Watch trailer</span><span>↗</span></a>
-    </nav>
-    <p class="panel__hint">SELECT ANOTHER NODE TO COMPARE.<br>ESC CLOSES THIS PANEL.</p>`;
-  $("#close", ui.panel).addEventListener("click", close);
-  $("#save", ui.panel).addEventListener("click", () => store.toggle(game.id));
-  syncSaveButton();
-  $(".panel__art", ui.panel).addEventListener("error", (e) => {
-    e.target.src = coverFor(game);                              // remote cover unreachable
-    $(".panel__credit", ui.panel)?.remove();
-  });
+  panel.open(game);
   history.replaceState(null, "", location.pathname + location.search + `#game=${game.id}`);
-}
-
-function syncSaveButton() {
-  const btn = $("#save", ui.panel);
-  if (!btn || !state.selected) return;
-  const saved = store.has(state.selected.id);
-  btn.classList.toggle("is-saved", saved);
-  btn.textContent = saved ? "✓ In my list" : "+ Add to my list";
 }
 
 function jumpTo(game) {
@@ -262,9 +232,8 @@ function jumpTo(game) {
 function close() {
   if (!state.selected) return;
   state.selected = null;
-  ui.panel.hidden = true;
   document.body.classList.remove("has-panel");
-  ui.panel.textContent = "";
+  panel.close();
   history.replaceState(null, "", location.pathname + location.search);  // drop the #game hash
 }
 
