@@ -11,6 +11,8 @@
     "check:links": "node scripts/check-links.mjs",
     "smoke": "node scripts/smoke.mjs",
     "check:data": "node scripts/check-data.mjs",
-    "test": "node scripts/check-data.mjs && node scripts/smoke.mjs"
+    "test": "node scripts/check-data.mjs && node scripts/smoke.mjs",
+    "fetch:specs": "node scripts/fetch-specs.mjs",
+    "harvest": "node scripts/harvest-wikidata.mjs"
   }
 }

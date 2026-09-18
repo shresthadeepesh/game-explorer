@@ -1,0 +1,2406 @@
+{
+  "updatedAt": "2026-09-18",
+  "source": "Steam store API",
+  "games": {
+    "super-mario-world-1990": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "the-secret-of-monkey-island-1990": {
+      "steamAppId": 32360,
+      "steamName": "The Secret of Monkey Island: Special Edition",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/32360/",
+      "steamYear": 2009,
+      "edition": "reissue",
+      "minimum": {
+        "os": "Windows XP® or Windows Vista®",
+        "processor": "Intel Pentium 4 3GHz or AMD Athlon 64 3000+",
+        "memory": "256 MB RAM, 512 MB for Vista",
+        "graphics": "128 MB with Shader Model 2.0 capability",
+        "directx": "9.0c (March 2009)",
+        "storage": "2.5GB free hard drive space",
+        "sound": "DirectX® 9.0c compliant sound card",
+        "notes": "Controller support: Xbox 360 controller"
+      },
+      "recommended": null
+    },
+    "wing-commander-1990": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "railroad-tycoon-1990": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "f-zero-1990": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "dragon-quest-iv-1990": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "sonic-the-hedgehog-1991": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "street-fighter-ii-1991": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "civilization-1991": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "the-legend-of-zelda-a-link-to-the-past-1991": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "another-world-1991": {
+      "steamAppId": 1246390,
+      "steamName": "Another_World",
+      "steamYear": 2020,
+      "status": "ambiguous"
+    },
+    "lemmings-1991": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "mortal-kombat-1992": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "wolfenstein-3d-1992": {
+      "steamAppId": 2270,
+      "steamName": "Wolfenstein 3D",
+      "steamYear": 2007,
+      "status": "ambiguous"
+    },
+    "super-mario-kart-1992": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "dune-ii-1992": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "ultima-underworld-1992": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "kirbys-dream-land-1992": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "doom-1993": {
+      "steamAppId": 379720,
+      "steamName": "DOOM",
+      "steamYear": 2016,
+      "status": "ambiguous"
+    },
+    "myst-1993": {
+      "steamAppId": 1255560,
+      "steamName": "Myst",
+      "steamYear": 2021,
+      "status": "ambiguous"
+    },
+    "star-fox-1993": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "secret-of-mana-1993": {
+      "steamAppId": 637670,
+      "steamName": "Secret of Mana",
+      "steamYear": 2018,
+      "status": "ambiguous"
+    },
+    "simcity-2000-1993": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "nba-jam-1993": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "super-metroid-1994": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "final-fantasy-vi-1994": {
+      "steamAppId": 1173820,
+      "steamName": "FINAL FANTASY VI",
+      "steamYear": 2022,
+      "status": "ambiguous"
+    },
+    "donkey-kong-country-1994": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "system-shock-1994": {
+      "steamAppId": 410710,
+      "steamName": "System Shock: Enhanced Edition",
+      "steamYear": 2015,
+      "status": "ambiguous"
+    },
+    "warcraft-orcs-humans-1994": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "tie-fighter-1994": {
+      "steamAppId": 355250,
+      "steamName": "STAR WARS™: TIE Fighter Special Edition",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/355250/",
+      "steamYear": 2015,
+      "edition": "reissue",
+      "minimum": {
+        "os": "Windows XP/Vista/7/8",
+        "processor": "1.8 GHz",
+        "memory": "1 GB RAM",
+        "graphics": "3D graphics card compatible with DirectX 7 (DirectX 9 recommended)",
+        "storage": "406 MB available space",
+        "notes": "Additional Notes: The Windows version of STAR WARS: TIE Fighter (1998) requires a controller or joystick. STAR WARS: TIE Fighter (1994) can be played with a mouse and keyboard."
+      },
+      "recommended": null
+    },
+    "chrono-trigger-1995": {
+      "steamAppId": 613830,
+      "steamName": "CHRONO TRIGGER®",
+      "steamYear": 2018,
+      "status": "ambiguous"
+    },
+    "command-conquer-1995": {
+      "steamAppId": 1213210,
+      "steamName": "Command & Conquer™ Remastered Collection",
+      "steamYear": 2020,
+      "status": "ambiguous"
+    },
+    "yoshis-island-1995": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "descent-1995": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "suikoden-1995": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "wipeout-1995": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "super-mario-64-1996": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "resident-evil-1996": {
+      "steamAppId": 304240,
+      "steamName": "Resident Evil",
+      "steamYear": 2015,
+      "status": "ambiguous"
+    },
+    "quake-1996": {
+      "steamAppId": 2310,
+      "steamName": "Quake",
+      "steamYear": 2007,
+      "status": "ambiguous"
+    },
+    "diablo-1996": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "pokemon-red-and-blue-1996": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "tomb-raider-1996": {
+      "steamAppId": 8000,
+      "steamName": "Tomb Raider: Anniversary",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/8000/",
+      "steamYear": 2007,
+      "edition": "reissue",
+      "minimum": {
+        "summary": "Microsoft Windows Vista, 2000, or XP, Pentium 3 1.4Ghz or Athlon XP 1500+, 4GB free space, 100% DirectX 9.0c compatible 64 MB 3D Accelerated Card with TnL (GeForce 3TI / Radeon 9 series), 512MB RAM (Windows Vista) or 256MB RAM (Windows 2000/XP), Microsoft Windows 2000/XP/Vista compatible sound card (100% DirectX 9.0c -compatible), 100% Windows 2000/XP/Vista compatible mouse and keyboard Recommended: Microsoft Windows XP, Vista, Pentium 4 3.0Ghz or Athlon 64 3000+, Microsoft Windows XP/Vista compatible sound card (100% DirectX 9.0c -compatible), 1GB RAM, 100% DirectX 9.0c compatible 64MB 3D Accelerated Card with Pixel Shader 2.0 (GeForce 6000 series / Radeon X series)"
+      },
+      "recommended": null
+    },
+    "final-fantasy-vii-1997": {
+      "steamAppId": 1462040,
+      "steamName": "FINAL FANTASY VII REMAKE INTERGRADE",
+      "steamYear": 2022,
+      "status": "ambiguous"
+    },
+    "goldeneye-007-1997": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "fallout-1997": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "castlevania-symphony-of-the-night-1997": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "ultima-online-1997": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "parappa-the-rapper-1997": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "half-life-1998": {
+      "steamAppId": 70,
+      "steamName": "Half-Life",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/70/",
+      "steamYear": 1998,
+      "minimum": {
+        "summary": "500 mhz processor, 96mb ram, 16mb video card, Windows XP, Mouse, Keyboard, Internet Connection Recommended: 800 mhz processor, 128mb ram, 32mb+ video card, Windows XP, Mouse, Keyboard, Internet Connection"
+      },
+      "recommended": null
+    },
+    "the-legend-of-zelda-ocarina-of-time-1998": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "metal-gear-solid-1998": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "starcraft-1998": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "resident-evil-2-1998": {
+      "steamAppId": 883710,
+      "steamName": "Resident Evil 2",
+      "steamYear": 2019,
+      "status": "ambiguous"
+    },
+    "grim-fandango-1998": {
+      "steamAppId": 316790,
+      "steamName": "Grim Fandango Remastered",
+      "steamYear": 2015,
+      "status": "ambiguous"
+    },
+    "system-shock-2-1999": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "silent-hill-1999": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "age-of-empires-ii-1999": {
+      "status": "unavailable",
+      "reason": "not a game entry"
+    },
+    "unreal-tournament-1999": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "everquest-1999": {
+      "steamAppId": 205710,
+      "steamName": "EverQuest",
+      "steamYear": 2012,
+      "status": "ambiguous"
+    },
+    "planescape-torment-1999": {
+      "steamAppId": 466300,
+      "steamName": "Planescape: Torment: Enhanced Edition",
+      "steamYear": 2017,
+      "status": "ambiguous"
+    },
+    "deus-ex-2000": {
+      "steamAppId": 6910,
+      "steamName": "Deus Ex: Game of the Year Edition",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/6910/",
+      "steamYear": 2007,
+      "edition": "reissue",
+      "minimum": {
+        "summary": "300 MHz Pentium II or equlivalent, Windows 95/98, 64 MB RAM, DirectX 7.0a compliant 3D accelerated video card 16MB VRAM, Direct X 7.0a compliant sound card, Direct X 7.0a or higher (included), 150MB uncompressed hard drive space, Keyboard and Mouse"
+      },
+      "recommended": null
+    },
+    "the-sims-2000": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "diablo-ii-2000": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "counter-strike-2000": {
+      "steamAppId": 10,
+      "steamName": "Counter-Strike",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/10/",
+      "steamYear": 2000,
+      "minimum": {
+        "summary": "500 mhz processor, 96mb ram, 16mb video card, Windows XP, Mouse, Keyboard, Internet Connection Recommended: 800 mhz processor, 128mb ram, 32mb+ video card, Windows XP, Mouse, Keyboard, Internet Connection"
+      },
+      "recommended": null
+    },
+    "perfect-dark-2000": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "tony-hawks-pro-skater-2-2000": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "halo-combat-evolved-2001": {
+      "status": "unavailable",
+      "reason": "not a game entry"
+    },
+    "grand-theft-auto-iii-2001": {
+      "steamAppId": 1546970,
+      "steamName": "Grand Theft Auto III – The Definitive Edition",
+      "steamYear": 2023,
+      "status": "ambiguous"
+    },
+    "ico-2001": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "max-payne-2001": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "super-smash-bros-melee-2001": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "silent-hill-2-2001": {
+      "steamAppId": 2124490,
+      "steamName": "SILENT HILL 2",
+      "steamYear": 2024,
+      "status": "ambiguous"
+    },
+    "the-elder-scrolls-iii-morrowind-2002": {
+      "steamAppId": 22320,
+      "steamName": "The Elder Scrolls III: Morrowind® Game of the Year Edition",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/22320/",
+      "steamYear": 2009,
+      "edition": "reissue",
+      "minimum": {
+        "os": "Windows ME/98/XP/2000",
+        "processor": "500 MHz Intel Pentium III, Celeron, or AMD Athlon",
+        "memory": "256 MB",
+        "graphics": "32MB Direct3D Compatible video card with 32-bit color support and DirectX 8.1",
+        "directx": "8.1",
+        "storage": "1GB free hard disk space",
+        "sound": "DirectX 8.1 compatible sound card"
+      },
+      "recommended": null
+    },
+    "metroid-prime-2002": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "kingdom-hearts-2002": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "battlefield-1942-2002": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "animal-crossing-2002": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "warcraft-iii-2002": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "the-wind-waker-2003": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "prince-of-persia-sands-of-time-2003": {
+      "steamAppId": 13600,
+      "steamName": "Prince of Persia®: The Sands of Time",
+      "steamYear": 2009,
+      "status": "ambiguous"
+    },
+    "beyond-good-evil-2003": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "call-of-duty-2003": {
+      "steamAppId": 1938090,
+      "steamName": "Call of Duty®",
+      "steamYear": 2022,
+      "status": "ambiguous"
+    },
+    "star-wars-knights-of-the-old-republic-2003": {
+      "steamAppId": 32370,
+      "steamName": "STAR WARS™ Knights of the Old Republic™",
+      "steamYear": 2009,
+      "status": "ambiguous"
+    },
+    "eve-online-2003": {
+      "steamAppId": 8500,
+      "steamName": "EVE Online",
+      "steamYear": 2010,
+      "status": "ambiguous"
+    },
+    "half-life-2-2004": {
+      "steamAppId": 220,
+      "steamName": "Half-Life 2",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/220/",
+      "steamYear": 2004,
+      "minimum": {
+        "os": "Windows 7, Vista, XP",
+        "processor": "1.7 Ghz",
+        "memory": "512 MB RAM",
+        "graphics": "DirectX 8.1 level Graphics Card (requires support for SSE)",
+        "storage": "6500 MB available space"
+      },
+      "recommended": null
+    },
+    "world-of-warcraft-2004": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "gta-san-andreas-2004": {
+      "steamAppId": 1547000,
+      "steamName": "Grand Theft Auto: San Andreas – The Definitive Edition",
+      "steamYear": 2023,
+      "status": "ambiguous"
+    },
+    "katamari-damacy-2004": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "far-cry-2004": {
+      "steamAppId": 13520,
+      "steamName": "Far Cry®",
+      "steamYear": 2008,
+      "status": "ambiguous"
+    },
+    "burnout-3-takedown-2004": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "resident-evil-4-2005": {
+      "steamAppId": 254700,
+      "steamName": "Resident Evil 4 (2005)",
+      "steamYear": 2014,
+      "status": "ambiguous"
+    },
+    "shadow-of-the-colossus-2005": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "psychonauts-2005": {
+      "steamAppId": 3830,
+      "steamName": "Psychonauts",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/3830/",
+      "steamYear": 2006,
+      "minimum": {
+        "os": "Windows 98 SE/2000/XP",
+        "processor": "1.0 GHz Pentium(R) III and AMD Athlon(tm)",
+        "memory": "256 MB of RAM",
+        "graphics": "64 MB GeForce (tm) 3 or higher or ATI(R) Radeon 8500 or higher (except GeForce 4 MX and Go series)",
+        "directx": "version 9.0 or higher (included with game)",
+        "storage": "3.75 GB minimum hard drive space",
+        "sound": "DirectX&reg 9.0 or higher compatible sound card",
+        "notes": "Controls: Windows-compatible keyboard and mouse"
+      },
+      "recommended": {
+        "os": "Windows 2000/XP",
+        "processor": "2.0 GHz Pentium(R) IV and AMD Athlon(tm)",
+        "memory": "512 MB of RAM",
+        "graphics": ", 128 MB GeForce FX 5600 or higher or ATI(R) Radeon 9600 or higher",
+        "directx": "version 9.0 or higher (included with game)",
+        "storage": "6.0 GB minimum hard drive space",
+        "sound": "DirectX&reg 9.0 or higher and Sound Blaster Audigy 2 series sound card",
+        "notes": "Controls: Game Pad (optional)"
+      }
+    },
+    "guitar-hero-2005": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "civilization-iv-2005": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "god-of-war-2005": {
+      "steamAppId": 1593500,
+      "steamName": "God of War",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/1593500/",
+      "steamYear": 2022,
+      "portedLater": 2022,
+      "minimum": {
+        "os": "Windows 10",
+        "processor": "Intel i5-2500k (4 core 3.3 GHz) or AMD Ryzen 3 1200 (4 core 3.1 GHz)",
+        "memory": "8 GB RAM",
+        "graphics": "NVIDIA GTX 960 (4 GB) or AMD R9 290X (4 GB)",
+        "directx": "Version 11",
+        "storage": "70 GB available space",
+        "notes": "Requires a 64-bit processor and operating system · Additional Notes: DirectX feature level 11_1 required"
+      },
+      "recommended": {
+        "os": "Windows 10",
+        "processor": "Intel i5-6600k (4 core 3.5 GHz) or AMD Ryzen 5 2400 G (4 core 3.6 GHz)",
+        "memory": "8 GB RAM",
+        "graphics": "NVIDIA GTX 1060 (6 GB) or AMD RX 570 (4 GB)",
+        "directx": "Version 11",
+        "storage": "70 GB available space",
+        "notes": "Requires a 64-bit processor and operating system · Additional Notes: DirectX feature level 11_1 required"
+      }
+    },
+    "oblivion-2006": {
+      "steamAppId": 22330,
+      "steamName": "The Elder Scrolls IV: Oblivion® Game of the Year Edition (2009)",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/22330/",
+      "steamYear": 2009,
+      "minimum": {
+        "os": "Windows XP, Windows 2000, Windows XP 64-Bit",
+        "processor": "2 Ghz Intel Pentium 4 or equivalent",
+        "memory": "512 MB",
+        "graphics": "128 MB Direct3D compatible video card and DirectX 9.0 compatible driver",
+        "directx": "DirectX 9.0c",
+        "storage": "4.6 GB",
+        "sound": "DirectX 8.1 compatible"
+      },
+      "recommended": null
+    },
+    "okami-2006": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "gears-of-war-2006": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "wii-sports-2006": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "company-of-heroes-2006": {
+      "steamAppId": 228200,
+      "steamName": "Company of Heroes",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/228200/",
+      "steamYear": 2006,
+      "minimum": {
+        "os": "Windows® XP or Vista",
+        "processor": "2.0 Ghz Intel Pentium IV or equivalent or AMD Athlon XP or equivalent",
+        "memory": "512 MB RAM",
+        "graphics": "DirectX 9.0c compatible 64MB video card with Pixel Shader 1.1 support or equivalent and latest manufacturer drivers",
+        "storage": "1 GB available space",
+        "sound": "DirectX® 9.0c compatible 16-bit",
+        "notes": "Additional Notes: Supported Video Cards: NVIDIA: NVIDIA GeForce 3 series or better with latest manufacturer drivers (excluding the GeForce 4 MX series), ATI: ATI Radeon 9500 series or better with latest manufacturer drivers."
+      },
+      "recommended": {
+        "os": "Windows® XP or Vista",
+        "processor": "3.0 Ghz Intel Pentium IV or equivalent",
+        "memory": "1 GB RAM",
+        "graphics": "256 MB NVIDIA GeForce 6800 series or better",
+        "sound": "DirectX® 9.0c compatible 16-bit"
+      }
+    },
+    "hitman-blood-money-2006": {
+      "steamAppId": 6860,
+      "steamName": "Hitman: Blood Money",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/6860/",
+      "steamYear": 2007,
+      "minimum": {
+        "notes": "Microsoft Windows® 2000/XP (Windows 95/98/ME/NT Not Supported) · Pentium 4 1.5Ghz or Athlon XP Equivalent · 512MB RAM · 100% DirectX 9.0c compatible video card which supports Hardware TnL and Pixel Shader 2.0 (GeForce FX / Radeon 9500 or higher) · 100% DirectX 9.0c Compatible Sound Card · 5.0GB free disk space · 100% Windows 2000/XP compatible Mouse and Keyboard (Gamepads and controller are not supported) · Pentium 4 2.4Ghz or Athlon XP/64-bit equivalent · 1024MB RAM · ATI X800 series, Nvidia GeForce 6800 series or higher video card · 100% DirectX 9.0c Compatible Sound Card, Sound Blaster X-Fi series · 5.0GB free disk space"
+      },
+      "recommended": null
+    },
+    "portal-2007": {
+      "steamAppId": 400,
+      "steamName": "Portal",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/400/",
+      "steamYear": 2007,
+      "minimum": {
+        "summary": "1.7 GHz Processor, 512MB RAM, DirectX&reg; 8.1 level Graphics Card (Requires support for SSE), Windows&reg; 7 (32/64-bit)/Vista/XP, Mouse, Keyboard, Internet Connection Recommended: Pentium 4 processor (3.0GHz, or better), 1GB RAM, DirectX&reg; 9 level Graphics Card, Windows&reg; 7 (32/64-bit)/Vista/XP, Mouse, Keyboard, Internet Connection"
+      },
+      "recommended": null
+    },
+    "bioshock-2007": {
+      "steamAppId": 7670,
+      "steamName": "BioShock™",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/7670/",
+      "steamYear": 2007,
+      "minimum": {
+        "processor": ": Intel single-core Pentium 4 processor at 2.4GHz",
+        "memory": ": 1 GB",
+        "graphics": ": Direct X 9.0c compliant video card with 128MB RAM and Pixel Shader 3.0 (NVIDIA 6600 or better/ATI X1300 or better, excluding ATI X1550)",
+        "sound": ": 100% direct X 9.0c compatible sound card",
+        "storage": ": 8GB",
+        "notes": "Operating System: : Windows XP (with Service Pack 2) or Windows Vista · Game requires Internet connection for activation"
+      },
+      "recommended": {
+        "processor": ": Intel Core 2 Duo processor",
+        "memory": ": 2GB",
+        "graphics": ": DX 9 - Direct X 9.0c compliant video card with 512 MB RAM and Pixel Shader 3.0 (NVIDIA GeForce 7900 GT or better), DX 10 - NVIDIA GeForce 8600 or better",
+        "sound": ": SoundBlaster(r) X-Fi(tm) series (optimized foruse with Creative Labs EAX ADVANCED HD 4.0 or EAX ADVANCED HD 5.0 compatible sound cards)"
+      }
+    },
+    "super-mario-galaxy-2007": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "mass-effect-2007": {
+      "steamAppId": 17460,
+      "steamName": "Mass Effect (2007)",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/17460/",
+      "steamYear": 2008,
+      "minimum": {
+        "processor": "Intel P4 2.4 Ghz or faster / AMD 2.0 Ghz",
+        "memory": "1.0 GB RAM or more (2.0 GB for Vista)",
+        "graphics": "DirectX 9.0c compatible, ATI X1300 XT or greater (ATI X1300, X1300 Pro, X1600 Pro, Radeon 2600 HD, and HD 2400 are below minimum system requirements); NVidia GeForce 6800 or greater (7300, 7600 GS, 8500 are below minimum system requirements)",
+        "storage": "12.0 GB or more free hard drive space",
+        "sound": "DirectX 9.0c compatible",
+        "directx": "9.0c",
+        "notes": "Supported OS: Microsoft Windows® XP with SP2 or Windows Vista* · INTERNET CONNECTION AND END USER LICENSE AGREEMENT REQUIRED TO PLAY. MORE INFORMATION IS AVAILABLE AT ."
+      },
+      "recommended": null
+    },
+    "team-fortress-2-2007": {
+      "steamAppId": 440,
+      "steamName": "Team Fortress 2",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/440/",
+      "steamYear": 2007,
+      "minimum": {
+        "os": "Windows® 7 (32/64-bit)/Vista/XP",
+        "processor": "1.7 GHz Processor or better",
+        "memory": "512 MB RAM",
+        "directx": "Version 8.1",
+        "network": "Broadband Internet connection",
+        "storage": "15 GB available space"
+      },
+      "recommended": {
+        "os": "Windows® 7 (32/64-bit)",
+        "processor": "Pentium 4 processor (3.0GHz, or better)",
+        "memory": "1 GB RAM",
+        "directx": "Version 9.0c",
+        "network": "Broadband Internet connection",
+        "storage": "15 GB available space"
+      }
+    },
+    "rock-band-2007": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "fallout-3-2008": {
+      "steamAppId": 22300,
+      "steamName": "Fallout 3",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/22300/",
+      "steamYear": 2008,
+      "minimum": {
+        "processor": "2.4 Ghz Intel Pentium 4 or equivalent processor",
+        "memory": "1 GB (XP)/ 2 GB (Vista)",
+        "graphics": "Direct X 9.0c compliant video card with 256MB RAM (NVIDIA 6800 or better/ATI X850 or better)",
+        "sound": "DirectX®: 9.0c",
+        "notes": "Operating system: Windows XP/Vista · Hard disk space: 7 GB · Controller support: Xbox 360 controller · Other Requirements: Online play requires log-in to Games For Windows - Live · NVIDIA: GeForce 200 series, Geforce 9800 series, Geforce 9600 series, Geforce 8800 series, Geforce 8600 series, Geforce 8500 series, Geforce 8400 series, Geforce 7900 series, Geforce 7800 series, Geforce 7600 series, Geforce 7300 series, GeForce 6800 series · ATI: HD 4800 series, HD 4600 series, HD 3800 series, HD 3600 series, HD 3400 series, HD 2900 series, HD 2600 series, HD 2400 series, X1900 series, X1800 series, X1600 series, X1300 series, X850 series"
+      },
+      "recommended": {
+        "processor": "Intel Core 2 Duo processor",
+        "memory": "2 GB System RAM",
+        "graphics": "Direct X 9.0c compliant video card with 512MB RAM (NVIDIA 8800 series, ATI 3800 series)",
+        "sound": "DirectX®: 9.0c",
+        "notes": "Operating system: Windows XP/Vista · Hard disk space: 7 GB · Controller support: Xbox 360 controller"
+      }
+    },
+    "littlebigplanet-2008": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "dead-space-2008": {
+      "steamAppId": 17470,
+      "steamName": "Dead Space (2008)",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/17470/",
+      "steamYear": 2009,
+      "minimum": {
+        "processor": "2.8 GHz or faster",
+        "memory": "1 GB RAM or more for Windows XP (2 GB for Vista)",
+        "graphics": "DirectX® 9.0c compatible video card, Shader Model 3.0 required, 256 MB or better, NVIDIA GeForce 6800 or better (7300, 7600 GS, and 8500 are below minimum system requirements), ATI X1600 Pro or better (X1300, X1300 Pro and HD2400 are below minimum system requirements)",
+        "storage": "7.5 GB free space",
+        "sound": "DirectX® 9.0c compatible sound card",
+        "notes": "Supported OS: Microsoft Windows® XP SP2 or Vista · INTERNET CONNECTION, ONLINE AUTHENTICATION AND ACCEPTANCE OF END USER LICENSE AGREEMENT REQUIRED TO PLAY. EA MAY RETIRE ONLINE FEATURES AFTER 30 DAYS NOTICE POSTED ON ."
+      },
+      "recommended": null
+    },
+    "braid-2008": {
+      "steamAppId": 26800,
+      "steamName": "Braid",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/26800/",
+      "steamYear": 2009,
+      "minimum": {
+        "processor": "1.4GHz or faster",
+        "memory": "768 MB or more",
+        "graphics": "Pixel Shader 2.0",
+        "directx": "DirectX® 9.0c",
+        "notes": "Operating System: Microsoft® Windows® XP / Vista / 7 · Hard Disk Space: 200 MB or more · Controller Support: Microsoft Xbox 360 Controller for Windows"
+      },
+      "recommended": null
+    },
+    "left-4-dead-2008": {
+      "steamAppId": 500,
+      "steamName": "Left 4 Dead",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/500/",
+      "steamYear": 2008,
+      "minimum": {
+        "processor": "Pentium 4 3.0GHz",
+        "memory": "1 GB",
+        "graphics": "128 MB, Shader model 2.0, ATI 9600, NVidia 6600 or better",
+        "storage": "At least 7.5 GB of free space",
+        "sound": "DirectX 9.0c compatible sound card",
+        "notes": "Supported OS: Windows® 7 32/64-bit / Vista 32/64 / XP"
+      },
+      "recommended": {
+        "processor": "Intel core 2 duo 2.4GHz",
+        "memory": "1 GB",
+        "graphics": "Shader model 3.0, NVidia 7600, ATI X1600 or better",
+        "notes": "Supported OS: Windows® 7 32/64-bit / Vista 32/64 / XP"
+      }
+    },
+    "world-of-goo-2008": {
+      "steamAppId": 22000,
+      "steamName": "World of Goo",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/22000/",
+      "steamYear": 2008,
+      "minimum": {
+        "notes": "Requires a 64-bit processor and operating system"
+      },
+      "recommended": {
+        "notes": "Requires a 64-bit processor and operating system"
+      }
+    },
+    "demons-souls-2009": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "uncharted-2-among-thieves-2009": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "minecraft-2009": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "batman-arkham-asylum-2009": {
+      "steamAppId": 35140,
+      "steamName": "Batman: Arkham Asylum Game of the Year Edition",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/35140/",
+      "steamYear": 2010,
+      "minimum": {
+        "os": "Vista/XP",
+        "processor": "3Ghz Intel or AMD or any Dual Core",
+        "memory": "1GB Ram(XP)/2GB Ram",
+        "graphics": "PCI Express SM3 NVidia 6600/ ATI 1300",
+        "directx": "9",
+        "storage": "8GB free space",
+        "sound": "Any onboard sound card"
+      },
+      "recommended": null
+    },
+    "plants-vs-zombies-2009": {
+      "steamAppId": 3590,
+      "steamName": "Plants vs. Zombies GOTY Edition",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/3590/",
+      "steamYear": 2009,
+      "minimum": {
+        "os": "Windows XP/Vista/7",
+        "processor": "1.2GHz+ processor",
+        "memory": "1GB of RAM",
+        "graphics": "128MB of video memory, 16-bit or 32-bit color quality",
+        "directx": "DirectX 8 or later",
+        "storage": "65+MB of free hard drive space",
+        "sound": "DirectX-compatible sound"
+      },
+      "recommended": null
+    },
+    "dragon-age-origins-2009": {
+      "steamAppId": 47810,
+      "steamName": "Dragon Age: Origins - Ultimate Edition",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/47810/",
+      "steamYear": 2010,
+      "minimum": {
+        "os": "Windows XP (SP3) or Windows Vista (SP1) or Windows 7",
+        "processor": "Intel Core 2 Single 1.6 Ghz Processor (or equivalent) or AMD 64 2.0 GHz Processor (or equivalent)",
+        "memory": "1GB (1.5 GB Vista and Windows 7)",
+        "graphics": "ATI Radeon X850 256MB or NVIDIA GeForce 6600 GT 128MB or greater (Windows Vista: Radeon X1550 256 MB or NVidia GeForce 7600GT 256MB)",
+        "directx": "DirectX (November 2007)",
+        "storage": "20 GB HD space",
+        "sound": "Direct X Compatible Sound Card"
+      },
+      "recommended": {
+        "os": "Windows XP (SP3) or Windows Vista (SP1) or Windows 7",
+        "processor": "Intel Core 2 Duo 2.4 Ghz or AMD Phenom II X2 Dual-Core 2.7 Ghz Processor or equivalent",
+        "memory": "2 GB (3GB Vista and Windows 7)",
+        "graphics": "ATI 3850 512 MB or NVidia 8800GTS 512MB or greater",
+        "directx": "DirectX (November 2007)",
+        "storage": "20 GB HD space",
+        "sound": "Direct X Compatible Sound Card"
+      }
+    },
+    "red-dead-redemption-2010": {
+      "steamAppId": 2668510,
+      "steamName": "Red Dead Redemption",
+      "steamYear": 2024,
+      "status": "ambiguous"
+    },
+    "mass-effect-2-2010": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "super-meat-boy-2010": {
+      "steamAppId": 40800,
+      "steamName": "Super Meat Boy",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/40800/",
+      "steamYear": 2010,
+      "minimum": {
+        "os": "Microsoft® Windows® XP / Vista / 7 (Windows 8 is not officially supported)",
+        "processor": "1.4GHz or faster",
+        "memory": "1 GB RAM",
+        "graphics": "Graphics Card made within the last 4 years (Pixel Shader 3.0, Vertex Shader 3.0)",
+        "directx": "DirectX® 9.0c",
+        "storage": "300 MB",
+        "notes": "Controller Support: Microsoft Xbox 360 Controller or Direct Input compatible controller"
+      },
+      "recommended": null
+    },
+    "starcraft-ii-wings-of-liberty-2010": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "limbo-2010": {
+      "steamAppId": 48000,
+      "steamName": "LIMBO",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/48000/",
+      "steamYear": 2011,
+      "minimum": {
+        "os": "Windows 10 or later",
+        "processor": "2 GHz",
+        "memory": "4GB",
+        "graphics": "Integrated graphics from 2020 or later. Shader Model 3.0 required",
+        "directx": "9.0c",
+        "notes": "Hard Disk Space: 150MB"
+      },
+      "recommended": null
+    },
+    "civilization-v-2010": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "the-elder-scrolls-v-skyrim-2011": {
+      "steamAppId": 489830,
+      "steamName": "The Elder Scrolls V: Skyrim Special Edition",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/489830/",
+      "steamYear": 2016,
+      "edition": "reissue",
+      "minimum": {
+        "os": "Windows 7/8.1/10 (64-bit Version)",
+        "processor": "Intel i5-750/AMD Phenom II X4-945",
+        "memory": "8 GB RAM",
+        "graphics": "NVIDIA GTX 470 1GB /AMD HD 7870 2GB",
+        "storage": "12 GB available space"
+      },
+      "recommended": {
+        "os": "Windows 7/8.1/10 (64-bit Version)",
+        "processor": "Intel i5-2400/AMD FX-8320",
+        "memory": "8 GB RAM",
+        "graphics": "NVIDIA GTX 780 3GB /AMD R9 290 4GB",
+        "storage": "12 GB available space"
+      }
+    },
+    "dark-souls-2011": {
+      "steamAppId": 570940,
+      "steamName": "DARK SOULS™: REMASTERED",
+      "steamYear": 2018,
+      "status": "ambiguous"
+    },
+    "portal-2-2011": {
+      "steamAppId": 620,
+      "steamName": "Portal 2",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/620/",
+      "steamYear": 2011,
+      "minimum": {
+        "os": "Windows 7 / Vista / XP",
+        "processor": "3.0 GHz P4, Dual Core 2.0 (or higher) or AMD64X2 (or higher)",
+        "memory": "2 GB RAM",
+        "graphics": "Video card must be 128 MB or more and with support for Pixel Shader 2.0b (ATI Radeon X800 or higher / NVIDIA GeForce 7600 or higher / Intel HD Graphics 2000 or higher).",
+        "directx": "Version 9.0c",
+        "storage": "8 GB available space",
+        "sound": "DirectX 9.0c compatible"
+      },
+      "recommended": null
+    },
+    "the-binding-of-isaac-2011": {
+      "steamAppId": 113200,
+      "steamName": "The Binding of Isaac",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/113200/",
+      "steamYear": 2011,
+      "minimum": {
+        "os": "Windows XP, Vista, 7",
+        "processor": "2.5 GHz",
+        "memory": "1GB",
+        "graphics": "Direct X9.0c Compatible Card",
+        "directx": "DirectX® 9.0c",
+        "notes": "Hard Disk Space: 50MB"
+      },
+      "recommended": null
+    },
+    "terraria-2011": {
+      "steamAppId": 105600,
+      "steamName": "Terraria",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/105600/",
+      "steamYear": 2011,
+      "minimum": {
+        "notes": "OS: Windows Xp, Vista, 7, 8/8.1, 10 · Processor: 2.0 Ghz · Memory: 2.5GB · Hard Disk Space: 200MB · Video Card: 128mb Video Memory, capable of Shader Model 2.0+ · DirectX®: 9.0c or Greater"
+      },
+      "recommended": {
+        "notes": "OS: Windows 7, 8/8.1, 10 · Processor: Dual Core 3.0 Ghz · Memory: 4GB · Hard Disk Space: 200MB · Video Card: 256mb Video Memory, capable of Shader Model 2.0+ · DirectX®: 9.0c or Greater"
+      }
+    },
+    "bastion-2011": {
+      "steamAppId": 107100,
+      "steamName": "Bastion",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/107100/",
+      "steamYear": 2011,
+      "minimum": {
+        "os": "Windows XP, Vista, 7",
+        "processor": "1.7 GHz Dual Core or Greater",
+        "memory": "2 GB",
+        "graphics": "512 MB DirectX 9.0c compatible graphics card (shader model 2)",
+        "directx": "9.0c",
+        "sound": "DirectX 9.0c compatible",
+        "notes": "Hard Disk Space: 1.0 GB"
+      },
+      "recommended": null
+    },
+    "journey-2012": {
+      "steamAppId": 638230,
+      "steamName": "Journey",
+      "steamYear": 2020,
+      "status": "ambiguous"
+    },
+    "xcom-enemy-unknown-2012": {
+      "steamAppId": 200510,
+      "steamName": "XCOM: Enemy Unknown",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/200510/",
+      "steamYear": 2012,
+      "minimum": {
+        "os": "Windows Vista",
+        "processor": "2 GHz Dual Core",
+        "memory": "2 GB RAM",
+        "graphics": "NVIDIA GeForce 8600 GT / ATI Radeon HD 2600 XT or greater",
+        "directx": "9.0",
+        "storage": "20 GB HD space",
+        "sound": "DirectX Compatible",
+        "notes": "Other Requirements: Broadband Internet connection · Additional: Initial installation requires one-time internet connection for Steam authentication; software installations required (included with the game) include Steam Client, Visual C++ 2008 Redistributable, DirectX and Microsoft .NET 4."
+      },
+      "recommended": {
+        "os": "Windows 7",
+        "processor": "2 GHz Dual Core (Intel Core 2 Duo 2.4 GHz or Athlon X2 2.7 GHz)",
+        "memory": "4 GB RAM",
+        "graphics": "NVIDIA GeForce 9000 series / ATI Radeon HD 3000 series or greater",
+        "directx": "9.0",
+        "storage": "20 GB HD space",
+        "sound": "DirectX Compatible",
+        "notes": "Other Requirements: Broadband Internet connection · Additional: Initial installation requires one-time internet connection for Steam authentication; software installations required (included with the game) include Steam Client, Visual C++ 2008 Redistributable, DirectX and Microsoft .NET 4."
+      }
+    },
+    "dishonored-2012": {
+      "steamAppId": 205100,
+      "steamName": "Dishonored",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/205100/",
+      "steamYear": 2012,
+      "minimum": {
+        "os": "Windows Vista / Windows 7",
+        "processor": "3.0 GHz dual core or better",
+        "memory": "3 GB system RAM",
+        "graphics": "DirectX 9 compatible with 512 MB video RAM or better (NVIDIA GeForce GTX 460 / ATI Radeon HD 5850)",
+        "sound": "Windows compatible sound card",
+        "notes": "Hard Disk Space: 9 GB"
+      },
+      "recommended": {
+        "os": "Windows Vista / Windows 7 (enhanced for 64-bit OS)",
+        "processor": "2.4 GHz quad core or better (enhanced for multi-core processors)",
+        "memory": "4 GB system RAM",
+        "graphics": "DirectX 9 compatible with 768 MB video RAM or better (NVIDIA GeForce GTX 460 / ATI Radeon HD 5850)",
+        "sound": "Windows compatible sound card",
+        "notes": "Hard Disk Space: 9 GB"
+      }
+    },
+    "ftl-faster-than-light-2012": {
+      "steamAppId": 212680,
+      "steamName": "FTL: Faster Than Light",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/212680/",
+      "steamYear": 2012,
+      "minimum": {
+        "os": "Windows XP / Vista / 7",
+        "processor": "2 GHz",
+        "memory": "1 GB RAM",
+        "graphics": "1280x720 minimum resolution, OpenGL 2.0 Support, and recommended dedicated graphics card with 128 MB of RAM",
+        "storage": "175 MB HD space"
+      },
+      "recommended": null
+    },
+    "hotline-miami-2012": {
+      "steamAppId": 219150,
+      "steamName": "Hotline Miami",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/219150/",
+      "steamYear": 2012,
+      "minimum": {
+        "os": "Microsoft® Windows® XP / Vista / 7",
+        "processor": "1.2GHz processor",
+        "memory": "512 MB RAM",
+        "graphics": "DirectX 8-compatible graphics card with at least 32MB of video memory",
+        "directx": "9.0c",
+        "storage": "250 MB HD space",
+        "notes": "Additional: Microsoft Xbox 360 Controller or Direct Input compatible controller, OpenGL 2.x or better highly recommended."
+      },
+      "recommended": {
+        "os": "Microsoft® Windows® XP / Vista / 7",
+        "processor": "1.4GHz processor or faster",
+        "memory": "1 GB RAM",
+        "graphics": "DirectX 8-compatible graphics card with at least 32MB of video memory",
+        "directx": "9.0c",
+        "storage": "250 MB HD space",
+        "notes": "Additional: Microsoft Xbox 360 Controller or Direct Input compatible controller"
+      }
+    },
+    "the-walking-dead-2012": {
+      "steamAppId": 207610,
+      "steamName": "The Walking Dead",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/207610/",
+      "steamYear": 2012,
+      "minimum": {
+        "os": "XP Service Pack 3",
+        "processor": "2.0 GHz Pentium 4 or equivalent",
+        "memory": "3 GB RAM",
+        "graphics": "ATI or nVidia card with 512 MB RAM (not supported on Intel integrated graphics)",
+        "directx": "Direct X 9.0c",
+        "sound": "Direct X 9.0c sound device",
+        "notes": "Hard Disk Space: 2 GB"
+      },
+      "recommended": {
+        "os": "Windows 7",
+        "processor": "Core 2 Duo 2GHz or equivalent",
+        "memory": "3 GB RAM",
+        "graphics": "ATI or nVidia card with 1024 MB RAM",
+        "directx": "Direct X 9.0c",
+        "sound": "Direct X 9.0c sound device",
+        "notes": "Hard Disk Space: 2 GB"
+      }
+    },
+    "the-last-of-us-2013": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "grand-theft-auto-v-2013": {
+      "steamAppId": 3240220,
+      "steamName": "Grand Theft Auto V Enhanced",
+      "steamYear": 2025,
+      "status": "ambiguous"
+    },
+    "papers-please-2013": {
+      "steamAppId": 239030,
+      "steamName": "Papers, Please",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/239030/",
+      "steamYear": 2013,
+      "minimum": {
+        "os": "Windows XP or later",
+        "processor": "1.5 GHz Core2Duo",
+        "memory": "2 GB RAM",
+        "graphics": "OpenGL 1.4 or better",
+        "storage": "100 MB available space",
+        "notes": "Requires a 64-bit processor and operating system · Additional Notes: Minimum 1280x720 screen resolution"
+      },
+      "recommended": {
+        "notes": "Requires a 64-bit processor and operating system"
+      }
+    },
+    "super-mario-3d-world-2013": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "gone-home-2013": {
+      "steamAppId": 232430,
+      "steamName": "Gone Home",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/232430/",
+      "steamYear": 2013,
+      "minimum": {
+        "summary": "• Windows 7 SP1 or higher • 1.80GHz Processor • 2GB Memory • DX10 Video card with 512MB of VRAM • (NOTE: Intel HD Graphic 4000 NOT CURRENTLY SUPPORTED on Windows 8) • 2GB HDD space"
+      },
+      "recommended": null
+    },
+    "dota-2-2013": {
+      "steamAppId": 570,
+      "steamName": "Dota 2",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/570/",
+      "steamYear": 2013,
+      "minimum": {
+        "os": "Windows 7 or newer",
+        "processor": "Dual core from Intel or AMD at 2.8 GHz",
+        "memory": "4 GB RAM",
+        "graphics": "NVIDIA GeForce 8600/9600GT, ATI/AMD Radeon HD2600/3600",
+        "directx": "Version 11",
+        "network": "Broadband Internet connection",
+        "storage": "60 GB available space",
+        "sound": "DirectX Compatible"
+      },
+      "recommended": null
+    },
+    "alien-isolation-2014": {
+      "steamAppId": 214490,
+      "steamName": "Alien: Isolation",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/214490/",
+      "steamYear": 2014,
+      "minimum": {
+        "os": "Windows 7 (32bit)",
+        "processor": "3.16Ghz Intel Core 2 Duo E8500",
+        "memory": "4 GB RAM",
+        "graphics": "1GB (AMD Radeon HD 5550 or Nvidia GeForce GT 430)",
+        "directx": "Version 11",
+        "network": "Broadband Internet connection",
+        "storage": "35 GB available space",
+        "notes": "Additional Notes: Microsoft no longer supports Windows 10 or older versions"
+      },
+      "recommended": {
+        "os": "Windows 7 (64bit)",
+        "processor": "AMD: Phenom II X4 955 - 4 Core, 3.2 GHz or Intel: Core 2 Quad Q9650 - 4 Core, 3.0 GHz",
+        "memory": "8 GB RAM",
+        "graphics": "2GB (AMD GPU: AMD Radeon R9 200 Series or Nvidia GPU: Nvidia GeForce GTX660)",
+        "directx": "Version 11",
+        "network": "Broadband Internet connection",
+        "storage": "35 GB available space",
+        "notes": "Additional Notes: Microsoft no longer supports Windows 10 or older versions"
+      }
+    },
+    "shovel-knight-2014": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "bayonetta-2-2014": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "destiny-2014": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "hearthstone-2014": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "mario-kart-8-2014": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "the-witcher-3-wild-hunt-2015": {
+      "steamAppId": 292030,
+      "steamName": "The Witcher 3: Wild Hunt - Complete Edition",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/292030/",
+      "steamYear": 2015,
+      "minimum": {
+        "os": "64-bit Windows 7, 64-bit Windows 8 (8.1)",
+        "processor": "Intel CPU Core i5-2500K 3.3GHz / AMD A10-5800K APU (3.8GHz)",
+        "memory": "6 GB RAM",
+        "graphics": "Nvidia GPU GeForce GTX 660 / AMD GPU Radeon HD 7870",
+        "directx": "Version 11",
+        "storage": "50 GB available space",
+        "notes": "Additional Notes: *System requirements will change on 2026.09.29."
+      },
+      "recommended": {
+        "os": "64-bit Windows 10/11",
+        "processor": "Intel Core i5-7400 / Ryzen 5 1600",
+        "memory": "8 GB RAM",
+        "graphics": "Nvidia GTX 1070 / Radeon RX 480",
+        "directx": "Version 12",
+        "storage": "50 GB available space",
+        "notes": "Additional Notes: *System requirements will change on 2026.09.29."
+      }
+    },
+    "bloodborne-2015": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "metal-gear-solid-v-2015": {
+      "status": "unavailable",
+      "reason": "not a game entry"
+    },
+    "undertale-2015": {
+      "steamAppId": 391540,
+      "steamName": "Undertale",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/391540/",
+      "steamYear": 2015,
+      "minimum": {
+        "os": "Windows XP, Vista, 7, 8, or 10",
+        "memory": "2 GB RAM",
+        "graphics": "128MB",
+        "storage": "200 MB available space"
+      },
+      "recommended": {
+        "os": "Windows XP, Vista, 7, or 10",
+        "processor": "2GHz+",
+        "memory": "3 GB RAM",
+        "graphics": "512MB",
+        "storage": "200 MB available space"
+      }
+    },
+    "rocket-league-2015": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "splatoon-2015": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "overwatch-2016": {
+      "steamAppId": 2357570,
+      "steamName": "Overwatch®",
+      "steamYear": 2023,
+      "status": "ambiguous"
+    },
+    "doom-2016": {
+      "steamAppId": 379720,
+      "steamName": "DOOM",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/379720/",
+      "steamYear": 2016,
+      "minimum": {
+        "os": "Windows 7/8.1/10 (64-bit versions)",
+        "processor": "Intel Core i5-2400/AMD FX-8320 or better",
+        "memory": "8 GB RAM",
+        "graphics": "NVIDIA GTX 670 2GB/AMD Radeon HD 7870 2GB or better",
+        "storage": "55 GB available space",
+        "notes": "Additional Notes: Requires Steam activation and broadband internet connection for Multiplayer and SnapMap"
+      },
+      "recommended": {
+        "os": "Windows 7/8.1/10 (64-bit versions)",
+        "processor": "Intel Core i7-3770/AMD FX-8350 or better",
+        "memory": "8 GB RAM",
+        "graphics": "NVIDIA GTX 970 4GB/AMD Radeon R9 290 4GB or better",
+        "storage": "55 GB available space",
+        "notes": "Additional Notes: Requires Steam activation and broadband internet connection for Multiplayer and SnapMap"
+      }
+    },
+    "inside-2016": {
+      "steamAppId": 304430,
+      "steamName": "INSIDE",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/304430/",
+      "steamYear": 2016,
+      "minimum": {
+        "os": "Windows 10 (64-bit OS required)",
+        "processor": "Intel Core 2 Quad Q6600 @ 2.4 GHz, AMD FX 8120 @ 3.1 GHz",
+        "memory": "4 GB RAM",
+        "graphics": "NVIDIA GT 630 / 650m, AMD Radeon HD6570 or equivalent",
+        "directx": "Version 9.0c",
+        "storage": "3 GB available space",
+        "sound": "100% DirectX 9.0c compatible sound card"
+      },
+      "recommended": {
+        "os": "Windows 10 or later (64-bit OS required)",
+        "processor": "Intel i7 920 @ 2.7 GHz, AMD Phenom II 945 @ 3.0 GHz",
+        "memory": "8 GB RAM",
+        "graphics": "NVIDIA GTX 660, Radeon R9-270",
+        "directx": "Version 11",
+        "storage": "3 GB available space",
+        "sound": "100% DirectX 9.0c compatible sound card"
+      }
+    },
+    "stardew-valley-2016": {
+      "steamAppId": 413150,
+      "steamName": "Stardew Valley",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/413150/",
+      "steamYear": 2016,
+      "minimum": {
+        "os": "Windows Vista or greater",
+        "processor": "2 Ghz",
+        "memory": "2 GB RAM",
+        "graphics": "256 mb video memory, shader model 3.0+",
+        "directx": "Version 10",
+        "storage": "500 MB available space"
+      },
+      "recommended": null
+    },
+    "titanfall-2-2016": {
+      "steamAppId": 1237970,
+      "steamName": "Titanfall® 2",
+      "steamYear": 2020,
+      "status": "ambiguous"
+    },
+    "hitman-2016": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "breath-of-the-wild-2017": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "nier-automata-2017": {
+      "steamAppId": 524220,
+      "steamName": "NieR:Automata™",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/524220/",
+      "steamYear": 2017,
+      "minimum": {
+        "os": "Windows 7 /8.1 /10 64bit",
+        "processor": "Intel Core i3 2100 or AMD A8-6500",
+        "memory": "4 GB RAM",
+        "graphics": "NVIDIA GeForce GTX 770 VRAM 2GB or AMD Radeon R9 270X VRAM 2GB",
+        "directx": "Version 11",
+        "network": "Broadband Internet connection",
+        "storage": "50 GB available space",
+        "sound": "DirectX® 11 supported",
+        "notes": "Additional Notes: Mouse, keyboard and game pad (XInput only). Screen resolution: 1280x720. This product only supports MS-IME keyboard input. There is a possibility that other IME will not function correctly with it."
+      },
+      "recommended": {
+        "os": "Windows 8.1 /10 64bit",
+        "processor": "Intel Core i5 4670 or AMD A10-7850K",
+        "memory": "8 GB RAM",
+        "graphics": "NVIDIA GeForce GTX 980 VRAM 4GB or AMD Radeon R9 380X VRAM 4GB",
+        "directx": "Version 11",
+        "network": "Broadband Internet connection",
+        "storage": "50 GB available space",
+        "sound": "DirectX® 11 supported",
+        "notes": "Additional Notes: Mouse, keyboard and game pad (XInput only). Screen resolution: 1920x1080. Depending on the monitor and PC graphics card environment and setup used, this title can expand its display resolution to 4K. However, please be aware that 4K resolutions are not officially supported. This product only supports MS-IME keyboard input. There is a possibility that other IME will not function correctly with it."
+      }
+    },
+    "super-mario-odyssey-2017": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "pubg-2017": {
+      "steamAppId": 578080,
+      "steamName": "PUBG: BATTLEGROUNDS",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/578080/",
+      "steamYear": 2017,
+      "minimum": {
+        "os": "64-bit Windows 10",
+        "processor": "Intel Core i5-4430 / AMD FX-6300",
+        "memory": "8 GB RAM",
+        "graphics": "NVIDIA GeForce GTX 960 2GB / AMD Radeon R7 370 2GB",
+        "directx": "Version 11",
+        "network": "Broadband Internet connection",
+        "storage": "40 GB available space",
+        "notes": "Requires a 64-bit processor and operating system"
+      },
+      "recommended": {
+        "os": "64-bit Windows 10",
+        "processor": "Intel Core i5-6600K / AMD Ryzen 5 1600",
+        "memory": "16 GB RAM",
+        "graphics": "NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB",
+        "directx": "Version 11",
+        "network": "Broadband Internet connection",
+        "storage": "50 GB available space",
+        "notes": "Requires a 64-bit processor and operating system"
+      }
+    },
+    "hollow-knight-2017": {
+      "steamAppId": 367520,
+      "steamName": "Hollow Knight",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/367520/",
+      "steamYear": 2017,
+      "minimum": {
+        "os": "Windows 10 version 21H1 (build 19043) or newer",
+        "processor": "Intel Core i3-3240, AMD FX-4300",
+        "memory": "4 GB RAM",
+        "graphics": "GeForce GTX 560 Ti (1GB), Radeon HD 7750 (1GB)",
+        "directx": "Version 10",
+        "storage": "9 GB available space",
+        "notes": "Requires a 64-bit processor and operating system"
+      },
+      "recommended": {
+        "os": "Windows 10 version 21H1 (build 19043) or newer",
+        "processor": "Intel Core i5-3470",
+        "memory": "8 GB RAM",
+        "graphics": "GeForce GTX 1050 (2GB), Radeon R9 380 (2GB)",
+        "directx": "Version 10",
+        "storage": "9 GB available space",
+        "notes": "Requires a 64-bit processor and operating system"
+      }
+    },
+    "persona-5-2017": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "red-dead-redemption-2-2018": {
+      "steamAppId": 1174180,
+      "steamName": "Red Dead Redemption 2",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/1174180/",
+      "steamYear": 2019,
+      "minimum": {
+        "os": "Windows 10 - 64-bit",
+        "processor": "Intel® Core™ i5-2500K / AMD FX-6300",
+        "memory": "8 GB RAM",
+        "graphics": "Nvidia GeForce GTX 770 2GB / AMD Radeon R9 280 3GB",
+        "network": "Broadband Internet connection",
+        "storage": "150 GB available space",
+        "sound": "Direct X Compatible",
+        "notes": "Requires a 64-bit processor and operating system"
+      },
+      "recommended": {
+        "os": "Windows 10 - 64-bit",
+        "processor": "Intel® Core™ i7-4770K / AMD Ryzen 5 1500X",
+        "memory": "12 GB RAM",
+        "graphics": "Nvidia GeForce GTX 1060 6GB / AMD Radeon RX 480 4GB",
+        "network": "Broadband Internet connection",
+        "storage": "150 GB available space",
+        "sound": "Direct X Compatible",
+        "notes": "Requires a 64-bit processor and operating system"
+      }
+    },
+    "celeste-2018": {
+      "steamAppId": 504230,
+      "steamName": "Celeste",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/504230/",
+      "steamYear": 2018,
+      "minimum": {
+        "os": "Windows 7 or newer",
+        "processor": "Intel Core i3 M380",
+        "memory": "2 GB RAM",
+        "graphics": "Intel HD 4000",
+        "directx": "Version 10",
+        "storage": "1200 MB available space"
+      },
+      "recommended": null
+    },
+    "god-of-war-2018": {
+      "steamAppId": 1593500,
+      "steamName": "God of War",
+      "steamYear": 2022,
+      "status": "ambiguous"
+    },
+    "return-of-the-obra-dinn-2018": {
+      "steamAppId": 653530,
+      "steamName": "Return of the Obra Dinn",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/653530/",
+      "steamYear": 2018,
+      "minimum": {
+        "os": "Windows 7 or better",
+        "processor": "2 GHz Intel i5 or better",
+        "memory": "4 GB RAM",
+        "graphics": "Discrete GPU",
+        "storage": "2 GB available space",
+        "notes": "Additional Notes: Requires 720p or higher resolution and outputs 16:9 aspect only, letterboxed if necessary."
+      },
+      "recommended": null
+    },
+    "into-the-breach-2018": {
+      "steamAppId": 590380,
+      "steamName": "Into the Breach",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/590380/",
+      "steamYear": 2018,
+      "minimum": {
+        "os": "Windows Vista/7/8/10",
+        "processor": "1.7+ GHz or better",
+        "memory": "1 GB RAM",
+        "graphics": "Must support OpenGL 2.1 or higher. Intel HD 3000 or better.",
+        "storage": "400 MB available space"
+      },
+      "recommended": null
+    },
+    "dead-cells-2018": {
+      "steamAppId": 588650,
+      "steamName": "Dead Cells",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/588650/",
+      "steamYear": 2018,
+      "minimum": {
+        "os": "Windows 7+",
+        "processor": "Intel i5+",
+        "memory": "2 GB RAM",
+        "graphics": "Nvidia 450 GTS / Radeon HD 5750 or better",
+        "storage": "500 MB available space",
+        "notes": "Additional Notes: DirectX 9.1+ or OpenGL 3.2+"
+      },
+      "recommended": {
+        "os": "Windows 7+",
+        "processor": "Intel i5+",
+        "memory": "4 GB RAM",
+        "graphics": "Nvidia GTX 460 / Radeon HD 7800 or better",
+        "storage": "500 MB available space",
+        "notes": "Additional Notes: DirectX 9.1+ or OpenGL 3.2+"
+      }
+    },
+    "sekiro-shadows-die-twice-2019": {
+      "steamAppId": 814380,
+      "steamName": "Sekiro™: Shadows Die Twice - GOTY Edition",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/814380/",
+      "steamYear": 2019,
+      "minimum": {
+        "os": "Windows 7 64-bit | Windows 8 64-bit | Windows 10 64-bit",
+        "processor": "Intel Core i3-2100 | AMD FX-6300",
+        "memory": "4 GB RAM",
+        "graphics": "NVIDIA GeForce GTX 760 | AMD Radeon HD 7950",
+        "directx": "Version 11",
+        "network": "Broadband Internet connection",
+        "storage": "25 GB available space",
+        "sound": "DirectX 11 Compatible"
+      },
+      "recommended": {
+        "os": "Windows 7 64-bit | Windows 8 64-bit | Windows 10 64-bit",
+        "processor": "Intel Core i5-2500K | AMD Ryzen 5 1400",
+        "memory": "8 GB RAM",
+        "graphics": "NVIDIA GeForce GTX 970 | AMD Radeon RX 570",
+        "directx": "Version 11",
+        "network": "Broadband Internet connection",
+        "storage": "25 GB available space",
+        "sound": "DirectX 11 Compatible"
+      }
+    },
+    "disco-elysium-2019": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "outer-wilds-2019": {
+      "steamAppId": 753640,
+      "steamName": "Outer Wilds",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/753640/",
+      "steamYear": 2020,
+      "minimum": {
+        "os": "Windows 10",
+        "processor": "Intel Core i5-2300 | AMD FX-4350",
+        "memory": "6 GB RAM",
+        "graphics": "Nvidia GeForce GTX 660, 2 GB | AMD Radeon HD 7870, 2 GB",
+        "storage": "8 GB available space",
+        "notes": "Requires a 64-bit processor and operating system · Additional Notes: Gamepad or Controller Recommended (Xbox and PS4 Natively Supported)"
+      },
+      "recommended": {
+        "os": "Windows 10",
+        "processor": "Intel Core i5-8400 | AMD Ryzen 5 2600X",
+        "memory": "8 GB RAM",
+        "graphics": "Nvidia GeForce GTX 1060 | AMD Radeon RX 580",
+        "storage": "8 GB available space",
+        "notes": "Requires a 64-bit processor and operating system · Additional Notes: Gamepad or Controller Recommended (Xbox and PS4 Natively Supported)"
+      }
+    },
+    "death-stranding-2019": {
+      "steamAppId": 1850570,
+      "steamName": "DEATH STRANDING DIRECTOR'S CUT",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/1850570/",
+      "steamYear": 2022,
+      "minimum": {
+        "os": "Windows® 10",
+        "processor": "Intel® Core™ i5-3470 or AMD Ryzen™ 3 1200",
+        "memory": "8 GB RAM",
+        "graphics": "GeForce GTX 1050 4 GB or AMD Radeon™ RX 560 4 GB",
+        "directx": "Version 12",
+        "storage": "80 GB available space",
+        "sound": "DirectX compatible",
+        "notes": "Requires a 64-bit processor and operating system · Additional Notes: AVX instruction set required"
+      },
+      "recommended": {
+        "os": "Windows® 10",
+        "processor": "Intel™ Core i7-3770 or AMD Ryzen™ 5 1600",
+        "memory": "8 GB RAM",
+        "graphics": "GeForce GTX 1060 6 GB or AMD Radeon™ RX 590",
+        "directx": "Version 12",
+        "storage": "80 GB available space",
+        "sound": "DirectX compatible",
+        "notes": "Requires a 64-bit processor and operating system · Additional Notes: AVX instruction set required"
+      }
+    },
+    "slay-the-spire-2019": {
+      "steamAppId": 646570,
+      "steamName": "Slay the Spire",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/646570/",
+      "steamYear": 2019,
+      "minimum": {
+        "os": "Windows XP, Vista, 7, 8/8.1, 10",
+        "processor": "2.0 Ghz",
+        "memory": "2 GB RAM",
+        "graphics": "1Gb Video Memory, capable of OpenGL 3.0+ support (2.1 with ARB extensions acceptable)",
+        "storage": "1 GB available space"
+      },
+      "recommended": null
+    },
+    "apex-legends-2019": {
+      "steamAppId": 1172470,
+      "steamName": "Apex Legends™",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/1172470/",
+      "steamYear": 2020,
+      "minimum": {
+        "os": "64-bit Windows 10",
+        "processor": "AMD FX 4350 or Equivalent, Intel Core i3 6300 or Equivalent",
+        "memory": "6 GB RAM",
+        "graphics": "AMD Radeon™ HD 7790 (2 GB), NVIDIA GeForce® GTX 950",
+        "directx": "Version 12",
+        "network": "Broadband Internet connection",
+        "storage": "75 GB available space",
+        "notes": "Requires a 64-bit processor and operating system · Additional Notes: ~3.8GB for 1 localized language"
+      },
+      "recommended": {
+        "os": "64-bit Windows 10",
+        "processor": "Ryzen 5 CPU or Equivalent",
+        "memory": "8 GB RAM",
+        "graphics": "AMD Radeon™ R9 290, NVIDIA GeForce® GTX 970",
+        "directx": "Version 12",
+        "network": "Broadband Internet connection",
+        "storage": "75 GB available space",
+        "notes": "Requires a 64-bit processor and operating system · Additional Notes: ~3.8GB for 1 localized language"
+      }
+    },
+    "hades-2020": {
+      "steamAppId": 1145360,
+      "steamName": "Hades",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/1145360/",
+      "steamYear": 2020,
+      "minimum": {
+        "os": "Windows 7 SP1",
+        "processor": "Dual Core 2.4 GHz",
+        "memory": "4 GB RAM",
+        "graphics": "1GB VRAM / DirectX 10+ support",
+        "storage": "15 GB available space"
+      },
+      "recommended": {
+        "os": "Windows 7 SP1",
+        "processor": "Dual Core 3.0 GHz+",
+        "memory": "8 GB RAM",
+        "graphics": "2GB VRAM / DirectX 10+ support",
+        "storage": "20 GB available space"
+      }
+    },
+    "half-life-alyx-2020": {
+      "steamAppId": 546560,
+      "steamName": "Half-Life: Alyx",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/546560/",
+      "steamYear": 2020,
+      "minimum": {
+        "os": "Windows 10",
+        "processor": "Core i5-7500 / Ryzen 5 1600",
+        "memory": "12 GB RAM",
+        "graphics": "GTX 1060 / RX 580 - 6GB VRAM",
+        "notes": "Requires a 64-bit processor and operating system · VR Support: SteamVR"
+      },
+      "recommended": {
+        "notes": "Requires a 64-bit processor and operating system"
+      }
+    },
+    "animal-crossing-new-horizons-2020": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "ghost-of-tsushima-2020": {
+      "steamAppId": 2215430,
+      "steamName": "Ghost of Tsushima DIRECTOR'S CUT",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/2215430/",
+      "steamYear": 2024,
+      "portedLater": 2024,
+      "minimum": {
+        "os": "Windows 10",
+        "processor": "Intel Core i3-7100 or AMD Ryzen 3 1200",
+        "memory": "8 GB RAM",
+        "graphics": "NVIDIA GeForce GTX 960 or AMD Radeon RX 5500 XT",
+        "storage": "75 GB available space",
+        "notes": "Requires a 64-bit processor and operating system · Additional Notes: SSD Recommended"
+      },
+      "recommended": {
+        "os": "Windows 10",
+        "processor": "Intel Core i5-8600 or AMD Ryzen 5 3600",
+        "memory": "16 GB RAM",
+        "graphics": "NVIDIA GeForce RTX 2060 or AMD Radeon RX 5600 XT",
+        "storage": "75 GB available space",
+        "notes": "Requires a 64-bit processor and operating system · Additional Notes: SSD Required"
+      }
+    },
+    "doom-eternal-2020": {
+      "steamAppId": 782330,
+      "steamName": "DOOM Eternal",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/782330/",
+      "steamYear": 2020,
+      "minimum": {
+        "os": "64-bit Windows 7 / 64-Bit Windows 10",
+        "processor": "Intel Core i5 @ 3.3 GHz or better, or AMD Ryzen 3 @ 3.1 GHz or better",
+        "memory": "8 GB RAM",
+        "graphics": "NVIDIA GeForce GTX 1050Ti (4GB), GTX 1060 (3GB), GTX 1650 (4GB) or AMD Radeon R9 280(3GB), AMD Radeon R9 290 (4GB), RX 470 (4GB)",
+        "network": "Broadband Internet connection",
+        "storage": "80 GB available space",
+        "notes": "Requires a 64-bit processor and operating system · Additional Notes: ( 1080p / 60 FPS / Low Quality Settings )"
+      },
+      "recommended": {
+        "os": "64-bit Windows 10",
+        "processor": "Intel Core i7-6700K or better, or AMD Ryzen 7 1800X or better",
+        "memory": "8 GB RAM",
+        "graphics": "NVIDIA GeForce GTX 1060 (6GB), NVIDIA GeForce 970 (4GB), AMD RX 480 (8GB)",
+        "network": "Broadband Internet connection",
+        "storage": "80 GB available space",
+        "notes": "Requires a 64-bit processor and operating system · Additional Notes: ( 1080p / 60 FPS / High Quality Settings ) - *On NVIDIA GTX 970 cards Texture Quality should be set to Medium"
+      }
+    },
+    "fall-guys-2020": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "it-takes-two-2021": {
+      "steamAppId": 1426210,
+      "steamName": "It Takes Two",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/1426210/",
+      "steamYear": 2021,
+      "minimum": {
+        "os": "Windows 8.1 64-bit or Windows 10 64-bit",
+        "processor": "Intel Core i3-2100T or AMD FX 6100",
+        "memory": "8 GB RAM",
+        "graphics": "Nvidia GeForce GTX 660 or AMD R7 260x",
+        "directx": "Version 11",
+        "network": "Broadband Internet connection",
+        "storage": "50 GB available space",
+        "notes": "Requires a 64-bit processor and operating system"
+      },
+      "recommended": {
+        "os": "Windows 8.1 64-bit or Windows 10 64-bit",
+        "processor": "Intel Core i5 3570K or AMD Ryzen 3 1300x",
+        "memory": "16 GB RAM",
+        "graphics": "Nvidia GeForce GTX 980 or AMD R9 290X",
+        "directx": "Version 11",
+        "network": "Broadband Internet connection",
+        "storage": "50 GB available space",
+        "notes": "Requires a 64-bit processor and operating system"
+      }
+    },
+    "metroid-dread-2021": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "returnal-2021": {
+      "steamAppId": 1649240,
+      "steamName": "Returnal™",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/1649240/",
+      "steamYear": 2023,
+      "minimum": {
+        "os": "Windows 10 64-bit (version 1903)",
+        "processor": "Intel Core i5-6400 (4 core 2.7GHz) AMD Ryzen 5 1500X (4 core 3.5GHz)",
+        "memory": "16 GB RAM",
+        "graphics": "NVIDIA GeForce GTX 1060 (6 GB) AMD Radeon RX 580 (8 GB)",
+        "storage": "60 GB available space",
+        "notes": "Additional Notes: SSD Recommended"
+      },
+      "recommended": {
+        "os": "Windows 10 64-bit (version 1903)",
+        "processor": "Intel i7-8700 (6 core 3.7 GHz) AMD Ryzen 7 2700X (8 core 3.7 GHz)",
+        "memory": "16 GB RAM",
+        "graphics": "NVIDIA RTX 2070 Super (8 GB) AMD Radeon RX 6700 XT (12 GB)",
+        "storage": "60 GB available space"
+      }
+    },
+    "inscryption-2021": {
+      "steamAppId": 1092790,
+      "steamName": "Inscryption",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/1092790/",
+      "steamYear": 2021,
+      "minimum": {
+        "os": "Windows 7",
+        "processor": "Intel Core i5-760 (4 * 2800); AMD Athlon II X4 645 AM3 (4 * 3100)",
+        "memory": "4 GB RAM",
+        "graphics": "GeForce GTX 550 Ti (3072 VRAM); Radeon HD 6850 (1024 VRAM)",
+        "storage": "3 GB available space"
+      },
+      "recommended": {
+        "os": "Windows 10",
+        "processor": "Intel Core i5-3470 (4 * 3200); AMD FX-4350 (4 * 4200)",
+        "memory": "8 GB RAM",
+        "graphics": "GeForce GTX 1050 2048 VRAM; Radeon RX 460 4096 VRAM",
+        "storage": "3 GB available space"
+      }
+    },
+    "forza-horizon-5-2021": {
+      "steamAppId": 1551360,
+      "steamName": "Forza Horizon 5",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/1551360/",
+      "steamYear": 2021,
+      "minimum": {
+        "os": "Windows 10 version 18362.0 or higher",
+        "processor": "Intel i5-4460 or AMD Ryzen 3 1200",
+        "memory": "8 GB RAM",
+        "graphics": "NVidia GTX 970, AMD RX 470, OR Intel Arc A380",
+        "directx": "Version 12",
+        "network": "Broadband Internet connection",
+        "storage": "110 GB available space",
+        "notes": "Requires a 64-bit processor and operating system"
+      },
+      "recommended": {
+        "os": "Windows 10 version 18362.0 or higher",
+        "processor": "Intel i5-8400 or AMD Ryzen 5 1500X",
+        "memory": "16 GB RAM",
+        "graphics": "NVidia GTX 1070, AMD RX 590, OR Intel Arc A750",
+        "directx": "Version 12",
+        "network": "Broadband Internet connection",
+        "storage": "110 GB available space",
+        "notes": "Requires a 64-bit processor and operating system"
+      }
+    },
+    "psychonauts-2-2021": {
+      "steamAppId": 607080,
+      "steamName": "Psychonauts 2",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/607080/",
+      "steamYear": 2021,
+      "minimum": {
+        "os": "Windows 7 (64 bit)",
+        "processor": "Intel Core i3-3225, AMD Phenom II X6 1100T",
+        "memory": "8 GB RAM",
+        "graphics": "Nvidia GeForce GTX 1050, AMD Radeon RX 560",
+        "directx": "Version 11",
+        "storage": "30 GB available space",
+        "notes": "Requires a 64-bit processor and operating system · Additional Notes: 2 GB video memory"
+      },
+      "recommended": {
+        "os": "Windows 10 (64 bit)",
+        "processor": "Intel Core i7-7700K, Ryzen 5 1600",
+        "memory": "8 GB RAM",
+        "graphics": "Nvidia GeForce GTX 1060, AMD Radeon RX 580",
+        "directx": "Version 12",
+        "storage": "30 GB available space",
+        "notes": "Requires a 64-bit processor and operating system · Additional Notes: 6 GB video memory"
+      }
+    },
+    "elden-ring-2022": {
+      "steamAppId": 1245620,
+      "steamName": "ELDEN RING",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/1245620/",
+      "steamYear": 2022,
+      "minimum": {
+        "os": "Windows 10",
+        "processor": "INTEL CORE I5-8400 or AMD RYZEN 3 3300X",
+        "memory": "12 GB RAM",
+        "graphics": "NVIDIA GEFORCE GTX 1060 3 GB or AMD RADEON RX 580 4 GB",
+        "directx": "Version 12",
+        "storage": "60 GB available space",
+        "sound": "Windows Compatible Audio Device",
+        "notes": "Requires a 64-bit processor and operating system"
+      },
+      "recommended": {
+        "os": "Windows 10/11",
+        "processor": "INTEL CORE I7-8700K or AMD RYZEN 5 3600X",
+        "memory": "16 GB RAM",
+        "graphics": "NVIDIA GEFORCE GTX 1070 8 GB or AMD RADEON RX VEGA 56 8 GB",
+        "directx": "Version 12",
+        "storage": "60 GB available space",
+        "sound": "Windows Compatible Audio Device",
+        "notes": "Requires a 64-bit processor and operating system"
+      }
+    },
+    "vampire-survivors-2022": {
+      "steamAppId": 1794680,
+      "steamName": "Vampire Survivors",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/1794680/",
+      "steamYear": 2022,
+      "minimum": {
+        "os": "Windows 10 64bit",
+        "processor": "x64 architecture with SSE2 instruction set support",
+        "memory": "1 GB RAM",
+        "graphics": "DX11, DX12 capable",
+        "storage": "2500 MB available space",
+        "notes": "Requires a 64-bit processor and operating system"
+      },
+      "recommended": {
+        "notes": "Requires a 64-bit processor and operating system"
+      }
+    },
+    "god-of-war-ragnarok-2022": {
+      "steamAppId": 2322010,
+      "steamName": "God of War Ragnarök",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/2322010/",
+      "steamYear": 2024,
+      "minimum": {
+        "os": "Windows 10 20H1",
+        "processor": "Intel i5-4670k or AMD Ryzen 3 1200",
+        "memory": "8 GB RAM",
+        "graphics": "NVIDIA GTX 1060 (6GB) or AMD RX 5500 XT (8GB) or Intel Arc A750",
+        "directx": "Version 12",
+        "storage": "190 GB available space",
+        "notes": "Requires a 64-bit processor and operating system"
+      },
+      "recommended": {
+        "os": "Windows 10 20H1",
+        "processor": "Intel i5-8600 or AMD Ryzen 5 3600",
+        "memory": "16 GB RAM",
+        "graphics": "NVIDIA RTX 2060 Super or AMD RX 5700 or Intel Arc A770",
+        "directx": "Version 12",
+        "storage": "190 GB available space",
+        "notes": "Requires a 64-bit processor and operating system"
+      }
+    },
+    "stray-2022": {
+      "steamAppId": 1332010,
+      "steamName": "Stray",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/1332010/",
+      "steamYear": 2022,
+      "minimum": {
+        "os": "Windows 10",
+        "processor": "Intel Core i5-2300 | AMD FX-6350",
+        "memory": "8 GB RAM",
+        "graphics": "NVIDIA GeForce GTX 650 Ti, 2 GB | AMD Radeon R7 360, 2 GB",
+        "directx": "Version 12",
+        "storage": "10 GB available space",
+        "notes": "Requires a 64-bit processor and operating system"
+      },
+      "recommended": {
+        "os": "Windows 10",
+        "processor": "Intel Core i5-8400 | AMD Ryzen 5 2600",
+        "memory": "8 GB RAM",
+        "graphics": "NVIDIA GeForce GTX 780, 3 GB | AMD Radeon R9 290X, 4 GB",
+        "directx": "Version 12",
+        "storage": "10 GB available space",
+        "notes": "Requires a 64-bit processor and operating system"
+      }
+    },
+    "tunic-2022": {
+      "steamAppId": 553420,
+      "steamName": "TUNIC",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/553420/",
+      "steamYear": 2022,
+      "minimum": {
+        "os": "Windows 10",
+        "processor": "Intel i5 Quad-Core, 2.7 GHz",
+        "memory": "8 GB RAM",
+        "graphics": "GTX 660 / RX 460",
+        "storage": "2 GB available space",
+        "notes": "Additional Notes: Gamepad or Controller Recommended."
+      },
+      "recommended": {
+        "os": "Windows 10",
+        "processor": "Intel i5 Quad-Core, 3 GHz",
+        "memory": "8 GB RAM",
+        "graphics": "GTX 1080 Ti / RX Vega 64",
+        "storage": "2 GB available space",
+        "notes": "Additional Notes: Gamepad or Controller Recommended."
+      }
+    },
+    "pentiment-2022": {
+      "steamAppId": 1205520,
+      "steamName": "Pentiment",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/1205520/",
+      "steamYear": 2022,
+      "minimum": {
+        "os": "Windows 7 (SP1) 64bit",
+        "processor": "Intel Core i3-3225",
+        "memory": "4 GB RAM",
+        "graphics": "Nvidia GTX 650 Ti",
+        "storage": "12 GB available space",
+        "notes": "Requires a 64-bit processor and operating system"
+      },
+      "recommended": {
+        "notes": "Requires a 64-bit processor and operating system"
+      }
+    },
+    "baldurs-gate-3-2023": {
+      "steamAppId": 1086940,
+      "steamName": "Baldur's Gate 3",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/1086940/",
+      "steamYear": 2023,
+      "minimum": {
+        "os": "Windows 10 64-bit",
+        "processor": "Intel I5 4690 / AMD FX 8350 / Snapdragon X Elite",
+        "memory": "8 GB RAM",
+        "graphics": "Nvidia GTX 970 / RX 480 / Intel Arc A380 / Qualcomm Adreno X1 (4GB+ of VRAM)",
+        "directx": "Version 11",
+        "storage": "150 GB available space",
+        "notes": "Requires a 64-bit processor and operating system · Additional Notes: SSD required"
+      },
+      "recommended": {
+        "os": "Windows 10 64-bit",
+        "processor": "Intel i7 8700K / AMD r5 3600",
+        "memory": "16 GB RAM",
+        "graphics": "Nvidia 2060 Super / RX 5700 XT / Intel Arc A580 (8GB+ of VRAM)",
+        "directx": "Version 11",
+        "storage": "150 GB available space",
+        "notes": "Requires a 64-bit processor and operating system · Additional Notes: SSD required"
+      }
+    },
+    "tears-of-the-kingdom-2023": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "alan-wake-2-2023": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "pizza-tower-2023": {
+      "steamAppId": 2231450,
+      "steamName": "Pizza Tower",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/2231450/",
+      "steamYear": 2023,
+      "minimum": {
+        "os": "Windows 7",
+        "processor": "Intel or AMD Dual Core CPU",
+        "memory": "512 MB RAM",
+        "graphics": "GeForce GT 1030 (2 GB) or equivalent",
+        "directx": "Version 11",
+        "storage": "300 MB available space",
+        "notes": "Requires a 64-bit processor and operating system"
+      },
+      "recommended": {
+        "notes": "Requires a 64-bit processor and operating system"
+      }
+    },
+    "street-fighter-6-2023": {
+      "steamAppId": 1364780,
+      "steamName": "Street Fighter™ 6",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/1364780/",
+      "steamYear": 2023,
+      "minimum": {
+        "os": "Windows 10 (64 bit required)",
+        "processor": "Intel Core i5-7500 / AMD Ryzen 3 1200",
+        "memory": "8 GB RAM",
+        "graphics": "GTX1060 (VRAM 6GB) / Radeon RX 580 (VRAM 4GB)",
+        "directx": "Version 12",
+        "storage": "60 GB available space",
+        "notes": "Requires a 64-bit processor and operating system · Additional Notes: - The framerate may drop during graphic-intensive scenes. - Additional storage is required for each subsequent update."
+      },
+      "recommended": {
+        "os": "Windows 10 (64 bit)/Windows 11 (64 bit)",
+        "processor": "Intel Core i7 8700 / AMD Ryzen 5 3600",
+        "memory": "16 GB RAM",
+        "graphics": "RTX2070 / Radeon RX 5700XT",
+        "directx": "Version 12",
+        "storage": "60 GB available space",
+        "notes": "Requires a 64-bit processor and operating system · Additional Notes: - The framerate may drop during graphic-intensive scenes. - Additional storage is required for each subsequent update."
+      }
+    },
+    "cocoon-2023": {
+      "steamAppId": 1497440,
+      "steamName": "COCOON",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/1497440/",
+      "steamYear": 2023,
+      "minimum": {
+        "os": "Windows 10",
+        "processor": "Intel Core i7-2600 or AMD FX-8350",
+        "memory": "6 GB RAM",
+        "graphics": "NVIDIA GeForce GTX 950, 2 GB or AMD Radeon R9 380, 4 GB",
+        "storage": "3 GB available space",
+        "notes": "Requires a 64-bit processor and operating system"
+      },
+      "recommended": {
+        "os": "Windows 10",
+        "processor": "Intel Core i7-3770 or AMD Ryzen 5 1400",
+        "memory": "8 GB RAM",
+        "graphics": "NVIDIA GeForce GTX 960, 4 GB or AMD Radeon RX 590, 8 GB",
+        "storage": "3 GB available space",
+        "notes": "Requires a 64-bit processor and operating system"
+      }
+    },
+    "balatro-2024": {
+      "steamAppId": 2379780,
+      "steamName": "Balatro",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/2379780/",
+      "steamYear": 2024,
+      "minimum": {
+        "os": "Windows 7, 8, 10, 11 x64",
+        "processor": "Intel Core i3",
+        "memory": "1 GB RAM",
+        "graphics": "OpenGL 2.1 compatible graphics card, integrated graphics",
+        "storage": "150 MB available space",
+        "notes": "Requires a 64-bit processor and operating system"
+      },
+      "recommended": {
+        "notes": "Requires a 64-bit processor and operating system"
+      }
+    },
+    "astro-bot-2024": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "black-myth-wukong-2024": {
+      "steamAppId": 2358720,
+      "steamName": "Black Myth: Wukong",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/2358720/",
+      "steamYear": 2024,
+      "minimum": {
+        "os": "Windows 10 64-bit",
+        "processor": "Intel Core i5-8400 / AMD Ryzen 5 1600",
+        "memory": "16 GB RAM",
+        "graphics": "NVIDIA GeForce GTX 1060 6GB / AMD Radeon RX 580 8GB",
+        "directx": "Version 11",
+        "storage": "130 GB available space",
+        "sound": "Windows Compatible Audio Device",
+        "notes": "Requires a 64-bit processor and operating system · Additional Notes: HDD Supported, SSD Recommended. The above specifications were tested with DLSS/FSR/XeSS enabled."
+      },
+      "recommended": {
+        "os": "Windows 10 64-bit",
+        "processor": "Intel Core i7-9700 / AMD Ryzen 5 5500",
+        "memory": "16 GB RAM",
+        "graphics": "NVIDIA GeForce RTX 2060 / AMD Radeon RX 5700 XT / INTEL Arc A750",
+        "directx": "Version 12",
+        "storage": "130 GB available space",
+        "sound": "Windows Compatible Audio Device",
+        "notes": "Requires a 64-bit processor and operating system · Additional Notes: SSD Required. The above specifications were tested with DLSS/FSR/XeSS enabled."
+      }
+    },
+    "metaphor-refantazio-2024": {
+      "steamAppId": 2679460,
+      "steamName": "Metaphor: ReFantazio",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/2679460/",
+      "steamYear": 2024,
+      "minimum": {
+        "os": "Windows 10",
+        "processor": "Intel Core i5-3470 or AMD FX-6300",
+        "memory": "6 GB RAM",
+        "graphics": "NVIDIA GeForce GTX 750 Ti, 4GB or AMD Radeon R7 360, 4GB or Intel Arc A310, 4GB",
+        "directx": "Version 11",
+        "storage": "93 GB available space",
+        "notes": "Requires a 64-bit processor and operating system · Additional Notes: 720p @ 30 FPS. A CPU with AVX support is required. Microsoft no longer supports Windows 10 or older versions."
+      },
+      "recommended": {
+        "os": "Windows 10",
+        "processor": "Intel Core i5-7600 or Ryzen 5 2600",
+        "memory": "8 GB RAM",
+        "graphics": "NVIDIA GeForce GTX 970, 4GB or AMD Radeon RX 480, 4GB or Intel Arc A380, 6GB",
+        "directx": "Version 11",
+        "storage": "93 GB available space",
+        "notes": "Requires a 64-bit processor and operating system · Additional Notes: 1080p @ 60 FPS. A CPU with AVX support is required. Microsoft no longer supports Windows 10 or older versions."
+      }
+    },
+    "helldivers-2-2024": {
+      "steamAppId": 553850,
+      "steamName": "HELLDIVERS™ 2",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/553850/",
+      "steamYear": 2024,
+      "minimum": {
+        "os": "Windows 10",
+        "processor": "Intel Core i7-4790K or AMD Ryzen 5 1500X",
+        "memory": "8 GB RAM",
+        "graphics": "NVIDIA GeForce GTX 1050 Ti or AMD Radeon RX 470",
+        "storage": "135 GB available space",
+        "notes": "Requires a 64-bit processor and operating system"
+      },
+      "recommended": {
+        "os": "Windows 10",
+        "processor": "Intel Core i7-9700K or AMD Ryzen 7 3700X",
+        "memory": "16 GB RAM",
+        "graphics": "NVIDIA GeForce RTX 2060 or AMD Radeon RX 6600XT",
+        "storage": "40 GB available space",
+        "notes": "Requires a 64-bit processor and operating system · Additional Notes: SSD Recommended"
+      }
+    },
+    "animal-well-2024": {
+      "steamAppId": 813230,
+      "steamName": "ANIMAL WELL",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/813230/",
+      "steamYear": 2024,
+      "minimum": {
+        "os": "Windows 10",
+        "processor": "1 GHz",
+        "memory": "1 GB RAM",
+        "graphics": "Integrated",
+        "directx": "Version 12",
+        "storage": "35 MB available space",
+        "notes": "Requires a 64-bit processor and operating system"
+      },
+      "recommended": {
+        "graphics": "GeForce GTX 1060 or equivalent",
+        "notes": "Requires a 64-bit processor and operating system"
+      }
+    },
+    "clair-obscur-expedition-33-2025": {
+      "steamAppId": 1903340,
+      "steamName": "Clair Obscur: Expedition 33",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/1903340/",
+      "steamYear": 2025,
+      "minimum": {
+        "os": "Windows 10",
+        "processor": "Intel Core i7-8700K / AMD Ryzen 5 1600X",
+        "memory": "8 GB RAM",
+        "graphics": "NVIDIA GeForce GTX 1060 6 GB / AMD Radeon RX 5600 XT 6 GB / Intel Arc A380 6 GB",
+        "directx": "Version 12",
+        "storage": "55 GB available space",
+        "notes": "Requires a 64-bit processor and operating system · Additional Notes: SSD required. Minimum specs allow for 1080p 30FPS low settings gameplay."
+      },
+      "recommended": {
+        "os": "Windows 11",
+        "processor": "Intel Core i7-12700K / AMD Ryzen 7 5800X",
+        "memory": "16 GB RAM",
+        "graphics": "NVIDIA GeForce RTX 3060 Ti 8 GB / AMD Radeon RX 6800 XT 16 GB",
+        "directx": "Version 12",
+        "storage": "55 GB available space",
+        "notes": "Requires a 64-bit processor and operating system · Additional Notes: SSD required. Recommended specs allow for 1080p 60FPS high settings gameplay."
+      }
+    },
+    "blue-prince-2025": {
+      "steamAppId": 1569580,
+      "steamName": "Blue Prince",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/1569580/",
+      "steamYear": 2025,
+      "minimum": {
+        "os": "Windows 10/11, 64-bits",
+        "processor": "i5-2300/Ryzen 3 1200",
+        "memory": "16 GB RAM",
+        "graphics": "NVIDIA GeForce GTX 1060/AMD RX580",
+        "directx": "Version 11",
+        "storage": "6 GB available space",
+        "notes": "Requires a 64-bit processor and operating system"
+      },
+      "recommended": {
+        "os": "Windows 10/11, 64-bits",
+        "processor": "Intel Core i5 4690K / AMD Ryzen 5 1500x",
+        "memory": "16 GB RAM",
+        "graphics": "NVidia GeForce 1080 GTX /AMD RX 5700",
+        "directx": "Version 11",
+        "storage": "6 GB available space",
+        "notes": "Requires a 64-bit processor and operating system"
+      }
+    },
+    "split-fiction-2025": {
+      "steamAppId": 2001120,
+      "steamName": "Split Fiction",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/2001120/",
+      "steamYear": 2025,
+      "minimum": {
+        "os": "64 bit Windows 10/11",
+        "processor": "Intel Core i5-6600K or AMD Ryzen 5 2600X",
+        "memory": "16 GB RAM",
+        "graphics": "NVIDIA GeForce GTX 970 - 4GB or Radeon RX 470 - 4GB",
+        "directx": "Version 12",
+        "network": "Broadband Internet connection",
+        "storage": "85 GB available space",
+        "notes": "Requires a 64-bit processor and operating system · Additional Notes: Resolution: 1920x1080 Native FPS: 30 Graphics Settings Preset: Low"
+      },
+      "recommended": {
+        "os": "64 bit Windows 10/11",
+        "processor": "Intel Core i7-11700k or AMD Ryzen 7 5800X",
+        "memory": "16 GB RAM",
+        "graphics": "NVIDIA GeForce RTX 3070 - 8GB or AMD Radeon 6700 XT - 12GB",
+        "directx": "Version 12",
+        "network": "Broadband Internet connection",
+        "storage": "85 GB available space",
+        "notes": "Requires a 64-bit processor and operating system · Additional Notes: Resolution: 2560x1440 Native FPS: 60 Graphics Settings Preset: High"
+      }
+    },
+    "hollow-knight-silksong-2025": {
+      "steamAppId": 1030300,
+      "steamName": "Hollow Knight: Silksong",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/1030300/",
+      "steamYear": 2025,
+      "minimum": {
+        "os": "Windows 10 version 21H1 (build 19043) or newer",
+        "processor": "Intel Core i3-3240, AMD FX-4300",
+        "memory": "4 GB RAM",
+        "graphics": "GeForce GTX 560 Ti (1GB), Radeon HD 7750 (1GB)",
+        "directx": "Version 10",
+        "storage": "8 GB available space",
+        "notes": "Requires a 64-bit processor and operating system"
+      },
+      "recommended": {
+        "os": "Windows 10 version 21H1 (build 19043) or newer",
+        "processor": "Intel Core i5-3470",
+        "memory": "8 GB RAM",
+        "graphics": "GeForce GTX 1050 (2GB), Radeon R9 380 (2GB)",
+        "directx": "Version 10",
+        "storage": "8 GB available space",
+        "notes": "Requires a 64-bit processor and operating system"
+      }
+    },
+    "mario-kart-world-2025": {
+      "steamAppId": null,
+      "status": "no-steam-match"
+    },
+    "kingdom-come-deliverance-ii-2025": {
+      "steamAppId": 1771300,
+      "steamName": "Kingdom Come: Deliverance II",
+      "status": "ok",
+      "url": "https://store.steampowered.com/app/1771300/",
+      "steamYear": 2025,
+      "minimum": {
+        "os": "Windows 10 64-bit (or newer)",
+        "processor": "Intel Core i5-8400, AMD Ryzen 5 2600",
+        "memory": "16 GB RAM",
+        "graphics": "NVIDIA GeForce GTX 1060 (6GB), AMD Radeon RX 580",
+        "storage": "100 GB available space",
+        "notes": "Requires a 64-bit processor and operating system · Additional Notes: SSD required"
+      },
+      "recommended": {
+        "os": "Windows 10 64-bit (or newer)",
+        "processor": "Intel Core i7-13700K, AMD Ryzen 7 7800X3D",
+        "memory": "32 GB RAM",
+        "graphics": "NVIDIA GeForce RTX 4070, AMD Radeon RX 7800 XT",
+        "storage": "100 GB available space",
+        "notes": "Requires a 64-bit processor and operating system · Additional Notes: SSD required"
+      }
+    }
+  }
+}
