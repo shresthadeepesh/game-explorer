@@ -88,6 +88,44 @@ async function resolveWikipedia(list) {
   return out;
 }
 
+// A handful of articles have no lead image for pageimages to return. Their
+// cover or logo is still on the page, so fall back to listing the article's
+// files and picking the most cover-shaped one.
+const CHROME = /commons-logo|wiki[a-z]*-logo|wikidata|gnome-mime|openclipart|ambox|question_book|edit-clear|symbol_|folder_hexagonal|\.ogg$/i;
+const score = (name) =>
+  /cover|box[\s_]?art/i.test(name) ? 3
+    : /logo|wordmark|title/i.test(name) ? 2
+      : /\.(jpe?g|png)$/i.test(name) ? 1 : 0;
+
+async function resolveWikipediaFallback(list) {
+  const out = new Map();
+  for (const game of list) {
+    const listing = await fetch("https://en.wikipedia.org/w/api.php?" + new URLSearchParams({
+      action: "query", format: "json", formatversion: "2", redirects: "1",
+      titles: game.wikiTitle, prop: "images", imlimit: "100"
+    }), { headers: { "user-agent": UA } });
+    if (!listing.ok) continue;
+    const page = (await listing.json()).query?.pages?.[0];
+    const best = (page?.images || [])
+      .map((i) => i.title)
+      .filter((name) => !CHROME.test(name) && score(name) > 0)
+      .sort((a, b) => score(b) - score(a))[0];
+    if (!best) { console.log(`  · ${game.id}: no usable image on the article`); continue; }
+
+    await sleep(400);
+    const info = await fetch("https://en.wikipedia.org/w/api.php?" + new URLSearchParams({
+      action: "query", format: "json", formatversion: "2", titles: best, prop: "imageinfo", iiprop: "url"
+    }), { headers: { "user-agent": UA } });
+    if (!info.ok) continue;
+    const url = (await info.json()).query?.pages?.[0]?.imageinfo?.[0]?.url;
+    if (!url) continue;
+    out.set(game.id, { url, source: "wikipedia", credit: `Wikipedia: ${best.replace(/^File:/, "")}` });
+    console.log(`  ✓ ${game.id}: ${best}`);
+    await sleep(400);
+  }
+  return out;
+}
+
 async function igdbToken() {
   const res = await fetch("https://id.twitch.tv/oauth2/token?" + new URLSearchParams({
     client_id: process.env.TWITCH_CLIENT_ID,
@@ -138,9 +176,17 @@ async function resolveIgdb(list) {
 const pending = force ? targets : targets.filter((g) => !manifest[g.id]?.url);
 console.log(`source: ${source} · ${pending.length} of ${targets.length} games need a cover URL`);
 
-const resolved = pending.length
-  ? (source === "igdb" ? await resolveIgdb(pending) : await resolveWikipedia(pending))
-  : new Map();
+let resolved = new Map();
+if (pending.length) {
+  resolved = source === "igdb" ? await resolveIgdb(pending) : await resolveWikipedia(pending);
+  if (source === "wikipedia") {
+    const stillMissing = pending.filter((g) => !resolved.has(g.id));
+    if (stillMissing.length) {
+      console.log(`${stillMissing.length} without a lead image, checking article files`);
+      for (const [id, entry] of await resolveWikipediaFallback(stillMissing)) resolved.set(id, entry);
+    }
+  }
+}
 
 for (const [id, entry] of resolved) manifest[id] = entry;
 await mkdir(dirname(MANIFEST), { recursive: true });

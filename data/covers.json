@@ -1065,6 +1065,21 @@
       "url": "https://upload.wikimedia.org/wikipedia/en/d/d4/Blue_Prince_cover_art.jpg",
       "source": "wikipedia",
       "credit": "Wikipedia: Blue Prince"
+    },
+    "minecraft-2009": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/b/be/Minecraft_game_logo_2023.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Minecraft game logo 2023.png"
+    },
+    "undertale-2015": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Undertale_vector_logo_on_black_borders.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Undertale vector logo on black borders.svg"
+    },
+    "fall-guys-2020": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/5/5e/Fall_Guys_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Fall Guys cover.jpg"
     }
   }
 }

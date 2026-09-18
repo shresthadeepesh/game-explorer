@@ -59,7 +59,7 @@ the panel and the favicon. Add a genre to a category's `genres` list and rebuild
 
 ## Cover images
 
-Art resolution per game, in order: a local file in `assets/covers/<id>.<ext>`,
+All 216 games have real art. Resolution order per game: a local file in `assets/covers/<id>.<ext>`,
 then the remote `imageUrl` from `data/covers.json`, then procedural art the app
 generates from the game's seed and category colour. Nothing ever renders empty,
 and a cover that fails to load falls back to the generated poster at runtime.
@@ -76,7 +76,7 @@ Providers:
 
 | Source | Key | Notes |
 | --- | --- | --- |
-| `wikipedia` (default) | none | Infobox art via the MediaWiki `pageimages` API, one call per 50 games. Fills 213 of 216 here — Minecraft, Undertale and Fall Guys have no usable infobox image and stay procedural. |
+| `wikipedia` (default) | none | Infobox art via the MediaWiki `pageimages` API, one call per 50 games. Articles with no lead image fall back to listing the article's own files and picking the most cover-shaped one, which covers all 216. |
 | `igdb` | `TWITCH_CLIENT_ID` + `TWITCH_CLIENT_SECRET` | Better, more consistent box art. Free credentials from the Twitch developer console; the script trades them for a token, searches each title and only accepts a match within two years of the dataset's release year. |
 
 Other options if you want different art: SteamGridDB (free key, community box
