@@ -224,6 +224,49 @@ try {
   });
   check("faded years are kept out of the tab order", inert.inert > 0 && inert.inert < inert.total, JSON.stringify(inert));
 
+  // ---- catalogue graph ----
+
+  await go(BASE);
+  const canvas = await evaluate(async () => {
+    await new Promise((r) => setTimeout(r, 2000));
+    const el = document.querySelector(".catalogue");
+    if (!el) return { present: false };
+    // a painted canvas encodes much larger than an empty one of the same size
+    return { present: true, hidden: el.hidden, bytes: el.toDataURL().length };
+  });
+  check("catalogue canvas is present and painted", canvas.present && canvas.bytes > 20000, JSON.stringify({ ...canvas, bytes: canvas.bytes }));
+
+  const catalogueOff = await evaluate(async () => {
+    document.querySelector("#catalogue-toggle").click();
+    await new Promise((r) => setTimeout(r, 200));
+    return { hidden: document.querySelector(".catalogue").hidden, url: location.search };
+  });
+  check("catalogue can be switched off", catalogueOff.hidden === true && catalogueOff.url.includes("catalogue=0"), JSON.stringify(catalogueOff));
+
+  await go(`${BASE}?view=list&q=doom`);
+  const expanded = await evaluate(async () => {
+    const button = document.querySelector("[data-more]");
+    if (!button) return { skipped: true };
+    const year = button.dataset.more;
+    const before = document.querySelectorAll(".listview__game").length;
+    button.click();
+    await new Promise((r) => setTimeout(r, 1500));
+    return { year, before, after: document.querySelectorAll(".listview__game").length };
+  });
+  check("list view can expand a year to its full catalogue",
+    expanded.skipped || expanded.after > expanded.before, JSON.stringify(expanded));
+
+  const catalogueGame = await evaluate(async () => {
+    const entry = [...document.querySelectorAll(".listview__name button")].pop();
+    if (!entry) return { skipped: true };
+    const title = entry.textContent;
+    entry.click();
+    await new Promise((r) => setTimeout(r, 400));
+    return { title, panel: document.querySelector(".panel__title")?.textContent };
+  });
+  check("a catalogue game opens in the panel",
+    catalogueGame.skipped || catalogueGame.panel === catalogueGame.title, JSON.stringify(catalogueGame));
+
   // ---- share links ----
 
   const shared = await evaluate(async () => {

@@ -6,8 +6,9 @@ import * as store from "./store.js";
 
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
-export function mountListView({ root, onSelect }) {
+export function mountListView({ root, onSelect, loadYear, catalogueCounts }) {
   let years = [];
+  const expanded = new Map();          // year -> extra games, once fetched
 
   function render() {
     const total = years.reduce((n, y) => n + y.games.length, 0);
@@ -18,7 +19,7 @@ export function mountListView({ root, onSelect }) {
         <section class="listview__year" aria-labelledby="y-${row.year}">
           <h2 class="listview__heading" id="y-${row.year}">${row.year}</h2>
           <ul class="listview__games">
-            ${row.games.map((game) => `
+            ${[...row.games, ...(expanded.get(row.year) || [])].map((game) => `
               <li class="listview__game">
                 <img class="listview__art" src="${artFor(game)}" alt="" loading="lazy" decoding="async">
                 <div class="listview__body">
@@ -40,14 +41,33 @@ export function mountListView({ root, onSelect }) {
                 </div>
               </li>`).join("")}
           </ul>
+          ${moreControl(row.year)}
         </section>`).join("")}
       ${total ? "" : `<p class="listview__lede">Nothing matches the current filters.</p>`}`;
   }
 
-  root.addEventListener("click", (e) => {
+  function moreControl(year) {
+    const total = catalogueCounts?.[year];
+    if (!total) return "";
+    if (expanded.has(year)) return `<p class="listview__more">All ${total} games released in ${year}.</p>`;
+    return `<p class="listview__more"><button type="button" data-more="${year}">Show all ${total} games from ${year}</button></p>`;
+  }
+
+  root.addEventListener("click", async (e) => {
+    const more = e.target.closest("[data-more]");
+    if (more) {
+      const year = Number(more.dataset.more);
+      more.disabled = true;
+      more.textContent = `Loading ${catalogueCounts[year]} games…`;
+      expanded.set(year, await loadYear(year));
+      render();
+      document.getElementById(`y-${year}`)?.scrollIntoView({ block: "start" });
+      return;
+    }
     const open = e.target.closest("[data-open]");
     if (open) {
-      const game = years.flatMap((y) => y.games).find((g) => g.id === open.dataset.open);
+      const pool = years.flatMap((y) => [...y.games, ...(expanded.get(y.year) || [])]);
+      const game = pool.find((g) => g.id === open.dataset.open);
       if (game) onSelect(game);
       return;
     }

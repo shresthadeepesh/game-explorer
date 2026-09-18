@@ -29,10 +29,11 @@ const nodeMarkup = `
 </button>`;
 
 export class Timeline {
-  constructor(root, { onSelect, onFrame } = {}) {
+  constructor(root, { onSelect, onFrame, onCamera } = {}) {
     this.root = root;
     this.onSelect = onSelect || (() => {});
     this.onFrame = onFrame || (() => {});
+    this.onCamera = onCamera || (() => {});      // every frame, for layers sharing this camera
     this.years = [];
     this.z = 0;
     this.targetZ = 0;
@@ -208,6 +209,8 @@ export class Timeline {
       }
     }
 
+    this.onCamera({ camZ, px: this.px, py: this.py, nearestIndex: nearest });
+
     const progress = this.maxZ ? Math.min(1, Math.max(0, camZ / this.maxZ)) : 0;
     if (nearest !== this.nearest || Math.abs(progress - (this.progress ?? -1)) > 0.001) {
       this.nearest = nearest;
@@ -259,7 +262,13 @@ export class Timeline {
       this.targetZ = this.clampZ(this.targetZ + dy * 6);
       this.drag = e.clientY;
     };
-    this.onUp = () => { this.drag = null; this.stage.classList.remove("is-dragging"); };
+    this.onUp = (e) => {
+      const wasDrag = this.dragged;
+      this.drag = null;
+      this.dragged = false;
+      this.stage.classList.remove("is-dragging");
+      if (!wasDrag && e && !e.target.closest("a, button, input, [data-no-drag]")) this.onBackgroundClick?.(e);
+    };
 
     window.addEventListener("wheel", this.onWheel, { passive: false });
     window.addEventListener("pointermove", this.onPointerMove, { passive: true });
@@ -281,4 +290,4 @@ export class Timeline {
   }
 }
 
-export { SPACING };
+export { SPACING, CAM_OFFSET, FAR_FADE };

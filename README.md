@@ -99,6 +99,46 @@ art is normally non-free fair-use — fine for local use, your call to publish.
 The panel credits whichever source supplied the image, and deleting a file from
 `assets/covers/` plus a rebuild reverts that game to procedural art.
 
+## The catalogue layer
+
+The timeline carries two datasets. **216 featured games** — hand-picked, with
+written blurbs and real box art — are the cards you fly between. Behind them,
+**every video game on Wikidata with an English Wikipedia article**, about 28,800
+across 1990-2025, is drawn as a spatial graph.
+
+Position means something:
+
+- **depth** is the release year, the same axis the cards use
+- **angle** is the category, so a genre reads as a corridor running through the
+  decades, with a faint spoke back to its hub
+- **radius** is notability, measured as the number of Wikipedia language editions
+  that cover the game — the games everyone knows sit near the axis, the long
+  tail spreads outward
+
+28,800 nodes cannot be DOM, and they don't need to be. `src/graph.js` draws to a
+canvas using the same projection maths the CSS perspective applies, so the two
+layers share one camera and agree pixel for pixel. Only years inside the depth
+window are drawn — one to two thousand points a frame — and only the year the
+camera is closest to gets labels, one per grid cell so they never stack. A
+featured game's catalogue twin is dropped, matched on its Wikidata id.
+
+Clicking a point opens it in the panel: genre, platforms, studio and links come
+from Wikidata, and the description is Wikipedia's own first sentences, fetched
+when you open it rather than shipped for 28,800 games. The layer toggles off
+with the **CATALOGUE** button or `?catalogue=0`, and the list view can expand any
+year to its full catalogue, which is how this stays reachable without a mouse.
+
+```bash
+node scripts/harvest-wikidata.mjs            # all years -> data/catalog/<year>.json
+node scripts/harvest-wikidata.mjs 1998 2001  # a range
+```
+
+Four small queries a year, because the query service has a 60s budget and
+answers an overrun with a truncated body that only shows up as malformed JSON —
+an aggregate over every `P577` in the class, or a 250-item `VALUES` join, both
+fail that way. Games with regional releases carry several dates and are filed
+under the earliest.
+
 ## Views
 
 The timeline is the default. `?view=list`, the header toggle or the skip link

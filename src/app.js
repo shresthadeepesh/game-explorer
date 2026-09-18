@@ -1,8 +1,9 @@
 // App shell: loads the dataset, owns filter state, drives the timeline.
 
-import { CATEGORIES } from "./categories.js";
+import { CATEGORIES, categoryFromGenres, colorOf } from "./categories.js";
 import { iconSprite } from "./art.js";
-import { Timeline } from "./timeline.js";
+import { Timeline, SPACING, CAM_OFFSET, FAR_FADE } from "./timeline.js";
+import { CatalogueGraph } from "./graph.js";
 import * as store from "./store.js";
 import { mountMyList, decodeShare } from "./mylist.js";
 import { mountPanel } from "./panel.js";
@@ -10,6 +11,50 @@ import { mountListView } from "./listview.js";
 import { trapFocus, announce } from "./a11y.js";
 
 const $ = (sel, root = document) => root.querySelector(sel);
+
+// Catalogue entries arrive in Wikidata's shape; everything downstream — art,
+// panel, saved list — expects the dataset's shape, so they are normalised once
+// and kept in a registry the rest of the app can resolve ids against.
+const registry = new Map();
+
+const fnv = (text) => {
+  let h = 0x811c9dc5;
+  for (let i = 0; i < text.length; i++) { h ^= text.charCodeAt(i); h = Math.imul(h, 0x01000193) >>> 0; }
+  return h >>> 0;
+};
+
+function fromCatalogue(entry) {
+  const known = registry.get(entry.qid);
+  if (known) return known;
+  const category = categoryFromGenres(entry.genres);
+  const article = entry.article.replace(/ /g, "_");
+  const game = {
+    id: entry.qid,
+    qid: entry.qid,
+    catalogue: true,
+    title: entry.title,
+    year: entry.year,
+    released: entry.released,
+    rank: 0,
+    genre: entry.genres[0] || CATEGORIES[category].label,
+    category,
+    categoryLabel: CATEGORIES[category].label,
+    color: colorOf(category),
+    platforms: entry.platforms || [],
+    developers: entry.developers || [],
+    blurb: "",                                   // fetched from Wikipedia when opened
+    image: null,
+    imageUrl: null,
+    seed: fnv(entry.qid),
+    wikiTitle: entry.article,
+    wiki: `https://en.wikipedia.org/wiki/${encodeURI(article)}`,
+    guide: `https://strategywiki.org/w/index.php?search=${encodeURIComponent(entry.title)}`,
+    trailer: `https://www.youtube.com/results?search_query=${encodeURIComponent(`${entry.title} ${entry.year} trailer`)}`,
+    search: `${entry.title} ${entry.genres.join(" ")} ${(entry.developers || []).join(" ")}`.toLowerCase()
+  };
+  registry.set(game.id, game);
+  return game;
+}
 
 const state = {
   data: null,
@@ -24,6 +69,7 @@ const state = {
 let timeline;
 let myList;
 let panel;
+let graph;
 let listView;
 let releasePanelFocus = null;
 let releaseDrawerFocus = null;
@@ -39,7 +85,28 @@ async function boot() {
   renderFilters();
   await store.init();
 
-  timeline = new Timeline(ui.stageHost, { onSelect: select, onFrame: onFrame });
+  for (const game of state.data.games) registry.set(game.id, game);
+
+  timeline = new Timeline(ui.stageHost, {
+    onSelect: select,
+    onFrame,
+    onCamera: (camera) => graph?.draw(camera)
+  });
+
+  graph = new CatalogueGraph({
+    stage: timeline.stage,
+    spacing: SPACING,
+    camOffset: CAM_OFFSET,
+    farFade: FAR_FADE
+  });
+  graph.setCurated(state.data.games);
+  graph.setEnabled(new URLSearchParams(location.search).get("catalogue") !== "0");
+  ui.catalogueToggle.setAttribute("aria-pressed", String(graph.enabled));
+  ui.catalogueToggle.classList.toggle("is-off", !graph.enabled);
+  timeline.onBackgroundClick = (e) => {
+    const hit = graph.pick(e.clientX, e.clientY);
+    if (hit) select(fromCatalogue(hit));
+  };
 
   panel = mountPanel({
     root: ui.panel,
@@ -48,14 +115,33 @@ async function boot() {
     onClose: close
   });
 
-  listView = mountListView({ root: ui.listview, onSelect: (game) => { jumpTo(game); select(game); } });
+  const catalogueIndex = await fetch("data/catalog/index.json")
+    .then((r) => (r.ok ? r.json() : null))
+    .catch(() => null);
+  const catalogueCounts = Object.fromEntries((catalogueIndex?.years || []).map((y) => [y.year, y.count]));
+  if (catalogueIndex) ui.catalogueTotal.textContent = catalogueIndex.total.toLocaleString();
+
+  listView = mountListView({
+    root: ui.listview,
+    onSelect: (game) => { jumpTo(game); select(game); },
+    catalogueCounts,
+    // the timeline's own curated entries are already listed, so drop their twins
+    loadYear: async (year) => {
+      const res = await fetch(`data/catalog/${year}.json`);
+      if (!res.ok) return [];
+      const { games } = await res.json();
+      const curated = new Set(state.data.games.filter((g) => g.year === year).map((g) => g.wikidata));
+      return games.filter((g) => !curated.has(g.qid)).map(fromCatalogue);
+    }
+  });
   if (new URLSearchParams(location.search).get("view") === "list") setView(true);
 
   myList = mountMyList({
     root: ui.mylist,
     games: state.data.games,
     onSelect: (game) => { jumpTo(game); select(game); },
-    onListOnlyChange: (on) => { state.listOnly = on; applyFilters(); }
+    onListOnlyChange: (on) => { state.listOnly = on; applyFilters(); },
+    resolve: (id) => registry.get(id)
   });
   if (state.listOnly) myList.setListOnly(true);
 
@@ -97,9 +183,12 @@ function cacheRefs() {
   ui.listview = $("#listview");
   ui.listCount = $("#list-count");
   ui.viewToggle = $("#view-toggle");
+  ui.catalogueToggle = $("#catalogue-toggle");
+  ui.catalogueTotal = $("#catalogue-total");
 
   $("#open-list").addEventListener("click", () => myList.toggleOpen());
   ui.viewToggle.addEventListener("click", () => setView(!listView.isVisible()));
+  ui.catalogueToggle.addEventListener("click", () => setCatalogue(!graph.enabled));
   $("[data-skip]").addEventListener("click", (e) => { e.preventDefault(); setView(true); ui.listview.focus(); });
 
   ui.search.addEventListener("input", () => {
@@ -171,6 +260,16 @@ async function offerSharedList() {
   bar.querySelector("[data-no]").addEventListener("click", done);
 }
 
+function setCatalogue(on) {
+  graph.setEnabled(on);
+  ui.catalogueToggle.setAttribute("aria-pressed", String(on));
+  ui.catalogueToggle.classList.toggle("is-off", !on);
+  const params = new URLSearchParams(location.search);
+  on ? params.delete("catalogue") : params.set("catalogue", "0");
+  const qs = params.toString();
+  history.replaceState(null, "", (qs ? `?${qs}` : location.pathname) + location.hash);
+}
+
 function setView(asList) {
   listView.setVisible(asList);
   ui.viewToggle.textContent = asList ? "TIMELINE" : "LIST VIEW";
@@ -237,6 +336,7 @@ function applyFilters() {
 
   syncUrl();
   listView?.setData(state.years);
+  graph?.setYears(state.years);
   ui.total.textContent = matched.length;
   ui.range.textContent = state.years.length
     ? `${state.years[0].year}\u2013${state.years[state.years.length - 1].year}`

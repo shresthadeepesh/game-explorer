@@ -46,3 +46,33 @@ export const ICON_PATHS = {
 
 export const categoryOf = (genre) => GENRE_TO_CATEGORY[genre] || "action";
 export const colorOf = (categoryKey) => (CATEGORIES[categoryKey] || CATEGORIES.action).color;
+
+// Wikidata's genre vocabulary (P136) is free-form and much larger than our 15
+// categories, so catalogue entries are folded in by pattern. Order matters:
+// the first rule that matches wins, so the specific ones come before the broad
+// ones ("roguelike" before "role-playing", "open world" before "adventure").
+const GENRE_RULES = [
+  [/immersive sim/i, "immersive"],
+  [/roguelike|roguelite|deck.?build|collectible card|card game/i, "roguelike"],
+  [/stealth/i, "stealth"],
+  [/survival horror|horror/i, "horror"],
+  [/open world/i, "openworld"],
+  [/kart|racing|driving|motorsport|rally/i, "racing"],
+  [/fighting|beat 'em up|beat-'em-up|versus/i, "fighting"],
+  [/platform/i, "platformer"],
+  [/first-person shooter|third-person shooter|shooter|shoot 'em up|shmup|light gun|battle royale/i, "shooter"],
+  [/real-time strategy|turn-based strategy|grand strategy|4x|tower defen|wargame|multiplayer online battle arena|moba|tactic|strategy/i, "strategy"],
+  [/role-playing|\brpg\b|dungeon crawl/i, "rpg"],
+  [/puzzle|logic game|match.?three|sokoban/i, "puzzle"],
+  [/metroidvania|action-adventure|adventure|interactive fiction|visual novel|point-and-click|graphic adventure|exploration|walking sim/i, "adventure"],
+  [/simulation|simulator|life sim|city-building|construction and management|business|farming|tycoon|sports|sport game|rhythm|music|party|educational|sandbox|survival/i, "simulation"],
+  [/action|hack and slash|arcade/i, "action"]
+];
+
+/** Best category for a list of Wikidata genre labels; falls back to action. */
+export function categoryFromGenres(labels = []) {
+  for (const [pattern, key] of GENRE_RULES) {
+    if (labels.some((label) => pattern.test(label))) return key;
+  }
+  return "action";
+}

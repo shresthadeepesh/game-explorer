@@ -19,6 +19,23 @@ const fact = (label, value) => value
   ? `<div class="fact"><dt>${label}</dt><dd>${value}</dd></div>`
   : "";
 
+const summaries = new Map();
+
+/** Wikipedia's own first sentences, for entries with no hand-written blurb. */
+async function fetchSummary(game) {
+  if (summaries.has(game.id)) { game.blurb = summaries.get(game.id); return; }
+  try {
+    const res = await fetch(`https://en.wikipedia.org/api/rest_v1/page/summary/${encodeURIComponent(game.wikiTitle.replace(/ /g, "_"))}`);
+    if (!res.ok) throw new Error(String(res.status));
+    const summary = await res.json();
+    game.blurb = (summary.extract || "").split(". ").slice(0, 2).join(". ");
+  } catch {
+    game.blurb = "No summary available.";
+  }
+  summaries.set(game.id, game.blurb);
+  document.dispatchEvent(new CustomEvent("game-summary", { detail: game.id }));
+}
+
 export function mountPanel({ root, games, onSelect, onClose }) {
   let game = null;
 
@@ -36,6 +53,7 @@ export function mountPanel({ root, games, onSelect, onClose }) {
   }
 
   function similarFor(g) {
+    if (g.catalogue) return "";              // not in the recommender's index
     const picks = recommend(games, [g.id], 3);
     if (!picks.length) return "";
     return `<section class="panel__similar">
@@ -97,7 +115,7 @@ export function mountPanel({ root, games, onSelect, onClose }) {
         </p>
       </div>
       ${factsFor(g)}
-      <p class="panel__blurb">${esc(g.blurb)}</p>
+      <p class="panel__blurb" data-blurb>${esc(g.blurb) || (g.catalogue ? "Looking this one up…" : "")}</p>
       ${listControlsFor(g)}
       <nav class="panel__links">
         <a href="${g.wiki}" target="_blank" rel="noopener"><span>Wikipedia · what it is</span><span>↗</span></a>
@@ -111,6 +129,8 @@ export function mountPanel({ root, games, onSelect, onClose }) {
       e.target.src = coverFor(g);                   // remote cover unreachable
       $(".panel__credit", root)?.remove();
     });
+    if (g.catalogue && !g.blurb) fetchSummary(g);
+
     const note = $("[data-note]", root);
     if (note) {
       let timer;
@@ -131,6 +151,13 @@ export function mountPanel({ root, games, onSelect, onClose }) {
     else if (el.dataset.go) {
       const next = games.find((x) => x.id === el.dataset.go);
       if (next) onSelect(next);
+    }
+  });
+
+  document.addEventListener("game-summary", (e) => {
+    if (game && e.detail === game.id) {
+      const el = $("[data-blurb]", root);
+      if (el) el.textContent = game.blurb;
     }
   });
 

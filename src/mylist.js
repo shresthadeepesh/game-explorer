@@ -25,8 +25,10 @@ export const decodeShare = (text) => {
 
 const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
-export function mountMyList({ root, games, onSelect, onListOnlyChange }) {
-  const byId = new Map(games.map((g) => [g.id, g]));
+export function mountMyList({ root, games, onSelect, onListOnlyChange, resolve }) {
+  const curated = new Map(games.map((g) => [g.id, g]));
+  // catalogue entries are not in the curated array, so fall back to the app's registry
+  const byId = { get: (id) => curated.get(id) || resolve?.(id) || null };
 
   root.innerHTML = `
     <div class="drawer__top">
@@ -164,7 +166,7 @@ export function mountMyList({ root, games, onSelect, onListOnlyChange }) {
     el.only.classList.toggle("is-on", listOnly);
     el.only.disabled = saved.length === 0;
 
-    const picks = recommend(games, saved.map((g) => g.id));
+    const picks = recommend(games, saved.filter((g) => !g.catalogue).map((g) => g.id));
     el.recsWrap.hidden = picks.length === 0;
     el.recs.innerHTML = picks.map(({ game, reason }) => `<li class="drawer__row">
       <button type="button" class="drawer__rowmain" data-act="open" data-id="${game.id}">
