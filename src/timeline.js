@@ -201,7 +201,10 @@ export class Timeline {
       if (Math.abs(o - g.opacity) > 0.004) {
         g.opacity = o;
         g.el.style.opacity = o.toFixed(3);
-        g.el.style.visibility = o < 0.01 ? "hidden" : "visible";
+        const hidden = o < 0.01;
+        g.el.style.visibility = hidden ? "hidden" : "visible";
+        g.el.inert = hidden;                      // faded-out years must not catch Tab
+        g.el.setAttribute("aria-hidden", String(hidden));
       }
     }
 
