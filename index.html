@@ -4,12 +4,37 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>A Field Guide to Games</title>
-<meta name="description" content="A 3D timeline of 108 landmark games, 1998–2024, by category.">
+<meta name="description" content="A 3D timeline of 216 landmark games, 1990–2025, by category.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" href="data/games.json" as="fetch" type="application/json" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- No crossorigin: the app fetches this same-origin, and a mismatched preload
+     is a second download rather than a head start. -->
+<link rel="preload" href="data/games.json" as="fetch" type="application/json">
+
 <link rel="stylesheet" href="src/styles.css">
+
+<!-- The module graph is two levels deep, so tell the browser about it now
+     instead of making it parse app.js to discover the rest. -->
+<link rel="modulepreload" href="src/app.js">
+<link rel="modulepreload" href="src/util.js">
+<link rel="modulepreload" href="src/categories.js">
+<link rel="modulepreload" href="src/art.js">
+<link rel="modulepreload" href="src/timeline.js">
+<link rel="modulepreload" href="src/graph.js">
+<link rel="modulepreload" href="src/catalog.js">
+<link rel="modulepreload" href="src/store.js">
+<link rel="modulepreload" href="src/url.js">
+<link rel="modulepreload" href="src/a11y.js">
+<link rel="modulepreload" href="src/panel.js">
+<link rel="modulepreload" href="src/mylist.js">
+<link rel="modulepreload" href="src/listview.js">
+<link rel="modulepreload" href="src/recommend.js">
+
+<!-- Webfonts are a progressive enhancement here: every rule falls back to a
+     system stack, so they must not hold up first paint. -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#08090c">
 <meta name="apple-mobile-web-app-capable" content="yes">

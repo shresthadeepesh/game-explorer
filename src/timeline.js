@@ -7,6 +7,7 @@
 // diffed against the last value it wrote.
 
 import { artFor, coverFor } from "./art.js";
+import { ramp } from "./util.js";
 
 const SPACING = 1320;      // depth between years, px
 const CAM_OFFSET = 380;    // how far in front of the camera the focused year sits
@@ -44,6 +45,10 @@ export class Timeline {
     this.free = [];
     this.nearest = -1;
     this.drag = null;
+    // Reused every frame: the loop runs 60 times a second and has no business
+    // handing the GC a fresh object each time.
+    this.cameraPayload = { camZ: 0, px: 0, py: 0, nearestIndex: 0 };
+    this.framePayload = { nearest: 0, progress: 0, year: undefined };
 
     this.stage = document.createElement("div");
     this.stage.className = "stage";
@@ -178,12 +183,16 @@ export class Timeline {
     if (!this.running) return;
     const dt = Math.min(64, now - this.lastT);
     this.lastT = now;
-    const ease = (rate) => (REDUCED ? 1 : 1 - Math.pow(1 - rate, dt / 16.67));
+    // Frame-rate independent easing: the same fraction of the remaining gap per
+    // 16.67ms, whatever the display is actually running at.
+    const step = dt / 16.67;
+    const easeZ = REDUCED ? 1 : 1 - Math.pow(0.915, step);      // was ease(0.085)
+    const easePan = REDUCED ? 1 : 1 - Math.pow(0.94, step);     // was ease(0.06)
 
-    this.z += (this.targetZ - this.z) * ease(0.085);
+    this.z += (this.targetZ - this.z) * easeZ;
     if (Math.abs(this.targetZ - this.z) < 0.05) this.z = this.targetZ;
-    this.px += (this.tx - this.px) * ease(0.06);
-    this.py += (this.ty - this.py) * ease(0.06);
+    this.px += (this.tx - this.px) * easePan;
+    this.py += (this.ty - this.py) * easePan;
 
     const camZ = this.z - CAM_OFFSET;
     this.#sync(camZ, false);
@@ -192,13 +201,12 @@ export class Timeline {
     if (world !== this.lastWorld) { this.world.style.transform = world; this.lastWorld = world; }
 
     let nearest = 0, best = Infinity;
-    for (const [index, g] of this.bound) {
+    for (const g of this.bound.values()) {        // yearIndex lives on the record, so no entry pairs
+      const index = g.yearIndex;
       const dist = index * SPACING - camZ;
       const d = Math.abs(dist - CAM_OFFSET);
       if (d < best) { best = d; nearest = index; }
-      const near = Math.min(1, Math.max(0, dist / NEAR_FADE));
-      const far = Math.min(1, Math.max(0, (FAR_FADE - dist) / 1550));
-      const o = near * far;
+      const o = ramp(dist, 0, NEAR_FADE) * ramp(FAR_FADE - dist, 0, 1550);
       if (Math.abs(o - g.opacity) > 0.004) {
         g.opacity = o;
         g.el.style.opacity = o.toFixed(3);
@@ -209,13 +217,17 @@ export class Timeline {
       }
     }
 
-    this.onCamera({ camZ, px: this.px, py: this.py, nearestIndex: nearest });
+    const camera = this.cameraPayload;
+    camera.camZ = camZ; camera.px = this.px; camera.py = this.py; camera.nearestIndex = nearest;
+    this.onCamera(camera);
 
     const progress = this.maxZ ? Math.min(1, Math.max(0, camZ / this.maxZ)) : 0;
     if (nearest !== this.nearest || Math.abs(progress - (this.progress ?? -1)) > 0.001) {
       this.nearest = nearest;
       this.progress = progress;
-      this.onFrame({ nearest, progress, year: this.years[nearest]?.year });
+      const payload = this.framePayload;
+      payload.nearest = nearest; payload.progress = progress; payload.year = this.years[nearest]?.year;
+      this.onFrame(payload);
     }
 
     this.frame = requestAnimationFrame(this.#tick);

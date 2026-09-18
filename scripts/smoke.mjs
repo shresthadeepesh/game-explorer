@@ -18,10 +18,25 @@ const CANDIDATES = [
   process.env.CHROME_PATH,
   join(process.env.HOME || "", ".cache/puppeteer/chrome-headless-shell/mac_arm-131.0.6778.204/chrome-headless-shell-mac-arm64/chrome-headless-shell"),
   "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
-  "/usr/bin/google-chrome"
+  "/usr/bin/google-chrome",
+  "/usr/bin/google-chrome-stable",
+  "/usr/bin/chromium",
+  "/usr/bin/chromium-browser",
+  "/snap/bin/chromium",
+  "/usr/bin/microsoft-edge"
 ].filter(Boolean);
 const CHROME = CANDIDATES.find((p) => existsSync(p));
-if (!CHROME) { console.error("no chrome binary found; set CHROME_PATH"); process.exit(1); }
+if (!CHROME) {
+  console.error("no chrome binary found; set CHROME_PATH to one, e.g.");
+  console.error("  CHROME_PATH=/usr/bin/chromium npm run smoke");
+  // Under WSL the Windows browser is visible but its debugging port is bound to
+  // the Windows loopback, which this side cannot reach: run the smoke test from
+  // a Windows shell, or install a Linux browser in the distro.
+  if (existsSync("/mnt/c/Program Files/Google/Chrome/Application/chrome.exe")) {
+    console.error("  (a Windows Chrome is installed, but WSL cannot reach its debugging port)");
+  }
+  process.exit(1);
+}
 
 const PORT = 9333;
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));

@@ -19,6 +19,13 @@ let degraded = false;
 const cache = new Map();          // id -> row
 const listeners = new Set();
 
+// Derived views of the cache. Every mutation goes through invalidate(), so
+// reading the list a hundred times between writes costs one sort, not a hundred.
+let sorted = null;
+let idList = null;
+let idSetCache = null;
+const invalidate = () => { sorted = null; idList = null; idSetCache = null; };
+
 const request = (req) => new Promise((resolve, reject) => {
   req.onsuccess = () => resolve(req.result);
   req.onerror = () => reject(req.error);
@@ -73,6 +80,7 @@ export async function init() {
     db = await openDb();
     const rows = await request(db.transaction(STORE, "readonly").objectStore(STORE).getAll());
     for (const row of rows) cache.set(row.id, normalise(row));
+    invalidate();
   } catch (err) {
     degraded = true;
     console.warn("my list is session-only:", err.message);
@@ -80,22 +88,32 @@ export async function init() {
   emit();
 }
 
-const emit = () => { for (const fn of listeners) fn(entries()); };
+const emit = () => {
+  const rows = entries();
+  for (const fn of listeners) fn(rows);
+};
 
 export const subscribe = (fn) => { listeners.add(fn); fn(entries()); return () => listeners.delete(fn); };
 export const isDegraded = () => degraded;
 export const has = (id) => cache.has(id);
 export const get = (id) => cache.get(id) || null;
 export const size = () => cache.size;
-export const ids = () => [...cache.keys()];
-/** Newest first. */
-export const entries = () => [...cache.values()].sort((a, b) => b.addedAt - a.addedAt);
+
+/** Saved ids. Treat the result as read-only; it is shared between callers. */
+export const ids = () => (idList ??= [...cache.keys()]);
+
+/** The same ids as a Set, for the membership tests the timeline and filters do. */
+export const idSet = () => (idSetCache ??= new Set(cache.keys()));
+
+/** Newest first. Treat the result as read-only; it is shared between callers. */
+export const entries = () => (sorted ??= [...cache.values()].sort((a, b) => b.addedAt - a.addedAt));
 
 export async function add(id, fields = {}) {
   if (cache.has(id)) return false;
   const now = Date.now();
   const row = { id, addedAt: now, updatedAt: now, ...DEFAULTS, ...fields };
   cache.set(id, row);
+  invalidate();
   emit();
   await persist((s) => s.put(row));
   return true;
@@ -103,6 +121,7 @@ export async function add(id, fields = {}) {
 
 export async function remove(id) {
   if (!cache.delete(id)) return false;
+  invalidate();
   emit();
   await persist((s) => s.delete(id));
   return true;
@@ -115,6 +134,7 @@ export async function update(id, patch) {
   if (!cache.has(id)) return add(id, patch);
   const row = { ...cache.get(id), ...patch, updatedAt: Date.now() };
   cache.set(id, row);
+  invalidate();
   emit();
   await persist((s) => s.put(row));
   return true;
@@ -126,6 +146,7 @@ export const setNote = (id, note) => update(id, { note: String(note).slice(0, 50
 
 export async function clear() {
   cache.clear();
+  invalidate();
   emit();
   await persist((s) => s.clear());
 }
@@ -136,6 +157,7 @@ export const exportRows = () => ({ version: DB_VERSION, exportedAt: new Date().t
 /** Merges rows in; existing entries keep their own data unless `overwrite`. */
 export async function importRows(rows, { overwrite = false } = {}) {
   let added = 0, updated = 0;
+  const writes = [];
   for (const raw of rows) {
     if (!raw?.id || typeof raw.id !== "string") continue;
     const row = normalise({
@@ -150,8 +172,11 @@ export async function importRows(rows, { overwrite = false } = {}) {
       updated++;
     } else added++;
     cache.set(row.id, row);
-    await persist((s) => s.put(row));
+    writes.push(row);
   }
+  invalidate();
   emit();
+  // one transaction for the whole import, not one per row
+  if (writes.length) await persist((s) => { for (const row of writes) s.put(row); });
   return { added, updated };
 }
