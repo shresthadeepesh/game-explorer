@@ -166,6 +166,99 @@ try {
   });
   check("list survives a reload", afterReload.size === 3 && afterReload.count === "3", JSON.stringify(afterReload));
 
+  // ---- filters, search and deep links ----
+
+  await go(`${BASE}?cat=horror`);
+  const filtered = await evaluate(() => ({
+    total: document.querySelector("#total").textContent,
+    range: document.querySelector("#range").textContent,
+    on: document.querySelector('.chip[data-cat="horror"]')?.classList.contains("is-on")
+  }));
+  check("category deep link filters and marks its chip", filtered.total === "8" && filtered.on === true, JSON.stringify(filtered));
+
+  await go(BASE);
+  const searched = await evaluate(async () => {
+    const input = document.querySelector("#search");
+    input.value = "fromsoftware";
+    input.dispatchEvent(new Event("input"));
+    await new Promise((r) => setTimeout(r, 200));
+    return { total: document.querySelector("#total").textContent, url: location.search };
+  });
+  check("search reaches enriched fields", Number(searched.total) >= 3, `fromsoftware -> ${searched.total}`);
+  check("search is in the URL", searched.url.includes("q=fromsoftware"), searched.url);
+  check("search cleared the category filter view", !searched.url.includes("cat="), searched.url);
+
+  await go(`${BASE}#game=portal-2007`);
+  const deep = await evaluate(() => ({
+    title: document.querySelector(".panel__title")?.textContent,
+    facts: [...document.querySelectorAll(".panel__facts dt")].map((n) => n.textContent),
+    similar: [...document.querySelectorAll(".similar__name")].map((n) => n.textContent)
+  }));
+  check("deep link opens the panel", deep.title === "Portal", deep.title || "none");
+  check("panel shows enriched facts", deep.facts.includes("Released") && deep.facts.some((f) => f.startsWith("Developer")), deep.facts.join(", "));
+  check("panel recommends similar games", deep.similar.length === 3, deep.similar.join(", "));
+
+  const chained = await evaluate(async () => {
+    document.querySelector(".similar__item").click();
+    await new Promise((r) => setTimeout(r, 300));
+    return document.querySelector(".panel__title")?.textContent;
+  });
+  check("a similar game opens in place", chained && chained !== "Portal", chained || "none");
+
+  // ---- list view ----
+
+  await go(`${BASE}?view=list`);
+  const list = await evaluate(() => ({
+    games: document.querySelectorAll(".listview__game").length,
+    years: document.querySelectorAll(".listview__year").length,
+    hiddenStage: getComputedStyle(document.querySelector(".stage")).display
+  }));
+  check("list view renders every game", list.games === 216 && list.years === 36, JSON.stringify(list));
+  check("list view replaces the 3D stage", list.hiddenStage === "none");
+
+  await go(BASE);
+  const inert = await evaluate(async () => {
+    await new Promise((r) => setTimeout(r, 500));
+    const groups = [...document.querySelectorAll(".year-group")];
+    return { total: groups.length, inert: groups.filter((g) => g.inert).length };
+  });
+  check("faded years are kept out of the tab order", inert.inert > 0 && inert.inert < inert.total, JSON.stringify(inert));
+
+  // ---- share links ----
+
+  const shared = await evaluate(async () => {
+    const store = await import("/src/store.js");
+    const { encodeShare, decodeShare } = await import("/src/mylist.js");
+    await store.clear();
+    await store.add("celeste-2018");
+    const token = encodeShare(store.ids());
+    return { token, roundTrip: decodeShare(token) };
+  });
+  check("share tokens round-trip", shared.roundTrip.includes("celeste-2018"), shared.token);
+
+  await go(`${BASE}?share=${shared.token}`);
+  const offered = await evaluate(async () => {
+    await new Promise((r) => setTimeout(r, 300));
+    const bar = document.querySelector(".sharebar");
+    bar?.querySelector("[data-yes]")?.click();
+    await new Promise((r) => setTimeout(r, 300));
+    const store = await import("/src/store.js");
+    return { offered: Boolean(bar), size: store.size(), url: location.search };
+  });
+  check("a shared list is offered, not forced", offered.offered === true);
+  check("accepting a shared list merges it", offered.size >= 1 && !offered.url.includes("share="), JSON.stringify(offered));
+
+  // ---- offline shell ----
+
+  const sw = await evaluate(async () => {
+    const reg = await navigator.serviceWorker.getRegistration();
+    if (!reg) return { registered: false };
+    await navigator.serviceWorker.ready;
+    const keys = await caches.keys();
+    return { registered: true, caches: keys };
+  });
+  check("service worker registers and precaches", sw.registered === true && sw.caches?.length > 0, JSON.stringify(sw));
+
   const cleared = await evaluate(async () => {
     const store = await import("/src/store.js");
     await store.clear();

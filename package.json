@@ -6,9 +6,11 @@
   "description": "A 3D timeline of landmark games, 1998-2024.",
   "scripts": {
     "start": "node scripts/serve.mjs",
-    "build:data": "node scripts/build-data.mjs",
+    "build:data": "node scripts/build-data.mjs && node scripts/check-data.mjs",
     "fetch:covers": "node scripts/fetch-covers.mjs",
     "check:links": "node scripts/check-links.mjs",
-    "smoke": "node scripts/smoke.mjs"
+    "smoke": "node scripts/smoke.mjs",
+    "check:data": "node scripts/check-data.mjs",
+    "test": "node scripts/check-data.mjs && node scripts/smoke.mjs"
   }
 }
