@@ -1,0 +1,14 @@
+{
+  "name": "game-explorer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A 3D timeline of landmark games, 1998-2024.",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "build:data": "node scripts/build-data.mjs",
+    "fetch:covers": "node scripts/fetch-covers.mjs",
+    "check:links": "node scripts/check-links.mjs",
+    "smoke": "node scripts/smoke.mjs"
+  }
+}
