@@ -32,6 +32,8 @@ scripts/fetch-covers.mjs  optional real key art from Wikipedia
 scripts/check-links.mjs   verifies every Wikipedia article still resolves
 scripts/check-data.mjs    dataset integrity gate
 scripts/enrich-wikidata.mjs  platforms, studios and release dates
+scripts/fetch-specs.mjs   PC system requirements from Steam
+scripts/harvest-wikidata.mjs  the full per-year catalogue
 scripts/smoke.mjs         CDP end-to-end test, 29 checks
 sw.js, manifest.webmanifest  offline shell and install metadata
 assets/covers/            drop-in real covers, named <id>.jpg|png|webp|avif
@@ -138,6 +140,41 @@ answers an overrun with a truncated body that only shows up as malformed JSON �
 an aggregate over every `P577` in the class, or a 250-item `VALUES` join, both
 fail that way. Games with regional releases carry several dates and are filed
 under the earliest.
+
+## System requirements
+
+The panel shows minimum and recommended PC specs — OS, CPU, RAM, GPU, storage,
+DirectX — for the 88 games where Steam publishes them, with a link to the store
+page they came from. `data/specs.json` is loaded when a panel first opens, never
+up front.
+
+```bash
+npm run fetch:specs                        # games with no specs yet
+node scripts/fetch-specs.mjs --retry       # re-try the ones that failed
+node scripts/fetch-specs.mjs --only=elden --force
+```
+
+Steam is the only source for this that needs no key, and matching a title to an
+app id is where it can go wrong, so the script refuses to guess:
+
+- Valve's store search does the ranking, and a candidate must match our title
+  exactly once normalised, with edition suffixes stripped from the raw name
+  before comparison ("Game of the Year Edition", "Ultimate", "Remastered").
+- Among matches it takes the lowest app id, because ids climb over time — that
+  is what separates Oblivion's 2009 Game of the Year edition from the 2025
+  remaster.
+- A store date more than three years from ours is rejected, because titles get
+  reused: searching "Doom" returns the 2016 game, which matches our 1993 entry
+  exactly. Two exceptions pass: a re-listing of the same build (a Game of the
+  Year or Complete edition) and a PC port of a game that shipped console-only,
+  where the port's requirements are the only ones that exist.
+- Older entries write their requirements as one prose line rather than a
+  labelled list — Portal's reads "1.7 GHz Processor, 512MB RAM, DirectX 8.1
+  level Graphics Card…" — and are kept whole.
+
+What is left over is recorded rather than dropped, and the panel says which it
+is: not on Steam (93, mostly console-only and pre-Steam PC games), no published
+requirements, or a match too far from our date to trust.
 
 ## Views
 

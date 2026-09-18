@@ -224,6 +224,29 @@ try {
   });
   check("faded years are kept out of the tab order", inert.inert > 0 && inert.inert < inert.total, JSON.stringify(inert));
 
+  // ---- system requirements ----
+
+  await go(`${BASE}#game=elden-ring-2022`);
+  const specs = await evaluate(async () => {
+    await new Promise((r) => setTimeout(r, 800));
+    const rows = [...document.querySelectorAll(".specs tbody tr")].map((tr) =>
+      [...tr.children].map((cell) => cell.textContent.trim()));
+    return { rows: rows.length, cpu: rows.find((r) => r[0] === "CPU"), heading: document.querySelector(".panel__specs h3")?.textContent };
+  });
+  check("panel shows minimum and recommended specs",
+    specs.rows >= 4 && specs.cpu?.[1] && specs.cpu?.[2] && specs.cpu[1] !== specs.cpu[2],
+    JSON.stringify(specs.cpu || specs));
+
+  await go(`${BASE}#game=super-mario-world-1990`);
+  const noSpecs = await evaluate(async () => {
+    await new Promise((r) => setTimeout(r, 800));
+    return {
+      note: document.querySelector(".specs__none")?.textContent?.trim(),
+      table: Boolean(document.querySelector(".specs"))
+    };
+  });
+  check("a console-only game says why it has no specs", Boolean(noSpecs.note) && !noSpecs.table, JSON.stringify(noSpecs));
+
   // ---- catalogue graph ----
 
   await go(BASE);

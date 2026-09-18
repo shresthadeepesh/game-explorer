@@ -80,8 +80,19 @@ if (existsSync(catalogueIndex)) {
   if (counted !== catalogue.total) problems.push(`catalogue: total says ${catalogue.total}, years add to ${counted}`);
 }
 
+const specsFile = join(ROOT, "data", "specs.json");
+let specs = null;
+if (existsSync(specsFile)) {
+  specs = JSON.parse(readFileSync(specsFile, "utf8"));
+  const ids = new Set(data.games.map((g) => g.id));
+  for (const [id, spec] of Object.entries(specs.games || {})) {
+    if (!ids.has(id)) problems.push(`specs: ${id} is not in the dataset`);
+    if (spec.status === "ok" && !spec.minimum && !spec.recommended) problems.push(`specs: ${id} is marked ok with no requirements`);
+  }
+}
+
 const covered = data.games.filter((g) => g.image || g.imageUrl).length;
-console.log(`checked ${data.games.length} games · ${Object.keys(data.categories).length} categories · ${covered} with real cover art${catalogue ? ` · catalogue ${catalogue.total} across ${catalogue.years.length} years` : ""}`);
+console.log(`checked ${data.games.length} games · ${Object.keys(data.categories).length} categories · ${covered} with real cover art${catalogue ? ` · catalogue ${catalogue.total} across ${catalogue.years.length} years` : ""}${specs ? ` · specs for ${Object.values(specs.games || {}).filter((s) => s.status === "ok").length}` : ""}`);
 if (problems.length) {
   console.error(`\n${problems.length} problem${problems.length > 1 ? "s" : ""}:\n  ${problems.join("\n  ")}`);
   process.exit(1);

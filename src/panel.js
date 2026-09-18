@@ -19,6 +19,19 @@ const fact = (label, value) => value
   ? `<div class="fact"><dt>${label}</dt><dd>${value}</dd></div>`
   : "";
 
+// Requirements are their own file: only the panel needs them, and only once
+// someone opens a game.
+let specsPromise = null;
+const loadSpecs = () => (specsPromise ??= fetch("data/specs.json")
+  .then((r) => (r.ok ? r.json() : { games: {} }))
+  .then((d) => d.games || {})
+  .catch(() => ({})));
+
+const SPEC_ROWS = [
+  ["os", "OS"], ["processor", "CPU"], ["memory", "RAM"],
+  ["graphics", "GPU"], ["storage", "Storage"], ["directx", "DirectX"]
+];
+
 const summaries = new Map();
 
 /** Wikipedia's own first sentences, for entries with no hand-written blurb. */
@@ -34,6 +47,38 @@ async function fetchSummary(game) {
   }
   summaries.set(game.id, game.blurb);
   document.dispatchEvent(new CustomEvent("game-summary", { detail: game.id }));
+}
+
+function specsMarkup(spec) {
+  if (!spec) return "";
+  if (spec.status !== "ok") {
+    const why = {
+      "no-steam-match": "No PC release on Steam, so no published requirements.",
+      "no-requirements": "Steam lists no system requirements for this one.",
+      ambiguous: `Steam's closest match is dated ${spec.steamYear}, too far from this release to trust.`
+    }[spec.status] || "Requirements could not be fetched.";
+    return `<section class="panel__specs">
+      <h3 class="panel__heading">System requirements</h3>
+      <p class="specs__none">${why}</p>
+    </section>`;
+  }
+
+  const rows = SPEC_ROWS
+    .filter(([key]) => spec.minimum?.[key] || spec.recommended?.[key])
+    .map(([key, label]) => `<tr>
+      <th scope="row">${label}</th>
+      <td>${esc(spec.minimum?.[key] || "—")}</td>
+      <td>${esc(spec.recommended?.[key] || "—")}</td>
+    </tr>`).join("");
+
+  return `<section class="panel__specs">
+    <h3 class="panel__heading">System requirements</h3>
+    <table class="specs">
+      <thead><tr><th scope="col"><span class="sr-only">Component</span></th><th scope="col">Minimum</th><th scope="col">Recommended</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table>
+    <p class="specs__source">Steam${spec.steamName ? ` · ${esc(spec.steamName)}` : ""} · <a href="${spec.url}" target="_blank" rel="noopener">store page ↗</a></p>
+  </section>`;
 }
 
 export function mountPanel({ root, games, onSelect, onClose }) {
@@ -122,6 +167,7 @@ export function mountPanel({ root, games, onSelect, onClose }) {
         <a href="${g.guide}" target="_blank" rel="noopener"><span>StrategyWiki · how to play</span><span>↗</span></a>
         <a href="${g.trailer}" target="_blank" rel="noopener"><span>Watch trailer</span><span>↗</span></a>
       </nav>
+      <div data-specs></div>
       ${similarFor(g)}
       <p class="panel__hint">SELECT ANOTHER NODE TO COMPARE.<br>ESC CLOSES THIS PANEL.</p>`;
 
@@ -130,6 +176,12 @@ export function mountPanel({ root, games, onSelect, onClose }) {
       $(".panel__credit", root)?.remove();
     });
     if (g.catalogue && !g.blurb) fetchSummary(g);
+
+    loadSpecs().then((all) => {
+      if (game !== g) return;                    // the panel moved on while we waited
+      const slot = $("[data-specs]", root);
+      if (slot) slot.innerHTML = specsMarkup(all[g.id]);
+    });
 
     const note = $("[data-note]", root);
     if (note) {
