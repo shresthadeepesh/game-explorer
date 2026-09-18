@@ -1,11 +1,15 @@
 // The "my list" drawer: saved games plus recommendations derived from them.
+//
 // Rendering is driven by store subscriptions, so any add/remove anywhere in the
-// app refreshes it.
+// app refreshes it — but only while the drawer is actually open. A closed drawer
+// just marks itself stale, which keeps the recommendation pass off the critical
+// path of every save made from the timeline or the list view.
 
 import * as store from "./store.js";
 import { artFor } from "./art.js";
 import { recommend } from "./recommend.js";
 import { trapFocus } from "./a11y.js";
+import { esc } from "./util.js";
 
 const SORTS = {
   added: { label: "Recently added", fn: (a, b) => b.row.addedAt - a.row.addedAt },
@@ -23,13 +27,28 @@ export const decodeShare = (text) => {
   } catch { return []; }
 };
 
-const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+/** One row, for both the saved list and the recommendation shelf. */
+function row(game, { sub, marks = "", saved }) {
+  return `<li class="drawer__row">
+    <button type="button" class="drawer__rowmain" data-act="open" data-id="${esc(game.id)}">
+      <img class="drawer__art" src="${artFor(game)}" alt="" loading="lazy" decoding="async">
+      <span class="drawer__meta">
+        <span class="drawer__name">${esc(game.title)}</span>
+        <span class="drawer__sub" style="--row-color:${game.color}">${sub}</span>
+        ${marks ? `<span class="drawer__marks">${marks}</span>` : ""}
+      </span>
+    </button>
+    <button type="button" class="drawer__icon" data-act="${saved ? "remove" : "add"}" data-id="${esc(game.id)}"
+      aria-label="${saved ? "Remove" : "Add"} ${esc(game.title)} ${saved ? "from" : "to"} my list">${saved ? "✕" : "+"}</button>
+  </li>`;
+}
+
+const marksFor = (meta) =>
+  `<span class="drawer__status" data-status="${meta.status}">${meta.status}</span>` +
+  (meta.rating ? `<span class="drawer__rating">${"★".repeat(meta.rating)}</span>` : "") +
+  (meta.note ? `<span class="drawer__hasnote" title="${esc(meta.note)}">note</span>` : "");
 
 export function mountMyList({ root, games, onSelect, onListOnlyChange, resolve }) {
-  const curated = new Map(games.map((g) => [g.id, g]));
-  // catalogue entries are not in the curated array, so fall back to the app's registry
-  const byId = { get: (id) => curated.get(id) || resolve?.(id) || null };
-
   root.innerHTML = `
     <div class="drawer__top">
       <div class="drawer__title">MY LIST <b data-count>0</b></div>
@@ -70,6 +89,7 @@ export function mountMyList({ root, games, onSelect, onListOnlyChange, resolve }
 
   let listOnly = false;
   let sort = "added";
+  let stale = true;
 
   root.querySelector("[data-close]").addEventListener("click", () => setOpen(false));
   root.querySelector("[data-clear]").addEventListener("click", () => {
@@ -89,7 +109,7 @@ export function mountMyList({ root, games, onSelect, onListOnlyChange, resolve }
     const { act, id } = action.dataset;
     if (act === "remove") store.remove(id);
     else if (act === "add") store.add(id);
-    else if (act === "open") { const g = byId.get(id); if (g) onSelect(g); }
+    else if (act === "open") { const g = resolve(id); if (g) onSelect(g); }
   });
 
   function say(message) {
@@ -134,50 +154,33 @@ export function mountMyList({ root, games, onSelect, onListOnlyChange, resolve }
     }
   }
 
-  function row(game, { saved, meta }) {
-    const marks = meta
-      ? `<span class="drawer__status" data-status="${meta.status}">${meta.status}</span>` +
-        (meta.rating ? `<span class="drawer__rating">${"★".repeat(meta.rating)}</span>` : "") +
-        (meta.note ? `<span class="drawer__hasnote" title="${esc(meta.note)}">note</span>` : "")
-      : "";
-    return `<li class="drawer__row">
-      <button type="button" class="drawer__rowmain" data-act="open" data-id="${game.id}">
-        <img class="drawer__art" src="${artFor(game)}" alt="" loading="lazy" decoding="async">
-        <span class="drawer__meta">
-          <span class="drawer__name">${esc(game.title)}</span>
-          <span class="drawer__sub" style="--row-color:${game.color}">${game.year} · ${esc(game.genre)}</span>
-          ${marks ? `<span class="drawer__marks">${marks}</span>` : ""}
-        </span>
-      </button>
-      <button type="button" class="drawer__icon" data-act="${saved ? "remove" : "add"}" data-id="${game.id}"
-        aria-label="${saved ? "Remove from" : "Add to"} my list">${saved ? "✕" : "+"}</button>
-    </li>`;
-  }
-
   function render() {
+    stale = false;
     const rows = store.entries()
-      .map((entry) => ({ row: entry, game: byId.get(entry.id) }))
+      .map((entry) => ({ row: entry, game: resolve(entry.id) }))
       .filter((r) => r.game)
       .sort(SORTS[sort].fn);
-    const saved = rows.map((r) => r.game);
-    el.count.textContent = saved.length;
-    el.empty.hidden = saved.length > 0;
-    el.items.innerHTML = rows.map(({ game, row: meta }) => row(game, { saved: true, meta })).join("");
-    el.only.classList.toggle("is-on", listOnly);
-    el.only.disabled = saved.length === 0;
 
-    const picks = recommend(games, saved.filter((g) => !g.catalogue).map((g) => g.id));
+    el.count.textContent = rows.length;
+    el.empty.hidden = rows.length > 0;
+    el.items.innerHTML = rows
+      .map(({ game, row: meta }) => row(game, {
+        sub: `${game.year} · ${esc(game.genre)}`,
+        marks: marksFor(meta),
+        saved: true
+      }))
+      .join("");
+    el.only.classList.toggle("is-on", listOnly);
+    el.only.disabled = rows.length === 0;
+
+    // the recommender only indexes the curated dataset, so catalogue saves are
+    // not useful seeds
+    const seeds = rows.map((r) => r.game).filter((g) => !g.catalogue).map((g) => g.id);
+    const picks = recommend(games, seeds);
     el.recsWrap.hidden = picks.length === 0;
-    el.recs.innerHTML = picks.map(({ game, reason }) => `<li class="drawer__row">
-      <button type="button" class="drawer__rowmain" data-act="open" data-id="${game.id}">
-        <img class="drawer__art" src="${artFor(game)}" alt="" loading="lazy" decoding="async">
-        <span class="drawer__meta">
-          <span class="drawer__name">${esc(game.title)}</span>
-          <span class="drawer__sub" style="--row-color:${game.color}">${esc(reason)}</span>
-        </span>
-      </button>
-      <button type="button" class="drawer__icon" data-act="add" data-id="${game.id}" aria-label="Add ${esc(game.title)} to my list">+</button>
-    </li>`).join("");
+    el.recs.innerHTML = picks
+      .map(({ game, reason }) => row(game, { sub: esc(reason), saved: false }))
+      .join("");
 
     if (store.isDegraded()) {
       el.note.hidden = false;
@@ -188,6 +191,7 @@ export function mountMyList({ root, games, onSelect, onListOnlyChange, resolve }
   let releaseFocus = null;
 
   function setOpen(open) {
+    if (open && stale) render();
     root.hidden = !open;
     document.body.classList.toggle("has-drawer", open);
     releaseFocus?.();
@@ -202,6 +206,7 @@ export function mountMyList({ root, games, onSelect, onListOnlyChange, resolve }
 
   store.subscribe(() => {
     if (listOnly && store.size() === 0) setListOnly(false);
+    if (root.hidden) stale = true;
     else render();
   });
 

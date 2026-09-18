@@ -1,19 +1,20 @@
 // Service worker. The app shell and dataset are precached so a reload is
-// instant and offline; cover art is cached as it is seen, because 213 images
-// have no business being fetched up front.
+// instant and offline; cover art is cached as it is seen, because a couple of
+// hundred images have no business being fetched up front.
 
-const VERSION = "v2";
+const VERSION = "v3";
 const SHELL = `shell-${VERSION}`;
 const DATA = `data-${VERSION}`;
 const ART = `art-${VERSION}`;
 const KEEP = new Set([SHELL, DATA, ART]);
 
 const SHELL_FILES = [
-  "./", "./index.html", "./manifest.webmanifest", "./icon.svg",
-  "./src/app.js", "./src/panel.js", "./src/mylist.js", "./src/store.js",
-  "./src/recommend.js", "./src/timeline.js", "./src/art.js",
-  "./src/categories.js", "./src/styles.css", "./src/a11y.js",
-  "./src/listview.js", "./src/graph.js"
+  "./", "./index.html", "./manifest.webmanifest", "./icon.svg", "./icon-maskable.svg",
+  "./src/styles.css",
+  "./src/app.js", "./src/panel.js", "./src/mylist.js", "./src/listview.js",
+  "./src/store.js", "./src/catalog.js", "./src/recommend.js",
+  "./src/timeline.js", "./src/graph.js", "./src/art.js",
+  "./src/categories.js", "./src/a11y.js", "./src/util.js", "./src/url.js"
 ];
 
 self.addEventListener("install", (event) => {
@@ -21,7 +22,8 @@ self.addEventListener("install", (event) => {
     const cache = await caches.open(SHELL);
     // one bad path must not fail the whole install
     await Promise.allSettled(SHELL_FILES.map((file) => cache.add(file)));
-    await caches.open(DATA).then((c) => c.add("./data/games.json").catch(() => {}));
+    const data = await caches.open(DATA);
+    await Promise.allSettled(["./data/games.json", "./data/catalog/index.json"].map((f) => data.add(f)));
     self.skipWaiting();
   })());
 });

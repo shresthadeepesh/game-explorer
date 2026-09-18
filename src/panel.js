@@ -5,9 +5,7 @@ import { CATEGORIES } from "./categories.js";
 import { artFor, coverFor } from "./art.js";
 import { recommend } from "./recommend.js";
 import * as store from "./store.js";
-
-const $ = (sel, root) => root.querySelector(sel);
-const esc = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+import { $, esc, debounce } from "./util.js";
 
 const DATE = new Intl.DateTimeFormat("en", { year: "numeric", month: "short", day: "numeric", timeZone: "UTC" });
 const formatDate = (iso) => {
@@ -81,7 +79,7 @@ function specsMarkup(spec) {
   </section>`;
 }
 
-export function mountPanel({ root, games, onSelect, onClose }) {
+export function mountPanel({ root, games, resolve, onSelect, onClose }) {
   let game = null;
 
   function factsFor(g) {
@@ -117,7 +115,7 @@ export function mountPanel({ root, games, onSelect, onClose }) {
     </section>`;
   }
 
-  function listControlsFor(g) {
+  function listControls(g) {
     const saved = store.get(g.id);
     return `<div class="panel__list">
       <button type="button" class="panel__save ${saved ? "is-saved" : ""}" data-save>
@@ -161,7 +159,7 @@ export function mountPanel({ root, games, onSelect, onClose }) {
       </div>
       ${factsFor(g)}
       <p class="panel__blurb" data-blurb>${esc(g.blurb) || (g.catalogue ? "Looking this one up…" : "")}</p>
-      ${listControlsFor(g)}
+      <div data-list-host>${listControls(g)}</div>
       <nav class="panel__links">
         <a href="${g.wiki}" target="_blank" rel="noopener"><span>Wikipedia · what it is</span><span>↗</span></a>
         <a href="${g.guide}" target="_blank" rel="noopener"><span>StrategyWiki · how to play</span><span>↗</span></a>
@@ -183,14 +181,15 @@ export function mountPanel({ root, games, onSelect, onClose }) {
       if (slot) slot.innerHTML = specsMarkup(all[g.id]);
     });
 
+    bindNote();
+  }
+
+  function bindNote() {
     const note = $("[data-note]", root);
-    if (note) {
-      let timer;
-      note.addEventListener("input", () => {
-        clearTimeout(timer);
-        timer = setTimeout(() => store.setNote(g.id, note.value), 400);   // one write per pause, not per keystroke
-      });
-    }
+    if (!note) return;
+    const g = game;
+    const save = debounce((value) => store.setNote(g.id, value), 400);    // one write per pause, not per keystroke
+    note.addEventListener("input", () => save(note.value));
   }
 
   root.addEventListener("click", (e) => {
@@ -201,7 +200,7 @@ export function mountPanel({ root, games, onSelect, onClose }) {
     else if (el.dataset.status) store.setStatus(game.id, el.dataset.status);
     else if (el.dataset.rate !== undefined) store.setRating(game.id, Number(el.dataset.rate));
     else if (el.dataset.go) {
-      const next = games.find((x) => x.id === el.dataset.go);
+      const next = resolve(el.dataset.go);
       if (next) onSelect(next);
     }
   });
@@ -213,16 +212,34 @@ export function mountPanel({ root, games, onSelect, onClose }) {
     }
   });
 
+  // Which control had focus, so clicking a star does not drop the user back to
+  // the top of the document when the block is rebuilt around them.
+  function focusKey(el) {
+    if (!el) return null;
+    if (el.dataset.status) return `[data-status="${el.dataset.status}"]`;
+    if (el.dataset.rate !== undefined) return `[data-rate="${el.dataset.rate}"]`;
+    if (el.dataset.save !== undefined) return "[data-save]";
+    return null;
+  }
+
   return {
     open(next) { game = next; render(); },
     close() { game = null; root.hidden = true; root.textContent = ""; },
     current: () => game,
-    /** Re-render in place when the saved list changes under us. */
+    /**
+     * The saved list changed under us. Only the save/status/rating block
+     * depends on it, so the artwork, the facts, the requirements table and the
+     * recommendations below are all left alone.
+     */
     refresh() {
       if (!game) return;
-      const focus = document.activeElement?.dataset?.note !== undefined;
-      if (focus) return;                            // do not yank the note field mid-edit
-      render();
+      if (document.activeElement?.dataset?.note !== undefined) return;   // mid-edit, leave it
+      const host = $("[data-list-host]", root);
+      if (!host) return;
+      const key = host.contains(document.activeElement) ? focusKey(document.activeElement) : null;
+      host.innerHTML = listControls(game);
+      if (key) ($(key, host) || $("[data-save]", host))?.focus({ preventScroll: true });
+      bindNote();
     }
   };
 }
