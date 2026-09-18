@@ -26,7 +26,7 @@ export function mountListView({ root, onSelect }) {
                     <button type="button" data-open="${game.id}">${esc(game.title)}</button>
                   </h3>
                   <p class="listview__meta" style="--row-color:${game.color}">
-                    ${esc(game.categoryLabel)} · ${esc(game.genre)}${game.developers?.length ? ` · ${esc(game.developers[0])}` : ""}${game.platforms?.length ? ` · ${game.platforms.map(esc).join(", ")}` : ""}
+                    ${esc(game.categoryLabel)}${game.genre === game.categoryLabel ? "" : ` · ${esc(game.genre)}`}${game.developers?.length ? ` · ${esc(game.developers[0])}` : ""}${game.platforms?.length ? ` · ${game.platforms.map(esc).join(", ")}` : ""}
                   </p>
                   <p class="listview__blurb">${esc(game.blurb)}</p>
                   <p class="listview__links">

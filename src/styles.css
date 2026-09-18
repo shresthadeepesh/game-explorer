@@ -978,8 +978,11 @@ button { font: inherit; color: inherit; background: none; border: none; }
   z-index: 4;
   max-width: 860px;
   margin: 0 auto;
-  padding: 150px 26px 90px;
+  /* the header's category chips wrap to three rows on a narrow window */
+  padding: clamp(170px, 27vh, 250px) 26px 90px;
 }
+
+.is-listview [data-drag-hint] { display: none; }
 
 .listview[hidden] { display: none; }
 .listview__title { margin: 0 0 8px; font-size: 34px; font-weight: 700; letter-spacing: -0.02em; }
