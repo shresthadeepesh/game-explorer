@@ -4,8 +4,10 @@ import { CATEGORIES } from "./categories.js";
 import { iconSprite } from "./art.js";
 import { Timeline } from "./timeline.js";
 import * as store from "./store.js";
-import { mountMyList } from "./mylist.js";
+import { mountMyList, decodeShare } from "./mylist.js";
 import { mountPanel } from "./panel.js";
+import { mountListView } from "./listview.js";
+import { trapFocus, announce } from "./a11y.js";
 
 const $ = (sel, root = document) => root.querySelector(sel);
 
@@ -14,6 +16,7 @@ const state = {
   categories: new Set(),   // empty = all
   query: "",
   listOnly: false,
+  share: "",
   selected: null,
   years: []
 };
@@ -21,6 +24,9 @@ const state = {
 let timeline;
 let myList;
 let panel;
+let listView;
+let releasePanelFocus = null;
+let releaseDrawerFocus = null;
 const ui = {};
 
 async function boot() {
@@ -42,6 +48,9 @@ async function boot() {
     onClose: close
   });
 
+  listView = mountListView({ root: ui.listview, onSelect: (game) => { jumpTo(game); select(game); } });
+  if (new URLSearchParams(location.search).get("view") === "list") setView(true);
+
   myList = mountMyList({
     root: ui.mylist,
     games: state.data.games,
@@ -60,6 +69,8 @@ async function boot() {
   });
 
   applyFilters();
+
+  await offerSharedList();
 
   const deep = new URLSearchParams(location.hash.slice(1)).get("game");
   if (deep) {
@@ -83,9 +94,13 @@ function cacheRefs() {
   ui.empty = $("#empty");
   ui.boot = $("#boot");
   ui.mylist = $("#mylist");
+  ui.listview = $("#listview");
   ui.listCount = $("#list-count");
+  ui.viewToggle = $("#view-toggle");
 
   $("#open-list").addEventListener("click", () => myList.toggleOpen());
+  ui.viewToggle.addEventListener("click", () => setView(!listView.isVisible()));
+  $("[data-skip]").addEventListener("click", (e) => { e.preventDefault(); setView(true); ui.listview.focus(); });
 
   ui.search.addEventListener("input", () => {
     state.query = ui.search.value.trim().toLowerCase();
@@ -112,6 +127,7 @@ function readUrlFilters() {
   const cats = (params.get("cat") || "").split(",").filter((k) => k in CATEGORIES);
   for (const k of cats) state.categories.add(k);
   state.listOnly = params.get("list") === "1";
+  state.share = params.get("share") || "";        // syncUrl() drops unknown params, so keep it now
   state.query = (params.get("q") || "").trim().toLowerCase();
   ui.search.value = params.get("q") || "";
 }
@@ -123,6 +139,47 @@ function syncUrl() {
   if (state.listOnly) params.set("list", "1");
   const qs = params.toString();
   history.replaceState(null, "", (qs ? `?${qs}` : location.pathname) + location.hash);
+}
+
+async function offerSharedList() {
+  const token = state.share;
+  if (!token) return;
+  const known = new Set(state.data.games.map((g) => g.id));
+  const ids = decodeShare(token).filter((id) => known.has(id));
+  if (!ids.length) return;
+
+  const fresh = ids.filter((id) => !store.has(id));
+  const bar = document.createElement("div");
+  bar.className = "sharebar";
+  bar.innerHTML = `<span>Someone shared ${ids.length} games with you${fresh.length < ids.length ? ` (${fresh.length} new)` : ""}.</span>
+    <button type="button" data-yes>Add to my list</button>
+    <button type="button" data-no>Dismiss</button>`;
+  document.body.appendChild(bar);
+
+  const done = () => {
+    bar.remove();
+    const params = new URLSearchParams(location.search);
+    params.delete("share");
+    const qs = params.toString();
+    history.replaceState(null, "", (qs ? `?${qs}` : location.pathname) + location.hash);
+  };
+  bar.querySelector("[data-yes]").addEventListener("click", async () => {
+    await store.importRows(ids.map((id) => ({ id })));
+    done();
+    myList.setOpen(true);
+  });
+  bar.querySelector("[data-no]").addEventListener("click", done);
+}
+
+function setView(asList) {
+  listView.setVisible(asList);
+  ui.viewToggle.textContent = asList ? "TIMELINE" : "LIST VIEW";
+  ui.viewToggle.setAttribute("aria-pressed", String(asList));
+  const params = new URLSearchParams(location.search);
+  asList ? params.set("view", "list") : params.delete("view");
+  const qs = params.toString();
+  history.replaceState(null, "", (qs ? `?${qs}` : location.pathname) + location.hash);
+  announce(asList ? "List view" : "Timeline view", 0);
 }
 
 function renderFilters() {
@@ -179,6 +236,7 @@ function applyFilters() {
   state.years = [...byYear.entries()].sort((a, b) => a[0] - b[0]).map(([year, games]) => ({ year, games }));
 
   syncUrl();
+  listView?.setData(state.years);
   ui.total.textContent = matched.length;
   ui.range.textContent = state.years.length
     ? `${state.years[0].year}\u2013${state.years[state.years.length - 1].year}`
@@ -207,7 +265,10 @@ function renderRail() {
 }
 
 function onFrame({ nearest, progress, year }) {
-  if (year != null && ui.readout.textContent !== String(year)) ui.readout.textContent = year;
+  if (year != null && ui.readout.textContent !== String(year)) {
+    ui.readout.textContent = year;
+    announce(`${year}, ${state.years[nearest]?.games.length ?? 0} games`);
+  }
   ui.progress.style.transform = `scaleX(${progress.toFixed(3)})`;
   const next = ui.railItems?.[nearest];
   if (next !== ui.activeRail) {
@@ -221,6 +282,8 @@ function select(game) {
   state.selected = game;
   document.body.classList.add("has-panel");
   panel.open(game);
+  releasePanelFocus?.();
+  releasePanelFocus = trapFocus(ui.panel, { onEscape: close });
   history.replaceState(null, "", location.pathname + location.search + `#game=${game.id}`);
 }
 
@@ -233,8 +296,18 @@ function close() {
   if (!state.selected) return;
   state.selected = null;
   document.body.classList.remove("has-panel");
+  releasePanelFocus?.();
+  releasePanelFocus = null;
   panel.close();
   history.replaceState(null, "", location.pathname + location.search);  // drop the #game hash
 }
 
 boot();
+
+// Offline shell + cached covers. Never registers from file://, and a failure
+// here must not take the app down.
+if ("serviceWorker" in navigator && location.protocol.startsWith("http")) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("sw.js").catch((err) => console.warn("service worker:", err.message));
+  });
+}
