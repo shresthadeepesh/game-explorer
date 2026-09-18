@@ -4,7 +4,7 @@
 //
 //   node scripts/check-data.mjs
 
-import { readFileSync, existsSync } from "node:fs";
+import { readFileSync, existsSync, readdirSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { CATEGORIES } from "../src/categories.js";
@@ -89,6 +89,19 @@ if (existsSync(specsFile)) {
     if (!ids.has(id)) problems.push(`specs: ${id} is not in the dataset`);
     if (spec.status === "ok" && !spec.minimum && !spec.recommended) problems.push(`specs: ${id} is marked ok with no requirements`);
   }
+}
+
+// The offline shell is a hand-maintained list, so it silently rots whenever a
+// module is added. Catch that here rather than on someone's aeroplane.
+const sw = readFileSync(join(ROOT, "sw.js"), "utf8");
+const shellList = sw.match(/const SHELL_FILES = \[([\s\S]*?)\];/)?.[1] || "";
+const shipped = new Set([...shellList.matchAll(/"\.\/([^"]+)"/g)].map((m) => m[1]));
+for (const file of readdirSync(join(ROOT, "src"))) {
+  if (!/\.(js|css)$/.test(file)) continue;
+  if (!shipped.has(`src/${file}`)) problems.push(`sw.js: src/${file} is not in SHELL_FILES`);
+}
+for (const file of shipped) {
+  if (file.startsWith("src/") && !existsSync(join(ROOT, file))) problems.push(`sw.js: SHELL_FILES lists missing ${file}`);
 }
 
 const covered = data.games.filter((g) => g.image || g.imageUrl).length;

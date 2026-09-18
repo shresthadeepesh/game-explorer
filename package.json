@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "A 3D timeline of landmark games, 1998-2024.",
+  "description": "A 3D timeline of landmark games, 1990-2025.",
   "scripts": {
     "start": "node scripts/serve.mjs",
     "build:data": "node scripts/build-data.mjs && node scripts/check-data.mjs",
@@ -11,8 +11,9 @@
     "check:links": "node scripts/check-links.mjs",
     "smoke": "node scripts/smoke.mjs",
     "check:data": "node scripts/check-data.mjs",
-    "test": "node scripts/check-data.mjs && node scripts/smoke.mjs",
+    "test": "node scripts/check-data.mjs && node --test scripts/unit.mjs && node scripts/smoke.mjs",
     "fetch:specs": "node scripts/fetch-specs.mjs",
-    "harvest": "node scripts/harvest-wikidata.mjs"
+    "harvest": "node scripts/harvest-wikidata.mjs",
+    "test:unit": "node --test scripts/unit.mjs"
   }
 }

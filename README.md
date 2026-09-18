@@ -20,10 +20,14 @@ src/listview.js         the accessible list view
 src/a11y.js             focus trapping and polite announcements
 src/mylist.js           my-list drawer and recommendation shelf
 src/store.js            IndexedDB persistence for the list
+src/catalog.js          catalogue year cache + the id registry
 src/recommend.js        similarity scoring behind the recommendations
 src/timeline.js         virtualised 3D camera + renderer
+src/graph.js            the catalogue layer, drawn to canvas
 src/art.js              procedural cover art, icon sprite
 src/categories.js       taxonomy: genre -> category, colour, icon path
+src/util.js             esc, the FNV hash, clamp/ramp, debounce
+src/url.js              the one place that writes to the address bar
 data/games.json         runtime dataset (generated)
 data/games.csv          same rows, for spreadsheets and diffs (generated)
 scripts/source-games.mjs  source of truth: [year, [[title, genre, blurb, wiki?], ...]]
@@ -230,13 +234,21 @@ like Elden Ring").
 
 ```bash
 npm run check:data   # dataset integrity, also runs as part of build:data
+npm run test:unit    # the DOM-free modules, no browser needed
 npm run smoke        # 29 browser checks; needs `npm start` in another shell
-npm test             # both
+npm test             # all three
 ```
 
 `check-data.mjs` fails the build on a duplicate id, an unmapped genre, a colour
 that disagrees with its category, an image path with no file behind it, a link
-that is not https, or a year index that disagrees with its games.
+that is not https, a year index that disagrees with its games, or a module that
+has been added to `src/` without being added to the service worker's precache
+list.
+
+`unit.mjs` covers the modules that never touch the DOM — the shared helpers, the
+category taxonomy, procedural art, the recommender, the catalogue normaliser and
+share links — and resolves the whole module graph, so a mistyped import or a
+renamed export fails here rather than as a blank page. It needs no browser.
 
 `smoke.mjs` drives real Chrome over the DevTools Protocol and checks the parts a
 DOM dump cannot: writes land in IndexedDB and survive a reload, the drawer and
@@ -257,6 +269,19 @@ service worker precaches.
   content is only rewritten when a slot's game changes.
 - **`transform`/`opacity` only** in the animated path. The progress bar is a
   `scaleX`, so no per-frame layout. `backdrop-filter` is confined to the panel.
+- **Batched canvas work.** Catalogue points are grouped by colour and quantised
+  opacity when a year loads, so a frame issues about 160 fills and strokes for
+  ~1,050 points rather than one of each per point — and the projection writes
+  into reused flat arrays, so a frame allocates roughly nothing.
+- **One fetch per catalogue year**, shared by the canvas layer and the list
+  view's "show all N games" control (`src/catalog.js`).
+- **Targeted updates.** Saving a game repaints the buttons that changed, not the
+  list; the detail panel rebuilds only its save/status/rating block and keeps
+  your focus where it was. Views that are closed defer their render until they
+  are opened.
+- **Deferred posters.** A generated poster is ~2.3KB of `data:` URI, so expanding
+  a busy year draws them as they scroll into reach — 101KB of markup instead of
+  1.4MB.
 - **No network in the render path** — data is one JSON fetch, art is inline SVG.
 - `prefers-reduced-motion` disables easing and pointer parallax.
 
