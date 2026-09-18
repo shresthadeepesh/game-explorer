@@ -20,7 +20,7 @@
 // box art is normally non-free fair-use, fine locally, your call to publish.
 // Games with no cover fall back to the app's procedural art.
 
-import { writeFile, mkdir, readFile, stat, rm } from "node:fs/promises";
+import { writeFile, mkdir, readFile, stat } from "node:fs/promises";
 import { execFile } from "node:child_process";
 import { promisify } from "node:util";
 import { existsSync, readdirSync } from "node:fs";
@@ -211,14 +211,19 @@ async function download(url, id, attempt = 0) {
 
 // Wikipedia originals run to several MB; the app never shows them above 600px.
 // sips ships with macOS, so no image dependency for the common case.
+//
+// Resize only — never re-encode into another format. A cover's filename is
+// recorded in data/games.json, which is committed, while the images themselves
+// are deliberately not. Re-encoding renamed .png to .jpg on the machines that
+// happen to have sips and left it alone everywhere else, so the committed
+// dataset ended up pointing at files that only existed on one person's laptop.
+// The name now follows the served content-type and nothing else.
 async function shrink(file) {
   if (file.endsWith(".svg")) return;               // vector, already small
   const { size } = await stat(file);
   if (size <= MAX_BYTES) return;
-  const jpg = file.replace(/\.[^.]+$/, ".jpg");
   try {
-    await run("sips", ["-Z", String(MAX_WIDTH), "-s", "format", "jpeg", "-s", "formatOptions", "80", file, "--out", jpg]);
-    if (jpg !== file) await rm(file);   // the payload is JPEG now, so the name must be too
+    await run("sips", ["-Z", String(MAX_WIDTH), file]);
   } catch {
     /* no sips (non-macOS): keep the original, it still works */
   }

@@ -91,6 +91,24 @@ if (existsSync(specsFile)) {
   }
 }
 
+// Cover images are gitignored but their filenames are committed, so the
+// extension has to be derivable from the manifest URL rather than from whatever
+// happens to be on the machine that last ran the build.
+const coversFile = join(ROOT, "data", "covers.json");
+if (existsSync(coversFile)) {
+  const EXT = { png: ".png", jpg: ".jpg", jpeg: ".jpg", webp: ".webp", avif: ".avif", svg: ".svg" };
+  const covers = JSON.parse(readFileSync(coversFile, "utf8")).covers || {};
+  for (const game of data.games) {
+    const url = covers[game.id]?.url;
+    if (!url || !game.image) continue;
+    const served = url.toLowerCase().match(/\.(png|jpe?g|webp|avif|svg)(?:\?|$)/);
+    if (!served) continue;
+    const expected = EXT[served[1]];
+    const actual = game.image.slice(game.image.lastIndexOf("."));
+    if (expected !== actual) fail(game.id, `image is ${actual} but ${url} serves ${expected}`);
+  }
+}
+
 // The offline shell is a hand-maintained list, so it silently rots whenever a
 // module is added. Catch that here rather than on someone's aeroplane.
 const sw = readFileSync(join(ROOT, "sw.js"), "utf8");
