@@ -1150,3 +1150,23 @@ button { font: inherit; color: inherit; background: none; border: none; }
 }
 
 .specs__none { text-transform: none; font-size: 11px; letter-spacing: 0.06em; line-height: 1.5; }
+
+/* ---------- seo ---------- */
+
+/* The static index under games/ is the crawlable copy of the dataset; the link
+   sits in the brand line so it is in the markup, not behind a script. */
+.brand__meta a { color: var(--accent); text-decoration: none; }
+.brand__meta a:hover { text-decoration: underline; }
+
+.noscript {
+  position: fixed;
+  inset: auto 0 0;
+  z-index: 8;
+  padding: 18px 30px;
+  background: var(--panel, #10131a);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-family: var(--mono);
+  font-size: 12px;
+  line-height: 1.7;
+}
+.noscript p { margin: 0; max-width: 60ch; }

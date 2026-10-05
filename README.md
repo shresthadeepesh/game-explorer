@@ -28,6 +28,7 @@ src/art.js              procedural cover art, icon sprite
 src/categories.js       taxonomy: genre -> category, colour, icon path
 src/util.js             esc, the FNV hash, clamp/ramp, debounce
 src/url.js              the one place that writes to the address bar
+src/seo.css             styles for the static pages under games/
 data/games.json         runtime dataset (generated)
 data/games.csv          same rows, for spreadsheets and diffs (generated)
 scripts/source-games.mjs  source of truth: [year, [[title, genre, blurb, wiki?], ...]]
@@ -39,6 +40,11 @@ scripts/enrich-wikidata.mjs  platforms, studios and release dates
 scripts/fetch-specs.mjs   PC system requirements from Steam
 scripts/harvest-wikidata.mjs  the full per-year catalogue
 scripts/smoke.mjs         CDP end-to-end test, 29 checks
+scripts/build-seo.mjs     games/ pages, sitemap.xml and robots.txt (generated)
+scripts/build-og.mjs      assets/og.png, the share card, drawn without a dependency
+scripts/check-seo.mjs     metadata and crawlable-page gate
+games/                    one static page per featured game (generated)
+sitemap.xml, robots.txt   generated alongside games/
 sw.js, manifest.webmanifest  offline shell and install metadata
 assets/covers/            drop-in real covers, named <id>.jpg|png|webp|avif
 ```
@@ -293,6 +299,37 @@ service worker precaches.
 - `?list=1` — show only saved games.
 - `/` focus search · `L` my list · `A` save the open game · `↑`/`↓`, `PgUp`/`PgDn`
   step a year · `Home`/`End` jump to the ends · `Esc` close the panel or drawer.
+
+## Search engines
+
+The timeline is drawn from JSON after load, and a game's deep link lives in the
+fragment (`#game=…`). A crawler fetching `index.html` therefore sees an empty
+stage, and a fragment is not a URL it can index at all — so the app alone would
+be one thin result and nothing else.
+
+`npm run build:seo` generates the indexable half: a static page per featured
+game under `games/`, with the facts in the markup, a canonical URL of its own,
+`VideoGame` and `BreadcrumbList` structured data, and a link into the app at its
+node. `games/index.html` lists all of them by year, `index.html` links to it from
+the chrome (and from a `<noscript>` block), and `sitemap.xml` names every page.
+The catalogue layer stays out: 23,000 rows of title-and-year are the kind of
+thin, near-duplicate pages that earn a site nothing.
+
+```
+npm run build:seo        # games/, sitemap.xml, robots.txt
+npm run build:og         # assets/og.png, only when the branding changes
+npm run check:seo        # runs inside npm test
+```
+
+`build:seo` runs as part of `build:site`, so both publish routes regenerate the
+pages; `check:seo` fails the test run if a dataset change landed without one.
+To publish somewhere else, set the base: `SITE_URL=https://example.com/ npm run
+build:seo` rewrites every canonical, sitemap entry and share-card URL.
+
+One caveat: robots.txt is only read from the origin root, and Pages serves this
+project from `/game-explorer/`. The file is correct and takes effect behind a
+custom domain; until then the sitemap link in it is advisory, so submit
+`sitemap.xml` to Search Console directly.
 
 ## Origin
 

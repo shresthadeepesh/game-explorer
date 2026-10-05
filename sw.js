@@ -2,7 +2,7 @@
 // instant and offline; cover art is cached as it is seen, because a couple of
 // hundred images have no business being fetched up front.
 
-const VERSION = "v3";
+const VERSION = "v4";
 const SHELL = `shell-${VERSION}`;
 const DATA = `data-${VERSION}`;
 const ART = `art-${VERSION}`;
@@ -10,7 +10,7 @@ const KEEP = new Set([SHELL, DATA, ART]);
 
 const SHELL_FILES = [
   "./", "./index.html", "./manifest.webmanifest", "./icon.svg", "./icon-maskable.svg",
-  "./src/styles.css",
+  "./src/styles.css", "./src/seo.css",
   "./src/app.js", "./src/panel.js", "./src/mylist.js", "./src/listview.js",
   "./src/store.js", "./src/catalog.js", "./src/recommend.js",
   "./src/timeline.js", "./src/graph.js", "./src/art.js",
@@ -61,8 +61,19 @@ self.addEventListener("fetch", (event) => {
   const url = new URL(request.url);
   if (url.origin !== self.location.origin) return;     // fonts and covers on other hosts stay untouched
 
+  // Navigations are network-first. The static pages under games/ are real
+  // documents, so a visited one is kept and served back offline; anything
+  // never visited falls back to the app shell.
   if (request.mode === "navigate") {
-    event.respondWith(fetch(request).catch(() => caches.match("./index.html")));
+    event.respondWith((async () => {
+      try {
+        const res = await fetch(request);
+        if (res.ok) (await caches.open(SHELL)).put(request, res.clone());
+        return res;
+      } catch {
+        return (await caches.match(request)) || (await caches.match("./index.html"));
+      }
+    })());
     return;
   }
   if (url.pathname.includes("/assets/covers/")) {

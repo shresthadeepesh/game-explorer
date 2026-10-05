@@ -22,7 +22,8 @@ const OUT = join(ROOT, "_site");
 const FILES = [
   "index.html", "manifest.webmanifest", "sw.js",
   "icon.svg", "icon-maskable.svg", ".nojekyll",
-  "src", "data", "assets"
+  "robots.txt", "sitemap.xml",
+  "src", "data", "assets", "games"
 ];
 
 await rm(OUT, { recursive: true, force: true });

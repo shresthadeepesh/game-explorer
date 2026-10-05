@@ -1,5 +1,7 @@
 {
+  "id": "./",
   "name": "A Field Guide to Games",
+  "lang": "en",
   "short_name": "Field Guide",
   "description": "A 3D timeline of 216 landmark games, 1990-2025.",
   "start_url": "./",

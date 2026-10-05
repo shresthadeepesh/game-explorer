@@ -1,0 +1,8 @@
+# A Field Guide to Games
+User-agent: *
+Allow: /game-explorer/
+
+# The dataset is fetched by the app, not content for a reader.
+Disallow: /game-explorer/data/
+
+Sitemap: https://shresthadeepesh.github.io/game-explorer/sitemap.xml

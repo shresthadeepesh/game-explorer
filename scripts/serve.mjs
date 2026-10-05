@@ -15,7 +15,8 @@ const TYPES = {
   ".css": "text/css; charset=utf-8", ".json": "application/json; charset=utf-8",
   ".webmanifest": "application/manifest+json; charset=utf-8",
   ".csv": "text/csv; charset=utf-8", ".svg": "image/svg+xml", ".png": "image/png",
-  ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".webp": "image/webp", ".avif": "image/avif"
+  ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".webp": "image/webp", ".avif": "image/avif",
+  ".txt": "text/plain; charset=utf-8", ".xml": "application/xml; charset=utf-8"
 };
 
 const cacheControl = (rel) =>
@@ -28,17 +29,26 @@ createServer(async (req, res) => {
   if (!file.startsWith(ROOT)) { res.writeHead(403).end("forbidden"); return; }
 
   try {
-    const info = await stat(file);
+    let info = await stat(file);
+    // Pages serves index.html for a directory, and games/ is requested that
+    // way; without this the read below throws EISDIR mid-response.
+    let target = file;
+    if (info.isDirectory()) {
+      target = join(file, "index.html");
+      info = await stat(target);
+    }
     const etag = `W/"${info.size.toString(16)}-${info.mtimeMs.toString(16)}"`;
     const headers = {
-      "content-type": TYPES[extname(file)] || "application/octet-stream",
+      "content-type": TYPES[extname(target)] || "application/octet-stream",
       "cache-control": cacheControl(rel),
       "last-modified": info.mtime.toUTCString(),
       etag
     };
     if (req.headers["if-none-match"] === etag) { res.writeHead(304, headers).end(); return; }
+    // Read first: a failure here must still be able to send a 404.
+    const body = req.method === "HEAD" ? undefined : await readFile(target);
     res.writeHead(200, headers);
-    res.end(req.method === "HEAD" ? undefined : await readFile(file));
+    res.end(body);
   } catch {
     res.writeHead(404, { "content-type": "text/plain" }).end("not found");
   }
