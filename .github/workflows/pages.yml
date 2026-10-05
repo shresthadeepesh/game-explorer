@@ -41,14 +41,9 @@ jobs:
       # by integration`.
       - uses: actions/configure-pages@v5
 
-      # Everything the page loads is a relative path, so the site works
-      # unchanged under /game-explorer/. Only the files the browser asks for
-      # are published: .git alone is larger than the site.
-      - name: Stage the site
-        run: |
-          mkdir -p _site
-          cp -R index.html manifest.webmanifest sw.js icon.svg icon-maskable.svg \
-                .nojekyll src data assets _site/
+      # The same staging step `npm run deploy` runs, so the two publish
+      # routes cannot end up with different file lists.
+      - run: npm run build:site
 
       - uses: actions/upload-pages-artifact@v3
         with:

@@ -7,6 +7,8 @@
   "scripts": {
     "start": "node scripts/serve.mjs",
     "build:data": "node scripts/build-data.mjs && node scripts/check-data.mjs",
+    "build:site": "node scripts/stage-site.mjs",
+    "deploy": "npm run build:site && gh-pages -d _site --dotfiles",
     "fetch:covers": "node scripts/fetch-covers.mjs",
     "check:links": "node scripts/check-links.mjs",
     "smoke": "node scripts/smoke.mjs",
@@ -15,5 +17,8 @@
     "fetch:specs": "node scripts/fetch-specs.mjs",
     "harvest": "node scripts/harvest-wikidata.mjs",
     "test:unit": "node --test scripts/unit.mjs"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
