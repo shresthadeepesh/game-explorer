@@ -1,0 +1,3354 @@
+{
+  "updatedAt": "2026-09-18",
+  "games": {
+    "the-secret-of-monkey-island-1990": {
+      "wikidata": "Q179247",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "Retro home computer"
+      ],
+      "developers": [
+        "Lucasfilm Games"
+      ],
+      "publishers": [
+        "Lucasfilm Games"
+      ],
+      "released": "1990-10-01"
+    },
+    "street-fighter-ii-1991": {
+      "wikidata": "Q1133204",
+      "platforms": [
+        "Arcade",
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Retro home computer",
+        "Sega",
+        "Xbox"
+      ],
+      "developers": [
+        "Capcom"
+      ],
+      "publishers": [
+        "Data East"
+      ],
+      "released": "1991-02-06"
+    },
+    "sonic-the-hedgehog-1991": {
+      "wikidata": "Q37123",
+      "platforms": [
+        "Arcade",
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Sega",
+        "Xbox"
+      ],
+      "developers": [
+        "Konami",
+        "Sonic Team"
+      ],
+      "publishers": [
+        "Sega"
+      ],
+      "released": "1991-06-23"
+    },
+    "nba-jam-1993": {
+      "wikidata": "Q1959943",
+      "platforms": [
+        "Arcade",
+        "Nintendo",
+        "Sega"
+      ],
+      "developers": [
+        "Midway Games"
+      ],
+      "publishers": [
+        "Midway Games"
+      ],
+      "released": "1994-03-01"
+    },
+    "mortal-kombat-1992": {
+      "wikidata": "Q150294",
+      "platforms": [
+        "Arcade",
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Retro home computer",
+        "Sega",
+        "Xbox"
+      ],
+      "developers": [
+        "Midway Games"
+      ],
+      "publishers": [
+        "Midway Games"
+      ],
+      "released": "1992-10-08"
+    },
+    "star-fox-1993": {
+      "wikidata": "Q1326889",
+      "platforms": [
+        "Nintendo"
+      ],
+      "developers": [
+        "Argonaut Games",
+        "Nintendo Entertainment Analysis & Development"
+      ],
+      "publishers": [
+        "Nintendo"
+      ],
+      "released": "1993-02-21"
+    },
+    "f-zero-1990": {
+      "wikidata": "Q1198491",
+      "platforms": [
+        "Nintendo"
+      ],
+      "developers": [
+        "Nintendo Entertainment Analysis & Development"
+      ],
+      "publishers": [
+        "Nintendo"
+      ],
+      "released": "1990-11-21"
+    },
+    "super-mario-kart-1992": {
+      "wikidata": "Q1061560",
+      "platforms": [
+        "Nintendo"
+      ],
+      "developers": [
+        "Nintendo Entertainment Analysis & Development"
+      ],
+      "publishers": [
+        "Nintendo"
+      ],
+      "released": "1992-08-27"
+    },
+    "super-mario-world-1990": {
+      "wikidata": "Q853143",
+      "platforms": [
+        "Nintendo"
+      ],
+      "developers": [
+        "Nintendo Entertainment Analysis & Development"
+      ],
+      "publishers": [
+        "Nintendo"
+      ],
+      "released": "1990-11-21"
+    },
+    "the-legend-of-zelda-a-link-to-the-past-1991": {
+      "wikidata": "Q370055",
+      "platforms": [
+        "Nintendo"
+      ],
+      "developers": [
+        "Nintendo Entertainment Analysis & Development"
+      ],
+      "publishers": [
+        "Nintendo"
+      ],
+      "released": "1991-11-21"
+    },
+    "warcraft-orcs-humans-1994": {
+      "wikidata": "Q207885",
+      "platforms": [
+        "PC"
+      ],
+      "developers": [
+        "Blizzard Entertainment"
+      ],
+      "publishers": [
+        "Blizzard Entertainment",
+        "Interplay Entertainment"
+      ],
+      "released": "1994-11-15"
+    },
+    "simcity-2000-1993": {
+      "wikidata": "Q1767176",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Retro home computer",
+        "Sega"
+      ],
+      "developers": [
+        "Full Fat",
+        "Maxis"
+      ],
+      "publishers": [
+        "Electronic Arts",
+        "Maxis",
+        "Nintendo DSi",
+        "Sega",
+        "Zushi Games"
+      ],
+      "released": "1993-01-01"
+    },
+    "dune-ii-1992": {
+      "wikidata": "Q596631",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "Retro home computer"
+      ],
+      "developers": [
+        "Westwood Studios"
+      ],
+      "publishers": [
+        "Virgin Interactive"
+      ],
+      "released": "1992-01-01"
+    },
+    "another-world-1991": {
+      "wikidata": "Q257469",
+      "platforms": [
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "Retro home computer",
+        "Sega"
+      ],
+      "developers": [
+        "Delphine Software International",
+        "Éric Chahi"
+      ],
+      "publishers": [
+        "Focus Entertainment",
+        "Interplay Entertainment",
+        "U.S. Gold"
+      ],
+      "released": "1991-01-01"
+    },
+    "secret-of-mana-1993": {
+      "wikidata": "Q1800173",
+      "platforms": [
+        "Mobile",
+        "Nintendo",
+        "PC"
+      ],
+      "developers": [
+        "Square"
+      ],
+      "publishers": [
+        "Square",
+        "Square Enix"
+      ],
+      "released": "1993-08-06"
+    },
+    "final-fantasy-vi-1994": {
+      "wikidata": "Q535940",
+      "platforms": [
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation"
+      ],
+      "developers": [
+        "Square"
+      ],
+      "publishers": [
+        "Square"
+      ],
+      "released": "1994-04-02"
+    },
+    "dragon-quest-iv-1990": {
+      "wikidata": "Q2310470",
+      "platforms": [
+        "Mobile",
+        "Nintendo",
+        "PlayStation"
+      ],
+      "developers": [
+        "Chunsoft"
+      ],
+      "publishers": [
+        "Enix"
+      ],
+      "released": "1990-02-11"
+    },
+    "doom-1993": {
+      "wikidata": "Q189784",
+      "platforms": [
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Retro home computer",
+        "Sega",
+        "Xbox"
+      ],
+      "developers": [
+        "Id Software",
+        "Nerve Software"
+      ],
+      "publishers": [
+        "Activision",
+        "Atari",
+        "Atari, Inc.",
+        "Ocean Software",
+        "Sega",
+        "WMS Industries"
+      ],
+      "released": "1993-01-01"
+    },
+    "wolfenstein-3d-1992": {
+      "wikidata": "Q18940",
+      "platforms": [
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Retro home computer",
+        "Xbox"
+      ],
+      "developers": [
+        "Id Software",
+        "Interplay Entertainment",
+        "Nerve Software",
+        "Raven Software"
+      ],
+      "publishers": [
+        "3D Realms",
+        "Activision",
+        "Apogee Software",
+        "Atari",
+        "BAM! Entertainment",
+        "Bethesda Softworks",
+        "Id Software",
+        "Imagineer",
+        "Interplay Entertainment",
+        "MacPlay",
+        "Manaccom",
+        "Valve Corporation"
+      ],
+      "released": "1992-05-05"
+    },
+    "kirbys-dream-land-1992": {
+      "wikidata": "Q1154044",
+      "platforms": [
+        "Nintendo"
+      ],
+      "developers": [
+        "HAL Laboratory"
+      ],
+      "publishers": [
+        "Nintendo"
+      ],
+      "released": "1992-04-27"
+    },
+    "donkey-kong-country-1994": {
+      "wikidata": "Q518987",
+      "platforms": [
+        "Nintendo"
+      ],
+      "developers": [
+        "Rare Ltd."
+      ],
+      "publishers": [
+        "Nintendo"
+      ],
+      "released": "1994-11-18"
+    },
+    "railroad-tycoon-1990": {
+      "wikidata": "Q5400123",
+      "platforms": [
+        "PC"
+      ],
+      "developers": [
+        "MicroProse"
+      ],
+      "publishers": [
+        "MicroProse"
+      ],
+      "released": "1990-01-01"
+    },
+    "civilization-1991": {
+      "wikidata": "Q368286",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Retro home computer",
+        "Sega"
+      ],
+      "developers": [
+        "MicroProse"
+      ],
+      "publishers": [
+        "Koei",
+        "MicroProse"
+      ],
+      "released": "1991-09-01"
+    },
+    "lemmings-1991": {
+      "wikidata": "Q864177",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "Retro home computer",
+        "Sega"
+      ],
+      "developers": [
+        "Rockstar North"
+      ],
+      "publishers": [
+        "SCE Studio Liverpool"
+      ],
+      "released": "1991-02-14"
+    },
+    "ultima-underworld-1992": {
+      "wikidata": "Q1891590",
+      "platforms": [
+        "PC",
+        "PlayStation"
+      ],
+      "developers": [
+        "Looking Glass Studios"
+      ],
+      "publishers": [
+        "Origin Systems"
+      ],
+      "released": "1992-03-21"
+    },
+    "system-shock-1994": {
+      "wikidata": "Q1151634",
+      "platforms": [
+        "PC"
+      ],
+      "developers": [
+        "Looking Glass Studios"
+      ],
+      "publishers": [
+        "Origin Systems"
+      ],
+      "released": "1994-09-23"
+    },
+    "myst-1993": {
+      "wikidata": "Q6497116",
+      "platforms": [
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Retro home computer",
+        "Sega",
+        "Xbox"
+      ],
+      "developers": [
+        "Cyan Worlds"
+      ],
+      "publishers": [
+        "Broderbund",
+        "Midway Games"
+      ],
+      "released": "1993-09-24"
+    },
+    "wing-commander-1990": {
+      "wikidata": "Q13390015",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "Retro home computer"
+      ],
+      "developers": [
+        "Origin Systems"
+      ],
+      "publishers": [
+        "Origin Systems"
+      ],
+      "released": "1990-01-01"
+    },
+    "tie-fighter-1994": {
+      "wikidata": "Q55312",
+      "platforms": [
+        "PC"
+      ],
+      "developers": [
+        "Totally Games"
+      ],
+      "publishers": [
+        "Lucasfilm Games"
+      ],
+      "released": "1994-07-01"
+    },
+    "super-metroid-1994": {
+      "wikidata": "Q1194825",
+      "platforms": [
+        "Nintendo"
+      ],
+      "developers": [
+        "Nintendo Research & Development 1"
+      ],
+      "publishers": [
+        "Nintendo"
+      ],
+      "released": "1994-03-19"
+    },
+    "the-legend-of-zelda-ocarina-of-time-1998": {
+      "wikidata": "Q213911",
+      "platforms": [
+        "Nintendo"
+      ],
+      "developers": [
+        "Nintendo",
+        "Nintendo Entertainment Analysis & Development"
+      ],
+      "publishers": [
+        "Nintendo"
+      ],
+      "released": "1998-11-21"
+    },
+    "resident-evil-1996": {
+      "wikidata": "Q1248594",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Sega"
+      ],
+      "developers": [
+        "Capcom"
+      ],
+      "publishers": [
+        "Capcom"
+      ],
+      "released": "1996-03-22"
+    },
+    "resident-evil-2-1998": {
+      "wikidata": "Q733992",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Sega"
+      ],
+      "developers": [
+        "Capcom",
+        "Factor 5",
+        "Rockstar San Diego",
+        "Tiger Electronics"
+      ],
+      "publishers": [
+        "Capcom"
+      ],
+      "released": "1998-01-21"
+    },
+    "metal-gear-solid-1998": {
+      "wikidata": "Q6582527",
+      "platforms": [
+        "PC",
+        "PlayStation"
+      ],
+      "developers": [
+        "Konami"
+      ],
+      "publishers": [
+        "Konami"
+      ],
+      "released": "1998-09-03"
+    },
+    "suikoden-1995": {
+      "wikidata": "Q3091499",
+      "platforms": [
+        "PC",
+        "PlayStation",
+        "Sega"
+      ],
+      "developers": [
+        "Konami"
+      ],
+      "publishers": [
+        "Konami"
+      ],
+      "released": "1995-12-15"
+    },
+    "castlevania-symphony-of-the-night-1997": {
+      "wikidata": "Q2007022",
+      "platforms": [
+        "Mobile",
+        "PlayStation"
+      ],
+      "developers": [
+        "Konami"
+      ],
+      "publishers": [
+        "Konami"
+      ],
+      "released": "1997-03-20"
+    },
+    "silent-hill-1999": {
+      "wikidata": "Q753164",
+      "platforms": [
+        "PC",
+        "PlayStation"
+      ],
+      "developers": [
+        "Konami",
+        "Team Silent"
+      ],
+      "publishers": [
+        "Konami"
+      ],
+      "released": "1999-02-23"
+    },
+    "yoshis-island-1995": {
+      "wikidata": "Q1045765",
+      "platforms": [
+        "Nintendo"
+      ],
+      "developers": [
+        "Nintendo Entertainment Analysis & Development"
+      ],
+      "publishers": [
+        "Nintendo"
+      ],
+      "released": "1995-08-05"
+    },
+    "super-mario-64-1996": {
+      "wikidata": "Q216995",
+      "platforms": [
+        "Nintendo"
+      ],
+      "developers": [
+        "Nintendo Entertainment Analysis & Development"
+      ],
+      "publishers": [
+        "Nintendo"
+      ],
+      "released": "1996-06-23"
+    },
+    "starcraft-1998": {
+      "wikidata": "Q165929",
+      "platforms": [
+        "Nintendo",
+        "PC"
+      ],
+      "developers": [
+        "Blizzard Entertainment"
+      ],
+      "publishers": [
+        "Blizzard Entertainment",
+        "Nintendo"
+      ],
+      "released": "1998-03-31"
+    },
+    "grim-fandango-1998": {
+      "wikidata": "Q592507",
+      "platforms": [
+        "Mobile",
+        "PC",
+        "PlayStation"
+      ],
+      "developers": [
+        "Lucasfilm Games"
+      ],
+      "publishers": [
+        "Lucasfilm Games"
+      ],
+      "released": "1998-10-30"
+    },
+    "command-conquer-1995": {
+      "wikidata": "Q868523",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Sega"
+      ],
+      "developers": [
+        "Westwood Studios"
+      ],
+      "publishers": [
+        "Nintendo",
+        "Virgin Interactive"
+      ],
+      "released": "1995-08-31"
+    },
+    "pokemon-red-and-blue-1996": {
+      "wikidata": "Q637137",
+      "platforms": [
+        "Nintendo"
+      ],
+      "developers": [
+        "Game Freak"
+      ],
+      "publishers": [
+        "Nintendo"
+      ],
+      "released": "1998-09-28"
+    },
+    "tomb-raider-1996": {
+      "wikidata": "Q317620",
+      "platforms": [
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Sega",
+        "Xbox"
+      ],
+      "developers": [
+        "Core Design"
+      ],
+      "publishers": [
+        "Eidos Interactive",
+        "Golden Disc Electronic",
+        "Suntendy Interactive Multimedia Co.,Ltd.",
+        "Victor Interactive Software"
+      ],
+      "released": "1996-10-25"
+    },
+    "goldeneye-007-1997": {
+      "wikidata": "Q369086",
+      "platforms": [
+        "Nintendo"
+      ],
+      "developers": [
+        "Rare Ltd."
+      ],
+      "publishers": [
+        "Nintendo"
+      ],
+      "released": "1997-08-23"
+    },
+    "chrono-trigger-1995": {
+      "wikidata": "Q761815",
+      "platforms": [
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation"
+      ],
+      "developers": [
+        "Square"
+      ],
+      "publishers": [
+        "Square",
+        "Square Enix"
+      ],
+      "released": "1995-03-11"
+    },
+    "final-fantasy-vii-1997": {
+      "wikidata": "Q214232",
+      "platforms": [
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation"
+      ],
+      "developers": [
+        "Square"
+      ],
+      "publishers": [
+        "Square",
+        "Square Enix"
+      ],
+      "released": "1997-01-31"
+    },
+    "planescape-torment-1999": {
+      "wikidata": "Q847638",
+      "platforms": [
+        "PC"
+      ],
+      "developers": [
+        "Black Isle Studios"
+      ],
+      "publishers": [
+        "Interplay Entertainment",
+        "Sega",
+        "Suntendy Interactive Multimedia Co.,Ltd."
+      ],
+      "released": "1999-12-12"
+    },
+    "fallout-1997": {
+      "wikidata": "Q60102",
+      "platforms": [
+        "PC"
+      ],
+      "developers": [
+        "Black Isle Studios"
+      ],
+      "publishers": [
+        "Interplay Entertainment"
+      ],
+      "released": "1997-10-10"
+    },
+    "system-shock-2-1999": {
+      "wikidata": "Q1371495",
+      "platforms": [
+        "PC"
+      ],
+      "developers": [
+        "Irrational Games",
+        "Looking Glass Studios"
+      ],
+      "publishers": [
+        "Electronic Arts"
+      ],
+      "released": "1999-08-11"
+    },
+    "diablo-1996": {
+      "wikidata": "Q220960",
+      "platforms": [
+        "PC",
+        "PlayStation"
+      ],
+      "developers": [
+        "Blizzard North"
+      ],
+      "publishers": [
+        "Blizzard Entertainment"
+      ],
+      "released": "1996-12-31"
+    },
+    "parappa-the-rapper-1997": {
+      "wikidata": "Q1340462",
+      "platforms": [
+        "PlayStation"
+      ],
+      "developers": [
+        "NanaOn-Sha"
+      ],
+      "publishers": [
+        "Sony Interactive Entertainment"
+      ],
+      "released": "1996-12-06"
+    },
+    "quake-1996": {
+      "wikidata": "Q217423",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Retro home computer",
+        "Sega",
+        "Xbox"
+      ],
+      "developers": [
+        "Id Software",
+        "Nightdive Studios"
+      ],
+      "publishers": [
+        "Activision",
+        "Atari, Inc.",
+        "Bethesda Softworks",
+        "ClickBoom",
+        "MacSoft Games",
+        "Macmillan Inc.",
+        "Midway Games",
+        "Sega"
+      ],
+      "released": "1996-06-22"
+    },
+    "everquest-1999": {
+      "wikidata": "Q1134845",
+      "platforms": [
+        "PC"
+      ],
+      "developers": [
+        "Daybreak Game Company"
+      ],
+      "publishers": [
+        "Daybreak Game Company"
+      ],
+      "released": "1999-03-16"
+    },
+    "ultima-online-1997": {
+      "wikidata": "Q1043550",
+      "platforms": [
+        "PC"
+      ],
+      "developers": [
+        "Origin Systems"
+      ],
+      "publishers": [
+        "Electronic Arts"
+      ],
+      "released": "1997-09-24"
+    },
+    "wipeout-1995": {
+      "wikidata": "Q286205",
+      "platforms": [
+        "PC",
+        "PlayStation",
+        "Sega"
+      ],
+      "developers": [
+        "SCE Studio Liverpool"
+      ],
+      "publishers": [],
+      "released": "1995-09-29"
+    },
+    "age-of-empires-ii-1999": {
+      "wikidata": "Q34852",
+      "platforms": [
+        "PC",
+        "PlayStation"
+      ],
+      "developers": [
+        "Ensemble Studios",
+        "Hidden Path Entertainment"
+      ],
+      "publishers": [
+        "Konami",
+        "Microsoft"
+      ],
+      "released": "1999-09-27"
+    },
+    "half-life-1998": {
+      "wikidata": "Q279744",
+      "platforms": [
+        "PC",
+        "PlayStation"
+      ],
+      "developers": [
+        "Valve Corporation"
+      ],
+      "publishers": [
+        "Sierra Entertainment",
+        "Valve Corporation"
+      ],
+      "released": "1998-11-19"
+    },
+    "unreal-tournament-1999": {
+      "wikidata": "Q627877",
+      "platforms": [
+        "PC",
+        "PlayStation",
+        "Sega"
+      ],
+      "developers": [
+        "Epic Games"
+      ],
+      "publishers": [
+        "Atari, Inc."
+      ],
+      "released": "1999-11-22"
+    },
+    "descent-1995": {
+      "wikidata": "Q1200546",
+      "platforms": [
+        "PC",
+        "PlayStation"
+      ],
+      "developers": [
+        "Parallax Software"
+      ],
+      "publishers": [
+        "Interplay Entertainment",
+        "MacPlay"
+      ],
+      "released": "1995-03-17"
+    },
+    "katamari-damacy-2004": {
+      "wikidata": "Q1206519",
+      "platforms": [
+        "PlayStation"
+      ],
+      "developers": [
+        "Namco"
+      ],
+      "publishers": [
+        "Bandai Namco Entertainment"
+      ],
+      "released": "2004-03-18"
+    },
+    "metroid-prime-2002": {
+      "wikidata": "Q1765733",
+      "platforms": [
+        "Nintendo"
+      ],
+      "developers": [
+        "Retro Studios"
+      ],
+      "publishers": [
+        "Nintendo"
+      ],
+      "released": "2002-11-18"
+    },
+    "silent-hill-2-2001": {
+      "wikidata": "Q752835",
+      "platforms": [
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Team Silent"
+      ],
+      "publishers": [
+        "Konami"
+      ],
+      "released": "2001-09-25"
+    },
+    "perfect-dark-2000": {
+      "wikidata": "Q1408723",
+      "platforms": [
+        "Nintendo",
+        "Xbox"
+      ],
+      "developers": [
+        "Rare Ltd."
+      ],
+      "publishers": [
+        "Rare Ltd."
+      ],
+      "released": "2000-05-22"
+    },
+    "battlefield-1942-2002": {
+      "wikidata": "Q791439",
+      "platforms": [
+        "PC"
+      ],
+      "developers": [
+        "DICE"
+      ],
+      "publishers": [
+        "Electronic Arts"
+      ],
+      "released": "2002-09-10"
+    },
+    "the-sims-2000": {
+      "wikidata": "Q184816",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Maxis"
+      ],
+      "publishers": [
+        "Aspyr",
+        "Electronic Arts",
+        "Findev"
+      ],
+      "released": "2000-02-04"
+    },
+    "kingdom-hearts-2002": {
+      "wikidata": "Q225912",
+      "platforms": [
+        "PlayStation"
+      ],
+      "developers": [
+        "Square"
+      ],
+      "publishers": [
+        "Square"
+      ],
+      "released": "2002-03-28"
+    },
+    "ico-2001": {
+      "wikidata": "Q1324448",
+      "platforms": [
+        "PlayStation"
+      ],
+      "developers": [
+        "Team Ico"
+      ],
+      "publishers": [
+        "Sony Interactive Entertainment"
+      ],
+      "released": "2001-09-25"
+    },
+    "tony-hawks-pro-skater-2-2000": {
+      "wikidata": "Q1538485",
+      "platforms": [
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Sega",
+        "Xbox"
+      ],
+      "developers": [
+        "Neversoft"
+      ],
+      "publishers": [
+        "Activision"
+      ],
+      "released": "2000-09-20"
+    },
+    "animal-crossing-2002": {
+      "wikidata": "Q5345827",
+      "platforms": [
+        "Nintendo"
+      ],
+      "developers": [
+        "Nintendo Entertainment Analysis & Development"
+      ],
+      "publishers": [
+        "Nintendo"
+      ],
+      "released": "2001-12-15"
+    },
+    "the-wind-waker-2003": {
+      "wikidata": "Q852563",
+      "platforms": [
+        "Nintendo"
+      ],
+      "developers": [
+        "Nintendo Entertainment Analysis & Development"
+      ],
+      "publishers": [
+        "Nintendo"
+      ],
+      "released": "2002-12-13"
+    },
+    "warcraft-iii-2002": {
+      "wikidata": "Q207948",
+      "platforms": [
+        "PC"
+      ],
+      "developers": [
+        "Blizzard Entertainment"
+      ],
+      "publishers": [
+        "Blizzard Entertainment"
+      ],
+      "released": "2002-07-03"
+    },
+    "world-of-warcraft-2004": {
+      "wikidata": "Q131007",
+      "platforms": [
+        "PC"
+      ],
+      "developers": [
+        "Blizzard Entertainment"
+      ],
+      "publishers": [
+        "Blizzard Entertainment"
+      ],
+      "released": "2004-11-23"
+    },
+    "diablo-ii-2000": {
+      "wikidata": "Q244033",
+      "platforms": [
+        "PC"
+      ],
+      "developers": [
+        "Blizzard North"
+      ],
+      "publishers": [
+        "Blizzard Entertainment"
+      ],
+      "released": "2000-06-28"
+    },
+    "the-elder-scrolls-iii-morrowind-2002": {
+      "wikidata": "Q718448",
+      "platforms": [
+        "PC",
+        "Xbox"
+      ],
+      "developers": [
+        "Bethesda Game Studios"
+      ],
+      "publishers": [
+        "1C Company",
+        "Bethesda Softworks",
+        "Softclub",
+        "Ubisoft"
+      ],
+      "released": "2002-05-01"
+    },
+    "call-of-duty-2003": {
+      "wikidata": "Q211096",
+      "platforms": [
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Infinity Ward"
+      ],
+      "publishers": [
+        "Activision",
+        "Aspyr",
+        "MediaQuest Holdings"
+      ],
+      "released": "2003-10-29"
+    },
+    "halo-combat-evolved-2001": {
+      "wikidata": "Q276217",
+      "platforms": [
+        "PC",
+        "Xbox"
+      ],
+      "developers": [
+        "Bungie",
+        "Gearbox Software"
+      ],
+      "publishers": [
+        "Xbox Game Studios"
+      ],
+      "released": "2001-11-15"
+    },
+    "eve-online-2003": {
+      "wikidata": "Q336177",
+      "platforms": [
+        "PC"
+      ],
+      "developers": [
+        "Fenris Creations",
+        "Simon & Schuster"
+      ],
+      "publishers": [
+        "Atari",
+        "Fenris Creations",
+        "Simon & Schuster"
+      ],
+      "released": "2003-05-06"
+    },
+    "super-smash-bros-melee-2001": {
+      "wikidata": "Q1052131",
+      "platforms": [
+        "Nintendo"
+      ],
+      "developers": [
+        "HAL Laboratory"
+      ],
+      "publishers": [
+        "Nintendo"
+      ],
+      "released": "2001-11-24"
+    },
+    "deus-ex-2000": {
+      "wikidata": "Q644793",
+      "platforms": [
+        "PC",
+        "PlayStation"
+      ],
+      "developers": [
+        "Ion Storm"
+      ],
+      "publishers": [
+        "Eidos Interactive",
+        "Suntendy Interactive Multimedia Co.,Ltd."
+      ],
+      "released": "2000-06-23"
+    },
+    "burnout-3-takedown-2004": {
+      "wikidata": "Q2079604",
+      "platforms": [
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Criterion Games"
+      ],
+      "publishers": [
+        "Electronic Arts"
+      ],
+      "released": "2004-09-07"
+    },
+    "grand-theft-auto-iii-2001": {
+      "wikidata": "Q149106",
+      "platforms": [
+        "Mobile",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Rockstar North"
+      ],
+      "publishers": [
+        "Capcom",
+        "Rockstar Games"
+      ],
+      "released": "2001-10-23"
+    },
+    "gta-san-andreas-2004": {
+      "wikidata": "Q83265",
+      "platforms": [
+        "Mobile",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Rockstar North"
+      ],
+      "publishers": [
+        "Rockstar Games"
+      ],
+      "released": "2004-10-26"
+    },
+    "far-cry-2004": {
+      "wikidata": "Q337865",
+      "platforms": [
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Crytek"
+      ],
+      "publishers": [
+        "Buka Entertainment",
+        "Ubisoft"
+      ],
+      "released": "2004-03-23"
+    },
+    "half-life-2-2004": {
+      "wikidata": "Q193581",
+      "platforms": [
+        "Mobile",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Valve Corporation"
+      ],
+      "publishers": [
+        "Valve Corporation"
+      ],
+      "released": "2004-11-16"
+    },
+    "counter-strike-2000": {
+      "wikidata": "Q163628",
+      "platforms": [
+        "PC",
+        "Xbox"
+      ],
+      "developers": [
+        "Valve Corporation"
+      ],
+      "publishers": [
+        "Nexon",
+        "Sierra Entertainment",
+        "Valve Corporation"
+      ],
+      "released": "2000-11-14"
+    },
+    "star-wars-knights-of-the-old-republic-2003": {
+      "wikidata": "Q725902",
+      "platforms": [
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "Xbox"
+      ],
+      "developers": [
+        "BioWare"
+      ],
+      "publishers": [
+        "Lucasfilm Games"
+      ],
+      "released": "2003-01-01"
+    },
+    "max-payne-2001": {
+      "wikidata": "Q1175156",
+      "platforms": [
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Remedy Entertainment"
+      ],
+      "publishers": [
+        "3D Realms",
+        "Feral Interactive",
+        "Gathering of Developers",
+        "MacSoft Games",
+        "Rockstar Games",
+        "Suntendy Interactive Multimedia Co.,Ltd.",
+        "Take-Two Interactive"
+      ],
+      "released": "2001-07-25"
+    },
+    "prince-of-persia-sands-of-time-2003": {
+      "wikidata": "Q715292",
+      "platforms": [
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Ubisoft Montreal"
+      ],
+      "publishers": [
+        "Sony Interactive Entertainment",
+        "Ubisoft"
+      ],
+      "released": "2003-10-28"
+    },
+    "beyond-good-evil-2003": {
+      "wikidata": "Q794367",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Ubisoft Montpellier"
+      ],
+      "publishers": [
+        "Ubisoft"
+      ],
+      "released": "2003-01-01"
+    },
+    "minecraft-2009": {
+      "wikidata": "Q49740",
+      "platforms": [
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Microsoft",
+        "Mojang Studios"
+      ],
+      "publishers": [
+        "Xbox Game Studios"
+      ],
+      "released": "2011-11-18"
+    },
+    "oblivion-2006": {
+      "wikidata": "Q49607",
+      "platforms": [
+        "Mobile",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "4J Studios",
+        "Bethesda Game Studios",
+        "Superscape"
+      ],
+      "publishers": [
+        "1C Company",
+        "2K",
+        "Bethesda Softworks",
+        "Vir2L Studios"
+      ],
+      "released": "2006-03-20"
+    },
+    "psychonauts-2005": {
+      "wikidata": "Q1277009",
+      "platforms": [
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Budcat Creations",
+        "Double Fine"
+      ],
+      "publishers": [
+        "Majesco Entertainment",
+        "THQ"
+      ],
+      "released": "2005-04-19"
+    },
+    "littlebigplanet-2008": {
+      "wikidata": "Q6579517",
+      "platforms": [
+        "PlayStation"
+      ],
+      "developers": [
+        "Media Molecule"
+      ],
+      "publishers": [
+        "Sony Interactive Entertainment"
+      ],
+      "released": "2008-10-27"
+    },
+    "super-mario-galaxy-2007": {
+      "wikidata": "Q170489",
+      "platforms": [
+        "Nintendo"
+      ],
+      "developers": [
+        "Nintendo Entertainment Analysis & Development"
+      ],
+      "publishers": [
+        "Nintendo"
+      ],
+      "released": "2007-11-01"
+    },
+    "wii-sports-2006": {
+      "wikidata": "Q71936",
+      "platforms": [
+        "Nintendo"
+      ],
+      "developers": [
+        "Nintendo Entertainment Analysis & Development"
+      ],
+      "publishers": [
+        "Nintendo"
+      ],
+      "released": "2006-11-19"
+    },
+    "resident-evil-4-2005": {
+      "wikidata": "Q275950",
+      "platforms": [
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Capcom"
+      ],
+      "publishers": [
+        "Capcom"
+      ],
+      "released": "2005-01-11"
+    },
+    "civilization-iv-2005": {
+      "wikidata": "Q2377",
+      "platforms": [
+        "PC"
+      ],
+      "developers": [
+        "Firaxis Games",
+        "Soren Johnson"
+      ],
+      "publishers": [
+        "1C Company",
+        "2K",
+        "Aspyr"
+      ],
+      "released": "2005-10-25"
+    },
+    "okami-2006": {
+      "wikidata": "Q385184",
+      "platforms": [
+        "Nintendo",
+        "PlayStation"
+      ],
+      "developers": [
+        "Clover Studio"
+      ],
+      "publishers": [
+        "Capcom"
+      ],
+      "released": "2006-04-20"
+    },
+    "dead-space-2008": {
+      "wikidata": "Q729074",
+      "platforms": [
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Visceral Games"
+      ],
+      "publishers": [
+        "Electronic Arts"
+      ],
+      "released": "2008-10-13"
+    },
+    "batman-arkham-asylum-2009": {
+      "wikidata": "Q746228",
+      "platforms": [
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Rocksteady Studios"
+      ],
+      "publishers": [
+        "Eidos Interactive"
+      ],
+      "released": "2009-08-25"
+    },
+    "demons-souls-2009": {
+      "wikidata": "Q1153708",
+      "platforms": [
+        "PlayStation"
+      ],
+      "developers": [
+        "FromSoftware"
+      ],
+      "publishers": [
+        "Sony Group"
+      ],
+      "released": "2009-02-05"
+    },
+    "braid-2008": {
+      "wikidata": "Q897376",
+      "platforms": [
+        "PC",
+        "PlayStation"
+      ],
+      "developers": [
+        "Jonathan Blow"
+      ],
+      "publishers": [],
+      "released": "2008-08-06"
+    },
+    "rock-band-2007": {
+      "wikidata": "Q1195153",
+      "platforms": [
+        "Nintendo",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Harmonix Music Systems",
+        "Pi Studios"
+      ],
+      "publishers": [
+        "MTV Games"
+      ],
+      "released": "2007-11-20"
+    },
+    "guitar-hero-2005": {
+      "wikidata": "Q116578",
+      "platforms": [
+        "PlayStation"
+      ],
+      "developers": [
+        "Harmonix Music Systems"
+      ],
+      "publishers": [
+        "RedOctane"
+      ],
+      "released": "2005-11-08"
+    },
+    "mass-effect-2007": {
+      "wikidata": "Q275960",
+      "platforms": [
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "BioWare",
+        "Demiurge Studios",
+        "Edge of Reality"
+      ],
+      "publishers": [
+        "CD Projekt",
+        "Electronic Arts",
+        "Square Enix",
+        "Xbox Game Studios"
+      ],
+      "released": "2007-11-20"
+    },
+    "fallout-3-2008": {
+      "wikidata": "Q221164",
+      "platforms": [
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Bethesda Game Studios"
+      ],
+      "publishers": [
+        "Bethesda Softworks"
+      ],
+      "released": "2008-10-28"
+    },
+    "bioshock-2007": {
+      "wikidata": "Q57270",
+      "platforms": [
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Irrational Games"
+      ],
+      "publishers": [
+        "2K"
+      ],
+      "released": "2007-08-21"
+    },
+    "hitman-blood-money-2006": {
+      "wikidata": "Q239889",
+      "platforms": [
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Feral Interactive",
+        "IO Interactive"
+      ],
+      "publishers": [
+        "Eidos Interactive"
+      ],
+      "released": "2006-05-26"
+    },
+    "shadow-of-the-colossus-2005": {
+      "wikidata": "Q846051",
+      "platforms": [
+        "PlayStation"
+      ],
+      "developers": [
+        "Team Ico"
+      ],
+      "publishers": [
+        "Sony Interactive Entertainment"
+      ],
+      "released": "2005-10-18"
+    },
+    "god-of-war-2005": {
+      "wikidata": "Q817369",
+      "platforms": [
+        "PlayStation"
+      ],
+      "developers": [
+        "Santa Monica Studio"
+      ],
+      "publishers": [
+        "Sony Interactive Entertainment"
+      ],
+      "released": "2005-03-22"
+    },
+    "world-of-goo-2008": {
+      "wikidata": "Q637312",
+      "platforms": [
+        "Mobile",
+        "Nintendo",
+        "PC"
+      ],
+      "developers": [
+        "2D Boy"
+      ],
+      "publishers": [
+        "2D Boy"
+      ],
+      "released": "2008-10-13"
+    },
+    "uncharted-2-among-thieves-2009": {
+      "wikidata": "Q17146",
+      "platforms": [
+        "PlayStation"
+      ],
+      "developers": [
+        "Naughty Dog"
+      ],
+      "publishers": [
+        "Sony Computer Entertainment America",
+        "Sony Interactive Entertainment"
+      ],
+      "released": "2009-10-13"
+    },
+    "team-fortress-2-2007": {
+      "wikidata": "Q382108",
+      "platforms": [
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Valve Corporation"
+      ],
+      "publishers": [
+        "Valve Corporation"
+      ],
+      "released": "2007-10-10"
+    },
+    "left-4-dead-2008": {
+      "wikidata": "Q323981",
+      "platforms": [
+        "PC",
+        "Xbox"
+      ],
+      "developers": [
+        "Turtle Rock Studios",
+        "Valve Corporation"
+      ],
+      "publishers": [
+        "Valve Corporation"
+      ],
+      "released": "2008-11-17"
+    },
+    "portal-2007": {
+      "wikidata": "Q274897",
+      "platforms": [
+        "Mobile",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Valve Corporation"
+      ],
+      "publishers": [
+        "Valve Corporation"
+      ],
+      "released": "2007-10-10"
+    },
+    "dragon-age-origins-2009": {
+      "wikidata": "Q735926",
+      "platforms": [
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "BioWare"
+      ],
+      "publishers": [
+        "Electronic Arts"
+      ],
+      "released": "2009-11-03"
+    },
+    "gears-of-war-2006": {
+      "wikidata": "Q636219",
+      "platforms": [
+        "PC",
+        "Xbox"
+      ],
+      "developers": [
+        "Epic Games"
+      ],
+      "publishers": [
+        "Xbox Game Studios"
+      ],
+      "released": "2006-11-07"
+    },
+    "plants-vs-zombies-2009": {
+      "wikidata": "Q379128",
+      "platforms": [
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation"
+      ],
+      "developers": [
+        "PopCap Games"
+      ],
+      "publishers": [
+        "PopCap Games"
+      ],
+      "released": "2009-05-05"
+    },
+    "company-of-heroes-2006": {
+      "wikidata": "Q500851",
+      "platforms": [
+        "PC"
+      ],
+      "developers": [
+        "Relic Entertainment"
+      ],
+      "publishers": [
+        "THQ"
+      ],
+      "released": "2006-09-11"
+    },
+    "dishonored-2012": {
+      "wikidata": "Q323264",
+      "platforms": [
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Arkane Studios"
+      ],
+      "publishers": [
+        "Bethesda Softworks"
+      ],
+      "released": "2012-10-09"
+    },
+    "the-last-of-us-2013": {
+      "wikidata": "Q1986744",
+      "platforms": [
+        "PlayStation"
+      ],
+      "developers": [
+        "Naughty Dog"
+      ],
+      "publishers": [
+        "Sony Interactive Entertainment"
+      ],
+      "released": "2013-06-14"
+    },
+    "destiny-2014": {
+      "wikidata": "Q210275",
+      "platforms": [
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Bungie"
+      ],
+      "publishers": [
+        "Activision"
+      ],
+      "released": "2014-09-09"
+    },
+    "alien-isolation-2014": {
+      "wikidata": "Q15613717",
+      "platforms": [
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Creative Assembly"
+      ],
+      "publishers": [
+        "Feral Interactive",
+        "Sega"
+      ],
+      "released": "2014-10-07"
+    },
+    "mario-kart-8-2014": {
+      "wikidata": "Q13427106",
+      "platforms": [
+        "Nintendo"
+      ],
+      "developers": [
+        "Nintendo Entertainment Analysis & Development"
+      ],
+      "publishers": [
+        "Nintendo"
+      ],
+      "released": "2014-05-29"
+    },
+    "hearthstone-2014": {
+      "wikidata": "Q8262784",
+      "platforms": [
+        "Mobile",
+        "PC"
+      ],
+      "developers": [
+        "Blizzard Entertainment"
+      ],
+      "publishers": [
+        "Blizzard Entertainment"
+      ],
+      "released": "2014-03-11"
+    },
+    "starcraft-ii-wings-of-liberty-2010": {
+      "wikidata": "Q239288",
+      "platforms": [
+        "PC"
+      ],
+      "developers": [
+        "Blizzard Entertainment"
+      ],
+      "publishers": [
+        "Blizzard Entertainment"
+      ],
+      "released": "2010-07-27"
+    },
+    "grand-theft-auto-v-2013": {
+      "wikidata": "Q17452",
+      "platforms": [
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Rockstar Leeds",
+        "Rockstar London",
+        "Rockstar New England",
+        "Rockstar North",
+        "Rockstar San Diego",
+        "Rockstar Toronto"
+      ],
+      "publishers": [
+        "Rockstar Games",
+        "Softclub",
+        "Take-Two Interactive"
+      ],
+      "released": "2013-09-17"
+    },
+    "xcom-enemy-unknown-2012": {
+      "wikidata": "Q26097",
+      "platforms": [
+        "Mobile",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Feral Interactive",
+        "Firaxis Games"
+      ],
+      "publishers": [
+        "2K",
+        "Feral Interactive"
+      ],
+      "released": "2012-10-09"
+    },
+    "civilization-v-2010": {
+      "wikidata": "Q2385",
+      "platforms": [
+        "PC"
+      ],
+      "developers": [
+        "Firaxis Games"
+      ],
+      "publishers": [
+        "2K",
+        "Aspyr"
+      ],
+      "released": "2010-09-21"
+    },
+    "the-walking-dead-2012": {
+      "wikidata": "Q939588",
+      "platforms": [
+        "Mobile",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Telltale Games"
+      ],
+      "publishers": [
+        "Telltale Games"
+      ],
+      "released": "2012-04-24"
+    },
+    "gone-home-2013": {
+      "wikidata": "Q5581572",
+      "platforms": [
+        "Mobile",
+        "Nintendo",
+        "PC"
+      ],
+      "developers": [
+        "Fullbright"
+      ],
+      "publishers": [
+        "Fullbright"
+      ],
+      "released": "2013-08-15"
+    },
+    "super-mario-3d-world-2013": {
+      "wikidata": "Q13426947",
+      "platforms": [
+        "Nintendo"
+      ],
+      "developers": [
+        "EAD Tokyo Group No. 2"
+      ],
+      "publishers": [
+        "Nintendo"
+      ],
+      "released": "2013-11-21"
+    },
+    "terraria-2011": {
+      "wikidata": "Q332697",
+      "platforms": [
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "505 Games",
+        "Engine Software",
+        "Re-Logic"
+      ],
+      "publishers": [
+        "505 Games",
+        "Pipeworks Software",
+        "Re-Logic",
+        "Spike Chunsoft"
+      ],
+      "released": "2011-05-17"
+    },
+    "dark-souls-2011": {
+      "wikidata": "Q1166232",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "FromSoftware"
+      ],
+      "publishers": [
+        "FromSoftware"
+      ],
+      "released": "2011-09-22"
+    },
+    "super-meat-boy-2010": {
+      "wikidata": "Q1784048",
+      "platforms": [
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Edmund McMillen"
+      ],
+      "publishers": [
+        "Xbox Game Studios"
+      ],
+      "released": "2010-10-20"
+    },
+    "the-binding-of-isaac-2011": {
+      "wikidata": "Q1041427",
+      "platforms": [
+        "PC"
+      ],
+      "developers": [
+        "Edmund McMillen"
+      ],
+      "publishers": [
+        "Edmund McMillen",
+        "Florian Himsl"
+      ],
+      "released": "2011-09-28"
+    },
+    "limbo-2010": {
+      "wikidata": "Q1339030",
+      "platforms": [
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Playdead"
+      ],
+      "publishers": [
+        "Playdead",
+        "Xbox Game Studios"
+      ],
+      "released": "2010-07-21"
+    },
+    "the-elder-scrolls-v-skyrim-2011": {
+      "wikidata": "Q323862",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Bethesda Game Studios"
+      ],
+      "publishers": [
+        "1C Company",
+        "Bethesda Softworks",
+        "Softclub"
+      ],
+      "released": "2011-11-11"
+    },
+    "dota-2-2013": {
+      "wikidata": "Q771541",
+      "platforms": [
+        "PC"
+      ],
+      "developers": [
+        "Valve Corporation"
+      ],
+      "publishers": [
+        "Perfect World (company)",
+        "Valve Corporation"
+      ],
+      "released": "2013-07-09"
+    },
+    "portal-2-2011": {
+      "wikidata": "Q279446",
+      "platforms": [
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Valve Corporation"
+      ],
+      "publishers": [
+        "Valve Corporation"
+      ],
+      "released": "2011-04-18"
+    },
+    "mass-effect-2-2010": {
+      "wikidata": "Q725057",
+      "platforms": [
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "BioWare"
+      ],
+      "publishers": [
+        "Electronic Arts"
+      ],
+      "released": "2010-01-26"
+    },
+    "journey-2012": {
+      "wikidata": "Q677274",
+      "platforms": [
+        "Mobile",
+        "PC",
+        "PlayStation"
+      ],
+      "developers": [
+        "Thatgamecompany"
+      ],
+      "publishers": [
+        "Annapurna Interactive",
+        "Sony Interactive Entertainment"
+      ],
+      "released": "2012-03-13"
+    },
+    "red-dead-redemption-2010": {
+      "wikidata": "Q548203",
+      "platforms": [
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Rockstar San Diego"
+      ],
+      "publishers": [
+        "Rockstar Games"
+      ],
+      "released": "2010-05-18"
+    },
+    "bayonetta-2-2014": {
+      "wikidata": "Q3233480",
+      "platforms": [
+        "Nintendo"
+      ],
+      "developers": [
+        "PlatinumGames"
+      ],
+      "publishers": [
+        "Nintendo"
+      ],
+      "released": "2014-02-13"
+    },
+    "bastion-2011": {
+      "wikidata": "Q810662",
+      "platforms": [
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Supergiant Games"
+      ],
+      "publishers": [
+        "Warner Bros. Games"
+      ],
+      "released": "2011-07-20"
+    },
+    "shovel-knight-2014": {
+      "wikidata": "Q13427374",
+      "platforms": [
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Yacht Club Games"
+      ],
+      "publishers": [
+        "Yacht Club Games"
+      ],
+      "released": "2014-06-26"
+    },
+    "ftl-faster-than-light-2012": {
+      "wikidata": "Q4308783",
+      "platforms": [
+        "Mobile",
+        "PC"
+      ],
+      "developers": [
+        "Subset Games"
+      ],
+      "publishers": [
+        "Subset Games"
+      ],
+      "released": "2012-09-14"
+    },
+    "hotline-miami-2012": {
+      "wikidata": "Q3389836",
+      "platforms": [
+        "Mobile",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Dennaton Games"
+      ],
+      "publishers": [
+        "Devolver Digital"
+      ],
+      "released": "2012-10-23"
+    },
+    "papers-please-2013": {
+      "wikidata": "Q14565978",
+      "platforms": [
+        "Mobile",
+        "PC",
+        "PlayStation"
+      ],
+      "developers": [
+        "Lucas Pope"
+      ],
+      "publishers": [
+        "3909"
+      ],
+      "released": "2013-08-08"
+    },
+    "bloodborne-2015": {
+      "wikidata": "Q17154554",
+      "platforms": [
+        "PlayStation"
+      ],
+      "developers": [
+        "FromSoftware",
+        "Japan Studio"
+      ],
+      "publishers": [
+        "Sony Interactive Entertainment"
+      ],
+      "released": "2015-03-24"
+    },
+    "death-stranding-2019": {
+      "wikidata": "Q24666782",
+      "platforms": [
+        "Mobile",
+        "PC",
+        "PlayStation"
+      ],
+      "developers": [
+        "Guerrilla Games",
+        "Kojima Productions"
+      ],
+      "publishers": [
+        "505 Games",
+        "Sony Interactive Entertainment"
+      ],
+      "released": "2019-11-08"
+    },
+    "inside-2016": {
+      "wikidata": "Q22019785",
+      "platforms": [
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Playdead"
+      ],
+      "publishers": [
+        "Playdead"
+      ],
+      "released": "2016-06-29"
+    },
+    "doom-2016": {
+      "wikidata": "Q513867",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Bethesda Game Studios",
+        "Id Software"
+      ],
+      "publishers": [
+        "Bethesda Softworks"
+      ],
+      "released": "2016-05-13"
+    },
+    "dead-cells-2018": {
+      "wikidata": "Q30639210",
+      "platforms": [
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Evil Empire",
+        "Motion Twin"
+      ],
+      "publishers": [
+        "Motion Twin"
+      ],
+      "released": "2017-05-10"
+    },
+    "undertale-2015": {
+      "wikidata": "Q21039924",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "8-4",
+        "Toby Fox"
+      ],
+      "publishers": [
+        "8-4",
+        "Fangamer"
+      ],
+      "released": "2015-09-15"
+    },
+    "apex-legends-2019": {
+      "wikidata": "Q61478103",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Iron Galaxy Studios",
+        "Panic Button",
+        "Respawn Entertainment"
+      ],
+      "publishers": [
+        "Electronic Arts"
+      ],
+      "released": "2019-02-04"
+    },
+    "splatoon-2015": {
+      "wikidata": "Q17490239",
+      "platforms": [
+        "Nintendo"
+      ],
+      "developers": [
+        "Nintendo Entertainment Analysis & Development"
+      ],
+      "publishers": [
+        "Nintendo"
+      ],
+      "released": "2015-05-28"
+    },
+    "super-mario-odyssey-2017": {
+      "wikidata": "Q28234671",
+      "platforms": [
+        "Nintendo"
+      ],
+      "developers": [
+        "Nintendo"
+      ],
+      "publishers": [
+        "Nintendo"
+      ],
+      "released": "2017-10-27"
+    },
+    "disco-elysium-2019": {
+      "wikidata": "Q71693825",
+      "platforms": [
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "ZA/UM"
+      ],
+      "publishers": [
+        "Spike Chunsoft",
+        "ZA/UM"
+      ],
+      "released": "2019-10-15"
+    },
+    "breath-of-the-wild-2017": {
+      "wikidata": "Q17185964",
+      "platforms": [
+        "Nintendo"
+      ],
+      "developers": [
+        "Monolith Soft Inc.",
+        "Nintendo Entertainment Planning & Development"
+      ],
+      "publishers": [
+        "Nintendo"
+      ],
+      "released": "2017-03-03"
+    },
+    "overwatch-2016": {
+      "wikidata": "Q18515944",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Blizzard Entertainment"
+      ],
+      "publishers": [
+        "Blizzard Entertainment"
+      ],
+      "released": "2016-05-24"
+    },
+    "sekiro-shadows-die-twice-2019": {
+      "wikidata": "Q54906424",
+      "platforms": [
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "FromSoftware",
+        "Yoshitaka Suzuki"
+      ],
+      "publishers": [
+        "Activision",
+        "Cubejoy",
+        "FromSoftware"
+      ],
+      "released": "2019-03-22"
+    },
+    "titanfall-2-2016": {
+      "wikidata": "Q24044813",
+      "platforms": [
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Respawn Entertainment"
+      ],
+      "publishers": [
+        "Electronic Arts"
+      ],
+      "released": "2016-10-28"
+    },
+    "into-the-breach-2018": {
+      "wikidata": "Q30591391",
+      "platforms": [
+        "Nintendo",
+        "PC"
+      ],
+      "developers": [
+        "Subset Games"
+      ],
+      "publishers": [
+        "Subset Games"
+      ],
+      "released": "2018-02-27"
+    },
+    "return-of-the-obra-dinn-2018": {
+      "wikidata": "Q48987695",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Lucas Pope"
+      ],
+      "publishers": [
+        "3909",
+        "Lucas Pope"
+      ],
+      "released": "2018-10-18"
+    },
+    "rocket-league-2015": {
+      "wikidata": "Q20031743",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Psyonix"
+      ],
+      "publishers": [
+        "505 Games",
+        "Psyonix"
+      ],
+      "released": "2015-07-07"
+    },
+    "god-of-war-2018": {
+      "wikidata": "Q18345138",
+      "platforms": [
+        "PC",
+        "PlayStation"
+      ],
+      "developers": [
+        "Jetpack Interactive",
+        "Santa Monica Studio"
+      ],
+      "publishers": [
+        "PlayStation PC LLC",
+        "Sony Interactive Entertainment"
+      ],
+      "released": "2018-04-20"
+    },
+    "the-witcher-3-wild-hunt-2015": {
+      "wikidata": "Q4267401",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "CD Projekt RED"
+      ],
+      "publishers": [
+        "CD Projekt RED",
+        "Namco",
+        "Warner Bros. Games",
+        "cdp.pl"
+      ],
+      "released": "2015-05-19"
+    },
+    "hollow-knight-2017": {
+      "wikidata": "Q29300592",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Team Cherry"
+      ],
+      "publishers": [
+        "Team Cherry"
+      ],
+      "released": "2017-02-24"
+    },
+    "pubg-2017": {
+      "wikidata": "Q28937399",
+      "platforms": [
+        "Mobile",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "PUBG Studios"
+      ],
+      "publishers": [
+        "Krafton"
+      ],
+      "released": "2017-03-23"
+    },
+    "outer-wilds-2019": {
+      "wikidata": "Q19631660",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Mobius Digital"
+      ],
+      "publishers": [
+        "Annapurna Interactive"
+      ],
+      "released": "2019-05-28"
+    },
+    "stardew-valley-2016": {
+      "wikidata": "Q23013817",
+      "platforms": [
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "ConcernedApe LLC"
+      ],
+      "publishers": [
+        "ConcernedApe LLC"
+      ],
+      "released": "2016-02-26"
+    },
+    "hitman-2016": {
+      "wikidata": "Q15630929",
+      "platforms": [
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "IO Interactive"
+      ],
+      "publishers": [
+        "Feral Interactive",
+        "Square Enix",
+        "Warner Bros. Games"
+      ],
+      "released": "2016-03-11"
+    },
+    "persona-5-2017": {
+      "wikidata": "Q15225985",
+      "platforms": [
+        "PlayStation"
+      ],
+      "developers": [
+        "Atlus"
+      ],
+      "publishers": [
+        "Atlus",
+        "Deep Silver"
+      ],
+      "released": "2016-09-15"
+    },
+    "red-dead-redemption-2-2018": {
+      "wikidata": "Q27438121",
+      "platforms": [
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Rockstar San Diego"
+      ],
+      "publishers": [
+        "Rockstar Games"
+      ],
+      "released": "2018-10-26"
+    },
+    "nier-automata-2017": {
+      "wikidata": "Q21078985",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "PlatinumGames"
+      ],
+      "publishers": [
+        "Square Enix"
+      ],
+      "released": "2017-02-23"
+    },
+    "metal-gear-solid-v-2015": {
+      "wikidata": "Q717600",
+      "platforms": [
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [],
+      "publishers": [
+        "Konami"
+      ],
+      "released": "2015-09-01"
+    },
+    "slay-the-spire-2019": {
+      "wikidata": "Q48078440",
+      "platforms": [
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [],
+      "publishers": [
+        "Humble Bundle, Inc."
+      ],
+      "released": "2019-01-01"
+    },
+    "celeste-2018": {
+      "wikidata": "Q28451532",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Maddy Makes Games"
+      ],
+      "publishers": [
+        "Maddy Makes Games"
+      ],
+      "released": "2018-01-25"
+    },
+    "god-of-war-ragnarok-2022": {
+      "wikidata": "Q99397916",
+      "platforms": [
+        "PC",
+        "PlayStation"
+      ],
+      "developers": [
+        "Jetpack Interactive",
+        "Santa Monica Studio"
+      ],
+      "publishers": [
+        "Sony Interactive Entertainment"
+      ],
+      "released": "2022-11-09"
+    },
+    "tears-of-the-kingdom-2023": {
+      "wikidata": "Q64577191",
+      "platforms": [
+        "Nintendo"
+      ],
+      "developers": [
+        "Monolith Soft Inc.",
+        "Nintendo Entertainment Planning & Development"
+      ],
+      "publishers": [
+        "Nintendo"
+      ],
+      "released": "2023-05-12"
+    },
+    "forza-horizon-5-2021": {
+      "wikidata": "Q107214683",
+      "platforms": [
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Playground Games"
+      ],
+      "publishers": [
+        "Xbox Game Studios"
+      ],
+      "released": "2021-11-09"
+    },
+    "street-fighter-6-2023": {
+      "wikidata": "Q110999026",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Capcom"
+      ],
+      "publishers": [
+        "Capcom"
+      ],
+      "released": "2023-06-02"
+    },
+    "pentiment-2022": {
+      "wikidata": "Q112432074",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Obsidian Entertainment"
+      ],
+      "publishers": [
+        "Xbox Game Studios"
+      ],
+      "released": "2022-11-15"
+    },
+    "psychonauts-2-2021": {
+      "wikidata": "Q22019734",
+      "platforms": [
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Double Fine"
+      ],
+      "publishers": [
+        "Xbox Game Studios"
+      ],
+      "released": "2021-08-25"
+    },
+    "elden-ring-2022": {
+      "wikidata": "Q64826862",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "FromSoftware"
+      ],
+      "publishers": [
+        "Bandai Namco Entertainment",
+        "FromSoftware"
+      ],
+      "released": "2022-02-25"
+    },
+    "baldurs-gate-3-2023": {
+      "wikidata": "Q64441774",
+      "platforms": [
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Larian Studios"
+      ],
+      "publishers": [
+        "Larian Studios"
+      ],
+      "released": "2023-08-03"
+    },
+    "hades-2020": {
+      "wikidata": "Q59756366",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Supergiant Games"
+      ],
+      "publishers": [
+        "Supergiant Games"
+      ],
+      "released": "2020-09-17"
+    },
+    "fall-guys-2020": {
+      "wikidata": "Q85760410",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Mediatonic"
+      ],
+      "publishers": [
+        "Epic Games"
+      ],
+      "released": "2020-08-04"
+    },
+    "animal-crossing-new-horizons-2020": {
+      "wikidata": "Q64566657",
+      "platforms": [
+        "Nintendo"
+      ],
+      "developers": [
+        "Nintendo Entertainment Planning & Development"
+      ],
+      "publishers": [
+        "Nintendo"
+      ],
+      "released": "2020-03-20"
+    },
+    "metroid-dread-2021": {
+      "wikidata": "Q17006956",
+      "platforms": [
+        "Nintendo"
+      ],
+      "developers": [
+        "MercurySteam",
+        "Nintendo Entertainment Planning & Development"
+      ],
+      "publishers": [
+        "Nintendo"
+      ],
+      "released": "2021-10-08"
+    },
+    "half-life-alyx-2020": {
+      "wikidata": "Q75653574",
+      "platforms": [
+        "PC"
+      ],
+      "developers": [
+        "Campo Santo",
+        "Valve Corporation"
+      ],
+      "publishers": [
+        "Valve Corporation"
+      ],
+      "released": "2020-03-23"
+    },
+    "black-myth-wukong-2024": {
+      "wikidata": "Q98582386",
+      "platforms": [
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Game Science"
+      ],
+      "publishers": [
+        "Game Science"
+      ],
+      "released": "2024-08-20"
+    },
+    "tunic-2022": {
+      "wikidata": "Q55636303",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Isometricorp Games"
+      ],
+      "publishers": [
+        "Finji"
+      ],
+      "released": "2022-03-16"
+    },
+    "stray-2022": {
+      "wikidata": "Q96247255",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "BlueTwelve Studio"
+      ],
+      "publishers": [
+        "Annapurna Interactive"
+      ],
+      "released": "2022-07-19"
+    },
+    "pizza-tower-2023": {
+      "wikidata": "Q116590057",
+      "platforms": [
+        "Nintendo",
+        "PC"
+      ],
+      "developers": [
+        "Tour De Pizza"
+      ],
+      "publishers": [
+        "Tour De Pizza"
+      ],
+      "released": "2023-01-26"
+    },
+    "cocoon-2023": {
+      "wikidata": "Q112618750",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "Xbox"
+      ],
+      "developers": [
+        "Geometric Interactive"
+      ],
+      "publishers": [
+        "Annapurna Interactive"
+      ],
+      "released": "2023-09-29"
+    },
+    "balatro-2024": {
+      "wikidata": "Q124357469",
+      "platforms": [
+        "Mobile",
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "LocalThunk"
+      ],
+      "publishers": [
+        "Playstack"
+      ],
+      "released": "2024-02-20"
+    },
+    "doom-eternal-2020": {
+      "wikidata": "Q55662649",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Id Software"
+      ],
+      "publishers": [
+        "Bethesda Softworks"
+      ],
+      "released": "2020-03-20"
+    },
+    "metaphor-refantazio-2024": {
+      "wikidata": "Q119362054",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Atlus"
+      ],
+      "publishers": [
+        "Atlus",
+        "Sega"
+      ],
+      "released": "2024-10-11"
+    },
+    "alan-wake-2-2023": {
+      "wikidata": "Q108417001",
+      "platforms": [
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Remedy Entertainment"
+      ],
+      "publishers": [
+        "Epic Games"
+      ],
+      "released": "2023-10-27"
+    },
+    "ghost-of-tsushima-2020": {
+      "wikidata": "Q42564798",
+      "platforms": [
+        "PlayStation"
+      ],
+      "developers": [
+        "Sucker Punch Productions"
+      ],
+      "publishers": [
+        "Sony Interactive Entertainment"
+      ],
+      "released": "2020-07-17"
+    },
+    "returnal-2021": {
+      "wikidata": "Q96240947",
+      "platforms": [
+        "PC",
+        "PlayStation"
+      ],
+      "developers": [
+        "Housemarque"
+      ],
+      "publishers": [
+        "Sony Interactive Entertainment"
+      ],
+      "released": "2021-04-30"
+    },
+    "helldivers-2-2024": {
+      "wikidata": "Q118645527",
+      "platforms": [
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Arrowhead Game Studios"
+      ],
+      "publishers": [
+        "Sony Interactive Entertainment"
+      ],
+      "released": "2024-02-08"
+    },
+    "inscryption-2021": {
+      "wikidata": "Q109051201",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [],
+      "publishers": [
+        "Devolver Digital"
+      ],
+      "released": "2021-10-19"
+    },
+    "it-takes-two-2021": {
+      "wikidata": "Q105038239",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Hazelight Studios"
+      ],
+      "publishers": [
+        "Electronic Arts"
+      ],
+      "released": "2021-03-26"
+    },
+    "astro-bot-2024": {
+      "wikidata": "Q126199700",
+      "platforms": [
+        "PlayStation"
+      ],
+      "developers": [
+        "Team Asobi"
+      ],
+      "publishers": [
+        "Sony Interactive Entertainment"
+      ],
+      "released": "2024-09-06"
+    },
+    "vampire-survivors-2022": {
+      "wikidata": "Q110726215",
+      "platforms": [
+        "PC",
+        "PlayStation",
+        "Streaming & web",
+        "Xbox"
+      ],
+      "developers": [],
+      "publishers": [],
+      "released": "2021-12-17"
+    },
+    "animal-well-2024": {
+      "wikidata": "Q116149653",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [],
+      "publishers": [
+        "Bigmode"
+      ],
+      "released": "2024-05-09"
+    },
+    "split-fiction-2025": {
+      "wikidata": "Q131433899",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Hazelight Studios"
+      ],
+      "publishers": [
+        "Electronic Arts"
+      ],
+      "released": "2025-03-06"
+    },
+    "kingdom-come-deliverance-ii-2025": {
+      "wikidata": "Q125430996",
+      "platforms": [
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Warhorse Studios"
+      ],
+      "publishers": [
+        "Deep Silver"
+      ],
+      "released": "2025-02-04"
+    },
+    "mario-kart-world-2025": {
+      "wikidata": "Q131767872",
+      "platforms": [
+        "Nintendo"
+      ],
+      "developers": [
+        "Nintendo Entertainment Planning & Development"
+      ],
+      "publishers": [
+        "Nintendo"
+      ],
+      "released": "2025-06-05"
+    },
+    "hollow-knight-silksong-2025": {
+      "wikidata": "Q63294487",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Team Cherry"
+      ],
+      "publishers": [
+        "Team Cherry"
+      ],
+      "released": "2025-09-04"
+    },
+    "clair-obscur-expedition-33-2025": {
+      "wikidata": "Q126462072",
+      "platforms": [
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Sandfall Interactive"
+      ],
+      "publishers": [
+        "Kepler Interactive"
+      ],
+      "released": "2025-04-24"
+    },
+    "blue-prince-2025": {
+      "wikidata": "Q125131501",
+      "platforms": [
+        "Nintendo",
+        "PC",
+        "PlayStation",
+        "Xbox"
+      ],
+      "developers": [
+        "Dogubomb"
+      ],
+      "publishers": [
+        "Raw Fury"
+      ],
+      "released": "2025-04-10"
+    }
+  }
+}

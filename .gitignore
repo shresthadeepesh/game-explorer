@@ -1,0 +1,6 @@
+node_modules/
+.DS_Store
+
+# query cache for the catalogue refile pass, regenerable
+data/catalog/first-dates.json
+_site/

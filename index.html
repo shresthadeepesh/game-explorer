@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Field Guide to Games</title>
+<meta name="description" content="A 3D timeline of 216 landmark games, 1990–2025, by category.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- No crossorigin: the app fetches this same-origin, and a mismatched preload
+     is a second download rather than a head start. -->
+<link rel="preload" href="data/games.json" as="fetch" type="application/json">
+
+<link rel="stylesheet" href="src/styles.css">
+
+<!-- The module graph is two levels deep, so tell the browser about it now
+     instead of making it parse app.js to discover the rest. -->
+<link rel="modulepreload" href="src/app.js">
+<link rel="modulepreload" href="src/util.js">
+<link rel="modulepreload" href="src/categories.js">
+<link rel="modulepreload" href="src/art.js">
+<link rel="modulepreload" href="src/timeline.js">
+<link rel="modulepreload" href="src/graph.js">
+<link rel="modulepreload" href="src/catalog.js">
+<link rel="modulepreload" href="src/store.js">
+<link rel="modulepreload" href="src/url.js">
+<link rel="modulepreload" href="src/a11y.js">
+<link rel="modulepreload" href="src/panel.js">
+<link rel="modulepreload" href="src/mylist.js">
+<link rel="modulepreload" href="src/listview.js">
+<link rel="modulepreload" href="src/recommend.js">
+
+<!-- Webfonts are a progressive enhancement here: every rule falls back to a
+     system stack, so they must not hold up first paint. -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap"></noscript>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#08090c">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' fill='%2308090c'/%3E%3Cpath d='M3 12h7m0 0V8h6l5 4-5 4h-6v-4Z' fill='none' stroke='%23ff5a36' stroke-width='1.6' stroke-linejoin='round'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<a class="skip" href="#listview" data-skip>Skip the 3D timeline, read the list</a>
+
+<div class="backdrop" aria-hidden="true"></div>
+<div id="stage-host"></div>
+<div class="vignette" aria-hidden="true"></div>
+
+<header class="chrome">
+  <div>
+    <div class="brand__title">A FIELD GUIDE TO GAMES</div>
+    <div class="brand__meta"><span id="range">—</span> · <span id="total">0</span> FEATURED · <span id="catalogue-total">—</span> CATALOGUED</div>
+  </div>
+  <div class="tools" data-no-drag>
+    <input id="search" class="search" type="search" placeholder="Search /" aria-label="Search games" autocomplete="off" spellcheck="false">
+    <div id="filters" class="filters" role="group" aria-label="Filter by category"></div>
+    <div class="hint"><span data-drag-hint>SCROLL OR DRAG TO TRAVEL · </span><button id="catalogue-toggle" type="button" aria-pressed="true">CATALOGUE</button> · <button id="view-toggle" type="button" aria-pressed="false">LIST VIEW</button> · <button id="clear" type="button">RESET</button> · <button id="open-list" type="button">MY LIST <b id="list-count">0</b></button></div>
+  </div>
+</header>
+
+<nav id="rail" class="rail" aria-label="Jump to year"></nav>
+
+<div class="readout">
+  <div id="readout" class="readout__year" aria-hidden="true">—</div>
+  <div class="readout__track">
+    <div class="readout__bar"><div id="progress" class="readout__fill"></div></div>
+    <div class="readout__label">TIMELINE POSITION</div>
+  </div>
+</div>
+
+<main id="listview" class="listview" hidden></main>
+<aside id="mylist" class="drawer" data-no-drag hidden aria-label="My list"></aside>
+<aside id="panel" class="panel" data-no-drag hidden></aside>
+<div id="empty" class="empty" hidden>NO ENTRIES MATCH THIS FILTER</div>
+<div id="boot" class="boot">LOADING TIMELINE…</div>
+
+<script type="module" src="src/app.js"></script>
+</body>
+</html>

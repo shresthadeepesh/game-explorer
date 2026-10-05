@@ -1,0 +1,1085 @@
+{
+  "updatedAt": "2026-10-05",
+  "covers": {
+    "civilization-1991": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/e/ec/Civilizationboxart.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Civilization (video game)"
+    },
+    "chrono-trigger-1995": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/a/a7/Chrono_Trigger.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Chrono Trigger"
+    },
+    "doom-1993": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/5/57/Doom_cover_art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Doom (1993 video game)"
+    },
+    "quake-1996": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/4/4c/Quake1cover.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Quake (video game)"
+    },
+    "super-mario-kart-1992": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/3/38/Supermariokart_box.JPG",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Super Mario Kart"
+    },
+    "system-shock-1994": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/9/93/Sysshock.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: System Shock"
+    },
+    "wolfenstein-3d-1992": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/0/05/Wolfenstein-3d.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Wolfenstein 3D"
+    },
+    "final-fantasy-vi-1994": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/0/05/Final_Fantasy_VI.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Final Fantasy VI"
+    },
+    "final-fantasy-vii-1997": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/c/c2/Final_Fantasy_VII_Box_Art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Final Fantasy VII"
+    },
+    "half-life-1998": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/f/fa/Half-Life_Cover_Art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Half-Life (video game)"
+    },
+    "warcraft-orcs-humans-1994": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/9/9c/Warcraft_-_Orcs_%26_Humans_Coverart.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Warcraft: Orcs & Humans"
+    },
+    "lemmings-1991": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/0/0c/Lemmings-BoxScan.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Lemmings (video game)"
+    },
+    "the-secret-of-monkey-island-1990": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/a/a8/The_Secret_of_Monkey_Island_artwork.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: The Secret of Monkey Island"
+    },
+    "super-mario-world-1990": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/3/32/Super_Mario_World_Coverart.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Super Mario World"
+    },
+    "yoshis-island-1995": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/9/9a/Yoshi%27s_Island_%28Super_Mario_World_2%29_box_art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Yoshi's Island"
+    },
+    "ultima-online-1997": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/7/76/Ultima_Online_cover.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Ultima Online"
+    },
+    "super-mario-64-1996": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/e/e9/Super_Mario_64.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Super Mario 64"
+    },
+    "donkey-kong-country-1994": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/1/1a/Donkey_Kong_Country_SNES_cover.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Donkey Kong Country"
+    },
+    "the-legend-of-zelda-ocarina-of-time-1998": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/5/57/The_Legend_of_Zelda_Ocarina_of_Time.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: The Legend of Zelda: Ocarina of Time"
+    },
+    "the-legend-of-zelda-a-link-to-the-past-1991": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/2/21/The_Legend_of_Zelda_A_Link_to_the_Past_SNES_Game_Cover.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: The Legend of Zelda: A Link to the Past"
+    },
+    "descent-1995": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/5/5f/Descent_cover.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Descent (video game)"
+    },
+    "simcity-2000-1993": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/d/d4/SimCity_2000_Coverart.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: SimCity 2000"
+    },
+    "f-zero-1990": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/9/9b/SNES_F-Zero_boxart.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: F-Zero (video game)"
+    },
+    "goldeneye-007-1997": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/1/13/GoldenEye_007_N64_cover.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: GoldenEye 007"
+    },
+    "nba-jam-1993": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/a/a0/Nbajam.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: NBA Jam (1993 video game)"
+    },
+    "myst-1993": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/6/6a/MystCover.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Myst"
+    },
+    "street-fighter-ii-1991": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/1/1d/SF2_JPN_flyer.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Street Fighter II"
+    },
+    "sonic-the-hedgehog-1991": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/b/ba/Sonic_the_Hedgehog_1_Genesis_box_art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Sonic the Hedgehog (1991 video game)"
+    },
+    "secret-of-mana-1993": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/b/b7/Secret_of_Mana_Box.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Secret of Mana"
+    },
+    "super-metroid-1994": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/e/e4/Smetroidbox.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Super Metroid"
+    },
+    "pokemon-red-and-blue-1996": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/a/af/Pok%C3%A9mon_Red_and_Blue_cover_art.webp",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Pokémon Red, Blue, and Yellow"
+    },
+    "kirbys-dream-land-1992": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/6/6a/Kirbys-dream-land-gameboy-boxart.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Kirby's Dream Land"
+    },
+    "star-fox-1993": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/5/52/Star_Fox_SNES.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Star Fox (1993 video game)"
+    },
+    "castlevania-symphony-of-the-night-1997": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/c/cf/Castlevania_SOTN_PAL.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Castlevania: Symphony of the Night"
+    },
+    "dragon-quest-iv-1990": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/d/db/Dragon_Quest_IV_cover.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Dragon Quest IV"
+    },
+    "another-world-1991": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/b/b9/Another_World_Coverart.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Another World (video game)"
+    },
+    "ultima-underworld-1992": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/d/dd/Ultima_Underworld_cover.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Ultima Underworld: The Stygian Abyss"
+    },
+    "resident-evil-1996": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/a/a6/Resident_Evil_1_cover.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Resident Evil (1996 video game)"
+    },
+    "command-conquer-1995": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/3/34/Command_%26_Conquer_1995_cover.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Command & Conquer (1995 video game)"
+    },
+    "dune-ii-1992": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/7/78/Dune2_BOD.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Dune II"
+    },
+    "suikoden-1995": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/f/f9/Suikoden_packaging01.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Suikoden (video game)"
+    },
+    "wing-commander-1990": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/d/d1/WingCommanderBox-front.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Wing Commander (video game)"
+    },
+    "tomb-raider-1996": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/6/69/Tomb_Raider_%281996%29.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Tomb Raider (1996 video game)"
+    },
+    "fallout-1997": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/a/af/Fallout.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Fallout (video game)"
+    },
+    "wipeout-1995": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/c/c3/WipEoutCover.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Wipeout (video game)"
+    },
+    "railroad-tycoon-1990": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/2/28/Sid_Meier%27s_Railroad_Tycoon.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Railroad Tycoon (video game)"
+    },
+    "tie-fighter-1994": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/7/7d/Swtiefightercd.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Star Wars: TIE Fighter"
+    },
+    "diablo-1996": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/3/3a/Diablo_Coverart.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Diablo (video game)"
+    },
+    "parappa-the-rapper-1997": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/7/74/JPPaRappacover.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: PaRappa the Rapper"
+    },
+    "mortal-kombat-1992": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/3/33/Mortal_Kombat_cover.JPG",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Mortal Kombat (1992 video game)"
+    },
+    "counter-strike-2000": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/6/67/Counter-Strike_Box.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Counter-Strike (video game)"
+    },
+    "deus-ex-2000": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/b/ba/Deus_Ex_%28game_box_art%29.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Deus Ex (video game)"
+    },
+    "diablo-ii-2000": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/d/d5/Diablo_II_Coverart.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Diablo II"
+    },
+    "everquest-1999": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/d/d2/EverQuest_Coverart.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: EverQuest"
+    },
+    "starcraft-1998": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/9/93/StarCraft_box_art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: StarCraft (video game)"
+    },
+    "the-sims-2000": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/2/22/The_Sims_Coverart.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: The Sims (video game)"
+    },
+    "warcraft-iii-2002": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/6/66/WarcraftIII.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Warcraft III: Reign of Chaos"
+    },
+    "grim-fandango-1998": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/7/76/Grim_Fandango_artwork.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Grim Fandango"
+    },
+    "planescape-torment-1999": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/0/06/Planescape-torment-box.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Planescape: Torment"
+    },
+    "ico-2001": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/4/40/Ico_cover_-_EU%2BJP.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Ico"
+    },
+    "the-wind-waker-2003": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/7/79/The_Legend_of_Zelda_The_Wind_Waker.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: The Legend of Zelda: The Wind Waker"
+    },
+    "perfect-dark-2000": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/3/32/Perfect_dark_box.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Perfect Dark"
+    },
+    "kingdom-hearts-2002": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/8/85/Kingdom_Hearts.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Kingdom Hearts (video game)"
+    },
+    "metal-gear-solid-1998": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/3/33/Metal_Gear_Solid_cover_art.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Metal Gear Solid (video game)"
+    },
+    "halo-combat-evolved-2001": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/8/80/Halo_-_Combat_Evolved_%28XBox_version_-_box_art%29.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Halo: Combat Evolved"
+    },
+    "metroid-prime-2002": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/b/ba/MetroidPrimebox.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Metroid Prime"
+    },
+    "battlefield-1942-2002": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/2/27/Battlefield_1942_Box_Art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Battlefield 1942"
+    },
+    "max-payne-2001": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/4/4c/Maxpaynebox.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Max Payne (video game)"
+    },
+    "grand-theft-auto-iii-2001": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/b/be/GTA3boxcover.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Grand Theft Auto III"
+    },
+    "call-of-duty-2003": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/7/7c/Call_Of_Duty_%282003%29%2CCover%2CUpdated.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Call of Duty (video game)"
+    },
+    "world-of-warcraft-2004": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/6/65/World_of_Warcraft.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: World of Warcraft"
+    },
+    "eve-online-2003": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/EVE_online_logo.svg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Eve Online"
+    },
+    "system-shock-2-1999": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/9/91/Systemshock2box.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: System Shock 2"
+    },
+    "unreal-tournament-1999": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/f/f4/Unrealtournament.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Unreal Tournament"
+    },
+    "gta-san-andreas-2004": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/c/c4/GTASABOX.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Grand Theft Auto: San Andreas"
+    },
+    "animal-crossing-2002": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/8/82/Animal_Crossing_Coverart.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Animal Crossing (video game)"
+    },
+    "star-wars-knights-of-the-old-republic-2003": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/1/11/Kotorbox.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Star Wars: Knights of the Old Republic (video game)"
+    },
+    "prince-of-persia-sands-of-time-2003": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/8/86/Sands_of_time_cover.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Prince of Persia: The Sands of Time"
+    },
+    "half-life-2-2004": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/2/25/Half-Life_2_cover.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Half-Life 2"
+    },
+    "beyond-good-evil-2003": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/c/ce/BGE-cover.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Beyond Good & Evil (video game)"
+    },
+    "age-of-empires-ii-1999": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/5/56/Age_of_Empires_II_-_The_Age_of_Kings_Coverart.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Age of Empires II"
+    },
+    "far-cry-2004": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/a/a5/Far_Cry_1_boxshot.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Far Cry (video game)"
+    },
+    "tony-hawks-pro-skater-2-2000": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/4/41/Tony_Hawk%27s_Pro_Skater_2_cover.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Tony Hawk's Pro Skater 2"
+    },
+    "the-elder-scrolls-iii-morrowind-2002": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/5/53/MorrowindCOVER.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: The Elder Scrolls III: Morrowind"
+    },
+    "psychonauts-2005": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/1/12/Psychonautsbox.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Psychonauts"
+    },
+    "katamari-damacy-2004": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/a/aa/KatamariDamacybox.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Katamari Damacy"
+    },
+    "resident-evil-2-1998": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/4/40/NTSC_Resident_Evil_2_Cover.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Resident Evil 2"
+    },
+    "oblivion-2006": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/4/4b/The_Elder_Scrolls_IV_Oblivion_cover.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: The Elder Scrolls IV: Oblivion"
+    },
+    "civilization-iv-2005": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/7/7e/CivIVboxshot.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Civilization IV"
+    },
+    "resident-evil-4-2005": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/d/d9/Resi4-gc-cover.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Resident Evil 4"
+    },
+    "god-of-war-2005": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/b/b5/God_of_War_%282005%29_cover.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: God of War (2005 video game)"
+    },
+    "burnout-3-takedown-2004": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/9/93/Burnout_3_-_Takedown_Coverart.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Burnout 3: Takedown"
+    },
+    "shadow-of-the-colossus-2005": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/f/f8/Shadow_of_the_Colossus_%282005%29_cover.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Shadow of the Colossus"
+    },
+    "gears-of-war-2006": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/8/82/Gears_of_war_cover_art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Gears of War (video game)"
+    },
+    "silent-hill-2-2001": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/9/95/Silent_Hill_2.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Silent Hill 2"
+    },
+    "okami-2006": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/b/be/OkamiNTSCcoverFinal.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Ōkami"
+    },
+    "guitar-hero-2005": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/2/2d/Guitarhero-cover.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Guitar Hero (video game)"
+    },
+    "silent-hill-1999": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/9/96/Silent_Hill_video_game_cover.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Silent Hill (video game)"
+    },
+    "wii-sports-2006": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/5/54/Wii_Sports_Sleeve_Cover_Art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Wii Sports"
+    },
+    "super-smash-bros-melee-2001": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/7/75/Super_Smash_Bros_Melee_box_art.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Super Smash Bros. Melee"
+    },
+    "dragon-age-origins-2009": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/8/89/Dragon_Age_Origins_cover.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Dragon Age: Origins"
+    },
+    "hitman-blood-money-2006": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/b/ba/Hitman_4_artwork.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Hitman: Blood Money"
+    },
+    "bioshock-2007": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/6/6d/BioShock_cover.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: BioShock"
+    },
+    "team-fortress-2-2007": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/5/5f/Tf2_standalonebox.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Team Fortress 2"
+    },
+    "company-of-heroes-2006": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/c/ce/Companyofheroes_pcboxboxart_160w.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Company of Heroes (video game)"
+    },
+    "mass-effect-2007": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/e/e8/MassEffect.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Mass Effect (video game)"
+    },
+    "fallout-3-2008": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/8/83/Fallout_3_cover_art.PNG",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Fallout 3"
+    },
+    "super-mario-galaxy-2007": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/7/76/SuperMarioGalaxy.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Super Mario Galaxy"
+    },
+    "portal-2007": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/9/9f/Portal_standalonebox.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Portal (video game)"
+    },
+    "left-4-dead-2008": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/5/5b/Left4Dead_Windows_cover.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Left 4 Dead"
+    },
+    "littlebigplanet-2008": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/c/c1/LittleBigPlanetOfficialUKBoxArt.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: LittleBigPlanet (2008 video game)"
+    },
+    "rock-band-2007": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/e/e0/Rock_band_cover.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Rock Band (video game)"
+    },
+    "red-dead-redemption-2010": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/a/a7/Red_Dead_Redemption.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Red Dead Redemption"
+    },
+    "braid-2008": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/6/6a/Braidlogo.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Braid (video game)"
+    },
+    "dead-space-2008": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/5/57/Dead_Space_Box_Art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Dead Space (2008 video game)"
+    },
+    "civilization-v-2010": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/5/5c/CIVILIZATION-V-FRONT-OF-BOX.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Civilization V"
+    },
+    "world-of-goo-2008": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/c4/World_of_Goo_Logo.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: World of Goo"
+    },
+    "portal-2-2011": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/f/f9/Portal2cover.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Portal 2"
+    },
+    "mass-effect-2-2010": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/0/05/MassEffect2_cover.PNG",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Mass Effect 2"
+    },
+    "starcraft-ii-wings-of-liberty-2010": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/2/20/StarCraft_II_-_Box_Art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: StarCraft II: Wings of Liberty"
+    },
+    "batman-arkham-asylum-2009": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/4/42/Batman_Arkham_Asylum_Videogame_Cover.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Batman: Arkham Asylum"
+    },
+    "uncharted-2-among-thieves-2009": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/7/7b/Uncharted_2_box_artwork.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Uncharted 2: Among Thieves"
+    },
+    "demons-souls-2009": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/9/91/Demon%27s_Souls_Cover.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Demon's Souls"
+    },
+    "super-meat-boy-2010": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/a/aa/SuperMeatBoy_cover.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Super Meat Boy"
+    },
+    "limbo-2010": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/c/cc/Limbo_Box_Art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Limbo (video game)"
+    },
+    "journey-2012": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/6/64/Journey_Title_Poster.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Journey (2012 video game)"
+    },
+    "dota-2-2013": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/3/31/Dota_2_Steam_artwork.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Dota 2"
+    },
+    "the-elder-scrolls-v-skyrim-2011": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/1/15/The_Elder_Scrolls_V_Skyrim_cover.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: The Elder Scrolls V: Skyrim"
+    },
+    "bastion-2011": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/f/f4/Bastion_Boxart.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Bastion (video game)"
+    },
+    "dark-souls-2011": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/8/8d/Dark_Souls_Cover_Art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Dark Souls (video game)"
+    },
+    "plants-vs-zombies-2009": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/9/9c/PlantsvsZombiesCoverArt.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Plants vs. Zombies (video game)"
+    },
+    "the-walking-dead-2012": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/3/31/The_Walking_Dead%2C_Season_One_cover.jpeg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: The Walking Dead (video game)"
+    },
+    "grand-theft-auto-v-2013": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/a/a5/Grand_Theft_Auto_V.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Grand Theft Auto V"
+    },
+    "terraria-2011": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/1/1a/Terraria_Steam_artwork.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Terraria"
+    },
+    "dishonored-2012": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/6/65/Dishonored_box_art_Bethesda.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Dishonored"
+    },
+    "the-binding-of-isaac-2011": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/f/fa/Binding_of_isaac_header.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: The Binding of Isaac (video game)"
+    },
+    "the-last-of-us-2013": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/4/46/Video_Game_Cover_-_The_Last_of_Us.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: The Last of Us (video game)"
+    },
+    "xcom-enemy-unknown-2012": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/f/fd/XCOM_Enemy_Unknown_Game_Cover.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: XCOM: Enemy Unknown"
+    },
+    "destiny-2014": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/0/06/Destiny_XBO.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Destiny (video game)"
+    },
+    "hotline-miami-2012": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/f/f4/Hotline_Miami_cover.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Hotline Miami"
+    },
+    "ftl-faster-than-light-2012": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/FTL_Faster_Than_Light_Logo.svg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: FTL: Faster Than Light"
+    },
+    "bayonetta-2-2014": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/b/b1/Bayonetta_2_box_artwork.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Bayonetta 2"
+    },
+    "gone-home-2013": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Gone_Home.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Gone Home"
+    },
+    "mario-kart-8-2014": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/b/b5/MarioKart8Boxart.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Mario Kart 8"
+    },
+    "hearthstone-2014": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/f/f2/Hearthstone_2016_logo.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Hearthstone"
+    },
+    "super-mario-3d-world-2013": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/5/5e/Super_Mario_3D_World_box_art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Super Mario 3D World"
+    },
+    "shovel-knight-2014": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/c/c8/Shovel_knight_cover.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Shovel Knight"
+    },
+    "papers-please-2013": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Papers_Please_-_Title_Logo.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Papers, Please"
+    },
+    "alien-isolation-2014": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/6/6e/Alien_Isolation.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Alien: Isolation"
+    },
+    "metroid-dread-2021": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/f/f7/Metroid_Dread_Banner.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Metroid Dread"
+    },
+    "doom-2016": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/2/28/Doom_Cover.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Doom (2016 video game)"
+    },
+    "persona-5-2017": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/b/b0/Persona_5_cover_art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Persona 5"
+    },
+    "breath-of-the-wild-2017": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/c/c6/The_Legend_of_Zelda_Breath_of_the_Wild.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: The Legend of Zelda: Breath of the Wild"
+    },
+    "psychonauts-2-2021": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/2/23/Psychonauts_2_cover.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Psychonauts 2"
+    },
+    "metal-gear-solid-v-2015": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/8/8f/Metal_Gear_Solid_V_The_Phantom_Pain_cover.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Metal Gear Solid V: The Phantom Pain"
+    },
+    "the-witcher-3-wild-hunt-2015": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: The Witcher 3: Wild Hunt"
+    },
+    "return-of-the-obra-dinn-2018": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/d/d6/Return_of_the_Obra_Dinn_logo-title.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Return of the Obra Dinn"
+    },
+    "bloodborne-2015": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/6/68/Bloodborne_Cover_Wallpaper.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Bloodborne"
+    },
+    "splatoon-2015": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/b/bb/Splatoon.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Splatoon (video game)"
+    },
+    "overwatch-2016": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/5/51/Overwatch_cover_art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Overwatch (2016 video game)"
+    },
+    "outer-wilds-2019": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/f/f6/Outer_Wilds_Steam_artwork.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Outer Wilds"
+    },
+    "titanfall-2-2016": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/1/13/Titanfall_2.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Titanfall 2"
+    },
+    "rocket-league-2015": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Rocket_League_coverart.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Rocket League"
+    },
+    "hitman-2016": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/8/84/Hitman_2015.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Hitman (2016 video game)"
+    },
+    "nier-automata-2017": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/2/21/Nier_Automata_cover_art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Nier: Automata"
+    },
+    "stardew-valley-2016": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/f/fd/Logo_of_Stardew_Valley.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Stardew Valley"
+    },
+    "inside-2016": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/5/50/INSIDE_Xbox_One_cover_art.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Inside (video game)"
+    },
+    "death-stranding-2019": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/2/22/Death_Stranding.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Death Stranding"
+    },
+    "god-of-war-2018": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/a/a7/God_of_War_4_cover.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: God of War (2018 video game)"
+    },
+    "celeste-2018": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Celeste_box_art_full.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Celeste (video game)"
+    },
+    "red-dead-redemption-2-2018": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Red Dead Redemption 2"
+    },
+    "super-mario-odyssey-2017": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/8/8d/Super_Mario_Odyssey.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Super Mario Odyssey"
+    },
+    "into-the-breach-2018": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/e/e5/Into_the_breach_cover.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Into the Breach"
+    },
+    "pubg-2017": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/9/9f/Pubgbattlegrounds.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: PUBG: Battlegrounds"
+    },
+    "hollow-knight-2017": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/d/de/Hollow_Knight_2026_cover_art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Hollow Knight"
+    },
+    "dead-cells-2018": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/1/1f/Dead_cells_cover_art.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Dead Cells"
+    },
+    "ghost-of-tsushima-2020": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/b/b6/Ghost_of_Tsushima.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Ghost of Tsushima"
+    },
+    "slay-the-spire-2019": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/b/b7/Slay_the_spire_cover.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Slay the Spire"
+    },
+    "sekiro-shadows-die-twice-2019": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/6/6e/Sekiro_art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Sekiro: Shadows Die Twice"
+    },
+    "tunic-2022": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/8/85/Tunic_cover_art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Tunic (video game)"
+    },
+    "doom-eternal-2020": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/9/9d/Cover_Art_of_Doom_Eternal.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Doom Eternal"
+    },
+    "hades-2020": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/c/cc/Hades_cover_art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Hades (video game)"
+    },
+    "apex-legends-2019": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/d/db/Apex_legends_cover.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Apex Legends"
+    },
+    "baldurs-gate-3-2023": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/1/12/Baldur%27s_Gate_3_cover_art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Baldur's Gate 3"
+    },
+    "elden-ring-2022": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/b/b9/Elden_Ring_Box_art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Elden Ring"
+    },
+    "animal-crossing-new-horizons-2020": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/1/1f/Animal_Crossing_New_Horizons.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Animal Crossing: New Horizons"
+    },
+    "disco-elysium-2019": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/0/0d/Disco_Elysium_Poster.jpeg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Disco Elysium"
+    },
+    "half-life-alyx-2020": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/4/49/Half-Life_Alyx_Cover_Art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Half-Life: Alyx"
+    },
+    "returnal-2021": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/9/91/Returnal_cover_art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Returnal"
+    },
+    "stray-2022": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/f/f1/Stray_cover_art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Stray (video game)"
+    },
+    "it-takes-two-2021": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/a/aa/It_Takes_Two_cover_art.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: It Takes Two (video game)"
+    },
+    "god-of-war-ragnarok-2022": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/e/ee/God_of_War_Ragnar%C3%B6k_cover.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: God of War Ragnarök"
+    },
+    "tears-of-the-kingdom-2023": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/f/fb/The_Legend_of_Zelda_Tears_of_the_Kingdom_cover.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: The Legend of Zelda: Tears of the Kingdom"
+    },
+    "forza-horizon-5-2021": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/8/86/Forza_Horizon_5_cover_art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Forza Horizon 5"
+    },
+    "inscryption-2021": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/4/48/Inscryption_Cover_Art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Inscryption"
+    },
+    "vampire-survivors-2022": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/e/e6/Vampire_Survivors_key_art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Vampire Survivors"
+    },
+    "pentiment-2022": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Pentiment_cover_wide.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Pentiment (video game)"
+    },
+    "hollow-knight-silksong-2025": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/0/05/Silksong.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Hollow Knight: Silksong"
+    },
+    "black-myth-wukong-2024": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/a/a6/Black_Myth_Wukong_cover_art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Black Myth: Wukong"
+    },
+    "alan-wake-2-2023": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/e/ed/Alan_Wake_2_box_art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Alan Wake 2"
+    },
+    "street-fighter-6-2023": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/9/94/Street_Fighter_6_box_art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Street Fighter 6"
+    },
+    "cocoon-2023": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/9/96/Cocoon_Cover_Art.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Cocoon (video game)"
+    },
+    "animal-well-2024": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/6/65/Animal_Well_Cover_Art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Animal Well"
+    },
+    "pizza-tower-2023": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/6/60/Pizza_Tower_Promo_Art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Pizza Tower"
+    },
+    "metaphor-refantazio-2024": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/4/4d/Metaphor_Refantazio_Cover_Art.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Metaphor: ReFantazio"
+    },
+    "helldivers-2-2024": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/a/ab/Helldivers%E2%84%A2_2_Machinery_of_Oppression_Poster.webp",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Helldivers 2"
+    },
+    "balatro-2024": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/8/89/Balatro_cover.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Balatro"
+    },
+    "kingdom-come-deliverance-ii-2025": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/3/32/Kingdom_Come_Deliverance_II.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Kingdom Come: Deliverance II"
+    },
+    "astro-bot-2024": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/a/a9/Astro_Bot_cover_art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Astro Bot"
+    },
+    "clair-obscur-expedition-33-2025": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/5/5a/Clair_Obscur%2C_Expedition_33_Cover_1.webp",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Clair Obscur: Expedition 33"
+    },
+    "split-fiction-2025": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/4/40/Split_Fiction_cover_art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Split Fiction"
+    },
+    "mario-kart-world-2025": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/6/65/Mario_Kart_World_Cover_Artwork.png",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Mario Kart World"
+    },
+    "blue-prince-2025": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/d/d4/Blue_Prince_cover_art.jpg",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Blue Prince"
+    },
+    "minecraft-2009": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/b/be/Minecraft_game_logo_2023.png?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Minecraft game logo 2023.png"
+    },
+    "undertale-2015": {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Undertale_vector_logo_on_black_borders.svg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Undertale vector logo on black borders.svg"
+    },
+    "fall-guys-2020": {
+      "url": "https://upload.wikimedia.org/wikipedia/en/5/5e/Fall_Guys_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source": "wikipedia",
+      "credit": "Wikipedia: Fall Guys cover.jpg"
+    }
+  }
+}
