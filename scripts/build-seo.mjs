@@ -17,6 +17,7 @@ import { readFileSync, existsSync, writeFileSync, rmSync, mkdirSync } from "node
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { CATEGORIES } from "../src/categories.js";
+import { REPO, CONTRIBUTING, suggestEditUrl } from "../src/contribute.js";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const OUT = join(ROOT, "games");
@@ -202,6 +203,9 @@ ${jsonLd(breadcrumbJsonLd(game, url))}
 
 <footer class="seo-foot">
   <p>${data.count} featured games, ${data.yearRange?.join("–") || ""}${catalogue ? `, from a catalogue of ${catalogue.total.toLocaleString("en-US")}` : ""}.</p>
+  <p>Something here wrong? <a href="${esc(suggestEditUrl(game))}" rel="noopener">Suggest an edit</a> ·
+    <a href="${esc(CONTRIBUTING)}" rel="noopener">Contribute</a> ·
+    <a href="${esc(REPO)}" rel="noopener">Source on GitHub</a></p>
 </footer>
 </body>
 </html>
@@ -281,7 +285,9 @@ ${jsonLd(itemList)}
 </main>
 
 <footer class="seo-foot">
-  <p>Dataset generated ${esc(UPDATED)}.</p>
+  <p>Dataset generated ${esc(UPDATED)}. The list is hand-picked and open to argument:
+    <a href="${esc(CONTRIBUTING)}" rel="noopener">how to contribute</a> ·
+    <a href="${esc(REPO)}" rel="noopener">source on GitHub</a></p>
 </footer>
 </body>
 </html>

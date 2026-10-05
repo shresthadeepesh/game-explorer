@@ -6,6 +6,7 @@ import { artFor, coverFor } from "./art.js";
 import { recommend } from "./recommend.js";
 import * as store from "./store.js";
 import { $, esc, debounce } from "./util.js";
+import { suggestEditUrl } from "./contribute.js";
 
 const DATE = new Intl.DateTimeFormat("en", { year: "numeric", month: "short", day: "numeric", timeZone: "UTC" });
 const formatDate = (iso) => {
@@ -164,6 +165,7 @@ export function mountPanel({ root, games, resolve, onSelect, onClose }) {
         <a href="${g.wiki}" target="_blank" rel="noopener"><span>Wikipedia · what it is</span><span>↗</span></a>
         <a href="${g.guide}" target="_blank" rel="noopener"><span>StrategyWiki · how to play</span><span>↗</span></a>
         <a href="${g.trailer}" target="_blank" rel="noopener"><span>Watch trailer</span><span>↗</span></a>
+        <a class="panel__fix" href="${suggestEditUrl(g)}" target="_blank" rel="noopener"><span>${g.catalogue ? "Nominate for the timeline" : "Something wrong? Suggest an edit"}</span><span>↗</span></a>
       </nav>
       <div data-specs></div>
       ${similarFor(g)}

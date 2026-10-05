@@ -1,0 +1,49 @@
+name: Checks
+
+# Runs on pull requests, where the deploy workflow cannot: that one needs the
+# github-pages environment, which a fork's PR has no access to. This is the gate
+# a contributor's change actually has to pass.
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # No bundler, so the checks are the build. The smoke test drives a real
+      # browser against a real server, so both have to be up first; the ubuntu
+      # runner ships Chrome at a path scripts/smoke.mjs already looks for.
+      - name: Serve the site
+        run: |
+          npm start &
+          npx --yes wait-on http://localhost:4173 --timeout 60000
+
+      - run: npm test
+
+      # data/ and games/ are checked in, so a data PR that skipped the rebuild
+      # would ship a dataset the pages disagree with. Rebuild and compare —
+      # ignoring the two date stamps, which move on every run by design.
+      - name: The generated files match the source
+        run: |
+          npm run build:data
+          npm run build:seo
+          drift=$(git diff -- data games sitemap.xml robots.txt \
+            | grep '^[-+][^-+]' \
+            | grep -v 'generatedAt\|lastmod\|Dataset generated' \
+            || true)
+          if [ -n "$drift" ]; then
+            echo "::error::data/ or games/ is stale — run 'npm run build:data && npm run build:seo' and commit the result"
+            echo "$drift" | head -40
+            exit 1
+          fi
+          echo "generated files are in step with the source"

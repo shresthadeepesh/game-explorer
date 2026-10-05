@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: How to contribute
+    url: https://github.com/shresthadeepesh/game-explorer/blob/main/CONTRIBUTING.md
+    about: What the list is for, and how to edit it yourself.
+  - name: Catalogue data (the 23,000 faint entries)
+    url: https://www.wikidata.org
+    about: Harvested from Wikidata, not edited here. Fix it upstream and the next harvest picks it up.

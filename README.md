@@ -39,17 +39,24 @@ scripts/check-data.mjs    dataset integrity gate
 scripts/enrich-wikidata.mjs  platforms, studios and release dates
 scripts/fetch-specs.mjs   PC system requirements from Steam
 scripts/harvest-wikidata.mjs  the full per-year catalogue
-scripts/smoke.mjs         CDP end-to-end test, 29 checks
+scripts/smoke.mjs         CDP end-to-end test, 36 checks
 scripts/build-seo.mjs     games/ pages, sitemap.xml and robots.txt (generated)
 scripts/build-og.mjs      assets/og.png, the share card, drawn without a dependency
 scripts/check-seo.mjs     metadata and crawlable-page gate
+src/contribute.js         repository URL and the prefilled issue links
 games/                    one static page per featured game (generated)
 sitemap.xml, robots.txt   generated alongside games/
 sw.js, manifest.webmanifest  offline shell and install metadata
+CONTRIBUTING.md           how to nominate, correct and send a change
+.github/ISSUE_TEMPLATE/   the nomination and correction forms
 assets/covers/            drop-in real covers, named <id>.jpg|png|webp|avif
 ```
 
 ## Editing the data
+
+The list is hand-picked, so it is wrong in public — corrections and nominations
+are welcome. [CONTRIBUTING.md](CONTRIBUTING.md) has the steps; every entry page on
+the site links straight to the right issue form, already filled in.
 
 Edit `scripts/source-games.mjs`, then:
 

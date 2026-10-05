@@ -207,11 +207,15 @@ try {
   const deep = await evaluate(() => ({
     title: document.querySelector(".panel__title")?.textContent,
     facts: [...document.querySelectorAll(".panel__facts dt")].map((n) => n.textContent),
-    similar: [...document.querySelectorAll(".similar__name")].map((n) => n.textContent)
+    similar: [...document.querySelectorAll(".similar__name")].map((n) => n.textContent),
+    fix: document.querySelector(".panel__fix")?.href
   }));
   check("deep link opens the panel", deep.title === "Portal", deep.title || "none");
   check("panel shows enriched facts", deep.facts.includes("Released") && deep.facts.some((f) => f.startsWith("Developer")), deep.facts.join(", "));
   check("panel recommends similar games", deep.similar.length === 3, deep.similar.join(", "));
+  check("panel offers a prefilled correction form",
+    deep.fix?.includes("issues/new") && deep.fix.includes("template=fix-data.yml") && deep.fix.includes("portal-2007"),
+    deep.fix || "none");
 
   const chained = await evaluate(async () => {
     document.querySelector(".similar__item").click();

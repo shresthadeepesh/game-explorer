@@ -1,0 +1,46 @@
+name: Fix an entry
+description: Something on an existing game is wrong
+title: "Fix: "
+labels: ["data"]
+body:
+  - type: input
+    id: game
+    attributes:
+      label: Game
+      description: Filled in for you when you arrive from an entry page.
+      placeholder: Doom (doom-1993)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: field
+    attributes:
+      label: What is wrong?
+      options:
+        - Year
+        - Genre or category
+        - Blurb
+        - Platforms, studio or release date
+        - Cover art
+        - A link goes somewhere wrong
+        - Something else
+    validations:
+      required: true
+
+  - type: textarea
+    id: correction
+    attributes:
+      label: What it says, and what it should say
+      placeholder: |
+        Says: 1994
+        Should be: 1993-12-10, the shareware release.
+    validations:
+      required: true
+
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: Wikipedia, Wikidata, a press release — anything checkable.
+    validations:
+      required: false

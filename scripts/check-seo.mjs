@@ -38,6 +38,8 @@ for (const game of data.games) {
   if (!html.includes(`#game=${game.id}`)) fail(`${game.id}: does not link back into the app`);
   // The title has to be in the markup, not assembled by a script.
   if (!html.includes(`<h1>`)) fail(`${game.id}: no h1`);
+  // Every entry has to carry its own way to argue with it.
+  if (!html.includes("issues/new?template=")) fail(`${game.id}: no link to suggest an edit`);
 
   for (const block of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
     try { JSON.parse(block[1]); } catch (error) { fail(`${game.id}: structured data is not valid JSON (${error.message})`); }
@@ -71,7 +73,8 @@ const required = [
   ['property="og:title"', "og:title"],
   ['name="twitter:card"', "twitter card"],
   ['"@type": "WebSite"', "WebSite structured data"],
-  ['href="games/"', "a crawlable link to the written index"]
+  ['href="games/"', "a crawlable link to the written index"],
+  ["github.com/shresthadeepesh/game-explorer", "a link to the repository"]
 ];
 for (const [needle, what] of required) {
   if (!shell.includes(needle)) fail(`index.html is missing ${what}`);

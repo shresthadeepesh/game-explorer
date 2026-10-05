@@ -1,0 +1,63 @@
+name: Nominate a game
+description: Suggest a game for the featured timeline
+title: "Add: "
+labels: ["data", "nomination"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A year holds a handful of games, so a nomination usually means arguing
+        one out. The case that works: what did this game make possible that was
+        not possible before it?
+
+  - type: input
+    id: game
+    attributes:
+      label: Game
+      description: As it is commonly known.
+      placeholder: Outer Wilds
+    validations:
+      required: true
+
+  - type: input
+    id: year
+    attributes:
+      label: Year of release
+      placeholder: "2019"
+    validations:
+      required: true
+
+  - type: input
+    id: genre
+    attributes:
+      label: Genre
+      description: One of the genres already in src/categories.js, if you know it. Otherwise say what it plays like.
+      placeholder: Adventure
+    validations:
+      required: false
+
+  - type: textarea
+    id: case
+    attributes:
+      label: What did it change?
+      description: A genre, a technique, an audience, an expectation. Not a score.
+      placeholder: Knowledge is the only progression — the player gets no items, only understanding, and the game ends when they know enough.
+    validations:
+      required: true
+
+  - type: input
+    id: wikipedia
+    attributes:
+      label: Wikipedia article
+      description: The game's own article, not a series or disambiguation page.
+      placeholder: https://en.wikipedia.org/wiki/Outer_Wilds
+    validations:
+      required: false
+
+  - type: textarea
+    id: swap
+    attributes:
+      label: What should it replace?
+      description: Optional, but it is the question the maintainer will ask. Which entry in that year has the weaker claim?
+    validations:
+      required: false
