@@ -1,0 +1,153 @@
+/* Styles for the static, crawlable pages under games/. Deliberately separate
+   from styles.css: those pages carry no 3D stage, no chrome and no script, and
+   loading the app's sheet would drag in a layout built for a canvas. */
+
+:root {
+  --ink: #e9ecf2;
+  --ink-dim: #9aa3b5;
+  --bg: #08090c;
+  --panel: #10131a;
+  --line: #222734;
+  --accent: #ff5a36;
+  --serif: "Space Grotesk", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+* { box-sizing: border-box; }
+
+body.seo {
+  margin: 0;
+  padding: 0 1.25rem 4rem;
+  background: var(--bg);
+  color: var(--ink);
+  font: 400 1rem/1.65 var(--serif);
+  -webkit-font-smoothing: antialiased;
+}
+
+body.seo main,
+body.seo .seo-crumbs,
+body.seo .seo-foot { max-width: 46rem; margin-inline: auto; }
+
+a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { color: var(--ink); }
+
+.seo-crumbs,
+.seo-foot {
+  padding: 1.25rem 0;
+  font: 500 0.72rem/1.5 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+}
+.seo-foot { border-top: 1px solid var(--line); margin-top: 3rem; }
+
+.seo-head { padding-bottom: 1.5rem; border-bottom: 1px solid var(--line); }
+
+.seo-kicker {
+  margin: 0 0 0.5rem;
+  font: 500 0.72rem/1.5 var(--mono);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+h1 {
+  margin: 0 0 0.75rem;
+  font: 700 clamp(1.9rem, 6vw, 3rem)/1.1 var(--serif);
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  margin: 0 0 0.75rem;
+  font: 500 0.78rem/1.4 var(--mono);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+}
+
+.seo-blurb { margin: 0 0 1.25rem; color: var(--ink-dim); font-size: 1.05rem; }
+
+.seo-cta {
+  display: inline-block;
+  padding: 0.6rem 1.1rem;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  font: 500 0.78rem/1 var(--mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.seo-cta:hover { background: var(--accent); color: var(--bg); }
+
+.seo-cover {
+  display: block;
+  max-width: min(100%, 24rem);
+  height: auto;
+  margin: 1.75rem 0 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--panel);
+}
+
+.seo-credit { margin: 0; font: 400 0.75rem/1.5 var(--mono); color: var(--ink-dim); }
+
+.seo-section { margin-top: 2.25rem; }
+
+.seo-facts {
+  display: grid;
+  grid-template-columns: minmax(7rem, auto) 1fr;
+  gap: 0.5rem 1.25rem;
+  margin: 0;
+}
+.seo-facts dt {
+  font: 500 0.72rem/1.65 var(--mono);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+}
+.seo-facts dd { margin: 0; }
+
+.seo-links,
+.seo-list { margin: 0; padding: 0; list-style: none; }
+.seo-links li { padding: 0.3rem 0; }
+
+.seo-list li {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0.6rem;
+  align-items: baseline;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.seo-list span { font: 400 0.76rem/1.5 var(--mono); color: var(--ink-dim); }
+
+.seo-year { margin-top: 2.5rem; scroll-margin-top: 1rem; }
+.seo-year h2 { font-size: 1rem; color: var(--ink); }
+
+.seo-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.75rem;
+  margin-top: 1.5rem;
+  font: 500 0.74rem/1.4 var(--mono);
+}
+
+.seo-adjacent {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+  font: 500 0.78rem/1.5 var(--mono);
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --ink: #14161c;
+    --ink-dim: #596075;
+    --bg: #f7f7f9;
+    --panel: #ffffff;
+    --line: #dcdfe6;
+  }
+}
