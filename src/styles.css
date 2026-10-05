@@ -490,6 +490,9 @@ button { font: inherit; color: inherit; background: none; border: none; }
 }
 
 .panel__links a:first-child { border-color: var(--panel-color, var(--accent)); color: var(--panel-color, var(--accent)); }
+
+/* The list is hand-picked, so every entry carries its own way to argue with it. */
+.panel__fix { border-style: dashed; color: rgba(242, 240, 238, 0.5); }
 .panel__links a:hover { background: var(--panel-color, var(--accent)); border-color: var(--panel-color, var(--accent)); color: var(--bg); }
 
 .panel__hint {

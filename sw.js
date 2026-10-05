@@ -2,7 +2,7 @@
 // instant and offline; cover art is cached as it is seen, because a couple of
 // hundred images have no business being fetched up front.
 
-const VERSION = "v4";
+const VERSION = "v5";
 const SHELL = `shell-${VERSION}`;
 const DATA = `data-${VERSION}`;
 const ART = `art-${VERSION}`;
@@ -14,7 +14,8 @@ const SHELL_FILES = [
   "./src/app.js", "./src/panel.js", "./src/mylist.js", "./src/listview.js",
   "./src/store.js", "./src/catalog.js", "./src/recommend.js",
   "./src/timeline.js", "./src/graph.js", "./src/art.js",
-  "./src/categories.js", "./src/a11y.js", "./src/util.js", "./src/url.js"
+  "./src/categories.js", "./src/a11y.js", "./src/util.js", "./src/url.js",
+  "./src/contribute.js"
 ];
 
 self.addEventListener("install", (event) => {

@@ -40,6 +40,8 @@ a:hover { color: var(--ink); }
   color: var(--ink-dim);
 }
 .seo-foot { border-top: 1px solid var(--line); margin-top: 3rem; }
+.seo-foot p { margin: 0; }
+.seo-foot p + p { margin-top: 0.6rem; }
 
 .seo-head { padding-bottom: 1.5rem; border-bottom: 1px solid var(--line); }
 
