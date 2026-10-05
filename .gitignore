@@ -1,10 +1,6 @@
 node_modules/
 .DS_Store
 
-# Cover images are third-party art, mostly non-free fair-use, and regenerable:
-# data/covers.json holds every source URL, so `npm run fetch:covers` rebuilds
-# this directory. Keeping 17MB of other people's box art out of the history.
-assets/covers/
-
 # query cache for the catalogue refile pass, regenerable
 data/catalog/first-dates.json
+_site/
