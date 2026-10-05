@@ -35,11 +35,11 @@ jobs:
 
       - run: npm run test
 
-      # enablement turns Pages on the first time this runs, so the repository
-      # needs no setting flipped by hand before the first deploy.
+      # Pages itself is enabled in the repository settings, under
+      # Pages -> Source -> GitHub Actions. The workflow token cannot create
+      # the site: `enablement: true` here fails with `Resource not accessible
+      # by integration`.
       - uses: actions/configure-pages@v5
-        with:
-          enablement: true
 
       # Everything the page loads is a relative path, so the site works
       # unchanged under /game-explorer/. Only the files the browser asks for
